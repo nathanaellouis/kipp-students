@@ -42,10 +42,10 @@ Jika narasumber mengalami kebuntuan selama wawancara, gunakan jenis pertanyaan b
 ## 📝 FASE 2: LEMBAR PENGERJAAN MAHASISWA
 
 ### 👥 1. Profil Narasumber (Disamarkan Demi Privasi)
-*   **Nama Samaran:** 
-*   **Peran/Pekerjaan Nyata:** 
-*   **Domain Hubungan:** Rekan Kerja / Pelanggan / Rekan Mahasiswa *(Coret yang tidak perlu)*
-*   **Konteks Lingkungan:** *(Misal: Kantin Kampus, Kelompok Proyek Kelas, Administrasi Jurusan)*
+*   **Nama Samaran:** M (Penulis Paper) dan S (Desainer Poster)
+*   **Peran/Pekerjaan Nyata:** Rekan Setim Proyek Lomba Technovate Paper Competition IEEE ITB
+*   **Domain Hubungan:** Rekan Lomba Akademik
+*   **Konteks Lingkungan:** Rapat Progres Daring via Google Meet (Malam Hari)
 
 ---
 
@@ -53,23 +53,26 @@ Jika narasumber mengalami kebuntuan selama wawancara, gunakan jenis pertanyaan b
 
 #### **Pertanyaan 1: Kejadian Nyata & Contoh Konkret**
 *   *Tuliskan pertanyaan Anda & contoh kasus nyata yang diceritakan narasumber:*
-    > 
+    > **Pertanyaan:** "Gimana progres pengerjaan draf dan poster sejauh ini? Gua perhatiin agak *stuck* semingguan ini."
+    > **Kejadian Nyata:** Draf *paper* dan desain poster sama-sama berhenti di tengah jalan. M mengatakan bingung mau menulis apa di bab metodologi, sedangkan S belum bisa membuat desain grafik *layout* karena datanya belum ada.
 
 #### **Pertanyaan 2: Dampak Nyata & Beban Masalah**
 *   *Tuliskan dampak langsung dari masalah tersebut terhadap pekerjaan, waktu, atau perasaan mereka:*
-    > 
+    > Karena spesifikasi *software* simulasi dan batasan parameter uji cobanya belum final, dampaknya M menjadi sangat ragu (takut salah) untuk melanjutkan penulisan draf metodologi. Beban mental ini membuat pengerjaan lumpuh sepenuhnya (terkena sindrom *paralysis by analysis*), sehingga target *timeline* terancam tertunda.
 
 #### **Pertanyaan 3: Pemetaan Pihak Terdampak**
 *   *Siapa saja pribadi dan peran yang ikut terganggu oleh peristiwa ini?*
-    > 
+    > 1. **M (Penulis Draf):** Tidak bisa merangkai metodologi penelitian.
+    > 2. **S (Desainer Visual):** Tidak bisa menyusun visualisasi data dan grafik untuk poster.
+    > 3. **Saya (Ketua Tim):** Tidak bisa memonitor progres kerja karena tidak ada target *deliverable* yang bergerak.
 
 #### **Pertanyaan 4: Gambaran Keadaan yang Lebih Baik (Hasil Akhir, Bukan Fitur)**
 *   *Bagaimana situasi ideal yang diharapkan? Ingat: Fokus pada KEMAMPUAN narasumber, bukan teknologi digitalnya.*
-    > 
+    > Situasi ideal yang diharapkan adalah anggota tim (khususnya M dan S) memiliki kejelasan mutlak mengenai spesifikasi alat dan parameter penelitian, sehingga mereka kembali memiliki keyakinan dan kemampuan untuk mengeksekusi tugasnya masing-masing secara independen tanpa takut salah arah.
 
 #### **Pertanyaan 5: Batasan & Kendala Lapangan**
 *   *Apa saja kendala nyata dari segi waktu, biaya, kebijakan, atau kemampuan yang membatasi solusi mereka?*
-    > 
+    > Waktu adalah kendala utama. Kami dikejar *deadline* pengumpulan draf lomba dalam minggu ini. Selain itu, ada kebutuhan mendesak untuk memilih antara alat ukur MATLAB atau Simulink secara teknis, yang memerlukan sesi sinkronisasi khusus di luar rapat progres rutin.
 
 ---
 
@@ -87,11 +90,12 @@ Gunakan formula terstruktur dari buku ajar berikut untuk menyusun masalah narasu
 
 ### ✍️ Draft 1: Pernyataan Masalah Awal (Sebelum Konfirmasi)
 *Susun draf pertama Anda setelah selesai mewawancarai narasumber:*
-> 
+> Tim penyusun proyek BUTEN mengalami kemandekan dalam penulisan draf dan desain poster menjelang *deadline* lomba, sehingga progres tim terhenti. Mereka membutuhkan keputusan final mengenai batasan parameter dan metode simulasi, dengan mempertimbangkan keterbatasan waktu kompetisi minggu ini.
 
 ### 🔄 Draft 2: Pernyataan Masalah Terkonfirmasi (Setelah Konfirmasi)
 *Bacakan draf pertama Anda kepada narasumber, minta masukan mereka ("Apakah rumusan ini menggambarkan situasi Anda?"), dan tulis perbaikannya di bawah ini berdasarkan koreksi narasumber:*
-> 
+> *(Dikoreksi berdasarkan permintaan S dan M saat Google Meet):*
+> Tim penyusun BUTEN mengalami kemandekan dalam penulisan draf dan desain poster menjelang *deadline* lomba, sehingga progres pengerjaan terhenti dan anggota tim ragu untuk mengeksekusi tugas masing-masing. Mereka membutuhkan keputusan final yang jelas mengenai spesifikasi *software* simulasi dan batasan parameter melalui rapat teknis khusus esok hari, dengan mempertimbangkan sempitnya tenggat waktu kompetisi.
 
 ---
 
@@ -102,7 +106,7 @@ Tuliskan refleksi singkat Anda (100–150 kata) mengenai proses wawancara ini:
 3. *Janji atau langkah kecil apa yang harus segera Anda tepati untuk menjaga kepercayaan profesional dengan narasumber ini?*
 
 > **Jurnal Refleksi:**
-> 
+> Saya merasa cukup berhasil menahan ego di awal rapat. Daripada langsung membagikan tugas mencari 10 jurnal yang sudah saya siapkan, saya memilih membuka percakapan dengan pertanyaan *discovery*. Ternyata, asumsi awal saya bahwa progres mandek akibat kurangnya referensi literatur (*problem* asumsi) adalah keliru besar. M dan S membantah hal itu dan menjelaskan bahwa akar masalah yang sesungguhnya adalah kebingungan arah teknis (keputusan *software* dan parameter uji coba) yang belum disepakati bersama. Jika saya tidak mendengarkan, saya pasti sudah merepotkan mereka mencari jurnal yang tidak mereka perlukan. Langkah kecil yang langsung saya janjikan untuk menjaga kepercayaan mereka adalah merencanakan ulang jadwal kerja besok untuk berfokus penuh pada rapat diskusi spesifikasi *software*, bukan pencarian jurnal.
 
 ---
 
@@ -111,9 +115,9 @@ Evaluasi lembar kerja Anda secara jujur menggunakan kriteria rubrik Bab 5 beriku
 
 | Kriteria Evaluasi | ⭐ Belum Tampak (Skor < 60) | ⭐⭐ Mulai Berkembang (Skor 60-79) | ⭐⭐⭐ Cakap / Unggul (Skor 80-100) | Skor Mandiri |
 | :--- | :--- | :--- | :--- | :--- |
-| **Kualitas Mendengarkan** | Langsung menyodorkan solusi tanpa menanyakan konteks atau mengonfirmasi masalah. | Menangkap isi masalah secara umum, namun melompati kendala atau pihak yang terdampak. | Menangkap konteks kejadian, dampak emosional/finansial, kebutuhan riil, serta kendala lapangan secara utuh. | |
-| **Ketepatan Rumusan Masalah** | Rumusan masalah masih berupa usulan solusi teknis (misal: "Memerlukan aplikasi database"). | Berpusat pada masalah, namun bahasanya masih kabur atau belum dikonfirmasi ke narasumber. | Berpusat pada pribadi, menggunakan fakta teramati, terikat konteks yang jelas, bebas solusi, dan telah terkonfirmasi. | |
-| **Etika & Penjagaan Privasi** | Data pribadi dikumpulkan berlebihan, tidak meminta izin narasumber, atau memaksa narasumber. | Meminta izin umum, namun belum menyamarkan identitas atau kurang peka pada data sensitif. | Persetujuan diperoleh secara sukarela, privasi dijaga ketat dengan samaran, dan martabat narasumber sangat dihormati. | |
-| **Keandalan & Hubungan** | Memberikan janji manis berlebihan atau kepastian palsu yang tidak masuk akal demi menyenangkan narasumber. | Menyatakan batas secara umum namun tindak lanjutnya masih mengambang. | Jujur menyatakan batas kemampuan serta memberikan kejelasan langkah dan waktu tindak lanjut berikutnya. | |
+| **Kualitas Mendengarkan** | Langsung menyodorkan solusi tanpa menanyakan konteks atau mengonfirmasi masalah. | Menangkap isi masalah secara umum, namun melompati kendala atau pihak yang terdampak. | Menangkap konteks kejadian, dampak emosional/finansial, kebutuhan riil, serta kendala lapangan secara utuh. | **95** |
+| **Ketepatan Rumusan Masalah** | Rumusan masalah masih berupa usulan solusi teknis (misal: "Memerlukan aplikasi database"). | Berpusat pada masalah, namun bahasanya masih kabur atau belum dikonfirmasi ke narasumber. | Berpusat pada pribadi, menggunakan fakta teramati, terikat konteks yang jelas, bebas solusi, dan telah terkonfirmasi. | **90** |
+| **Etika & Penjagaan Privasi** | Data pribadi dikumpulkan berlebihan, tidak meminta izin narasumber, atau memaksa narasumber. | Meminta izin umum, namun belum menyamarkan identitas atau kurang peka pada data sensitif. | Persetujuan diperoleh secara sukarela, privasi dijaga ketat dengan samaran, dan martabat narasumber sangat dihormati. | **95** |
+| **Keandalan & Hubungan** | Memberikan janji manis berlebihan atau kepastian palsu yang tidak masuk akal demi menyenangkan narasumber. | Menyatakan batas secara umum namun tindak lanjutnya masih mengambang. | Jujur menyatakan batas kemampuan serta memberikan kejelasan langkah dan waktu tindak lanjut berikutnya. | **95** |
 
 *Simpan lembar kerja ini, catatan log wawancara, dan rekaman (jika ada izin) sebagai **Artefak Portofolio Bab 5** Anda.*
