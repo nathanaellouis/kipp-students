@@ -18,6 +18,10 @@ Melakukan personal conversation dengan listening, clarity, boundary, dan relatio
 - Evidence listening dan response.
 - Analisis relationship state sebelum dan sesudah.
 
+::: {.callout-tip title="Lihat contoh pengisian"}
+[Buka contoh fiktif Minggu 3](../examples/week-03.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+:::
+
 ## Konteks performance
 
 **Tanggal dan setting:** Sesi kerja kelompok *offline* dan koordinasi lanjutan via grup WhatsApp pada hari Sabtu, 26 September 2026 dalam rangka persiapan lomba AI Hackathon. Percakapan intens terjadi saat kami sedang melakukan finalisasi aset visual (logo dan maskot).
