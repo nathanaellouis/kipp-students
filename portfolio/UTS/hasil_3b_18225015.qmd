@@ -1,0 +1,124 @@
+---
+title: "Laporan UTS KIPP 2026 - Versi 2.0"
+subtitle: "Sesi 3b - Kasus 3"
+lang: id
+format: 
+  html:
+    toc: true
+execute:
+  eval: false
+---
+
+# A) Identitas
+
+| Elemen | Keterangan |
+|---|---|
+| Nama mahasiswa | Nathanael Louis Cahyono |
+| NIM | 18225015 |
+| Kelas dan tanggal | Kelas 01, 14 Oktober 2026 |
+| Nomor/judul kasus | Sesi 3b; Kasus 3 |
+| Nama dan ID target | Cyntia (K3-03) |
+| Versi bank/aturan penugasan | Bank 2.0; paket 2.0; penugasan dalam PENUGASAN.md |
+| Modalitas | Teks |
+| Kasus nyata/fiktif | Fiktif (Simulasi AI) |
+| Kelengkapan transkrip | Lengkap |
+
+# B) Kasus dan Tujuan
+
+## Kasus dan tujuan tindakan
+Customer (Cyntia) menangani pertanyaan pelanggan berulang dan pesanan tercecer dengan tenaga terbatas. Ia belum yakin perlu AI. Mahasiswa bertugas menggali kebutuhan dan menawarkan solusi TI/AI yang sesuai, dengan sasaran keputusan/uji coba konkret. 
+Tujuan Mahasiswa: Mencapai kesepakatan untuk melakukan satu pilot project (uji coba skala kecil) solusi TI/AI yang sangat spesifik, dengan menetapkan langkah (milestone) yang singkat, serta menunjuk saya sebagai Penanggung Jawab (PIC) eksekusinya agar tidak menambah beban kerja Cyntia minggu ini.
+
+## Profil awal komunikator
+| Unsur | Laporan/dugaan awal | Bukti | Tingkat kepastian |
+|---|---|---|---|
+| SWOT subjektif | Peluang usahanya besar (inovatif), tetapi Ancaman utamanya adalah prioritas yang terus berubah. Kekuatannya ada pada kreativitas, Kelemahan pada eksekusi/tindak lanjut yang kurang konsisten. | Rencana Tahap B | Sementara |
+| Attitude | Sangat antusias terhadap ide baru/inovasi, tetapi komitmennya mudah tersebar karena banyaknya hal yang ia kerjakan. Ia merasa kendalanya sering diremehkan. | Rencana Tahap B | Sementara |
+| Knowledge | Sudah mengerti gambaran besar tentang manfaat TI/AI, tetapi detailnya belum lengkap dan ia belum bisa memilih masalah utama mana yang harus diselesaikan lebih dulu. | Rencana Tahap B | Sementara |
+| Skill | Sangat kreatif sebagai penggerak, tetapi konsistensi tindak lanjutnya lemah jika tidak didampingi. Sangat membutuhkan ruang lingkup uji coba (pilot) yang jelas dan butuh PIC eksekutor. | Rencana Tahap B | Sementara |
+| Preferensi/MBTI jika dilaporkan | [Tidak didiagnosis, diasumsikan antusias/komunitas] | Rencana Tahap B | Hipotesis |
+| Karakter, peran, kultur/ko-kultur | Pengelola usaha/Customer, Penggerak | Rencana Tahap B | Sementara |
+
+## Dugaan awal profil target dan rencana
+| TAIDA | Status awal/target | Edukasi A/K/S | Repertoar yang direncanakan | Bukti yang diharapkan |
+|---|---|---|---|---|
+| Target | Cyntia (Pengelola usaha/Customer) | Diagnosis hambatan prioritas dan eksekusi | Memvalidasi kesibukan, mengerucutkan masalah, menawarkan diri sebagai PIC | Kesepakatan pilot project |
+| Attention | Merasa terbebani | Memvalidasi (A) | Memvalidasi kesibukannya tanpa sekadar memberikan pujian kosong. | Cyntia merasa dipahami beban kerjanya |
+| Interest | Belum fokus | Mengerucutkan (K) | Mengajaknya memilih satu saja masalah paling mendesak saat ini. | Cyntia memilih satu prioritas masalah |
+| Desire | Khawatir eksekusi | Solusi PIC (S) | Menawarkan solusi berupa pilot project dengan ruang lingkup sangat kecil (saya sebagai PIC). | Cyntia setuju dengan konsep uji coba ringan |
+| Action | Belum ada komitmen | Langkah konkret (S) | Menyepakati langkah pertama, jadwal pengingat singkat, dan pendelegasian tugas ke PIC. | Kesepakatan waktu uji coba/review draf |
+
+# C) Skrip Percakapan
+**Transkrip aktual, bukan dialog karangan.**
+
+**[Tahap Identifikasi & Perencanaan]**
+**U000:** (Menyampaikan identitas dan rencana TAIDA pada Tahap A dan B).
+
+**[Tahap Simulasi Awal]**
+**AI001 - Cyntia:** "Menarik! Tapi minggu ini banyak hal yang harus saya kerjakan."
+**U001:** "Saya paham banget, Mbak Cyntia. Memang ide baru itu selalu menarik ya, tapi saya juga sadar mengeksekusi hal baru di tengah jadwal Mbak yang sedang padat-padatnya pasti sangat menantang. Makanya, tujuan saya ke sini justru untuk mengurangi beban kerja Mbak, bukan menambah PR baru minggu ini. Biar Mbak nggak tambah pusing, kita jangan bahas semuanya. Dari dua kendala operasional yang ada—yaitu pesanan yang sering tercecer atau pertanyaan pelanggan yang terus berulang—mana sih yang paling menyita waktu dan pikiran Mbak saat ini? Kita pilih satu saja dulu untuk dibereskan."
+**AI002 - Cyntia:** "Wah, bener banget itu, untung kamu paham. Kalau disuruh milih, yang paling bikin pusing dan nyita waktu sekarang itu membalas pertanyaan pelanggan yang itu-itu saja tiap hari. Gara-gara sibuk jawabin chat mereka, kadang saya malah jadi kelewatan mencatat pesanan yang beneran masuk. Tapi jujur saja nih, saya bingung harus mulai dari mana kalau mau dibikin sistemnya. Saya juga khawatir kalau pakai bot atau otomatisasi gitu, nanti balasannya malah kelihatan kaku dan bikin pelanggan komunitas saya merasa nggak dilayani dengan personal."
+**U002:** "Wah, wajar banget Mbak Cyntia khawatir soal itu. Komunitas kan nyawanya memang ada di interaksi yang personal dan hangat ya, Mbak. Berita baiknya, otomatisasi sekarang nggak harus kaku kok. Kita bisa setting jawaban otomatisnya persis dengan gaya bahasa yang biasa Mbak pakai sehari-hari, lengkap dengan sapaan akrab atau emoji, supaya pelanggan tetap merasa dihargai. Nah, karena Mbak bingung mulai dari mana dan jadwal minggu ini padat, biar saya saja yang jadi PIC (Penanggung Jawab) teknisnya. Gimana kalau kita bikin pilot project atau uji coba kecil-kecilan dulu? Mbak cukup sebutkan 2 pertanyaan yang paling sering banget ditanyakan (misal: jam buka atau harga). Nanti saya yang akan buatkan draf balasan otomatisnya dan setting sistemnya. Mbak tinggal baca dan koreksi kalau bahasanya kurang pas. Kira-kira, 2 pertanyaan apa tuh Mbak yang paling sering muncul setiap harinya?"
+**AI003 - Cyntia:** "Beneran kamu yang mau pegang teknisnya? Wah, jujur itu ngebantu banget sih! Kalau cuma mikirin dua pertanyaan dan sistemnya kamu yang urus, saya mau coba. Lega dengernya kalau balasannya nanti bisa disesuaikan sama gaya bahasa saya, soalnya kedekatan sama anggota komunitas itu penting banget buat bisnis ini. Kalau untuk dua pertanyaan yang paling sering banget muncul tiap hari itu: pertama, 'Mbak, minta daftar harga atau katalog paket terbarunya dong?' dan kedua, 'Kalau pengiriman ke luar kota aman nggak, terus sampainya berapa lama?' Tapi nanti pas proses review drafnya, saya mintanya dikirim via chat aja ya biar cepat saya ceknya di sela-sela kerjaan. Kira-kira kapan kamu bisa kasih draf balasan otomatisnya ke saya buat dicek?"
+**U003:** "Sip, Mbak Cyntia! Dua pertanyaannya sudah saya catat ya: soal katalog harga dan keamanan/estimasi pengiriman luar kota. Dua hal ini memang cocok banget buat diotomatisasi. Sesuai request Mbak, nanti saya kirim draf teks balasan otomatisnya langsung via chat ini biar praktis. Sore ini jam 5, saya pastikan drafnya sudah masuk ke HP Mbak ya. Mbak Cyntia cukup baca sekilas saja nanti. Kalau gaya bahasanya dirasa sudah pas dan akrab seperti sapaan Mbak biasanya, Mbak tinggal balas 'Oke', dan besok pagi sistemnya langsung saya setting di HP admin dan saya pantau jalannya. Gimana Mbak, deal ya sore ini jam 5 saya kirim drafnya?"
+**AI004 - Cyntia:** "Deal! Jam 5 sore nanti saya tunggu drafnya via chat ya. Jujur nggak nyangka ternyata bisa sesimpel ini kalau ada yang bantuin ngurus teknisnya dan paham kondisinya. Makasih banyak ya udah mau ngertiin jadwal saya yang lagi padat-padatnya ini."
+
+**[Tahap Uji Ulang]**
+**AI005 - Cyntia:** "Wah, drafnya udah masuk. Bahasanya pas banget, santai dan tetap hangat. Tapi barusan admin saya yang pegang HP operasional bilang dia agak takut kalau sistem otomatis ini tiba-tiba nyala besok pagi. Dia khawatir balasannya nanti bentrok sama cara dia nyatet pesanan manual pas jam sibuk. Dia minta ditunda dulu saja proyeknya sampai minggu depan pas agak senggang biar dia bisa adaptasi. Gimana ya? Saya jadi ragu mau langsung jalanin besok."
+**U004:** "Wah, saya ngerti banget kekhawatirannya, Mbak. Wajar kalau admin takut bentrok, apalagi pas jam sibuk. Kita pastinya nggak mau nambahin beban stress dia. Tapi sayang banget kalau ditunda sampai minggu depan, karena masalah pesanan yang kelewat pasti bakal terus kejadian minggu ini. Supaya admin merasa 100% aman dan proyek ini tetap jalan, gimana kalau besok kita jangan nyalakan sistemnya di jam sibuk? Kita coba nyalakan 1 jam saja di waktu toko sedang paling sepi (misal jam 9-10 pagi). Saya akan standby memantau langsung bareng adminnya. Kalau dalam 1 jam itu dia merasa repot atau sistemnya bikin bingung, saya matikan detik itu juga. Jadi admin nggak perlu takut kehilangan kendali, karena dia yang pegang keputusan akhirnya. Gimana Mbak, kita coba jalan 1 jam aja di jam sepi besok biar adminnya nggak kaget?"
+**AI006 - Cyntia:** "Oh, ide bagus! Kalau cuma 1 jam di waktu sepi dan kamu ikut standby mantau langsung, harusnya dia nggak akan panik sih. Lagipula bener kata kamu, sayang kalau pesanan minggu ini banyak yang tercecer lagi karena kita tunda. Ya sudah, kalau begitu kita sepakat ya. Besok jam 9 pagi kita nyalakan sejam dulu buat test drive. Biar saya sampaikan ke admin sekarang supaya dia tenang. Terima kasih banyak ya atas pengertian dan solusinya yang fleksibel, ini bener-bener ngebantu banget!"
+
+# D) Hasil, Evaluasi, dan Refleksi
+
+## Hasil tujuan dan perubahan SWOT/ASK
+| Unsur | Awal | Akhir | Bukti giliran | Jenis bukti dan batas |
+|---|---|---|---|---|
+| Kesimpulan SWOT | Ancaman: prioritas terpecah. Kelemahan: eksekusi teknis. | Ancaman terkendali (skala kecil 1 jam), kelemahan tertutupi (mahasiswa jadi PIC). | AI006 | Simulasi/Interpretasi |
+| Attitude | Antusias tapi ragu/terbebani jadwal. | Sangat berkomitmen, lega, merasa terbantu. | AI004, AI006 | Bukti verbal simulasi |
+| Knowledge | Bingung mulai dari mana, khawatir AI kaku. | Paham AI bisa dikustomisasi sesuai gaya komunikasi, fokus pada 2 masalah. | AI003 | Bukti verbal simulasi |
+| Skill | Tidak punya waktu/kapasitas eksekusi mandiri. | Kapasitas eksekusi terjamin dengan adanya PIC (mahasiswa) dan lingkup uji aman 1 jam. | AI003, AI006 | Bukti kesepakatan |
+
+## Evaluasi stimulus respons dan diagnosis profil
+| Episode/ID | Estimasi status dan bukti | Stimulus mahasiswa | Respons | Perubahan ASK/SWOT | Adaptasi |
+|---|---|---|---|---|---|
+| Simulasi Awal (U001-AI002) | Awal: Sibuk, bingung prioritas (A/K). | Memvalidasi kesibukan, meminta memilih 1 dari 2 masalah utama. | Memilih masalah pertanyaan berulang, namun khawatir bot kaku (K). | A membaik, K mulai fokus tapi muncul kendala baru. | Mahasiswa menenangkan kekhawatiran sentuhan personal. |
+| Simulasi Awal (U002-AI004) | K butuh jaminan personalisasi, S butuh PIC. | Menjamin kustomisasi gaya bahasa, menawarkan diri sebagai PIC, membatasi pada 2 pertanyaan. | Mengungkapkan 2 pertanyaan utama, setuju sistem ditangani mahasiswa. | K terselesaikan, S teratasi oleh pendelegasian. | Menyepakati milestone ringan (review via chat jam 5). |
+
+## Pengaruh pesan personal dan kualitas relasi
+| Episode/ID | Pesan personal/kepedulian | Respons yang teramati | Rasa aman, kepercayaan, keterbukaan | Dampak ASK/SWOT dan batas inferensi |
+|---|---|---|---|---|
+| U001 | "tujuan saya ke sini justru untuk mengurangi beban kerja Mbak, bukan menambah PR baru minggu ini." | "Wah, bener banget itu, untung kamu paham." | Kepercayaan awal meningkat drastis. | Membuka keterbukaan Cyntia untuk berdiskusi lebih lanjut, menurunkan defensivitas. |
+| U004 | "Wajar kalau admin takut bentrok... Supaya admin merasa 100% aman... saya matikan detik itu juga." | "Terima kasih banyak ya atas pengertian dan solusinya yang fleksibel, ini bener-bener ngebantu banget!" | Kepercayaan sangat tinggi, merasa dihormati kendala timnya. | A (Attitude) tetap positif meski ada kendala lapangan; proyek tidak batal. |
+
+## Uji ulang dan pembelajaran
+Pada uji ulang (AI005), muncul kendala operasional (S) baru berupa ketakutan admin lapangan terhadap bentrok pencatatan saat jam sibuk. Mahasiswa merespons (U004) tidak dengan memaksa kesepakatan awal, melainkan memperkecil ruang lingkup (*pilot* 1 jam di jam sepi) dan memberikan otoritas penuh kepada admin (bisa dimatikan saat itu juga). Hasilnya, kesepakatan berhasil diselamatkan dengan adaptasi yang sangat relevan.
+
+## Penilaian enam dimensi
+| Dimensi | Skor 1-4/BT | ID dan kutipan bukti | Alasan |
+|---|---|---|---|
+| Tujuan dan konteks | 4 | U002: "Gimana kalau kita bikin pilot project atau uji coba kecil-kecilan dulu?" | Sangat fokus pada pencapaian uji coba konkret dan spesifik tanpa memaksa penjualan berskala besar. |
+| Persepsi dan validasi profil/status | 4 | U001: "mengeksekusi hal baru di tengah jadwal Mbak yang sedang padat-padatnya pasti sangat menantang." | Membaca dan memvalidasi kelelahan profil dengan sangat akurat sejak awal. |
+| Pemilihan dan urutan repertoar | 4 | U001 -> U002 -> U004 | Urutan sangat logis: empati (A) -> mengerucutkan masalah (K) -> mengambil alih beban teknis (S) -> negosiasi adaptif (S). |
+| Eksekusi jelas, peduli dan konsisten | 4 | U004: "Kalau dalam 1 jam itu dia merasa repot... saya matikan detik itu juga." | Bahasa luwes, empatik, sangat menghargai kendala pengguna lapangan. |
+| Evaluasi dan adaptasi | 4 | U004: "gimana kalau besok kita jangan nyalakan sistemnya di jam sibuk?" | Berhasil mempertahankan proyek dengan mengadaptasi metode (menjadi 1 jam) saat muncul penolakan baru. |
+| Refleksi dan lesson learned | 4 | Refleksi F: "...membutuhkan dua hal utama: pertama, seorang PIC... kedua, jaminan kuat bahwa teknologi tersebut tidak akan menghilangkan 'sentuhan personal'." | Pembelajaran merefleksikan kedalaman pemahaman terhadap karakter *community driver* dan pengelolaan hambatan. |
+*(Nilai Usulan AI: 24/24 * 100 = 100. Memerlukan moderasi dosen).*
+
+## Refleksi dan lesson learned mahasiswa
+Berhadapan dengan karakter "penggerak komunitas" yang sibuk (ENFP), ide inovatif saja tidak cukup untuk membuat mereka bergerak. Mereka membutuhkan dua hal utama: pertama, seorang PIC yang mau mengambil alih eksekusi teknisnya agar komitmen mereka tidak tambah berantakan; kedua, jaminan kuat bahwa teknologi tersebut tidak akan menghilangkan "sentuhan personal" (human touch) dengan pelanggan mereka.
+
+## Tindak lanjut dan batas bukti
+Langkah besok pagi: Memastikan setting auto-reply siap malam ini. Besok pukul 08.45 datang ke lokasi untuk briefing dan menenangkan admin. Pukul 09.00 - 10.00 menyalakan auto-reply dan standby di sebelah admin; mematikan sistem pukul 10.00. Pukul 10.15 memberikan update ringkas via chat kepada Cyntia untuk menentukan langkah selanjutnya. 
+*Batas bukti: Rencana ini logis dan terstruktur dengan indikator yang jelas, namun eksekusi dunia nyatanya (keberhasilan teknis bot) berada di luar batas simulasi percakapan ini.*
+
+## Bobot dan nilai akhir UTS
+| Komponen | Bobot | Nilai komponen |
+|---|---:|---|
+| Makalah pra-UTS (`paper.qmd`) | 10% | Nilai dosen pada skala 0-100 |
+| Sesi 1 | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 2a | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 2b | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 3a | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 3b | 18% | Jumlah enam skor / 24 * 100 |
+| **Total** | **100%** | |
+**Nilai akhir UTS = 0,10 * M + 0,18 * (S1 + S2a + S2b + S3a + S3b)**, dengan seluruh nilai komponen pada skala 0-100. Bobot ini berlaku di dalam nilai UTS. Nilai sesi hanya dihitung jika keenam skor sah tersedia. BT berarti belum dapat ditetapkan, bukan nol; komponen yang belum tersedia atau belum dapat dinilai tidak dianggap nol dan bobotnya tidak dinormalisasi ulang. Nilai akhir ditulis **Belum dihitung** sampai nilai makalah dan kelima sesi tersedia. Rata-rata sesi 2a/2b dan 3a/3b boleh ditampilkan sebagai ringkasan Kasus 2 dan 3. Kontribusi Kasus 1 adalah 18%, Kasus 2 adalah 36%, dan Kasus 3 adalah 36%; ringkasan kasus tidak dihitung lagi sebagai komponen tambahan. Rubrik makalah belum ditetapkan dalam dokumen ini. Gunakan nilai makalah dari dosen atau rubrik makalah resmi bila tersedia; jangan menerapkan rubrik performance enam dimensi pada makalah atau mengarang skor. Semua usulan skor AI memerlukan moderasi dosen.

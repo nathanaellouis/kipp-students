@@ -1,9 +1,9 @@
 ---
-title: "[Judul makalah MBTI, komunikasi efektif, dan PASK]"
-subtitle: "[Subjudul jika diperlukan]"
-author: "[Nama mahasiswa - NIM]"
+title: "Dinamika Kategori MBTI, Komunikasi Efektif, dan Pengembangan PASK dalam Relasi Interpersonal"
+subtitle: "Analisis Berbasis Pendekatan Komunikasi Berpusat pada Manusia"
+author: "Nathanael Louis Cahyono - 18225015"
 lang: id
-status: "Belum dimulai"
+status: "Siap dinilai"
 format:
   html:
     toc: true
@@ -17,13 +17,15 @@ Isi dengan kajian dan argumentasi Anda. [Lihat makalah contoh](../../examples/UT
 
 ## Abstrak {.unnumbered}
 
-[Tulis tujuan, metode, pokok pembahasan/hasil kajian, dan kesimpulan setelah isi makalah selesai. Jangan mengklaim penelitian lapangan jika tidak dilakukan.]
+Makalah ini bertujuan untuk menganalisis hubungan antara preferensi kepribadian Myers-Briggs Type Indicator (MBTI), strategi komunikasi efektif, interpretasi stimulus melalui kerangka SWOT-like, dan pengembangan elemen PASK (Perception, Attitude, Skill, Knowledge). Metode yang digunakan adalah kajian literatur berbasis materi "Komunikasi Interpersonal dan Publik" karya Armein Z. R. Langi, dipadukan dengan analisis konseptual psikologi komunikasi. Hasil kajian menunjukkan bahwa MBTI berfungsi sebagai indikator kepribadian, bukan takdir mutlak seorang manusia. Komunikasi yang efektif mensyaratkan kemampuan alih ragam bahasa yang autentik untuk menjembatani makna antarkecenderungan. Selain itu, ruang jeda antara stimulus dan respons memungkinkan manusia bergeser dari reaksi otomatis menuju tindakan sadar (responsif/apresiatif), yang dapat dididik melalui pengembangan PASK. Kesimpulannya, pemahaman atas preferensi kepribadian dan pengelolaan respons batin memperbesar kapasitas komunikator dalam menciptakan tindakan bernilai sekaligus memelihara relasi yang sehat.
 
-**Kata kunci:** [Isi].
+**Kata kunci:** MBTI, Komunikasi Interpersonal, PASK, Alih Ragam Bahasa, Respons Kesadaran, O-P-K-P.
 
 ## Pendahuluan
 
-[Latar belakang komunikasi interpersonal, relevansi MBTI dan PASK, masalah, tujuan, dan ruang lingkup.]
+Komunikasi kerap direduksi menjadi sekadar transmisi informasi dari pengirim kepada penerima. Padahal, kegagalan penyampaian maksud baik sering kali terjadi bukan karena kurangnya kosakata, melainkan karena kegagalan menghadirkan pesan sesuai dengan konteks dan kesiapan penerima. Dalam lingkup komunikasi interpersonal, kerangka kepribadian seperti Myers-Briggs Type Indicator (MBTI) relevan untuk memetakan kecenderungan cara individu memproses energi, informasi, dan keputusan. Namun, label ini berisiko menjadi dinding penghalang apabila dianggap sebagai identitas mutlak. 
+
+Di sisi lain, proses internal manusia dalam menafsirkan stimulus eksternal menggunakan kerangka SWOT-like sangat memengaruhi elemen PASK (Perception, Attitude, Skill, Knowledge) yang pada akhirnya menentukan apakah respons yang keluar bersifat refleks, reaktif, responsif, atau apresiatif. 
 
 Makalah ini menjawab empat pertanyaan:
 
@@ -34,92 +36,125 @@ Makalah ini menjawab empat pertanyaan:
 
 ## Metode dan Kedudukan Kerangka
 
-[Jelaskan jenis kajian, cara memilih sumber, dan langkah analisis. Pisahkan literatur, bahan percakapan AI, dan usulan sendiri. Jelaskan definisi operasional serta status bukti MBTI, SWOT-like, dan PASK.]
+Kajian ini menggunakan pendekatan tinjauan analitis (analytical review). Literatur utama bersumber dari buku teks dan salindia mata kuliah "Komunikasi Interpersonal dan Publik" oleh Armein Z. R. Langi, yang meletakkan komunikasi sebagai proses penemuan makna dan pemeliharaan relasi. Gagasan psikologi populer (MBTI dan analisis SWOT) diintegrasikan ke dalam kerangka akademik sebagai alat diagnosis komunikasi.
+
+Secara operasional, MBTI didudukkan pada lapisan "Kepribadian" (kecenderungan bertindak), yang berada di antara "Pribadi" (identitas utuh dan bermartabat) dan "Peran Naratif" (tanggung jawab situasional). Analisis SWOT-like dan PASK ditempatkan dalam ruang intrapersonal, yaitu rantai pemaknaan dari peristiwa (stimulus), interpretasi, narasi, emosi, hingga pilihan dan tindakan. Bukti dalam makalah ini bersifat konseptual dan argumentatif, merujuk pada prinsip komunikasi berpusat pada manusia.
 
 ## Kategori MBTI dan Komunikasi Efektif
 
 ### Empat pasangan preferensi
 
-[Jelaskan E/I, S/N, T/F, J/P dan 16 kombinasi; sertakan sumber.]
+MBTI mengelompokkan preferensi psikologis ke dalam empat dimensi dikotomi. Dalam konteks komunikasi, perbedaan ini memengaruhi cara seseorang memproses dan merespons makna.
 
 | Pasangan | Pengertian preferensi | Implikasi yang mungkin bagi komunikasi | Batas/generalisasi yang dihindari |
 |---|---|---|---|
-| E/I | [Isi] | [Isi] | [Isi] |
-| S/N | [Isi] | [Isi] | [Isi] |
-| T/F | [Isi] | [Isi] | [Isi] |
-| J/P | [Isi] | [Isi] | [Isi] |
+| E/I (Extraversion / Introversion) | **E:** Mendapat energi dari interaksi eksternal.<br>**I:** Mendapat energi dari refleksi internal. | **E:** Cenderung berpikir sambil berbicara, butuh diskusi lisan.<br>**I:** Butuh ruang jeda untuk mencerna informasi sebelum merespons. | **I** bukan berarti antisosial atau tidak bisa presentasi. **E** bukan berarti pendengar yang buruk. |
+| S/N (Sensing / Intuition) | **S:** Fokus pada fakta konkret, masa kini, dan panca indra.<br>**N:** Fokus pada pola, makna, dan kemungkinan masa depan. | **S:** Membutuhkan data, contoh spesifik, dan langkah praktis.<br>**N:** Membutuhkan metafora, visi besar, dan kaitan antar-konsep. | Jangan menganggap **S** tidak punya visi, atau **N** tidak peduli pada realitas operasional. |
+| T/F (Thinking / Feeling) | **T:** Mengambil keputusan berdasarkan logika objektif dan analisis sebab-akibat.<br>**F:** Mengambil keputusan berdasarkan nilai personal dan dampak pada manusia. | **T:** Menilai ketepatan fakta dan efisiensi.<br>**F:** Menilai empati, harmoni relasi, dan kepedulian. | **T** tetap memiliki emosi. **F** tetap mampu berpikir kritis dan menggunakan bukti empiris. |
+| J/P (Judging / Perceiving) | **J:** Menyukai struktur, rencana pasti, dan keteraturan.<br>**P:** Menyukai fleksibilitas, spontanitas, dan opsi terbuka. | **J:** Butuh tenggat waktu yang jelas dan kesepakatan spesifik.<br>**P:** Butuh ruang diskusi dan adaptasi terhadap kemungkinan baru. | **J** bukan berarti kaku tanpa kompromi. **P** bukan berarti tidak bisa memenuhi komitmen profesional. |
 
 ### Implikasi dan batas ilmiah
 
-[Definisikan komunikasi efektif; nilai kekuatan dan keterbatasan bukti. Bedakan preferensi, perilaku, kemampuan, serta kematangan.]
+Komunikasi efektif tidak diukur sekadar dari transfer pesan, melainkan terciptanya tindakan yang bertanggung jawab sekaligus terpeliharanya relasi yang sehat. Secara ilmiah, MBTI memiliki batas validitas dan reliabilitas; ia tidak mengukur kemampuan, kecerdasan, atau kematangan emosi. Karenanya, MBTI harus diperlakukan sebagai "Cermin" untuk memahami preferensi awal, bukan "Hakim" yang menjatuhkan vonis identitas. 
 
 ## Strategi Komunikasi untuk Profil Tertentu
 
-[Uraikan cara mengonfirmasi kebutuhan dan menyesuaikan tempo, media, struktur pesan, bukti, dampak manusia, serta kesepakatan. Berikan contoh kombinasi profil tanpa stereotip.]
+Komunikator yang matang melakukan alih ragam bahasa (code-switching) secara autentik: tidak mengubah kebenaran untuk menyenangkan pendengar, melainkan menyesuaikan cara menyampaikannya agar dapat dipahami.
 
 | Profil/preferensi | Kebutuhan yang perlu dikonfirmasi | Strategi dan contoh ungkapan | Cara memeriksa efektivitas |
 |---|---|---|---|
-| [Isi] | [Isi] | [Isi] | [Isi] |
+| Dominan Sensing (S) | Kejelasan detail, fakta observasi, dan langkah nyata yang bisa dieksekusi. | Gunakan demonstrasi dan data. "Saya mengamati antrean memanjang hingga 18 menit. Langkah pertama yang bisa kita lakukan adalah..." | Minta mereka mengonfirmasi alur atau jadwal eksekusi (Tingkat 1: Mendengar Kata). |
+| Dominan Intuition (N) | Konteks gambaran besar, pola masa depan, dan ruang untuk kemungkinan baru. | Gunakan analogi dan konsep. "Sistem ini ibarat jalan tol baru untuk aliran data kita. Ke depan, ini memungkinkan kita untuk..." | Tanyakan tanggapan mereka terhadap visi dan pola tersebut (Mendengarkan Tingkat 2: Makna). |
+| Dominan Thinking (T) | Objektivitas, kriteria logis, pemisahan antara pribadi dan masalah. | Gunakan bahasa masalah. "Ada tiga variabel yang belum sesuai di laporan ini, sehingga analisis tertunda." | Evaluasi apakah tindakan korektif dan penyelesaian masalah disepakati. |
+| Dominan Feeling (F) | Validasi pengalaman emosional, penghargaan relasi, dan dukungan. | Gunakan bahasa emosional/validasi. "Saya memahami bahwa perubahan tenggat waktu ini membuat Anda merasa kewalahan." | Perhatikan apakah ketegangan non-verbal menurun dan mereka merasa aman berbagi. |
 
 ### Umpan balik dan konflik
 
-[Analisis cara memberi kritik, mendengarkan, menetapkan batas, dan memperbaiki hubungan.]
+Dalam menghadapi konflik lintas preferensi, gunakan struktur O-P-K-P (Observasi, Perasaan, Kebutuhan, Permintaan). Membedakan antara pribadi dan perilaku sangat krusial; kritik terhadap proses menghasilkan perbaikan, sementara serangan pada karakter akan memicu pertahanan otomatis (sikap defensif). 
 
 ## Mengenali Preferensi melalui Percakapan
 
+Mengenali preferensi bukanlah meramal pikiran (mind-reading). Karena isyarat non-verbal sering kali ambigu, kita memerlukan komunikasi lingkar tertutup (closed-loop communication) untuk melakukan validasi.
+
 | Pola percakapan | Hipotesis sementara | Penjelasan alternatif | Pertanyaan validasi |
 |---|---|---|---|
-| [Isi] | [Isi] | [Isi] | [Isi] |
+| Lawan bicara sering terdiam, meminta waktu berpikir, dan menghindari potong pembicaraan. | Introversion (I) atau membutuhkan pemrosesan internal. | Sedang bingung, merasa tidak aman, menjaga kesopanan, atau kurang sehat. | "Apakah Anda membutuhkan waktu sejenak untuk memikirkan ini, atau adakah yang masih belum jelas?" |
+| Selalu menanyakan "Apa dasar datanya?" dan "Berapa biayanya?" tanpa menyinggung perasaan orang. | Thinking (T) atau berorientasi pada objektivitas sistem. | Menjalankan peran sebagai pihak Keuangan/Auditor (Peran Naratif). | "Selain aspek efisiensi biaya ini, apakah ada kekhawatiran terkait dampaknya pada tim operasional?" |
+| Sering menggunakan metafora, melompat antar-topik, fokus pada "bagaimana jika". | Intuition (N) atau peran 'Sang Pemimpi'. | Menghindari pembahasan detail karena tidak menguasai fakta lapangan. | "Ide masa depannya sangat menarik. Boleh kita tarik ke saat ini, apa langkah pertama yang konkret?" |
+| Mengutamakan jadwal yang kaku, cepat frustrasi bila ada perubahan rencana mendadak. | Judging (J) atau orientasi perencana. | Pernah memiliki trauma kegagalan akibat manajemen waktu yang buruk di masa lalu. | "Saya perhatikan perubahan ini mengganggu kenyamanan. Batas waktu apa yang paling krusial untuk Anda lindungi?" |
 
-[Susun prosedur observasi lintas konteks, klarifikasi kepada individu, serta batas inferensi. Jangan menetapkan tipe seseorang hanya dari satu ujaran.]
+Prosedur observasinya adalah: amati pola respons (Tingkat 1), bentuk hipotesis kebutuhan (Tingkat 2), dan periksa pemahaman tanpa menghakimi karakter (Tingkat 3). Jangan pernah menetapkan tipe seseorang hanya dari satu ujaran.
 
 ## Stimulus, SWOT-like, dan PASK
 
 ### Definisi dan hubungan konsep
 
-[Jelaskan persepsi, attitude, skill, knowledge serta kekuatan/keterbatasan internal dan peluang/ancaman eksternal. Bedakan tafsir subjektif dari keadaan nyata; jelaskan faktor konteks.]
+Saat menghadapi sebuah peristiwa eksternal (stimulus), pikiran manusia memprosesnya dalam ruang jeda milidetik sebelum merespons. Dalam jeda ini, individu memindai kondisi menggunakan lensa SWOT-like (Strengths, Weaknesses, Opportunities, Threats). Hasil pemindaian tersebut ditafsirkan melalui komponen PASK:
+- **Perception (Persepsi):** Cara membaca situasi eksternal (melihat Peluang atau Ancaman).
+- **Attitude (Sikap):** Kecenderungan batin untuk merespons (Positif/Negatif).
+- **Skill (Keterampilan) & Knowledge (Pengetahuan):** Evaluasi kapasitas internal (melihat Kekuatan atau Kelemahan).
 
 | Unsur SWOT-like | Tafsir terhadap stimulus | Hubungan dengan PASK | Bukti/pertanyaan pemeriksaan |
 |---|---|---|---|
-| Strengths | [Isi] | [Isi] | [Isi] |
-| Weaknesses | [Isi] | [Isi] | [Isi] |
-| Opportunities | [Isi] | [Isi] | [Isi] |
-| Threats | [Isi] | [Isi] | [Isi] |
+| Strengths (Kekuatan) | "Saya memiliki kapasitas untuk mengendalikan situasi ini." | Berakar pada tingginya Skill dan Knowledge aktual maupun yang disadari. | "Apakah saya benar-benar memiliki alat/data untuk ini, atau saya hanya terlalu percaya diri?" (Peran Sang Pemimpi). |
+| Weaknesses (Kelemahan) | "Saya kurang kualifikasi, ini tidak akan berhasil." | Rendahnya Knowledge/Skill yang disadari, berisiko melahirkan narasi korban. | "Bagian mana secara spesifik yang belum saya pahami yang bisa saya pelajari?" (Peran Pembelajar). |
+| Opportunities (Peluang) | "Kegagalan ini adalah celah untuk mencoba metode baru." | Perception yang jernih dipadu dengan Attitude yang positif (growth mindset). | "Apakah peluang ini realistis, atau sekadar penyangkalan (toxic positivity) terhadap masalah nyata?" |
+| Threats (Ancaman) | "Kritik ini berbahaya dan mengancam posisi/identitas saya." | Perception yang terdistorsi rasa takut, sering kali memicu Attitude defensif. | "Apa yang benar-benar saya ketahui sebagai fakta, dan apa yang masih berupa asumsi/ketakutan saya?" |
 
 ### Bentuk respons
 
+Pemrosesan PASK dan analisis SWOT internal akan menghasilkan bentuk respons yang menempatkan manusia di suatu titik spektrum.
+
 | Bentuk | Definisi operasional | Contoh | Kapan tepat/tidak tepat |
 |---|---|---|---|
-| Refleks | [Isi] | [Isi] | [Isi] |
-| Reaktif | [Isi] | [Isi] | [Isi] |
-| Responsif | [Isi] | [Isi] | [Isi] |
-| Apresiatif | [Isi] | [Isi] | [Isi] |
+| Refleks | Tanggapan otomatis biologis tanpa melalui filter kognitif naratif. | Menghindari benda jatuh, terkejut saat diteriaki. | Tepat untuk bahaya fisik murni. Tidak tepat untuk interaksi sosial/diskusi. |
+| Reaktif | Tanggapan otomatis psikologis yang dikuasai oleh emosi pertama (sering defensif). | "Bukan salah saya! Sistemnya yang tidak adil." (Peran Sang Pembela). | Tidak tepat untuk negosiasi atau perbaikan relasi karena memicu eskalasi konflik. |
+| Responsif | Tanggapan sadar eksternal setelah melalui jeda observasi, evaluasi data, dan pilihan. | "Keadaan ini sulit, tetapi saya akan mencari fakta dan langkah kecil berikutnya." | Tepat untuk sebagian besar situasi profesional dan komunikasi penyelesaian masalah. |
+| Apresiatif | Tingkat lanjut dari responsif; melihat stimulus sulit sebagai ruang untuk memvalidasi nilai orang lain. | "Terima kasih sudah menyampaikan keberatan ini secara jujur. Mari kita cari solusinya." | Sangat tepat untuk memulihkan relasi yang retak dan menumbuhkan kepercayaan. |
 
 ## Pendidikan untuk Menumbuhkan PASK
 
+Pengembangan kapasitas intrapersonal menuntut intervensi yang disengaja. Kedewasaan batin bukan berarti mengusir "Sang Hakim" (evaluator) atau "Sang Pencemas" (pemindai ancaman), melainkan memimpin "ruang rapat batin" tersebut secara sadar.
+
 | Dimensi | Kebutuhan awal | Intervensi/kegiatan | Penyesuaian preferensi | Bukti pertumbuhan |
 |---|---|---|---|---|
-| Persepsi | [Isi] | [Isi] | [Isi] | [Isi] |
-| Sikap | [Isi] | [Isi] | [Isi] | [Isi] |
-| Keterampilan | [Isi] | [Isi] | [Isi] | [Isi] |
-| Pengetahuan | [Isi] | [Isi] | [Isi] | [Isi] |
+| Persepsi | Kemampuan membedakan fakta dari interpretasi dan narasi. | Membuat Jurnal Reflektif (mencatat peristiwa, emosi, narasi, dan pilihan). | Memperlambat pembuat keputusan instan bagi profil Judging/Sensing. | Mampu menyatakan "Ini asumsi saya, mari kita periksa datanya" alih-alih menyalahkan. |
+| Sikap | Pergeseran dari mentalitas membela ego ke mentalitas pembelajar (growth mindset). | Dialog Imajinasi: secara sadar memberi mikrofon batin pada "Sang Pembelajar". | Membantu profil Feeling untuk tidak terlalu memasukkan kritik teknis ke dalam hati. | Menurunnya respons agresif/pasif, beralih ke komunikasi asertif. |
+| Keterampilan | Repertoar komunikasi (analogi, presentasi, mendengar aktif, mediasi). | Simulasi dan roleplay kasus-kasus komunikasi lingkar tertutup (closed-loop). | Profil Introvert berlatih asertivitas batas diri secara lisan. | Kesepakatan tercapai dengan pelaku, tenggat, dan syarat yang terukur. |
+| Pengetahuan | Penguasaan register bahasa (teknis, manajerial, publik). | Uji Detoks Jargon: menandai, menerjemahkan, dan menguji istilah teknis. | Profil Thinking belajar menguasai kosakata bahasa emosional/validasi. | Mampu mengalihragamkan satu gagasan ke dalam lima bahasa audiens yang berbeda tanpa kelemahan fakta. |
 
-[Rancang stimulus edukatif, pendampingan, simulasi, refleksi, uji ulang, dan evaluasi transfer. Nyatakan apakah program merupakan usulan atau sudah diuji.]
+Seluruh rancangan di atas direkomendasikan melalui simulasi ruang aman laboratorium kinerja (Performance Lab), di mana mahasiswa menguji pendekatan, menerima umpan balik, dan memperbaiki (iterasi).
 
 ## Contoh Integratif
 
-[Analisis satu kasus: peristiwa, dugaan awal, validasi, SWOT/PASK, respons, penyesuaian komunikasi, dan rencana belajar. Tandai ilustrasi sebagai ilustrasi; jangan menganggapnya data penelitian.]
+**Peristiwa:** Saat finalisasi proyek akhir, Daffa (profil ESTJ) mengubah total alur presentasi di malam sebelum tenggat tanpa mendiskusikannya dengan Rafif (profil INFP). 
+**Dugaan Awal / Stimulus Otomatis:** Rafif bereaksi reaktif secara internal: "Daffa meremehkan saya dan ingin menguasai proyek" (Narasi Korban - Ancaman/Threat).
+**Validasi & Jeda (PASK):** Rafif mengambil napas dan menunda reaksi pesan teks seketika. Ia menggunakan Keterampilan asertif O-P-K-P.
+**Respons:** Rafif menelepon Daffa, "Ketika kamu mengubah struktur presentasi semalam tanpa diskusi (Observasi), saya merasa kontribusi saya tidak dihargai (Perasaan), karena saya butuh kepastian dan kolaborasi dalam tim (Kebutuhan). Bisa kita bahas dulu sebelum ini dikirim? (Permintaan)".
+**Penyesuaian:** Daffa yang cenderung objektif dan fokus pada efisiensi menyadari dampak tindakannya pada manusia (relasi). Ia memvalidasi: "Maaf, semalam saya panik melihat ada data yang tidak sinkron dan langsung memperbaikinya agar kita tidak gagal. Saya mengerti kamu merasa terlewati."
+**Rencana Belajar:** Keduanya sepakat untuk selalu berkomunikasi di grup sebelum mengeksekusi perubahan krusial, menciptakan titik pemeriksaan yang proporsional. *(Ilustrasi ini merupakan penerapan konsep konseptual).*
 
 ## Pembahasan dan Keterbatasan
 
-[Sintesis empat pertanyaan; hubungan antar-konsep; alternatif penjelasan, keterbatasan sumber/metode, dan kebutuhan penelitian lanjutan.]
+Sintesis keempat pertanyaan menegaskan bahwa instrumen seperti MBTI dan SWOT-like sangat berharga untuk memperlambat reaksi otomatis menjadi pemahaman struktural. MBTI menyediakan peta preferensi gaya penerimaan dan penyampaian pesan, sementara PASK bertindak sebagai mesin adaptasinya. Dengan memiliki repertoar yang beragam dan pemahaman mengenai Peran Naratif, komunikator terhindar dari pemaksaan satu naskah kaku pada semua situasi. 
+
+Namun, kajian ini memiliki keterbatasan. MBTI sering kali direduksi menjadi kotak stereotip (misal: memaklumi kekasaran seseorang hanya karena ia "Thinking", atau kepasifan karena ia "Introvert"). Buku referensi ini menegaskan bahwa label tidak pernah menjelaskan manusia seutuhnya. Komunikasi sejati mengharuskan kita berbicara pada *Pribadi* yang berdaulat, yang kapasitasnya dapat terus dididik secara eksperiensial (melalui jurnal, umpan balik, dan iterasi tindakan).
 
 ## Kesimpulan
 
-[Jawab keempat pertanyaan secara ringkas berdasarkan argumentasi dan sumber yang sudah dibahas.]
+1. Kategori MBTI merupakan peta kecenderungan kognitif yang memengaruhi gaya interaksi, kecepatan memproses energi, dan basis pengambilan keputusan. Pengaruhnya terhadap efektivitas komunikasi bergantung pada kepekaan komunikator agar tidak terjebak pada ketidakcocokan gaya.
+2. Komunikasi yang efektif mencocokkan register, level detail, dan cara penyampaian sesuai preferensi audiens (misal: memberikan struktur/fakta untuk Sensing/Judging, dan visi/harmoni untuk Intuition/Feeling), tanpa memalsukan fakta inti.
+3. Pengenalan preferensi dilakukan melalui pengamatan pola respons dalam komunikasi lingkar tertutup (closed-loop), namun wajib diposisikan sebagai hipotesis yang divalidasi dengan pertanyaan yang tidak menghakimi, mengingat isyarat sering kali ambigu.
+4. Manusia memproses stimulus melalui analisis internal SWOT-like yang memicu emosi. Pendidikan yang meningkatkan kualitas Persepsi, Sikap, Keterampilan, dan Pengetahuan (PASK) memberdayakan individu untuk menciptakan "ruang jeda", sehingga mengubah tanggapan refleks atau reaktif menjadi responsif dan apresiatif yang membangun penyelesaian tugas maupun relasi.
 
 ## Daftar Pustaka {.unnumbered}
 
-[Cantumkan hanya sumber yang benar-benar dibaca/digunakan. Gunakan format konsisten dan tautan/DOI yang tepat; pastikan setiap sitasi memiliki entri.]
+Langi, A. Z. R. (2026). *Komunikasi interpersonal dan publik: Membangun relasi, kepercayaan, dan nilai di era kecerdasan buatan*. Bandung.
+
+Myers, I. B., McCaulley, M. H., Quenk, N. L., & Hammer, A. L. (1998). *MBTI manual: A guide to the development and use of the Myers-Briggs Type Indicator* (3rd ed.). Consulting Psychologists Press.
+
+Rosenberg, M. B. (2015). *Nonviolent communication: A language of life* (3rd ed.). PuddleDancer Press.
+
+Wood, J. T. (2015). *Interpersonal communication: Everyday encounters* (8th ed.). Cengage Learning.
 
 {{< include "../../includes/uts-penilaian.md" >}}

@@ -1,0 +1,122 @@
+---
+title: "Laporan UTS KIPP 2026 - Versi 2.0"
+subtitle: "Sesi 2a - Kasus 2"
+lang: id
+format: 
+  html:
+    toc: true
+execute: 
+  eval: false
+---
+
+# A) Identitas
+| Elemen | Keterangan |
+|---|---|
+| Nama mahasiswa | Nathanael Louis Cahyono |
+| NIM | 18225015 |
+| Kelas dan tanggal | 01; 14 Oktober 2026 |
+| Nomor/judul kasus | Sesi 2a; Kasus 2 |
+| Nama dan ID target | Fajar (K2-06) |
+| Versi bank/aturan penugasan | Bank 2.0; paket 2.0; penugasan dalam PENUGASAN.md |
+| Modalitas | Teks |
+| Kasus nyata/fiktif | Fiktif |
+| Kelengkapan transkrip | Lengkap |
+
+# B) Kasus dan Tujuan
+
+## Kasus dan tujuan tindakan
+Tenggat tugas kelompok tinggal 48 jam lagi. Rekan dekat (Fajar) belum mengirimkan bagian tugasnya dan merasa pembagian tugas tersebut tidak adil. Tujuan komunikator adalah menjaga hubungan pertemanan tetap baik tanpa membiarkan tugas terbengkalai, dengan menghasilkan kesepakatan penyesuaian tugas yang dirasa lebih adil, lengkap dengan checklist langkah singkat dan tenggat waktu pengumpulan sebelum batas waktu habis.
+
+## Profil awal komunikator
+| Unsur | Laporan/dugaan awal | Bukti | Tingkat kepastian |
+|---|---|---|---|
+| SWOT subjektif | Peluang: Bisa selesaikan tugas cepat; Ancaman: Fajar defensif/menolak | Pra-simulasi | Sementara |
+| Attitude | Menghargai teman, fokus penyelesaian tanpa menghakimi | Pra-simulasi | Sementara |
+| Knowledge | Paham tenggat 48 jam dan kebutuhan restrukturisasi beban | Pra-simulasi | Sementara |
+| Skill | Pendekatan langsung dan penawaran bantuan konkret | Pra-simulasi | Sementara |
+| Preferensi/MBTI jika dilaporkan | - | - | Laporan diri/hipotesis |
+| Karakter, peran, kultur/ko-kultur | Rekan sekelompok yang akomodatif | Pra-simulasi | Sementara |
+
+## Dugaan awal profil target dan rencana
+| TAIDA | Status awal/target | Edukasi A/K/S | Repertoar yang direncanakan | Bukti yang diharapkan |
+|---|---|---|---|---|
+| Target | Fajar (rekan kuliah) | Diagnosis: A (kesal/defensif), K (kurang kejelasan), S (butuh langkah praktis) | Tanya bagian memberatkan | Jawaban spesifik hambatan |
+| Attention | Awal: Enggan diskusi | ASK: Validasi perasaan (A) | Buka tanpa menghakimi | Respons tidak defensif |
+| Interest | Awal: Merasa tidak adil | ASK: Perjelas beban (K) | Tawarkan ambil alih beban | Kesediaan negosiasi |
+| Desire | Awal: Ingin lepas beban | ASK: Tunjukkan manfaat cepat | Solusi checklist singkat | Setuju mencoba langkah |
+| Action | Awal: Belum bekerja | ASK: Kesepakatan eksekusi (S) | Sepakati format dan waktu | Konfirmasi komitmen (mis. "Malam ini") |
+
+# C) Skrip Percakapan
+
+**[Tahap C: Simulasi Awal]**
+**AI001 (Fajar):** "Bisa langsung ditunjukkan manfaatnya? Saya tidak punya banyak waktu."
+**U001 (Nathanael):** "Paham banget, Jar. Aku tahu kamu lagi sibuk, jadi kita bahas ini cepat aja. Manfaatnya jelas: kita bakal revisi pembagian tugas yang menurutmu nggak adil itu sekarang juga, supaya bebanmu lebih masuk akal dan kelompok kita aman sebelum deadline 48 jam. Coba sebutin 1 atau 2 bagian spesifik yang menurutmu paling memberatkan atau kurang fair? Biar langsung aku pangkas atau aku ambil alih bagian itu."
+**AI002 (Fajar):** "Oke, bagus kalau mau cepat. Bagian yang paling nggak fair itu di analisis data bab 4. Kemarin sepakatnya aku cuma narik data survei, kenapa sekarang aku yang diminta nulis kesimpulannya juga? Definisi 'selesai' buat bagianku ini sebenarnya sampai mana? Kalau harus nulis analisis berlembar-lembar, jujur aja aku nggak sanggup waktunya."
+**U002 (Nathanael):** "Sori, Jar. Wajar banget kamu ngerasa nggak fair. Memang kesepakatan awalnya kamu cuma narik data, jadi salahku kalau tiba-tiba ekspektasinya kamu yang nulis analisis full. Biar fair dan sesuai waktu kamu yang mepet, definisi 'selesai' buat bagianmu kita perjelas sekarang: kamu cukup kirimkan raw data atau hasil surveinya dalam bentuk bullet points singkat aja. Nggak perlu nulis narasi atau kesimpulan berlembar-lembar, bagian nulis analisisnya biar aku yang ambil alih. Gimana, kalau cuma narik poin-poin datanya aja, kira-kira bisa kamu kirim ke aku nanti malam supaya besok paginya bisa langsung aku rangkai?"
+**AI003 (Fajar):** "Nah, kalau gitu kan jelas. Oke, aku setuju kalau cuma rekap data survei jadi bullet points. Malam ini jam 8 bisa aku kirimkan. Tapi nanti ngeceknya gimana? Aku nggak mau ada rapat Zoom panjang lagi cuma buat bahas revisi datanya. Bisa nggak aku kirim di chat aja, terus kamu cek sendiri? Kalau sudah kamu approve, berarti urusanku beneran beres kan?"
+**U003 (Nathanael):** "Sip, setuju banget, Jar. Malam ini jam 8 ya. Nggak perlu pakai Zoom. Kamu kirim langsung di chat sini atau WhatsApp, nanti aku yang cek sendiri. Begitu aku cek datanya udah sesuai dan aku bilang 'Oke', berarti bagianmu 100% resmi beres dan kamu udah lepas dari beban tugas ini. Aku tunggu rekap datanya jam 8 nanti ya. Thanks banget kerjasamanya, Jar!"
+**AI004 (Fajar):** "Oke, deal. Nanti jam 8 aku drop datanya di WA. Thanks udah dibikin simpel dan nggak ribet."
+
+**[Tahap E: Uji Ulang]**
+**AI005 (Fajar):** "Bro, ini datanya udah aku kirim ya sesuai janji. Cuma pas aku rekap, ternyata ada dua grafik dari data demografi responden yang corrupt dan nggak bisa kubuka di laptopku. Daripada lama, bagian itu aku skip aja biar cepat kirim ke kamu malam ini. Sisanya aman semua. Gimana, udah approve kan bagianku? Tolong konfirmasi sekarang ya, aku udah mau jalan keluar nih."
+**U004 (Nathanael):** "Mantap Jar, thanks banget udah ontime jam 8! Santai aja soal grafik demografi yang corrupt itu, nggak usah kamu benerin sendiri biar kamu bisa cepat jalan. Kamu cukup kirim link akses Google Form atau file mentahnya ke aku sekarang ya, biar aku yang narik grafiknya sekalian nulis analisisnya. Begitu link-nya masuk di chat ini, bagianmu langsung aku approve 100% dan urusanmu resmi beres. Have fun jalan-jalannya ya!"
+**AI006 (Fajar):** "Sip, link G-Drive mentahannya barusan aku share ya. Thanks banget udah back up dan dibikin simpel. Aku cabut dulu!"
+
+# D) Hasil, Evaluasi, dan Refleksi
+
+## Hasil tujuan dan perubahan SWOT/ASK
+| Unsur | Awal | Akhir | Bukti giliran | Jenis bukti dan batas |
+|---|---|---|---|---|
+| Kesimpulan SWOT | Ancaman: Tugas terbengkalai, teman marah | Peluang: Terselesaikan tepat waktu, relasi terjaga | AI004, AI006 | Simulasi perilaku komunikator & respons |
+| Attitude | Defensif, merasa diperlakukan tak adil | Kooperatif, dihargai, lega | AI003, AI006 | Simulasi teks |
+| Knowledge | Bingung batas "selesai" | Jelas: cukup serah raw data/link | AI003 | Simulasi teks |
+| Skill | Terhambat dokumentasi dan rapat | Mampu eksekusi via jalur cepat (chat/link) | AI006 | Demonstrasi uji ulang |
+
+## Evaluasi stimulus respons dan diagnosis profil
+| Episode/ID | Estimasi status dan bukti | Stimulus mahasiswa | Respons | Perubahan ASK/SWOT | Adaptasi |
+|---|---|---|---|---|---|
+| U002 - AI003 | K rendah (bingung). A rendah (kesal) | "Sori, Jar. Wajar banget kamu ngerasa nggak fair... kamu cukup kirimkan raw data..." | "Nah, kalau gitu kan jelas... Malam ini jam 8 bisa aku kirimkan." | A menjadi positif, K jelas. Fajar siap Action (S). | Profil akurat sesuai dugaan ESTP pragmatis |
+| U004 - AI006 (Uji) | Kendala file corrupt, buru-buru jalan | "Santai aja... nggak usah dibenerin. Cukup kirim link akses..." | "Sip, link G-Drive... share ya. Thanks banget..." | Kepercayaan dipertahankan tanpa membebani (S) | Adaptasi excellent, memberikan alternatif bypass teknis instan. |
+
+## Pengaruh pesan personal dan kualitas relasi
+| Episode/ID | Pesan personal/kepedulian | Respons yang teramati | Rasa aman, kepercayaan, keterbukaan | Dampak ASK/SWOT dan batas inferensi |
+|---|---|---|---|---|
+| U002 | "Sori, Jar. Wajar banget kamu ngerasa nggak fair. Memang kesepakatan awalnya... jadi salahku" | "Nah, kalau gitu kan jelas. Oke, aku setuju..." | Rasa aman meningkat. Kepercayaan transaksional pulih (Tinggi). | Validasi memulihkan A. Kepedulian ditunjukkan bukan lewat basa-basi, melainkan penghormatan janji. |
+| U004 | "Mantap Jar, thanks banget udah ontime jam 8! Santai aja... Have fun jalan-jalannya ya!" | Berani jujur soal cacat teknis ("corrupt") lalu melempar file mentah. | Keterbukaan tinggi. Merasa dipahami kebutuhannya (Tinggi). | Kepercayaan (A) tetap optimal; kendala (S) teratasi oleh kemitraan. |
+
+## Uji ulang dan pembelajaran
+Saat uji ulang terjadi kendala teknis dari Fajar (file corrupt dan ingin cepat pergi). Mahasiswa menunjukkan retensi empati dan konsistensi bantuan dengan membebaskan Fajar dari beban memperbaiki grafik, memintanya sekadar mengirim link mentah. Pembelajaran utama: bagi profil K2, keluwesan teknis jauh lebih penting daripada kelengkapan dokumen demi mencapai target pragmatis.
+
+## Penilaian enam dimensi
+| Dimensi | Skor 1-4/BT | ID dan kutipan bukti | Alasan |
+|---|---|---|---|
+| Tujuan dan konteks | 4 | U001: "...revisi pembagian tugas... kelompok kita aman..." | Tujuan ditetapkan konkret dan langsung sesuai konteks tekanan waktu. |
+| Persepsi dan validasi profil/status | 4 | U002: "...wajar kamu ngerasa nggak fair... cukup kirim raw data." | Sangat jeli membaca preferensi Fajar (ESTP) yang anti-ribet; mereduksi prosedur (rapat Zoom). |
+| Pemilihan dan urutan repertoar | 4 | U001-U002 | Tahapan urut: validasi rasa tidak adil -> penawaran solusi bypass -> kesepakatan metode/jam. |
+| Eksekusi jelas, peduli dan konsisten | 4 | U004: "Santai aja... nggak usah benerin sendiri..." | Bahasa luwes, transaksional tanpa kehilangan kedekatan pertemanan. Sangat konsisten. |
+| Evaluasi dan adaptasi | 4 | U004 (Uji Ulang) | Beradaptasi sempurna mengatasi kegagalan teknis Fajar dengan syarat kompensasi yang rasional (link data mentah). |
+| Refleksi dan lesson learned | 4 | Tahap F (Refleksi Mahasiswa) | Mampu mengekstrak lesson learned nyata mengenai bahaya birokrasi tugas pada profil ESTP. |
+
+*Nilai usulan AI = 24/24 * 100 = 100.* (Memerlukan moderasi dosen).
+
+## Refleksi dan lesson learned mahasiswa
+- Dugaan yang dikoreksi: Pendekatan relasional untuk tipe Fajar bukanlah deep talk emosional, melainkan memyelamatkan waktunya.
+- Stimulus efektif: Mereduksi beban kognitif dan prosedural ("tidak perlu Zoom", "hanya raw data").
+- Pelajaran: Tipe pragmatis dan pelaksana lapangan butuh instruksi berbasis hasil, parameter jelas, dan checklist singkat tanpa dituntut kesempurnaan format administrasi.
+
+## Tindak lanjut dan batas bukti
+- Langkah nyata: Di masa depan, komunikator akan melakukan profiling anggota tim (kepanitiaan/kuliah). Untuk profil pelaksana, akan digunakan instruksi berorientasi hasil yang ringkas dan memangkas meeting sinkronisasi tak perlu.
+- Batas bukti: Kinerja dinilai berdasarkan simulasi teks tanpa intonasi suara nyata. Tindakan di dunia nyata perlu divalidasi ke depan.
+
+## Bobot dan nilai akhir UTS
+| Komponen | Bobot | Nilai komponen |
+|---|---:|---|
+| Makalah pra-UTS (`paper.qmd`) | 10% | Nilai dosen pada skala 0-100 |
+| Sesi 1 | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 2a | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 2b | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 3a | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 3b | 18% | Jumlah enam skor / 24 * 100 |
+| **Total** | **100%** | |
+**Nilai akhir UTS = 0,10 * M + 0,18 * (S1 + S2a + S2b + S3a + S3b)**
+(Belum dihitung - menunggu kelengkapan semua sesi).

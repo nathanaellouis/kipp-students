@@ -1,0 +1,120 @@
+---
+title: "Laporan UTS KIPP 2026 - Versi 2.0"
+subtitle: "Sesi 2b - Kasus 2"
+lang: id
+format:
+  html:
+    toc: true
+execute:
+  eval: false
+---
+
+# A) Identitas
+| Elemen | Keterangan |
+|---|---|
+| Nama mahasiswa | Nathanael Louis Cahyono |
+| NIM | 18225015 |
+| Kelas dan tanggal | Kelas 01; 14 Oktober 2026 |
+| Nomor/judul kasus | Sesi 2b; Kasus 2 |
+| Nama dan ID target | Elsa (K2-05) |
+| Versi bank/aturan penugasan | Bank 2.0; paket 2.0; penugasan dalam PENUGASAN.md |
+| Modalitas | Teks |
+| Kasus nyata/fiktif | Fiktif (Simulasi) |
+| Kelengkapan transkrip | Lengkap |
+
+# B) Kasus dan Tujuan
+## Kasus dan tujuan tindakan
+Tenggat waktu tugas kelompok tinggal 48 jam lagi. Rekan dekat belum mengirimkan bagiannya dan merasa pembagian tugas tersebut tidak adil. Tujuan komunikator adalah menyepakati penyelesaian tugas kelompok dalam sisa waktu 48 jam dan mendistribusikan ulang beban kerjanya, sekaligus menjaga hubungan persahabatan dengan memberikan apresiasi dan rasa aman bahwa ia tidak perlu memikul semua beban kelompok sendirian.
+
+## Profil awal komunikator
+| Unsur | Laporan/dugaan awal | Bukti | Tingkat kepastian |
+|---|---|---|---|
+| SWOT subjektif | Peluang: Redistribusi beban. Ancaman: Deadline gagal jika ia burnout. Mampu: Teliti dan peduli. Belum mampu: Mengelola beban ekstra. | Rencana Awal | Sementara |
+| Attitude | Elsa merasa lelah, overwhelmed, pengorbanannya tidak dihargai, takut/bersalah menolak tugas. | Rencana Awal | Sementara |
+| Knowledge | Bingung mengenai batas tanggung jawab, mengira harus menanggung bagian yang bukan murni tugasnya. | Rencana Awal | Sementara |
+| Skill | Sangat teliti dan mampu mengerjakan rutinitas, namun butuh bantuan konkret mendistribusikan ulang beban ekstra. | Rencana Awal | Sementara |
+| Preferensi/MBTI jika dilaporkan | Karakter penjaga (peduli harmoni/mengorbankan diri). | Rencana Awal | Hipotesis |
+| Karakter, peran, kultur/ko-kultur | Rekan kelompok kuliah yang sangat peduli namun kelebihan beban. | Rencana Awal | Sementara |
+
+## Dugaan awal profil target dan rencana
+| TAIDA | Status awal/target | Edukasi A/K/S | Repertoar yang direncanakan | Bukti yang diharapkan |
+|---|---|---|---|---|
+| Target | Elsa, rekan kelompok. | Penyelarasan tugas. | Pendekatan suportif. | Kesepakatan tercapai. |
+| Attention | Lelah, merasa tidak dihargai. | A: Validasi usahanya. | Nada tenang, mengakui kerja kerasnya tanpa menghakimi. | Terbuka tentang kendala. |
+| Interest | Mengira membagi beban merepotkan. | K: Batasan peran. | Meyakinkan bahwa membagi beban menyelamatkan kelompok. | Paham pentingnya berbagi beban. |
+| Desire | Khawatir tugas berantakan. | S: Kepastian dukungan. | Menjelaskan batasan yang akan diambil alih. | Elsa merasa tenang dan lepas dari rasa bersalah. |
+| Action | Beban berlebih. | S: Eksekusi kerja. | Menyepakati redistribusi satu tugas. | Tugas terbagi dengan tenggat jelas. |
+
+# C) Skrip Percakapan
+**Transkrip aktual, bukan dialog karangan.**
+
+**[Tahap Simulasi Awal]**
+**AI001 (Elsa):** "Saya khawatir orang lain justru kesulitan kalau kita mengubah ini."
+**U001 (Nathanael):** "Sa, aku ngerti banget kamu mikirin teman-teman yang lain dan nggak mau ngerepotin. Jujur, aku apresiasi banget sama kepedulianmu dan sadar kalau selama ini kamu sering banget cover kekurangan kelompok kita. Tapi dengan sisa waktu 48 jam ini, justru kelompok kita bakal lebih bahaya kalau kamu nanggung beban terlalu banyak sendirian sampai kewalahan. Kita ini kan tim, jadi wajar banget kalau bebannya dibagi supaya kamu nggak burnout. Biar kamu lebih tenang, bagian mana sih yang sekarang paling berat atau sebenarnya bukan murni tugas utamamu? Coba kasih tahu aku, biar bagian itu aku aja yang ambil alih. Jadi kamu bisa fokus ngerjain tugas utamamu dengan nyaman."
+**AI002 (Elsa):** "Makasih ya, Nat. Jujur aku agak lega kamu bilang gitu... kadang aku ngerasa kalau nggak aku yang kerjain, nanti progres kita mandek dan kasihan yang lain, padahal aku juga capek. Sebenarnya bagian analisis data utamaku udah jalan, tapi aku kewalahan di bagian format dan penyusunan laporan akhirnya. Kemarin kan Budi bilang dia lagi sibuk banget sama urusan himpunan, jadi aku iyain aja pas dia minta tolong bagian itu di-handle sekalian sama aku. Tapi karena sekarang sisa dua hari lagi, aku keteteran. Kalau kamu mau ambil alih laporan akhirnya, aku takut nanti formatnya malah berantakan atau beda sama analisisku, soalnya dari awal aku yang pegang draftnya."
+**U002 (Nathanael):** "Makasih ya udah mau jujur, Sa. Pantesan kamu keteteran, ternyata kamu sampai nge-cover bagiannya Budi segala. Kamu baik banget, tapi ingat, itu bukan tanggung jawab utamamu dan kamu nggak harus nanggung semuanya sendirian. Soal laporan akhir yang takut berantakan, aku paham banget kekhawatiranmu karena kamu yang ngerawat draft-nya dari awal. Biar kamu tetap tenang dan formatnya terjamin, gimana kalau kita pakai cara ini: kamu fokus aja 100% beresin ketikan analisis datamu. Setelah itu kirim ke aku, nanti urusan layout, formatting, dan nyusun bab-bab akhirnya biar murni aku yang handle, dan aku janji bakal ngikutin persis style format yang udah kamu buat. Nanti sebelum tugasnya benar-benar kita submit, aku bakal kirim file jadinya ke kamu dulu buat kamu review sekilas. Jadi, kamu tetap bisa mastiin semuanya rapi sesuai standar kamu, tapi yang capek ngerjain layout-nya aku aja. Gimana, Sa? Boleh ya draft-nya di-share ke aku sekarang biar bebanmu langsung berkurang?"
+**AI003 (Elsa):** "Wah, kalau kamu bersedia ngikutin formatku dan aku masih bisa lihat hasil akhirnya sebelum disubmit, aku lega banget, Nat. Makasih banyak ya udah mau ngertiin dan ambil alih ini. Bebanku rasanya langsung berkurang drastis. Draft kasarnya aku kirim ke WA kamu sekarang ya. Tapi Nat, soal Budi... apa aku perlu ngabarin dia kalau bagiannya sekarang kamu yang handle? Aku cuma agak nggak enak aja kalau dia mikir aku lepas tanggung jawab gitu aja ke kamu padahal aku udah terlanjur mengiyakan bantuannya kemarin."
+**U003 (Nathanael):** "Nggak usah ngerasa nggak enak, Sa. Wajar banget kamu mikir gitu karena kamu orangnya emang sangat tanggung jawab. Tapi ingat, Budi pasti ngerti kok kalau ini semua murni demi ngejar deadline 48 jam kelompok kita. Biar beban pikiranmu benar-benar hilang dan nggak usah pusing mikirin kata-katanya, biar aku aja yang langsung chat Budi. Nanti aku bilang ke dia: 'Bud, bagian laporan akhir biar aku yang handle ya, soalnya Elsa lagi aku minta buat fokus 100% ngeberesin analisis datanya biar tugas kita cepat rampung.'"
+**AI004 (Elsa):** "Ya ampun, Nat... makasih banyak ya. Kalau kamu yang bantu bilangin ke Budi dengan cara kayak gitu, aku jadi benar-benar tenang. Nggak kepikiran dan nggak merasa bersalah lagi. Oke, draft kasarnya aku kirim sekarang ya. Aku janji bagian analisis datanya bakal aku selesaikan malam ini, jadi besok kamu punya waktu seharian penuh buat nyusun format laporannya dengan santai."
+
+**[Tahap Uji Ulang]**
+**AI005 (Elsa):** "Nat, maaf banget ganggu malam-malam. Aku udah ngerjain analisisnya sampai sekitar 80%, tapi laptopku tiba-tiba selalu freeze dan force close pas mau running sisa visualisasi data yang terakhir. Aku udah coba restart berkali-kali tapi tetep nge-hang terus karena datanya keberatan. Aku jadi nggak bisa nepatin janji buat nyelesaiin 100% malam ini... Aku kirim file yang 80% ke kamu sekarang ya. Apa kamu ada aplikasi statistiknya buat bantu running sisa visualisasinya di laptopmu, atau kita terpaksa harus ngurangin jumlah datanya aja? Maaf ya Nat, jadinya malah ngerepotin kamu lagi di luar rencana awal kita."
+**U005 (Nathanael):** "Nggak apa-apa banget, Sa. Santai, nggak usah minta maaf karena ini murni masalah teknis laptop, bukan salahmu. Kamu bisa ngeberesin sampai 80% malam ini aja itu udah ngebantu progress kita banget kok! Kirim aja file yang 80% itu sekarang ke aku, sekalian raw data buat visualisasi yang terakhir. Kebetulan laptopku aman dan ada aplikasinya, jadi biar sisa 20%-nya aku yang running sekalian aku masukin ke draft laporannya besok. Nggak perlu kita kurangin datanya supaya hasil analisis kelompk kita tetap maksimal. Sekarang kamu mending istirahat aja ya, kasihan kamunya kalau begadang dan laptopnya juga kalau dipaksain. Makasih banyak lho Sa udah diusahain banget sampai malam gini!"
+
+# D) Hasil, Evaluasi, dan Refleksi
+## Hasil tujuan dan perubahan SWOT/ASK
+| Unsur | Awal | Akhir | Bukti giliran | Jenis bukti dan batas |
+|---|---|---|---|---|
+| Kesimpulan SWOT | Ancaman: Kegagalan tenggat karena Elsa burnout. | Peluang (kecepatan kolaborasi), Kelemahan teknis ditutupi kekuatan rekan. | AI004, U005 | Simulasi; pelaksanaan riil menunggu tindakan luar sesi. |
+| Attitude | Overwhelmed, kelelahan, takut dinilai lepas tanggung jawab. | Sangat lega, aman secara emosional, merasa didukung. | AI004 | Simulasi |
+| Knowledge | Merasa harus menanggung bagian Budi, batas tanggung jawab bias. | Batas tanggung jawab sangat jelas, berbagi beban menyelamatkan kelompok. | AI003, AI004 | Simulasi |
+| Skill | Dilumpuhkan beban ganda & kendala teknis (laptop freeze). | Beban diambil alih, kapasitas terpulihkan, masalah teknis tertangani. | AI004, U005 | Simulasi |
+
+## Evaluasi stimulus respons dan diagnosis profil
+| Episode/ID | Estimasi status dan bukti | Stimulus mahasiswa | Respons | Perubahan ASK/SWOT | Adaptasi |
+|---|---|---|---|---|---|
+| U001 | Awal: Elsa takut merepotkan orang lain. | Memvalidasi kepeduliannya dan menawarkan ambil alih tugas tanpa menghakimi. | Lega dan mengungkap fakta ia menanggung tugas Budi (K). | A membaik, mulai mau membuka informasi K. | Mengidentifikasi bahwa masalah utamanya adalah beban tugas orang lain. |
+| U002 | Elsa khawatir format laporan berantakan (S/K). | Menawarkan jaminan layout sesuai format Elsa dan review akhir. | Setuju menyerahkan file, lega, beban drastis berkurang (S). | S meningkat, namun muncul hambatan emosional baru terkait Budi (A). | Beralih dari isu teknis ke isu sosial/rasa bersalah. |
+| U003 | Elsa merasa tidak enak/bersalah pada Budi (A). | Mengambil alih inisiatif untuk komunikasi penolakan ke Budi. | Benar-benar tenang, rasa bersalah hilang, janji selesaikan analisis (Action). | A terselesaikan penuh, Action disepakati. | Menguatkan rasa amannya dan melindungi dari konflik. |
+
+## Pengaruh pesan personal dan kualitas relasi
+| Episode/ID | Pesan personal/kepedulian | Respons yang teramati | Rasa aman, kepercayaan, keterbukaan | Dampak ASK/SWOT dan batas inferensi |
+|---|---|---|---|---|
+| U001 | "Jujur, aku apresiasi banget sama kepedulianmu... wajar banget kalau bebannya dibagi" | Mengakui kelelahan dan menjelaskan beban ekstra (Budi). | Rendah ke Tinggi: Elsa membuka kelemahan dan perasaannya. | Validasi menurunkan defensivitas secara drastis (A membaik). |
+| U003 | "Biar beban pikiranmu benar-benar hilang... biar aku aja yang langsung chat Budi." | "aku jadi benar-benar tenang. Nggak kepikiran dan nggak merasa bersalah lagi." | Sangat Tinggi: Elsa merasa sepenuhnya dilindungi. | Menghapus hambatan relasional; dedikasi kerja kembali pulih sepenuhnya. |
+
+## Uji ulang dan pembelajaran
+Pada uji ulang (U005), muncul kendala teknis (S) di mana laptop Elsa *freeze* saat data mencapai 80%. Mahasiswa beradaptasi dengan sangat baik: meredakan kepanikan/rasa bersalah Elsa, menawarkan solusi *running* sisa data 20% di perangkat mahasiswa tanpa mengurangi kualitas data, serta menyarankan Elsa beristirahat. Pembelajaran terbukti diterapkan dengan konsistensi menjaga rasa aman (Attitude) sambil memecahkan hambatan operasional (Skill).
+
+## Penilaian enam dimensi
+| Dimensi | Skor 1-4/BT | ID dan kutipan bukti | Alasan |
+|---|---|---|---|
+| Tujuan dan konteks | 4 | U002, U005 | Secara efektif mendistribusikan ulang beban dan menjaga tenggat 48 jam dengan baik. |
+| Persepsi dan validasi profil/status | 4 | U001 ("aku apresiasi kepedulianmu"), U003 | Berhasil memetakan kebutuhan Elsa akan harmoni dan validasi emosional. |
+| Pemilihan dan urutan repertoar | 4 | U001, U002, U003 | Menjalankan TAIDA secara progresif: dari empati, pemahaman peran, hingga resolusi konflik (isu Budi). |
+| Eksekusi jelas, peduli dan konsisten | 4 | U003, U005 | Pesan disampaikan dengan tulus, hangat, dan memberikan dukungan konkret. |
+| Evaluasi dan adaptasi | 4 | U005 | Cepat beradaptasi terhadap perubahan situasi tak terduga (kendala laptop) tanpa menyalahkan target. |
+| Refleksi dan lesson learned | 4 | Tahap F | Kesimpulan tajam terkait profil "Penjaga" dan penanganan rasa bersalah. |
+*Nilai usulan AI: 24/24 * 100 = 100. (Memerlukan moderasi dosen)*
+
+## Refleksi dan lesson learned mahasiswa
+Berhadapan dengan karakter "Penjaga" (seperti ISFJ), sekadar menyuruh berhenti bekerja berlebihan memicu rasa bersalah. Pendekatan efektif: (1) Validasi kepedulian, (2) Beri jaminan outcome kerja (tidak berantakan), dan (3) Proaktif melindungi dari rasa tidak enak ke pihak lain. Mengubah perspektif "merepotkan orang" menjadi "menyelamatkan kelompok" adalah stimulus paling efektif.
+
+## Tindak lanjut dan batas bukti
+- Menerima dan menyimpan file analisis 80% beserta raw data malam ini.
+- Mengeksekusi sisa 20% visualisasi data di laptop komunikator.
+- Menyusun dan formatting laporan akhir dengan gaya asli.
+- Mengirimkan draf akhir untuk direview Elsa sebelum submit.
+- *Batas Bukti:* Janji simulasi sudah tercapai, tetapi pembuktian *running data* 20% dan *formatting* dilakukan secara independen di luar sesi.
+
+## Bobot dan nilai akhir UTS
+| Komponen | Bobot | Nilai komponen |
+|---|---:|---|
+| Makalah pra-UTS (`paper.qmd`) | 10% | Nilai dosen pada skala 0-100 |
+| Sesi 1 | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 2a | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 2b | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 3a | 18% | Jumlah enam skor / 24 * 100 |
+| Sesi 3b | 18% | Jumlah enam skor / 24 * 100 |
+| **Total** | **100%** | |
+| **Nilai akhir UTS = 0,10 * M + 0,18 * (S1 + S2a + S2b + S3a + S3b)**, dengan seluruh nilai komponen pada skala 0-100. Bobot ini berlaku di dalam nilai UTS. Nilai sesi hanya dihitung jika keenam skor sah tersedia. BT berarti belum dapat ditetapkan, bukan nol; komponen yang belum tersedia atau belum dapat dinilai tidak dianggap nol dan bobotnya tidak dinormalisasi ulang. Nilai akhir ditulis **Belum dihitung** sampai nilai makalah dan kelima sesi tersedia. Rata-rata sesi 2a/2b dan 3a/3b boleh ditampilkan sebagai ringkasan Kasus 2 dan 3. Kontribusi Kasus 1 adalah 18%, Kasus 2 adalah 36%, dan Kasus 3 adalah 36%; ringkasan kasus tidak dihitung lagi sebagai komponen tambahan. Rubrik makalah belum ditetapkan dalam dokumen ini. Gunakan nilai makalah dari dosen atau rubrik makalah resmi bila tersedia; jangan menerapkan rubrik performance enam dimensi pada makalah atau mengarang skor. Semua usulan skor AI memerlukan moderasi dosen.

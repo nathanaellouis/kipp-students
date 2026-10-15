@@ -1,0 +1,105 @@
+---
+title: "Laporan UTS KIPP 2026 - Versi 2.0"
+subtitle: "Sesi 3a - Kasus 3"
+lang: id
+format:
+  html:
+    toc: true
+execute:
+  eval: false
+---
+
+# A) Identitas
+| Elemen | Keterangan |
+|---|---|
+| Nama mahasiswa | Nathanael Louis Cahyono |
+| NIM | 18225015 |
+| Kelas dan tanggal | Kelas 01, 14 Oktober 2026 |
+| Nomor/judul kasus | Sesi 3a; Kasus 3 |
+| Nama dan ID target | Ali (K3-01) |
+| Versi bank/aturan penugasan | Bank 2.0; paket 2.0; penugasan dalam PENUGASAN.md |
+| Modalitas | Teks |
+| Kasus nyata/fiktif | Fiktif (Simulasi Kasus 3) |
+| Kelengkapan transkrip | Lengkap |
+
+# B) Kasus dan Tujuan
+## Kasus dan tujuan tindakan
+**Brief Kasus:** Customer menangani pertanyaan pelanggan berulang dan pesanan tercecer, tenaga terbatas. Ia belum yakin perlu AI. Mahasiswa bertugas menggali kebutuhan dan menawarkan solusi TI/AI yang sesuai, dengan sasaran keputusan/uji coba konkret.
+**Tujuan Tindakan:** Mencapai kesepakatan dengan Ali untuk melakukan uji coba (trial) skala kecil dan bebas risiko dari solusi TI/AI sederhana (seperti chatbot FAQ otomatis atau sistem rekap pesanan dasar), untuk membuktikan bahwa teknologi ini akan membantu stafnya, bukan malah menyusahkan mereka.
+
+## Profil awal komunikator
+| Unsur | Laporan/dugaan awal | Bukti | Tingkat kepastian |
+|---|---|---|---|
+| SWOT subjektif | Peluang: Bisa meningkatkan efisiensi staf. Ancaman: Ketakutan staf tidak sanggup beradaptasi. | ID Rencana | Sementara |
+| Attitude | Keinginan berkembang ada, tapi ragu, takut gagal, khawatir staf terbebani. | ID Rencana | Sementara |
+| Knowledge | Belum paham TI/AI bekerja, mengira rumit. Menyadari pesanan tercecer. | ID Rencana | Sementara |
+| Skill | Mampu operasional dasar, belum ada skill TI lanjutan. Butuh demo dan pendampingan. | ID Rencana | Sementara |
+| Preferensi/MBTI jika dilaporkan | INFP (Memprioritaskan harmoni/kesejahteraan staf, menghindari membebani tim). | ID Rencana | Hipotesis |
+| Karakter, peran, kultur/ko-kultur | Menjaga harmoni; menghindari situasi yang menyusahkan atau mempermalukan staf. | ID Rencana | Sementara |
+
+## Dugaan awal profil target dan rencana
+| TAIDA | Status awal/target | Edukasi A/K/S | Repertoar yang direncanakan | Bukti yang diharapkan |
+|---|---|---|---|---|
+| Target | Mencapai kesepakatan uji coba | - | Validasi tanpa menghakimi | Tanggapan positif |
+| Attention | Rendah (Kekhawatiran tinggi) | A: Takut staf gagal | Apresiasi kepeduliannya pada staf, tidak menekan | Defensivitas turun |
+| Interest | Rendah (Menolak sistem rumit) | K: Belum paham batas TI | Hindari jargon teknis, fokus pada peringanan beban kerja | Mulai tertarik bertanya |
+| Desire | Rendah (Butuh rasa aman) | S: Perlu demo | Tawarkan demonstrasi langsung/langkah kecil tanpa rombak sistem | Kesediaan melihat demo |
+| Action | Belum ada | S: Kesiapan eksekusi | Ajak uji coba skala kecil bebas risiko dengan pendampingan | Sepakat uji coba (trial) |
+
+# C) Skrip Percakapan
+**Tahap C: Simulasi Awal**
+**AI001 (Ali):** "Terima kasih, tetapi saya belum yakin bisa melakukannya."
+**U001 (Mahasiswa):** "Saya sangat mengerti keraguan Pak Ali, dan wajar sekali merasa belum yakin. Membayangkan perubahan sistem pasti membawa kekhawatiran tersendiri, apalagi Bapak sangat memikirkan apakah staf nanti sanggup beradaptasi atau tidak, kan, Pak? Justru karena Bapak sangat peduli pada tim, saya di sini bukan untuk memaksa Bapak merombak sistem secara drastis atau memakai teknologi yang rumit. Saya siap menemani Bapak pelan-pelan. Kalau boleh tahu, untuk saat ini dari sisi operasional sehari-hari, bagian mana yang sebenarnya paling sering membuat staf Bapak kewalahan? Apakah saat harus merekap pesanan yang masuk, atau saat membalas pertanyaan pelanggan yang itu-itu saja?"
+**AI002 (Ali):** "Iya, betul sekali, Mas Nathanael. Saya memang kasihan melihat staf saya kadang sampai kewalahan. Sebenarnya dua-duanya bikin repot. Yang paling sering itu membalas chat pelanggan yang tanya stok atau jam operasional, tapi karena pesan yang masuk itu sangat banyak dan menumpuk, jadinya pesanan dari pelanggan yang benar-benar mau beli malah sering terlewat dan tercecer. Saya sih inginnya kerjaan mereka bisa lebih ringan, tapi ya itu... kalau harus pakai aplikasi atau sistem yang macam-macam, saya khawatir mereka malah tambah pusing belajarnya nanti. Kami ini biasanya cuma pakai cara manual yang gampang-gampang saja."
+**U002 (Mahasiswa):** "Wah, sayang sekali ya Pak kalau pesanan dari pembeli malah terlewat hanya karena tertumpuk pertanyaan jam operasional. Saya sangat setuju dengan Bapak, kita jangan sampai memakai aplikasi baru yang rumit dan malah membuat staf pusing belajar dari nol. Bagaimana kalau kita sama sekali tidak usah pakai aplikasi baru, tapi kita manfaatkan saja WhatsApp yang sudah biasa dipakai staf Bapak setiap hari? Kita cukup tambahkan fitur balasan otomatis (auto-reply) sederhana di WhatsApp tersebut, khusus untuk membalas otomatis pertanyaan soal 'jam operasional' dan 'stok'. Dengan begitu, staf Bapak tidak perlu belajar sistem baru, tapi beban kerja mereka langsung berkurang karena mereka tinggal fokus membalas chat pembeli yang benar-benar mau pesan. Biar Bapak bisa melihat sendiri betapa mudahnya, boleh tidak kalau saya buatkan demonstrasi kecilnya dulu di HP saya sekarang? Jadi Bapak bisa nilai sendiri apakah ini aman dan gampang untuk staf Bapak."
+**AI003 (Ali):** "Oh, jadi tetap pakai WhatsApp yang biasa dipakai anak-anak itu ya, Mas? Syukurlah kalau begitu, saya tadinya sudah membayangkan harus pakai komputer khusus atau install aplikasi yang rumit-rumit. Kalau cuma untuk membalas soal jam operasional otomatis sih, sepertinya memang bakal sangat membantu mereka. Boleh deh, Mas... kalau memang ada contohnya di HP Mas Nathanael sekarang, saya mau lihat dulu jalannya seperti apa. Saya cuma mau memastikan saja balasan otomatisnya tidak keliru membalas orang yang mau pesan. Biar saya ada gambaran nyata nanti jadinya bagaimana di lapangan."
+**U003 (Mahasiswa):** "(Saya mengeluarkan HP saya, membuka aplikasi WhatsApp, dan menunjukkan layar pengaturannya kepada Pak Ali) Betul sekali, Pak, jadi anak-anak tidak perlu pusing. Nah, mari kita lihat demonya ya, Pak. Bapak bisa lihat di layar saya ini, ada pengaturan sederhana berbasis 'kata kunci'. Untuk menjawab kekhawatiran Bapak, sistem ini kita atur supaya hanya membalas kalau ada pelanggan yang mengetik kata 'Jam buka' atau 'Lokasi'. Coba Bapak bayangkan, kalau ada pelanggan yang mengetik 'Pesan 2 porsi' atau 'Mau order', sistem otomatis ini akan diam saja. Jadi, pesan orderan itu akan tetap masuk seperti biasa dan langsung dibalas manual oleh staf Bapak. Jadi 100% aman, tidak akan ada pesanan yang keliru terbalas oleh robot. Sistemnya sesederhana ini, Pak. Supaya Bapak dan staf bisa merasakan langsung manfaatnya tanpa risiko, bagaimana kalau besok kita coba pasang khusus untuk kata 'Jam buka' dulu di satu HP admin selama beberapa jam? Saya akan standby menemani staf Bapak di toko sampai mereka benar-benar terbiasa. Kalau ternyata dirasa kurang pas, kita bisa matikan saat itu juga hanya dengan satu klik. Bagaimana, Pak Ali?"
+**AI004 (Ali):** "Wah, kalau cuma begitu cara kerjanya, masuk akal dan kelihatan aman ya, Mas. Yang penting pesanan orang tidak salah terbalas otomatis. Kalau Mas Nathanael bersedia meluangkan waktu untuk standby menemani anak-anak di sini besok dan kita cuma coba di satu HP dulu, saya setuju. Saya jadi jauh lebih lega karena ada yang mendampingi mereka kalau tiba-tiba bingung. Kita coba besok pagi ya, Mas. Terima kasih banyak lho sudah mau sabar kasih unjuk ke saya."
+
+**Tahap E: Uji Ulang**
+**AI005 (Ali):** "Pagi, Mas Nathanael. Syukurlah Mas sudah datang. Ini ada sedikit kendala, admin utama yang biasa pegang HP ini dan paling cekatan mendadak izin sakit pagi ini. Yang jaga sekarang Rina, staf junior kami. Anaknya agak penakut dan belum pernah utak-atik pengaturan HP sama sekali, takut salah pencet katanya. Menurut Mas bagaimana? Apa kita tunda saja uji cobanya sampai admin utama masuk besok, atau Mas Nathanael punya cara supaya Rina tidak panik kalau kita tetap coba hari ini?"
+**U004 (Mahasiswa):** "Pagi, Pak Ali. Wah, semoga admin utamanya cepat sembuh ya, Pak. Wajar sekali kalau Mbak Rina jadi gugup atau takut salah pencet, namanya juga belum terbiasa. Menurut saya, kita tidak perlu menunda, tapi pendekatannya saja yang kita ubah supaya Mbak Rina sama sekali tidak panik. Karena sistem auto-reply ini berjalan otomatis, Mbak Rina justru tidak perlu memencet atau mengatur apa-apa. Biar saya saja yang mengatur semuanya di HP tersebut pagi ini. Tugas Mbak Rina hari ini cukup duduk nyaman di sebelah saya dan melihat layar saja, membuktikan sendiri bagaimana mesinnya membalas pesan soal 'jam buka' tanpa dia harus mengetik apapun. Saya akan temani dia full. Kalau ternyata dalam 30 menit Mbak Rina masih merasa tegang atau tidak nyaman, kita langsung matikan saat itu juga dan tunggu admin utama besok. Bagaimana, Pak? Sekalian kita tunjukkan ke Mbak Rina bahwa teknologi ini aman dan bukan sesuatu yang perlu ditakuti."
+**AI006 (Ali):** "Wah, kalau Mas Nathanael yang atur semuanya dan Rina cuma perlu lihat saja, saya rasa dia tidak akan keberatan. Apalagi Mas bersedia menemani full dan bisa langsung dimatikan kalau dia tambah tegang. Ini justru bagus supaya dia juga terbiasa dan tahu kalau ini aman. Boleh deh Mas, kita coba 30 menit dulu hari ini. Mari saya kenalkan dengan anaknya di meja depan. Terima kasih banyak atas pengertian dan solusinya ya, Mas."
+
+# D) Hasil, Evaluasi, dan Refleksi
+## Hasil tujuan dan perubahan SWOT/ASK
+| Unsur | Awal | Akhir | Bukti giliran | Jenis bukti dan batas |
+|---|---|---|---|---|
+| Kesimpulan SWOT | A: Takut staf tidak sanggup. S: Kurang skill. | Peluang efisiensi; kelemahan skill ditutupi pendampingan (safety net). | AI004, AI006 | Simulasi & Laporan diri |
+| Attitude | Ragu, cemas membebani staf. | Lega, percaya diri karena pendampingan. | AI004, AI006 | Batas: Status simulasi |
+| Knowledge | Mengira butuh aplikasi rumit/komputer. | Paham sistem kata kunci di WA sederhana. | AI003, AI004 | Batas: Status simulasi |
+| Skill | Butuh demo dan pendampingan. | Uji coba terlaksana karena beban teknis dialihkan sementara. | AI006 | Batas: Keputusan di sesi |
+
+## Evaluasi stimulus respons dan diagnosis profil
+| Episode/ID | Estimasi status dan bukti | Stimulus mahasiswa | Respons | Perubahan ASK/SWOT | Adaptasi |
+|---|---|---|---|---|---|
+| Awal (U001) | Rasa aman rendah (AI001) | Validasi kekhawatiran; tanya kendala operasional spesifik | Bercerita tentang WA menumpuk dan takut aplikasi rumit | A naik (merasa dipahami), mulai terbuka | Ubah fokus dari "aplikasi" ke fitur WA |
+| Tengah (U003) | K naik (AI003 setuju WA) | Demo HP langsung, jaminan standby di toko | Setuju uji coba besok pagi | K & S naik (siap action) | Tawarkan uji coba 1 HP terkontrol |
+| Uji Ulang (U004) | Skill/Dukungan turun (admin utama sakit, AI005) | Tawarkan "take over" beban teknis; Rina cukup duduk dan lihat | Setuju uji coba 30 menit, lega karena tidak dipaksa | S naik lagi berkat kompensasi bantuan (safety net) | Langsung menyesuaikan peran staf pengganti |
+
+## Pengaruh pesan personal dan kualitas relasi
+| Episode/ID | Pesan personal/kepedulian | Respons yang teramati | Rasa aman, kepercayaan, keterbukaan | Dampak ASK/SWOT dan batas inferensi |
+|---|---|---|---|---|
+| U001 | "Justru karena Bapak sangat peduli pada tim... Saya siap menemani Bapak pelan-pelan." | Berbagi beban pikirannya (AI002) | Rendah ke Sedang (merasa divalidasi niat baiknya) | Membantu menurunkan defensivitas A |
+| U004 | "Wajar sekali kalau Mbak Rina jadi gugup... Tugas Mbak Rina hari ini cukup duduk nyaman" | "Terima kasih banyak atas pengertian dan solusinya ya, Mas." (AI006) | Sedang ke Tinggi (percaya pada komitmen perlindungan) | Memastikan kelanjutan S/Action meski ada rintangan |
+
+## Uji ulang dan pembelajaran
+Saat muncul kendala operasional (admin utama sakit, staf junior takut), respons adaptif dengan mengambil alih sementara beban teknis (safety net) terbukti sukses mempertahankan kesepakatan tanpa menekan target. Indikator perbaikannya jelas: penolakan berubah menjadi izin jalan (AI006). Keterbatasannya: adaptasi jangka panjang Rina masih harus dibuktikan pasca uji coba.
+
+## Penilaian enam dimensi (Usulan AI - Menunggu Moderasi Dosen)
+| Dimensi | Skor 1-4/BT | ID dan kutipan bukti | Alasan |
+|---|---|---|---|
+| Tujuan dan konteks | 4 | U003, U004 | Tujuan tercapai spesifik (uji coba auto-reply 1 HP, tanpa beban operasional bagi staf). |
+| Persepsi dan validasi profil/status | 4 | U001, U004 | Sangat akurat memvalidasi ketakutan Ali terhadap kesejahteraan/keamanan stafnya. |
+| Pemilihan dan urutan repertoar | 4 | U001-U004 | Terstruktur sangat baik: empati -> eliminasi jargon -> demo praktis -> take over saat kendala. |
+| Eksekusi jelas, peduli dan konsisten | 4 | U001-U004 | Sangat empatik, suportif, bahasa profesional namun hangat dan tidak memaksa ("safety net"). |
+| Evaluasi dan adaptasi | 4 | U004 | Cepat beradaptasi saat staf utama absen dengan menawarkan solusi yang meloloskan uji coba. |
+| Refleksi dan lesson learned | 4 | Refleksi akhir | Mampu mengekstrak esensi karakter pementing harmoni (rasa aman > kecanggihan teknologi). |
+
+*Nilai usulan AI = 24 / 24 * 100 = 100.*
+
+## Refleksi dan lesson learned mahasiswa
+Dari karakter pementing harmoni (INFP) seperti Ali, saya belajar bahwa kecanggihan teknologi bukanlah nilai jual utama. Kepastian bahwa teknologi tersebut tidak akan mengancam kedamaian, rasa aman, dan harga diri orang-orang di dalamnya adalah hal yang jauh lebih krusial untuk memenangkan persetujuan mereka. Memberikan "jaring pengaman" (safety net) terbukti menjadi stimulus yang paling efektif.
+
+## Tindak lanjut dan batas bukti
+Menjalankan uji coba auto-reply selama 30 menit sambil menemani Mbak Rina. Jika ia mulai nyaman, perlahan mengajarkannya cara mematikan/menyalakan fitur tersebut. Selanjutnya, mengevaluasi hasilnya bersama Pak Ali. Batas bukti: kesiapan dan kemandirian Mbak Rina di kemudian hari belum teruji nyata di luar simulasi ini.
