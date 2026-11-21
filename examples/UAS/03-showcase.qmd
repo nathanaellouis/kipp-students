@@ -1,0 +1,8 @@
+---
+title: "Contoh — Showcase dan Hasil"
+---
+
+[Indeks](index.qmd) · [Template](../../portfolio/UAS/03-showcase.qmd)
+
+
+Tim memperagakan latihan memilih dua abstrak. Setelah menunjukkan pilihan, pengguna diminta menunjuk kalimat yang mendukung keputusan dan menjelaskan batas klaimnya. Pertanyaan panel contoh: apakah latihan berlaku untuk bidang lain? Tim menjelaskan bahwa uji hanya memakai dua abstrak dan mengusulkan perluasan contoh sebelum mengklaim transfer. Dalam submisi nyata, tautkan materi dan bukti showcase serta tanggapan reviewer.

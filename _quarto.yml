@@ -108,6 +108,7 @@ website:
       contents:
         - assessment/index.qmd
         - assessment/rubric.qmd
+        - assessment/uas.qmd
     - id: examples
       title: "Contoh Portfolio"
       style: docked

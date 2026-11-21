@@ -74,3 +74,7 @@ Makalah pra-UTS berbobot **10%**, dan masing-masing sesi **1, 2a, 2b, 3a, 3b ber
 - Bedakan kontribusi individual dari hasil kelompok.
 - Minta deklarasi penggunaan AI.
 - Berikan satu prioritas perbaikan yang dapat diuji melalui replay atau evidence berikutnya.
+
+## UAS KIPP Triune Academic Commons
+
+Proyek kelas AI for Academic Work. Baca [panduan UAS](lk/lk-UAS/index.qmd), [portfolio](portfolio/UAS/index.qmd), dan [rubrik usulan](assessment/uas.qmd). Gunakan repositori Triune resmi yang diumumkan koordinator untuk kontribusi dan PR.

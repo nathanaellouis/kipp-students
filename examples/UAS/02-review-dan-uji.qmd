@@ -1,0 +1,8 @@
+---
+title: "Contoh — Review, Uji Pengguna, dan Revisi"
+---
+
+[Indeks](index.qmd) · [Template](../../portfolio/UAS/02-review-dan-uji.qmd)
+
+
+Reviewer tim lain meminta peserta menuliskan kalimat abstrak yang mendukung pilihan mereka. Pada uji ilustratif, dua pengguna dapat memilih abstrak, tetapi satu menyamakan relevansi dengan kekuatan bukti. Maya menambahkan contoh tandingan dan Eko memperjelas petunjuk. Uji ulang pada satu pengguna memberi jawaban lebih spesifik; hasil ini belum menunjukkan efektivitas umum. AI membantu variasi pertanyaan; tim memeriksa contoh terhadap abstrak asli. Submisi nyata menautkan komentar review, catatan uji dan revisi.

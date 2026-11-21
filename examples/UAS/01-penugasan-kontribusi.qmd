@@ -1,0 +1,8 @@
+---
+title: "Contoh — Penugasan dan Kontribusi"
+---
+
+[Indeks](index.qmd) · [Template](../../portfolio/UAS/01-penugasan-kontribusi.qmd)
+
+
+Tim contoh mendapat modul konsep **K-R01** dan berkontribusi pada alur literatur dan riset. Dari tiga percakapan ilustratif, calon pengguna kesulitan membedakan judul yang relevan dari klaim yang benar-benar didukung abstrak. Tim menyusun latihan membaca kritis dengan artikel akses terbuka. Rani merancang pertanyaan, Eko menyusun contoh, dan Maya memeriksa sumber. Dalam submisi nyata, lampirkan kebutuhan pengguna yang disamarkan, Issue, PR, status, dan kontribusi seluruh anggota.

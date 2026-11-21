@@ -34,3 +34,7 @@ Assessment menilai **perilaku komunikasi yang dapat diamati**, bukan kepribadian
 Gunakan [rubrik universal](rubric.qmd) untuk performance mingguan selain UTS. UTS memakai enam dimensi pada paket aktif dan bobot khusus di bawah; gunakan [prompt Minggu 08](llm-assessment-prompts.md#prompt-minggu-08---uts-performance-evidence-package) dan [indeks portfolio](../portfolio/index.qmd) untuk melihat status pencapaian mingguan.
 
 {{< include "../includes/uts-penilaian.md" >}}
+
+## UAS KIPP Triune Academic Commons
+
+[Lihat penilaian UAS](uas.qmd) untuk kontribusi individual, komunikasi dan TAIDA, review lintas tim, kualitas karya, refleksi, dan integritas AI.

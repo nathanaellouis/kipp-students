@@ -1,0 +1,15 @@
+---
+title: "Refleksi Individual"
+---
+
+[Indeks](index.qmd) · [Contoh](../../examples/UAS/04-refleksi-individual.qmd)
+
+
+Ulangi untuk setiap anggota atau tautkan halaman refleksi masing-masing.
+
+## [Nama — NIM]
+
+- **Kontribusi:** [Peran, keputusan dan pekerjaan sendiri; tautkan Issue, PR, komentar atau bukti uji].
+- **Komunikasi dan kolaborasi:** [Satu percakapan, review, atau masukan pengguna yang mengubah keputusan Anda].
+- **Integritas AI:** [Bantuan yang dipakai atau ditolak, cara memeriksa, keterbatasan; nyatakan bila tidak digunakan].
+- **Pembelajaran:** [Apa yang berubah dan satu langkah perbaikan yang dapat diperiksa].

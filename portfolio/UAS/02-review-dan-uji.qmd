@@ -1,0 +1,15 @@
+---
+title: "Review, Uji Pengguna, dan Revisi"
+---
+
+[Indeks](index.qmd) · [Contoh](../../examples/UAS/02-review-dan-uji.qmd)
+
+
+**ID artefak, PR, dan hasil validasi:** [Tautkan].
+
+| Bukti | Temuan/masukan | Tindakan dan hasil revisi | Kontributor dan tautan |
+|---|---|---|---|
+| Review lintas tim | [Isi reviewer, tanggal, komentar substantif] | [Isi] | [Isi] |
+| Uji pengguna di luar tim | [Isi tugas, minimal 2 pengguna, hasil dan batas uji] | [Isi] | [Isi] |
+
+Cantumkan sumber yang diperiksa dan deklarasi AI: alat, tujuan, keluaran yang dipakai/ditolak, pemeriksaan manusia dan keterbatasan. Jangan publikasikan data pribadi atau materi tanpa izin.

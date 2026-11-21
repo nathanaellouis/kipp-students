@@ -1,0 +1,14 @@
+---
+title: "Penugasan dan Kontribusi"
+---
+
+[Indeks](index.qmd) · [Contoh](../../examples/UAS/01-penugasan-kontribusi.qmd)
+
+
+**Tim, tema, periode dan tautan repo resmi:** [Isi].
+
+| ID artefak / alur belajar | Kebutuhan pengguna dan bukti discovery | Penulis/peran tiap anggota | Issue dan PR | Status |
+|---|---|---|---|---|
+| [Isi] | [Ringkas temuan minimal 3 calon pengguna per tim] | [Isi] | [Tautkan] | [Isi status dan kendala] |
+
+Cantumkan bagian yang Anda kerjakan dan tautkan perubahan yang dapat diperiksa. Status PR dan status review ditulis sesuai kenyataan.

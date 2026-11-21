@@ -1,0 +1,8 @@
+---
+title: "Contoh — Refleksi Individual"
+---
+
+[Indeks](index.qmd) · [Template](../../portfolio/UAS/04-refleksi-individual.qmd)
+
+
+**Rani (fiktif):** Saya merancang pertanyaan untuk calon pengguna. Awalnya saya berasumsi mereka membutuhkan daftar istilah. Percakapan memperlihatkan mereka lebih kesulitan menunjukkan bukti yang mendukung klaim. Saya mengganti daftar dengan pertanyaan latihan yang meminta kalimat sumber. Saya memeriksa hasil saran AI terhadap teks dan menolak contoh rujukan yang tidak dapat ditemukan. Berikutnya saya akan menguji latihan pada artikel dari bidang lain. Dalam pengumpulan nyata, saya menautkan kontribusi dan tanggapan terhadap review.

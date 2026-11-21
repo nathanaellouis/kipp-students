@@ -30,11 +30,4 @@ Mahasiswa harus menggunakan pengalaman, kontribusi, response, feedback, dan evid
 
 ## Contoh artefak UAS
 
-[Buka paket contoh UAS Jejak Laundry](UAS/index.qmd): peta sosok dan kompetensi, jurnal intraself tiga anggota, brief, stakeholder, kesepakatan tim, pendanaan, prototipe/pilot, penawaran, dialog komunitas, poster, pertumbuhan, refleksi individual, serta register bukti dan deklarasi AI. Semua fiktif dan terisi untuk memperlihatkan cara mengisi portfolio sendiri. UAS terpisah dari latihan capstone Minggu 15.
-
-## Cara membaca contoh
-
-Perhatikan bahwa setiap klaim dihubungkan dengan sesuatu yang dapat diperiksa: potongan transcript, catatan observer, perubahan artefak, agreement, atau tindakan. Skor diri juga tidak selalu maksimum; alasan dan batas kompetensi dijelaskan.
-
-[Kembali ke template portfolio](../portfolio/index.qmd)
-
+[Buka contoh portfolio Triune](UAS/index.qmd) untuk melihat ilustrasi kontribusi, review, uji, showcase, dan refleksi.

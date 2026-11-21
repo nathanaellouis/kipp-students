@@ -1,0 +1,18 @@
+---
+title: "Penilaian UAS — KIPP Triune Academic Commons"
+sidebar: assessment
+---
+
+Nilai kontribusi melalui [portfolio UAS](../portfolio/UAS/index.qmd), tautan PR, komentar review, hasil uji, showcase dan refleksi. Telusuri tindakan masing-masing mahasiswa; banyaknya commit tidak menunjukkan kualitas kontribusi.
+
+| Kriteria | Bobot usulan | Bukti yang diperiksa |
+|---|---:|---|
+| Kontribusi individual | 25% | Peran, keputusan, pekerjaan dan revisi yang dapat ditelusuri |
+| Komunikasi dan TAIDA | 25% | Kebutuhan pengguna, respons terhadap pertanyaan, serta presentasi/showcase |
+| Kolaborasi dan peer review | 20% | Kerja tim, review lintas tim dan tindak lanjut |
+| Kualitas dan kegunaan artefak | 20% | Referensi, kegunaan, contoh yang diuji, feedback dan perbaikan |
+| Refleksi dan integritas AI | 10% | Pembelajaran, verifikasi manusia, atribusi dan keterbatasan AI |
+
+Bobot di atas mengikuti **usulan rubrik Triune** (`assessments/rubric.md`). Penetapan resmi dan penyelarasan dengan RPS mengikuti keputusan dosen.
+
+[Panduan UAS](../lk/lk-UAS/index.qmd) · [Contoh fiktif](../examples/UAS/index.qmd)

@@ -28,5 +28,5 @@ Lihat [contoh portfolio lengkap untuk Minggu 1–15](../examples/index.qmd). Sem
 
 ## Template UAS
 
-[Buka portfolio UAS](UAS/index.qmd) untuk mengisi identitas proyek dan 14 artefak pendukung berdasarkan kasus tim. Bagian sosok, jurnal intraself, refleksi, dan penilaian diisi per mahasiswa. [Lihat contoh UAS](../examples/UAS/index.qmd). UAS memiliki jadwal, portfolio, dan nilai terpisah dari capstone Minggu 15.
+[Buka portfolio UAS Triune](UAS/index.qmd) untuk menautkan kontribusi, review, uji pengguna, showcase, dan refleksi individual. [Lihat contoh UAS](../examples/UAS/index.qmd). UAS dicatat terpisah dari capstone Minggu 15.
 

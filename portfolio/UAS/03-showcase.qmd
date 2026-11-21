@@ -1,0 +1,10 @@
+---
+title: "Showcase dan Hasil"
+---
+
+[Indeks](index.qmd) · [Contoh](../../examples/UAS/03-showcase.qmd)
+
+
+**Tautan artefak/katalog dan bahan atau bukti showcase:** [Isi].
+
+Jelaskan kebutuhan pengguna, peragakan penggunaan artefak, perlihatkan hasil uji, perubahan, dampak dan keterbatasan. Tunjukkan TAIDA dalam penyajian serta peran II, CI dan AI. Catat pertanyaan dan saran dari tim lain, jawaban, dan tindak lanjut.
