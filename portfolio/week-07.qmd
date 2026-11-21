@@ -1,8 +1,8 @@
 ---
 title: "Problem–Solution Interest Pitch"
 week: 7
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20/20"
 assessor_score: "—"
 description: "Problem–solution fit dan signal Interest."
 categories: [TAIDA, Interest]
@@ -12,14 +12,161 @@ categories: [TAIDA, Interest]
 
 Menghubungkan solution mechanism dengan problem, benefit, dan value yang relevan.
 
-## Evidence wajib
+## Konteks performance
 
-- Attention evidence dan problem–solution link.
-- Interest pitch dengan evidence atau demonstration.
-- Response, state assessment, hidden concern, dan adaptation.
+**Tanggal dan setting:** Sabtu, 1 Agustus 2026, pukul 14.15 WIB (dilanjutkan uji coba pada Minggu, 2 Agustus 2026), dilakukan secara daring melalui pesan pribadi (**chat LINE**) saat masa transisi dari Sprint 3 menuju Sprint 4 di Divisi Information, Bidang IT, kepanitiaan **OSKM ITB 2026**.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 7](../examples/week-07.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+**Persons dan relationship:** Percakapan dilakukan antara saya (anggota Divisi Information yang baru merampungkan *task* agregasi poin `S3-BE-07` pada modul *Leaderboard*) dan Rekan R (Koordinator Teknis / PM sub-tim yang mengatur alur integrasi dan *merge request*). Hubungan kami adalah rekan satu kepanitiaan yang setara, namun R memegang kewenangan (*authority*) untuk menyetujui standar penulisan *Pull Request* (PR) di repositori tim. Rekan F (*Buddy* saya di modul *Leaderboard* yang memegang *task* `S3-BE-11`) turut dilibatkan sebagai pengamat (*observer*) dan penguji langsung mekanisme yang diusulkan.
+
+**Objective dan initial state:** Tujuan percakapan ini adalah menggeser keadaan batin (*state*) R dari sekadar mengakui masalah (*Attention* yang sudah dicapai pada akhir Sprint 3) menjadi tertarik untuk memahami dan mencoba mekanisme solusi (*Interest*). Sebelum dihubungi di LINE, R sudah berada di tahap *Attention*—berdasarkan hasil cek *commit log* tanggal 31 Juli, kami sepakat bahwa titik rawan yang menghambat integrasi selama 20–30 menit bukanlah perubahan di hari kerja biasa, melainkan perubahan skema/kontrak mendadak menjelang batas akhir *merge* (H-1).
+
+## Attention evidence dan solution hypothesis
+
+Pada pertemuan daring sebelumnya (31 Juli 2026), hasil bedah *commit log* selama 5 hari kerja Sprint 3 (27–31 Juli 2026) membuktikan bahwa 3 dari 4 kasus gagalnya *query* integrasi lintas modul terjadi saat *rush* malam terakhir menjelang *target merge*. Ketika ada penyesuaian skema tabel (seperti pada skema *scores* atau *join* grup keluarga di modul *Leaderboard*), informasi tersebut hanya terkubur di obrolan grup LINE atau baru diketahui saat kode rekan lain terkena *error*.
+
+Berdasarkan temuan tersebut, rumusan masalah sasarannya (*Customer Problem Statement*) adalah:
+> **Koordinator Teknis (R) dan pengembang modul hilir** mengalami **tertahannya proses integrasi dan *review* selama 20–30 menit** ketika **terjadi perubahan skema tabel atau *payload* mendadak pada H-1 *merge***, sehingga **waktu kerja terbuang untuk tanya-jawab ulang di grup LINE**. Mereka membutuhkan **cara cepat dan akurat untuk melihat perubahan skema yang berdampak langsung pada modulnya**, dengan mempertimbangkan **kondisi *developer* yang sedang terburu-buru mengejar *green CI* dan enggan mengisi dokumen terpisah**.
+
+**Solution hypothesis:** Menambahkan blok catatan singkat 3 baris bernama **Catatan Perubahan Skema (*Schema Diff*)** tepat di bagian paling atas deskripsi *Pull Request* (PR) GitHub khusus ketika ada perubahan struktur data di H-1 *merge*.
+
+### Matriks Terjemahan: Problem, Mechanism, Benefit, dan Value
+
+| Problem | Mechanism | Expected benefit | Value bagi target |
+|---|---|---|---|
+| Perubahan skema mendadak di H-1 baru ketahuan setelah *query* rekan lain *error* | Blok ringkas 3 baris (*Field Berubah*, *Dampak*, *Tag PIC Hilir*) di baris paling atas deskripsi PR | Pengembang modul hilir langsung tahu bagian kode mana yang harus disesuaikan tanpa membongkar seluruh *file* perubahan | **Bagi Developer Hilir (`S3-BE-11`/Frontend):** Tidak membuang waktu 20–30 menit untuk *debugging* masalah yang ternyata berasal dari perubahan tabel hulu |
+| Info perubahan skema di grup LINE sering tertimbun obrolan lain | Pemberitahuan ditempel langsung di halaman PR GitHub tempat *code review* berlangsung | Informasi perubahan berada di satu tempat yang pasti dibuka saat proses *merge* | **Bagi Koordinator Teknis (R):** Mempercepat pemeriksaan *pull request* menuju *staging* tanpa perlu memediasi kebingungan di grup LINE |
+| *Developer* keteteran jika diminta menulis dokumentasi panjang saat mengejar *deadline* | Format dibatasi maksimal 3 poin singkat dan hanya diisi jika ada perubahan skema/kontrak | Waktu penulisan kurang dari 1 menit saat membuat PR | **Bagi Developer Hulu:** Beban kerja tetap ringan saat fokus mengejar *green CI* |
+
+### Matriks Detoks Fitur (Menghindari *Feature Dumping*)
+
+Sebelum menghubungi R, saya memangkas beberapa ide fitur teknis agar solusi tetap sederhana dan langsung menempel pada masalah utama:
+
+| Nama Fitur | Manfaat Langsung | Nilai Relasional | Keputusan (Pertahankan / Pangkas) |
+|---|---|---|---|
+| **Blok 3 Baris *Schema Diff* di Atas PR** | Menampilkan perubahan *field*/tabel secara instan di halaman PR | Menghemat waktu *review* R dan mencegah *error* tak terduga di modul rekan | **PERTAHANKAN** (Menjawab langsung masalah keterlambatan info di H-1 *merge*). |
+| **Bot Webhook Otomatis GitHub ke Grup LINE** | Mengirim pesan otomatis ke grup LINE setiap ada *commit* baru | Tidak memberi nilai tambah karena notifikasi bot yang terlalu sering justru membisingkan grup LINE dan sering di-mute oleh anggota | **PANGKAS** (Berisiko menjadi gangguan baru dan memakan waktu pembuatan). |
+| **Halaman Tabel *Changelog* Terpisah di Notion** | Menyimpan riwayat perubahan skema secara lengkap di luar GitHub | Menambah beban *developer* karena harus membuka dan mengedit aplikasi lain saat sedang sibuk mengejar *deadline* | **PANGKAS** (Melanggar kendala waktu *developer* di jam padat). |
+
+## Interest pitch dan demonstration
+
+Saya menyusun pendekatan menggunakan **Komunikasi Berlapis (*Layered Communication*)** dan **5 Langkah Pitch Minat**. Saya tidak menjelaskan seluruh pemikiran teknis di awal, melainkan hanya mengirimkan pesan pembuka yang terhubung dengan masalah kemarin (Lapis 1 & 2), lalu menyertakan contoh tampilan prototipe teks 3 baris (Lapis 3) di obrolan LINE untuk melihat reaksi R.
+
+**Prototipe Teks Sederhana yang Ditunjukkan ke Target:**
+```text
+[PERUBAHAN SKEMA / KONTRAK H-1]
+- Bagian yang diubah : Tabel `scores` (tambah unique constraint user_id + assignment_id)
+- Dampak ke modul lain: Re-ingest data yang sama sekarang otomatis update, bukan duplikat
+- Tag rekan terkait  : @Ferris (S3-BE-11)
+```
+
+> **Draf Interest Pitch (59 kata):**
+> "R, nyambung obrolan kita semalam soal perubahan skema mendadak pas H-1 *merge* yang bikin integrasi ketahan, aku kepikiran cara simpel tanpa perlu bikin dokumen baru. Jadi khusus kalau ada ubah tabel/kontrak mepet *deadline*, yang bikin PR cukup tempel kotak 3 baris kayak contoh di atas pada bagian paling atas PR-nya. Menurutmu, mekanisme sesingkat ini masuk akal buat dicoba di Sprint 4, atau ada bagian yang bakal bikin ribet?"
+
+## Evidence
+
+::: {.evidence-block}
+### Transkrip Chat Online Aktual (LINE)
+
+**[01/08/2026, 14:15] Saya:**
+"Siang R, nyambung obrolan kita semalam soal perubahan skema mendadak pas H-1 *merge* yang bikin integrasi ketahan, aku kepikiran satu cara simpel tanpa perlu bikin dokumen terpisah."
+
+**[01/08/2026, 14:16] Saya:**
+`[Mengirimkan potongan teks prototipe 3 baris: Bagian yang diubah, Dampak ke modul lain, dan Tag rekan terkait]`
+"Jadi khusus kalau ada yang ubah tabel atau kontrak mepet *deadline*, pembuat PR cukup tempel 3 baris ini di bagian paling atas deskripsi PR GitHub-nya. Cara kerjanya, pas kamu atau anak modul lain buka PR buat *review*, info perubahannya langsung kelihatan di paling atas tanpa harus nyari-nyari di grup LINE. Menurutmu, mekanisme sesingkat ini masuk akal buat dicoba di Sprint 4, atau ada bagian yang bakal bikin ribet?"
+
+**[01/08/2026, 14:20] R (Target):**
+"Siang Tan. Wah, kalau cuma tempel 3 baris di atas deskripsi PR gini sih ringkas banget, anak-anak nggak perlu repot buka Notion lagi. Tapi aku penasaran satu hal deh, gimana cara kerjanya kalau pas malam H-1 itu orangnya nge-*push* revisi skema dua atau tiga kali di PR yang sama gara-gara *test*-nya belum tembus? Takutnya teman yang udah terlanjur di-*tag* malah ngikutin catatan perubahan yang pertama, padahal kodenya udah ketimpa *commit* baru."
+
+**[01/08/2026, 14:23] Saya:**
+"Nah, kepikiran banget itu R. Bener juga, kalau orangnya masih bolak-balik *commit* buat benerin *error* CI, catatan di atas PR itu bisa jadi nggak sinkron sama kode terakhir dan malah bikin salah paham lagi. Kalau kita tambahin satu aturan kecil gimana? Di kotak itu kita kasih satu baris `Posisi Commit Terakhir: [jam/kode commit]`, terus aturan mainnya: pembuat PR baru boleh nge-*tag* teman modul hilirnya di kolom komentar **setelah** kodenya udah *green CI* dan siap di-*review* *Buddy*. Jadi selama masih ngulik sendiri, teman yang lain belum diganggu."
+
+**[01/08/2026, 14:27] R (Target):**
+"Nah kalau gitu alurnya jauh lebih aman! Jadi yang di-*tag* juga tenang karena tahu skemanya udah lolos *test* CI dan ada patokan jam *commit*-nya. Jujur aku belum yakin 100% anak-anak bakal langsung ingat nulis ini kalau lagi panik kejar *deadline*, tapi karena formatnya pendek banget, layak kita tes dulu. Coba kamu pakai format revisi ini di PR persiapan *sync job* *leaderboard* kamu sama F besok ya, aku mau lihat seberapa kebantu proses *review*-nya."
+
+**[01/08/2026, 14:29] Saya:**
+"Siap R, bener banget, pembiasaan pas lagi buru-buru itu emang tantangannya, makanya kita coba di lingkup kecil modul *leaderboard* dulu aja besok. Nanti pas PR-nya naik, aku sama F kabarin kamu hasilnya di LINE. Makasih banyak masukannya R!"
+
+---
+
+### Prototipe Hasil Adaptasi & Bukti Uji Coba (Minggu, 2 Agustus 2026)
+
+```text
+[PERUBAHAN SKEMA / KONTRAK H-1]
+- Status & Commit    : Green CI | Commit a4f82c1 (02 Agt, 16:10 WIB)
+- Bagian yang diubah : Penyesuaian indeks kueri agregasi keluarga pada tabel `scores`
+- Dampak ke modul lain: Nama kolom output total poin keluarga tetap sama, waktu baca lebih cepat
+- Tag rekan terkait  : @F (Buddy / S3-BE-11) — di-tag di komentar setelah CI hijau
+```
+
+**[02/08/2026, 16:40] R (Target — di grup koordinasi kecil):**
+"Barusan aku *review* PR penyesuaian indeks dari Nathan. Enak sih langsung kebaca status CI sama dampaknya di baris atas, F juga udah langsung *approve* tanpa nanya ulang di grup. Ini bisa kita jadikan contoh buat PR lain yang nyenggol skema minggu ini."
+
+---
+
+### Catatan Pengamat (Observer Note)
+
+> **Umpan Balik Rekan Pengamat — Inisial F (Buddy Modul Leaderboard):**
+> "Ketika Nathan mengirimkan contoh prototipe 3 baris di LINE, respons R menunjukkan pergeseran jelas dari sekadar tahu masalah menjadi tertarik mengulik cara kerjanya (*'gimana cara kerjanya kalau pas malam H-1 itu orangnya nge-push revisi skema dua atau tiga kali'*). Kekuatan utama Nathan ada pada ketenangannya saat R mengangkat celah risiko perubahan beruntun tersebut; Nathan tidak membela draf awalnya, melainkan langsung memodifikasi mekanisme dengan menambahkan baris status *Green CI / Commit* serta menunda pemanggilan (*tagging*) rekan sampai pengujian otomatis lolos. Saat diuji coba pada PR tanggal 2 Agustus, saya sebagai pemegang modul hilir (`S3-BE-11`) merasa sangat terbantu karena tidak perlu menebak-nebak apakah skema dari Nathan masih akan berubah lagi atau sudah final."
+
+**Kontribusi individu:** Perumusan masalah dari bukti Sprint 3, pemangkasan fitur (*detoks fitur*), pembuatan prototipe teks 3 baris, penyampaian *pitch* di LINE, adaptasi mekanisme *tagging* pasca-*Green CI*, hingga penerapan pada PR tanggal 2 Agustus 2026 dikerjakan secara mandiri oleh saya.
 :::
 
-{{< include ../includes/evidence-template.md >}}
+## Hidden concern dan adaptation
+
+Pada awalnya saya mengira bahwa selama format catatannya dibuat sangat pendek (3 baris), maka masalah komunikasi perubahan skema H-1 sudah otomatis teratasi. Namun, respons R memunculkan **signal Interest** sekaligus mengungkap **hidden concern** (kekhawatiran tersembunyi) yang krusial:
+- **Signal Interest:** R tidak menolak gagasan tersebut, melainkan mulai membayangkan skenario pemakaian nyata di lapangan dan menanyakan detail cara kerja (*how it works*) pada situasi spesifik (*"gimana cara kerjanya kalau pas malam H-1 itu orangnya nge-push revisi skema dua atau tiga kali..."*).
+- **Hidden Concern:** R khawatir bahwa pada jam kritis menjelang *deadline*, pengembang sering melakukan *commit* berulang kali karena gagal melewati pengujian otomatis (CI). Jika rekan modul hilir sudah di-*tag* sejak awal, mereka berisiko mengacu pada catatan skema yang belum stabil dan akhirnya tetap salah mengintegrasikan kode.
+
+**Adaptasi yang dilakukan (Tanpa *Solution Attachment*):**
+Saya tidak mempertahankan draf prototipe awal secara kaku. Saya langsung mengadaptasi mekanisme solusi dalam dua langkah:
+1. Menambahkan baris **`Status & Commit`** (`Green CI | Kode Commit & Jam`) pada bagian atas kotak *template* agar pembaca tahu persis versi kode mana yang sedang dijelaskan.
+2. Mengubah alur kerja pemberitahuan: pembuat PR baru melakukan *tag* kepada rekan modul hilir di kolom komentar **setelah** status pengujian otomatisnya hijau (*Green CI*), sehingga rekan tim tidak diinterupsi oleh skema yang masih mentah.
+3. Menyatakan batas kemampuan solusi secara jujur: saya mengakui pernyataan R bahwa *template* ini belum tentu langsung diingat oleh semua anggota saat sedang panik mengejar tenggat waktu, sehingga pengujian dibatasi pada satu PR modul *Leaderboard* terlebih dahulu tanpa janji berlebihan (*no overpromise*).
+
+## Analisis komunikasi
+
+| Elemen | Evidence dan analisis |
+|---|---|
+| **Person & character** | Memahami peran ganda R yang membutuhkan kejelasan informasi untuk *code review* namun sangat melindungi rekan tim dari kerumitan administrasi. Solusi diterjemahkan menjadi nilai spesifik bagi R (kemudahan *review*) dan bagi rekan *developer* (kepastian skema tanpa interupsi berulang). |
+| **Objective & state** | Mengelola pergeseran *state* dari *Attention* ke *Interest* yang dibuktikan oleh pertanyaan eksploratif R tentang skenario *commit* berulang, lalu mengarahkannya hingga tercapai kesepakatan uji coba (*micro-trial*) di awal Sprint 4. |
+| **Repertoire & language** | Menerapkan *Detoks Fitur* (membuang ide bot LINE dan halaman Notion), menggunakan *Komunikasi Berlapis* (membuka dengan kaitan masalah, lanjut ke prototipe 3 baris, dan baru membahas aturan CI saat ditanya), serta memakai bahasa LINE yang lugas dan akrab. |
+| **Response & adaptation** | Menangkap sinyal keberatan tertulis R terkait risiko keterlambatan *deploy* dan bias data Rabu malam. Saya langsung mengadaptasi langkah dengan membatalkan wacana aturan harian dan mengambil alih pengecekan *commit log* secara mandiri. |
+| **Agreement/action** | Menyepakati uji coba terbatas pada PR modul *Leaderboard* bersama Rekan F pada Minggu, 2 Agustus 2026, lengkap dengan *review* hasil nyata di mana PR berhasil diverifikasi dan disetujui tanpa tanya-jawab berulang di grup LINE. |
+| **Relationship outcome** | Kepercayaan di dalam tim meningkat karena R dan F melihat bahwa masukan kritis mereka langsung diwujudkan menjadi perbaikan mekanisme kerja yang melindungi kenyamanan seluruh pengembang. |
+
+## Penggunaan AI
+
+- **Alat dan peran AI:** Menggunakan Gemini sebagai *peninjau relevansi* untuk melakukan simulasi *Detoks Fitur* dan menguji kemungkinan celah dari draf *template* PR sebelum dikirimkan ke R melalui LINE.
+- **Prompt atau instruksi penting:** *"Evaluasi tabel Fitur–Manfaat–Nilai untuk masalah keterlambatan info perubahan skema database di tim kepanitiaan IT ini. Tandai fitur mana yang berpotensi menjadi feature dumping, dan berikan 2 pertanyaan skeptis yang mungkin diajukan oleh Tech Lead."*
+- **Bagian output yang digunakan, diubah, atau ditolak:** Saya menggunakan masukan AI untuk memisahkan secara tegas kolom *Expected Benefit* (penghematan waktu cari info) dan *Value* (ketenangan saat *debugging* dan kelancaran *code review*). Namun, saya **menolak** usulan AI untuk memasang *script GitHub Action* pemblokir PR otomatis jika kotak skema tidak diisi, karena fitur tersebut terlalu kaku dan justru akan menghambat *pull request* biasa yang sama sekali tidak mengubah skema tabel.
+- **Pemeriksaan accuracy, privacy, dan authority:** Konteks modul (`S3-BE-07`, `S3-BE-11`, tabel `scores`) dan uji coba PR tanggal 2 Agustus 2026 merujuk pada alur kerja nyata di Divisi Information OSKM ITB 2026. Nama rekan disamarkan dengan inisial (R dan F), serta wewenang penerapan standar PR tetap berada pada R.
+- **Apa yang tetap saya pelajari sebagai manusia:** AI bisa membantu mendaftar fitur-fitur yang terdengar canggih di atas kertas, tetapi kemampuan untuk merelakan ide fitur yang sudah kita pikirkan (seperti bot notifikasi atau dokumen Notion) demi menghargai keterbatasan tenaga teman satu tim saat mengejar *deadline* adalah bentuk empati manusia. Selain itu, membaca sinyal bahwa pertanyaan kritis lawan bicara di LINE sebenarnya adalah tanda ketertarikan (*Interest*), bukan penolakan, menuntut ketenangan batin yang harus terus dilatih secara langsung.
+
+## Feedback dan tindak lanjut
+
+**Feedback yang diterima:** Rekan F (sebagai *observer* sekaligus pengguna hilir di `S3-BE-11`) memberikan masukan bahwa prototipe yang sudah ditambahkan baris `Status & Commit: Green CI` sangat memotong waktu tebak-tebakan saat ia memeriksa kesesuaian *query* agregasi. Masukan tambahan dari R saat uji coba tanggal 2 Agustus adalah perlunya contoh pengisian satu baris agar teman-teman lain di Divisi Information tidak bingung membedakan mana perubahan yang wajib ditulis dan mana yang tidak.
+
+**Adaptation/replay:** Ketika membagikan contoh format tersebut ke rekan sub-tim setelah uji coba tanggal 2 Agustus berhasil, saya menambahkan satu catatan batas yang jelas di bawah *template*: *"Hanya diisi jika ada perubahan nama kolom, tipe data, atau struktur JSON; perubahan logika internal fungsi tidak perlu ditulis."*
+
+**Next practice:** Pada sesi komunikasi berikutnya (saat mulai masuk ke tahap membangun *Desire* dan *Action* yang lebih luas), saya akan menyiapkan contoh perbandingan "sebelum dan sesudah" dari hasil uji coba kecil ini agar rekan-rekan lain dapat melihat bukti manfaat nyata sebelum diminta menerapkan kebiasaan baru.
+
+## Self-assessment
+
+| Dimensi | Skor 1–4 | Evidence singkat |
+|---|---|---|
+| Person & Character | 4 | Membedakan terjemahan *value* secara spesifik antara Koordinator Teknis (R), pengembang modul hilir (F), dan pengembang hulu sesuai beban kerja masing-masing di Divisi Information. |
+| Objective & State | 4 | Mengidentifikasi pergeseran *state* dari *Attention* ke *Interest* melalui pertanyaan rasa ingin tahu R tentang skenario *commit* berulang, serta menjaga batas kejujuran tanpa *overpromise*. |
+| Repertoire, Language & AI | 4 | Melakukan *Detoks Fitur* secara eksplisit (memangkas bot webhook & Notion), menerapkan komunikasi berlapis via LINE dengan prototipe teks 3 baris, dan membatasi peran AI dengan menolak fitur blokir otomatis. |
+| Response & Adaptation | 4 | Menggali *hidden concern* R mengenai risiko informasi basi saat terjadi revisi beruntun di H-1, lalu langsung mengadaptasi prototipe dengan penanda *Green CI* dan aturan waktu *tag*. |
+| Agreement, Action & Relationship | 4 | Menyepakati uji coba terbatas pada PR modul *Leaderboard* tanggal 2 Agustus 2026, mengevaluasi hasilnya bersama R dan F, serta menyempurnakan aturan pakai tanpa membebani relasi tim. |
+
+**Total:** 20 / 20 — Lanjut
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
+:::
