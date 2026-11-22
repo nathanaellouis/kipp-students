@@ -1,8 +1,8 @@
 ---
 title: "Capstone Performance Portfolio"
 week: 15
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "Integrated person-centered communication performance."
 categories: [Assessment, Capstone]
@@ -20,8 +20,134 @@ Halaman ini mencatat capstone perkuliahan Minggu 15 beserta feedback dan replay.
 - Rekaman/transcript, observer feedback, serta decisive adaptation.
 - Agreement/action atau specific disagreement, relationship outcome, AI critique, dan reflection.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 15](../examples/week-15.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+## Konteks performance
+
+**Tanggal dan setting:** Minggu, 15 November 2026, pukul 19.30–20.15 WIB, sesi **Asistensi 1** daring untuk Tugas Besar IF2010 Pemrograman Berorientasi Objek (*Nangor Blast*, Map *Black Fortress*), sehari sebelum tenggat Asistensi 1 (16 November 2026) dan dua hari sebelum tenggat Milestone 1 (17 November 2026 pukul 20.10 WIB). Sesi ini direkam dan ditranskrip oleh kelompok sebagai bahan evaluasi, dengan asisten pembimbing (**K**) hadir sebagai pemandu klarifikasi sekaligus *observer* dinamika kerja tim.
+
+**Persons dan relationship:** Empat mahasiswa seangkatan dalam satu kelompok dengan posisi setara, **Saya** (modul *Player & Bomb*), **D** (modul *Core & Flow*), **R** (modul *Map & Infra*), dan **A** (modul *Enemy & Boss*) serta **K** sebagai Asisten Pembimbing yang memiliki otoritas validasi spesifikasi dan penilaian asistensi. Sesi ini melanjutkan koordinasi pembagian tugas Milestone 1 dari Week 11 ke dalam uji validasi langsung di hadapan pengamat.
+
+**Objective dan initial state:** Mengklarifikasi bagian-bagian rancangan awal *Nangor Blast* yang masih ambigu, memastikan pembagian tugas keempat anggota sudah mencakup seluruh kebutuhan sistem, serta mengunci rencana pengerjaan *Class Diagram* dan repositori GitHub sebelum 17 November 2026 tanpa menimbulkan beban timpang. *Initial state*: kelompok baru menyiapkan repositori dan membagi fitur wajib per modul, masih berencana mengerjakan fitur bonus "nanti kalau fitur wajib selesai lebih awal", dan belum memikirkan kelas pengelola tampilan antarmuka (UI) dasar.
+
+## Evidence
+
+::: {.callout-note appearance="simple" icon=false}
+### 1. Person, Character & State Map + Performance Plan
+
+| Person | Character dalam sesi | Kepentingan & kendala | Authority | State TAIDA (awal → akhir) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Saya (Player & Bomb)** | Inisiator klarifikasi teknis & penghubung kontrak antar-modul | Memastikan alur *Player*, *Bomb*, *Explosion*, dan *Power-Up* sinkron dengan sistem utama dan siap untuk integrasi | Menentukan rancangan kelas *Player & Bomb* serta kelengkapan struktur repositori GitHub | *Interest/Desire* (ingin validasi rancangan) → *Action* |
+| **D (Core & Flow)** | Pengelola alur utama (*GameEngine*, *State*, *Concurrency*) | Menjaga alur permainan tetap bersih dan modular, semula belum memetakan *UI manager* ke dalam modulnya | Menentukan arsitektur *game loop*, *state*, dan penanganan input-output utama | *Attention* (belum melihat celah *UI handler*) → *Action* (menerima cakupan GUI MVC) |
+| **R (Map & Infra)** | Pengelola peta *Black Fortress* & infrastruktur | Memastikan aturan *Switch*, *Gate*, *Laser Trap*, dan *build tool* (Gradle/Maven) jelas agar tidak salah bangun | Menentukan struktur grid, *validator*, dan konfigurasi proyek | *Attention* (butuh kepastian aturan legenda & *build tool*) → *Action* |
+| **A (Enemy & Boss)** | Pengelola perilaku musuh & *Boss* (*Cerberus* & *Altair*) | Memastikan mekanisme dua *boss* berurutan dan pola serangannya terdefinisi jelas di *Class Diagram* | Menentukan rancangan kelas *Enemy*, *Boss*, dan *Strategy Pattern* | *Attention* (menyimak klarifikasi mekanik *boss*) → *Action* |
+| **K (Asisten Pembimbing)** | Pembimbing teknis & *observer* koordinasi tim | Menguji kesiapan pembagian kerja tim, mencegah kesalahan arsitektur fatal sejak awal, dan menjaga sesi efisien | Memberi klarifikasi spesifikasi dan evaluasi wajib Asistensi 1 | *Observer* aktif (menilai kesiapan & mengarahkan fokus) |
+
+**Performance plan (empat fase komunikasi):**
+
+1. **Membuka & mengenali:** Menyampaikan laporan progres tim secara apa adanya (repositori dan pembagian fitur wajib sudah ada, fitur bonus belum diploting) lalu meminta penjelasan bagian spesifikasi yang krusial.
+2. **Mendengarkan & menemukan:** Menyimak penelusuran spesifikasi dari K, mengajukan pertanyaan terarah soal aturan yang ambigu (simbol bom di legenda, fungsi Gradle/Maven, batas isi repositori Milestone 1, format dokumen pembagian tugas, serta tata cara pengisian form asistensi), dan menangkap sinyal peringatan K mengenai celah arsitektur.
+3. **Mengomunikasikan & menegosiasikan:** Mendiskusikan langsung dengan D, R, dan A bagaimana masukan K mengubah rencana bonus dan pembagian kelas lintas modul.
+4. **Menyepakati langkah:** Mengunci pembagian tugas final, struktur *Class Diagram*, serta kewajiban mengisi form asistensi dalam batas waktu 1 jam setelah panggilan berakhir.
+
+---
+
+### 2. Rekaman Transkrip & Decisive Adaptation (Closed-Loop)
+
+Sesi asistensi direkam dan ditranskrip utuh. Alih-alih berjalan satu arah, percakapan membentuk **lingkar tertutup (*closed loop*)**: respons dan sinyal dari Asisten K langsung memperbarui pembacaan kelompok terhadap rancangan sistem kami.
+
+**Cuplikan transkrip sesi asistensi (15 November 2026):**
+
+> **K (Asisten):** *"Untuk progres kalian udah sampe mana, dan udah ngapain aja? ... Oh ya, terus kalian ada rencana ngerjain bonus gak?"*
+>
+> **Tim:** *"Untuk progres dari kelompok kami sih baru bikin repo, kak, sama bagi tugas... Untuk bonus sendiri, kalau misalkan udah selesai duluan, untuk waktunya jika masih cukup kita bakal ngerjain bonus."*
+>
+> **K (Asisten):** *"Untuk GUI gak bisa [ditambahin di akhir]. Karena GUI itu emang kalian harus desain dari awal, karena gak bisa ditambahin di akhir. ... Terus aku mau nanya juga ke kalian: kalian pembagian tugas kan sebelum desain kelas ya. Nanti pasti perlu kelas khusus atau handler khusus buat nampilin UI-nya. Mau CLI, mau GUI, pasti perlu satu manager yang nge-handle. Nah sistem-sistem dasar yang kayak gitu belum kebayang di pembagian tugas kalian harusnya, tapi mungkin bisa masuk Core and Flow sih. Kebayang gak maksudku gimana?"*
+>
+> **Tim:** *"Masuk kok, kak. ... Buat yang logbook sama booklet itu berarti belum dikumpulin buat Milestone 1 ini kan kak? Terus repositorinya udah harus ada isinya juga?"*
+>
+> **K (Asisten):** *"Belum. Milestone 1 cukup class diagram sama reponya at least udah ada folder structure-nya aja [src, config, doc, Makefile, README.md]. ... Kalau class diagram sangat disarankan bagi tugas, dan jangan premature optimization atau over-engineer. Jangan lupa juga isi form asistensi paling lambat 1 jam setelah selesai."*
+
+**Tiga adaptasi menentukan (*decisive adaptation*) dari hasil sesi ini:**
+
+1. **Mengubah strategi fitur bonus (menarik GUI ke Milestone 1):** Rencana awal kami untuk menunda seluruh bonus ke akhir pengerjaan langsung dibatalkan setelah K menjelaskan bahwa GUI tidak bisa ditempel belakangan. Kelompok memutuskan memasukkan **B01 GUI** dengan pola **MVC** (*Model–View–Controller*) sejak rancangan Milestone 1, disertai B02 (*Bomb Kick*), B04 (*Local Multiplayer*), dan B05 (5 *Design Pattern*), serta menerapkan peringatan K agar aset visual tidak menutupi elemen interaktif.
+2. **Menutup celah arsitektur pada modul *Core & Flow* (D):** Menanggapi temuan K bahwa pembagian tugas awal kami belum memiliki pengelola tampilan antarmuka, D dan tim sepakat menambahkan komponen *View* (`GameWindow`, `MenuPanel`, `GamePanel`, `HudPanel`, `SpriteManager`) dan *Controller* (`KeyboardController`) ke area *Core & Flow*, sementara Saya, R, dan A menyepakati kontrak antarmuka `Renderable` pada entitas masing-masing agar tidak terjadi tumpang tindih.
+3. **Menjaga desain tetap modular tanpa *over-engineering*:** Mengikuti peringatan K soal risiko terlalu lama merancang kelas atau membuat struktur yang terlalu rumit, tim menyepakati pembagian menggambar *Class Diagram* per modul dengan kontrak antarmuka yang ringkas namun siap dikembangkan saat masuk fase pengkodean Milestone 2.
+
+---
+
+### 3. Agreement, Action & Relationship Outcome
+
+**Kesepakatan tindakan pasca-asistensi (tenggat 15–17 November 2026):**
+
+| No | Siapa | Melakukan apa | Kapan | Bukti & status pelaksanaan |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | **Saya, D, R, dan A** (masing-masing) | Mengisi Google Form catatan kemajuan dan tindak lanjut Asistensi 1 beserta bukti tangkapan layar kehadiran | Minggu, 15 November 2026, maksimal 1 jam setelah sesi selesai (sebelum 21.15 WIB) | **Terlaksana**  langsung saling mengingatkan di akhir panggilan dan mengisi form tepat waktu |
+| 2 | **Saya & A** | Melengkapi struktur folder repositori GitHub (`src`, `config`, `doc`, `Makefile`, `README.md`) dan mengundang akun GitHub Asisten K | Senin, 16 November 2026 | **Terlaksana** struktur repositori siap sesuai panduan Asistensi 1 |
+| 3 | **D, R, A, dan Saya** | Memperbarui dokumen pembagian tugas dengan memasukkan GUI MVC, *renderer/UI manager*, 5 *design pattern*, dan kontrak `Renderable`, lalu menggambar *Class Diagram* per modul | Selasa, 17 November 2026, sebelum pukul 18.00 WIB | **Terlaksana** terdokumentasi dalam berkas `K1_Q_PembagianTugas.pdf` dan `K1_Q_ClassDiagram.pdf` |
+| 4 | **Saya & D** | Melakukan pengecekan akhir keselarasan antara dokumen pembagian tugas, *Class Diagram*, dan repositori sebelum pengumpulan | Selasa, 17 November 2026, sebelum pukul 20.10 WIB | **Terlaksana** seluruh berkas Milestone 1 terkumpul tepat waktu sebelum tenggat |
+
+**Relationship outcome:** Masukan K yang mengoreksi kekurangan pembagian tugas awal kami diterima tanpa sikap defensif maupun saling menyalahkan. Penambahan tanggung jawab *View/Controller* UI pada modul D berjalan mulus karena dibarengi kesepakatan bersama untuk mengunci antarmuka `Renderable` di modul Saya, R, dan A, serta komitmen saya membantu penyelarasan akhir dokumen pembagian tugas setelah repositori GitHub selesai.
+
+---
+
+### 4. Observer Feedback
+
+Sebagai *observer* selama sesi berlangsung, Asisten K memberikan beberapa umpan balik langsung yang relevan dengan kinerja komunikasi dan koordinasi kelompok kami:
+
+- **Kekuatan yang dicatat:** K menilai positif bahwa kelompok sudah menyiapkan pembagian tugas awal sebelum sesi dimulai sehingga waktu asistensi yang terbatas (karena K memiliki jadwal asistensi lain pukul 20.00 WIB) tidak habis untuk mengulang isi spesifikasi, melainkan langsung menyasar klarifikasi teknis dan celah arsitektur.
+- **Koreksi & peringatan penting:** K mengingatkan agar tim tidak terjebak *premature optimization* atau merancang struktur kelas secara berlebihan (*over-engineering*) yang justru memperlambat pengkodean, serta menekankan empati dan inisiatif kolektif (*"jangan hanya memedulikan pekerjaan sendiri"*). K juga menegaskan aturan baru bahwa penggunaan AI generatif bersifat bebas bertanggung jawab, seluruh anggota wajib mampu menjelaskan setiap baris kode dan desain kelas saat demo nanti.
 :::
 
-{{< include ../includes/evidence-template.md >}}
+## Analisis komunikasi
+
+| Elemen | Evidence dan analisis |
+| :--- | :--- |
+| **Person & character** | Memetakan 4 anggota tim dan 1 asisten sebagai *observer* dengan peran serta otoritas masing-masing, tim hadir sebagai pembelajar yang terbuka terhadap koreksi, bukan mempertahankan rancangan awal secara kaku. |
+| **Objective & state** | Mengelola *objective* kejelasan spesifikasi dan pembagian beban yang adil sambil membaca perubahan *state* anggota dari sekadar *Attention* (bingung soal mekanik *Black Fortress* dan *build tool*) menuju *Action* terkoordinasi. |
+| **Repertoire & language** | Mengajukan pertanyaan klarifikasi yang spesifik dan sopan kepada asisten, lalu langsung menerjemahkan jawaban teknis asisten menjadi pembagian kelas konkret antaranggota di grup kerja. |
+| **Response & adaptation** | Komunikasi bekerja sebagai *closed loop*: sinyal dari K soal GUI tidak bisa ditambah di akhir dan absennya *UI handler* langsung mengubah keputusan bonus tim dan menambah cakupan *Core & Flow*. |
+| **Agreement/action** | Empat butir tindak lanjut memiliki pemilik tunggal, tenggat jelas (termasuk batas 1 jam form asistensi dan 17 November pukul 20.10 WIB untuk Milestone 1), dan seluruhnya terbukti terlaksana lewat dokumen kelompok. |
+| **Relationship outcome** | Koreksi dari luar tim justru memperkuat kekompakan internal, penambahan beban arsitektur UI pada D diimbangi dukungan antarmuka dari R, A, dan saya sehingga rasa saling percaya tetap terjaga. |
+
+## Penggunaan AI & AI Critique
+
+- **Peran AI yang dipilih dan dibatasi:** Setelah sesi asistensi selesai, saya menggunakan AI (Gemini) sebagai **Copilot** untuk merapikan transkrip mentah rekaman asistensi menjadi kutipan yang bersih dan membantu menstrukturkan laporan portofolio ini. Pada pengerjaan Tugas Besar OOP sendiri, kelompok berpegang pada prinsip **lampu lalu lintas risiko**: AI hanya dipakai sebagai **Translator/Coach** untuk memahami dokumentasi Gradle/Maven dan pola desain Java, sedangkan rancangan *Class Diagram* dan keputusan arsitektur dikerjakan manual oleh masing-masing pemilik modul.
+- **Kritik terhadap AI (*AI Critique*) & output yang ditolak:** Saat saya menguji AI untuk membantu menyusun kerangka awal daftar kelas *Nangor Blast*, AI menghasilkan hierarki kelas abstrak dan antarmuka berlapis-lapis yang terlalu rumit. Saya **menolak output AI tersebut** karena bertentangan langsung dengan peringatan Asisten K mengenai *premature optimization / over-engineering* serta aturan baru spesifikasi (revisi 14 November 2026) bahwa setiap anggota wajib menguasai penuh desain kelas yang dikumpulkan. Mengandalkan generasi otomatis AI tanpa penyaringan manusia berisiko membuat kelompok kehilangan pemahaman atas kodenya sendiri saat sesi demo.
+
+## Feedback dan tindak lanjut
+
+- **Feedback yang diterima:** Asisten K mengapresiasi kesiapan pembagian tugas awal tim, mengoreksi absennya komponen pengelola tampilan (UI) dasar, serta mengingatkan bahaya *over-engineering* dan tanggung jawab penuh atas penggunaan AI.
+- **Adaptation/replay:** Seluruh masukan K langsung diwujudkan ke dalam pembaruan dokumen pembagian tugas (`PembagianTugas.pdf`), *Class Diagram* (`ClassDiagram.pdf`), dan struktur repositori sebelum pengumpulan Milestone 1 pada 17 November 2026.
+- **Next practice:** Menjelang **Asistensi 2** (paling lambat 3 Desember 2026) dan pengumpulan **Milestone 2** (4 Desember 2026), kelompok akan membawa bukti hasil *integration test* antar-modul (*Player & Bomb*, *Core & Flow*, *Enemy & Boss*, dan *Map & Infra*) serta mencatat secara jujur kendala konkurensi atau *bug* yang masih tersisa agar sesi asistensi berikutnya semakin tajam.
+
+## Refleksi capstone
+
+Rangkaian perjalanan komunikasi dari Week 9 hingga Week 15 mengubah cara saya memandang komunikasi dari sekadar menyampaikan pendapat atau membagi tugas dengan cepat, menjadi proses membaca manusia, menguji asumsi, dan beradaptasi secara bertanggung jawab. Di paruh awal semester (Week 9 dan Week 10) saat mempersiapkan final *The Sandbox 3.0 IEEE ITB* bersama S dan M, saya belajar bahwa semangat dan argumen teknis saja tidak cukup untuk meyakinkan penguji maupun menggerakkan tim. Saya belajar mengganti klaim yang terlalu tinggi dengan *Tangga Bukti* dan pengakuan batas yang jujur (*honest limits*), serta menyadari bahwa rencana latihan yang kaku tidak akan berjalan bila mengabaikan jadwal kuis dan *deadline* kuliah rekan tim. Ketika saya mengakui bahwa usulan awal saya kurang realistis lalu mengubahnya menjadi latihan mandiri dengan *checkpoint* Jumat dan sesi bertahap di *working space* Louvin, komitmen tim berubah dari niat menggantung menjadi tindakan nyata.
+
+Pelajaran tersebut berlanjut ke skala kelompok dan komunitas yang lebih beragam pada Week 11 dan Week 12. Pada koordinasi awal Tugas Besar OOP bersama D, R, dan A (Week 11), saya menyadari bahwa anggota yang diam atau cepat berkata "ikut aja" belum tentu benar-benar setuju, menanyakan langsung kendala antarmuka kepada A dan mencatat keberatan (*dissent*) D tanpa menghapusnya membuat keputusan tim jauh lebih adil. Sementara pada deliberasi delapan anggota Divisi Fundraising IMPACT 6.0 (Week 12), posisi saya sebagai staf biasa melatih saya menghormati batas wewenang Kabid dan Kadiv sambil tetap membuka ruang aman bagi rekan staf yang kesulitan menalangi modal pribadi yang akhirnya melahirkan skema *pilot* dua jalur berbasis dana talangan bidang.
+
+Pada Week 13 dan Week 14, tantangan bergeser ke komunikasi publik dan etika penggunaan AI saat menyederhanakan proyek riset MARS ke dalam *carousel* Instagram. Melalui uji *screenshot test* dan matriks risiko Hijau–Kuning–Merah, saya melihat langsung bahwa penyederhanaan yang terburu-buru atau kalimat *output* AI yang terlalu promosional mudah berubah menjadi distorsi makna. Pengalaman menerima dua kritik pembaca soal biaya bahan bakar dan cakupan pelabuhan, lalu mengakuinya secara terbuka di *correction log* tanpa membela diri, mengajarkan saya bahwa kredibilitas justru tumbuh ketika kita jujur pada keterbatasan karya kita sendiri.
+
+Puncaknya pada sesi Asistensi 1 di Week 15 ini, seluruh keterampilan tersebut teruji dalam satu situasi hidup yang berjalan cepat. Sikap **kerendahan hati (*humility*)** dan **rasa ingin tahu (*curiosity*)** membantu saya serta rekan tim menerima koreksi Asisten K soal arsitektur GUI MVC tanpa gengsi, **kejelasan (*clarity*)** dan **keberanian (*courage*)** terlihat saat kami mengklarifikasi bagian spesifikasi yang masih kabur dan langsung merombak rencana bonus, sedangkan **kepedulian (*care*)** dan **akuntabilitas (*accountability*)** terwujud lewat pembagian ulang kontrak antarmuka yang adil, kepatuhan mengisi form asistensi dalam satu jam, serta penolakan terhadap saran AI yang terlalu rumit agar seluruh anggota tetap menguasai rancangannya.
+
+**Rencana pengembangan 90 hari ke depan:** Dalam 90 hari ke depan dimulai dari fase integrasi kode dan *integration test* menuju Milestone 2 Tugas Besar OOP (4 Desember 2026) hingga kerja tim pada proyek perkuliahan dan himpunan semester berikutnya saya ingin melatih dua kebiasaan komunikasi utama: (1) **selalu melakukan cek kelayakan dan suara yang diam di awal diskusi** sebelum mengajukan solusi, serta (2) **membiasakan uji kritik (*red-teaming* ringan)** terhadap setiap rencana teknis atau draf berbantuan AI sebelum diputuskan. Untuk menjaga konsistensi kebiasaan ini, saya akan meminta umpan balik langsung dari tiga rekan satu tim saya (**D**, **R**, dan **A**) setelah evaluasi integrasi Milestone 2, serta dari rekan kerja proyek pada semester depan.
+
+## Self-assessment
+
+| Dimensi | Skor 1–4 | Evidence singkat |
+| :--- | :---: | :--- |
+| **Person & Character** | 4 | Memetakan 4 anggota tim dan 1 asisten sebagai *observer* lengkap dengan peran, kepentingan, kendala, dan wewenang, identitas seluruh pihak disamarkan sesuai etika portofolio. |
+| **Objective & State** | 4 | Mengelola kejelasan spesifikasi, arsitektur GUI MVC, dan keseimbangan beban kerja sambil membaca perubahan *state* anggota dari *Attention* menuju *Action*. |
+| **Repertoire, Language & AI** | 4 | Menggunakan pertanyaan klarifikasi terstruktur dalam sesi asistensi, menerapkan matriks risiko AI, dan secara kritis menolak *output* AI yang memicu *over-engineering*. |
+| **Response & Adaptation** | 4 | Komunikasi bekerja sebagai *closed loop*: sinyal dari Asisten K mengenai GUI dan *UI handler* langsung mengubah keputusan bonus tim dan struktur *Class Diagram* Milestone 1. |
+| **Agreement, Action & Relationship** | 4 | Empat kesepakatan pasca-asistensi memiliki pemilik dan tenggat jelas (termasuk form asistensi dalam 1 jam dan berkas Milestone 1 sebelum 17 November), sekaligus memperkuat kolaborasi tim. |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
+:::

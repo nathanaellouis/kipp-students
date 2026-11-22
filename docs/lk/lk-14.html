@@ -76,6 +76,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -159,7 +188,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#identitas-pengguna-dan-konteks-komunikasi" id="toc-identitas-pengguna-dan-konteks-komunikasi" class="nav-link" data-scroll-target="#identitas-pengguna-dan-konteks-komunikasi">1. Identitas Pengguna dan Konteks Komunikasi</a></li>
   <li><a href="#instrumen-i-matriks-lampu-lalu-lintas-risiko-ai" id="toc-instrumen-i-matriks-lampu-lalu-lintas-risiko-ai" class="nav-link" data-scroll-target="#instrumen-i-matriks-lampu-lalu-lintas-risiko-ai">2. Instrumen I: Matriks ‘Lampu Lalu Lintas Risiko’ AI</a></li>
   <li><a href="#instrumen-ii-format-spesifikasi-kopilot-komunikasi" id="toc-instrumen-ii-format-spesifikasi-kopilot-komunikasi" class="nav-link" data-scroll-target="#instrumen-ii-format-spesifikasi-kopilot-komunikasi">3. Instrumen II: Format Spesifikasi Kopilot Komunikasi</a></li>
-  <li><a href="#panduan-operasional-prompt-berpusat-pada-manusia" id="toc-panduan-operasional-prompt-berpusat-pada-manusia" class="nav-link" data-scroll-target="#panduan-operasional-prompt-berpusat-pada-manusia">4. Panduan Operasional: Prompt Berpusat pada Manusia</a></li>
+  <li><a href="#panduan-operasional-prompt-berpusat-pada-manusia" id="toc-panduan-operasional-prompt-berpusat-pada-manusia" class="nav-link" data-scroll-target="#panduan-operasional-prompt-berpusat-pada-manusia">4. Panduan Operasional: Prompt Berpusat pada Manusia</a>
+  <ul class="collapse">
+  <li><a href="#prompt-berpusat-pada-manusia-yang-digunakan" id="toc-prompt-berpusat-pada-manusia-yang-digunakan" class="nav-link" data-scroll-target="#prompt-berpusat-pada-manusia-yang-digunakan"><strong>Prompt Berpusat pada Manusia yang Digunakan:</strong></a></li>
+  <li><a href="#ringkasan-5-revisi-manusia-atas-output-awal-ai" id="toc-ringkasan-5-revisi-manusia-atas-output-awal-ai" class="nav-link" data-scroll-target="#ringkasan-5-revisi-manusia-atas-output-awal-ai"><strong>Ringkasan 5 Revisi Manusia atas Output Awal AI:</strong></a></li>
+  </ul></li>
   <li><a href="#daftar-periksa-etika-the-final-gate" id="toc-daftar-periksa-etika-the-final-gate" class="nav-link" data-scroll-target="#daftar-periksa-etika-the-final-gate">5. Daftar Periksa Etika (The Final Gate)</a></li>
   <li><a href="#pernyataan-transparansi-sesuai-lampiran-e.7" id="toc-pernyataan-transparansi-sesuai-lampiran-e.7" class="nav-link" data-scroll-target="#pernyataan-transparansi-sesuai-lampiran-e.7">6. Pernyataan Transparansi (Sesuai Lampiran E.7)</a></li>
   </ul></li>
@@ -196,56 +229,61 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="identitas-pengguna-dan-konteks-komunikasi">1. Identitas Pengguna dan Konteks Komunikasi</h2>
 <p>Sebelum melibatkan AI, Anda harus memetakan tiga lapis keberadaan manusia (Source 1.7) untuk memastikan komunikasi tidak tereduksi menjadi sekadar data teknis.</p>
 <ul>
-<li><strong>Nama Pengguna:</strong> ________________________________________________</li>
-<li><strong>Nama Pribadi (Target):</strong> ________________________________________</li>
-<li><strong>Domain Komunikasi (Source 1.9):</strong> (Pilih salah satu)
+<li><strong>Nama Pengguna:</strong> Nathanael Louis Cahyono (18225015)</li>
+<li><strong>Nama Pribadi (Target):</strong> Target utama adalah mahasiswa lintas jurusan dan pembaca muda di Instagram, sedangkan audiens sekunder mencakup dosen, juri kompetisi, praktisi logistik, para pengomentar, serta dua rekan tim (<strong>S</strong> dan <strong>M</strong>) yang karya bersamanya dibahas pada unggahan tanggal 22 November 2026.</li>
+<li><strong>Domain Komunikasi (Source 1.9):</strong>
 <ul class="task-list">
 <li><label><input type="checkbox"><strong>Diri Sendiri (Intrapribadi):</strong> Percakapan batin dan refleksi.</label></li>
 <li><label><input type="checkbox"><strong>Keluarga dan Sahabat (Relasi Dekat):</strong> Kehadiran dan dukungan emosional.</label></li>
 <li><label><input type="checkbox"><strong>Rekan Kerja dan Pelanggan (Profesional):</strong> Penciptaan nilai dan koordinasi.</label></li>
 <li><label><input type="checkbox"><strong>Tetangga dan Komunitas (Sosial/Kolektif):</strong> Deliberasi dan tindakan bersama.</label></li>
-<li><label><input type="checkbox"><strong>Dunia (Publik):</strong> Kontribusi gagasan dan dampak luas.</label></li>
+<li><label><input type="checkbox" checked=""><strong>Dunia (Publik):</strong> Kontribusi gagasan dan dampak luas.</label></li>
 </ul></li>
 <li><strong>Analisis Tiga Lapis Komunikasi:</strong>
 <ul>
-<li><strong>Pribadi (Dignity &amp; History):</strong> Siapa target Anda sebagai manusia yang bernilai? Apa sejarah relasi atau janji sebelumnya (Source 3.5) yang harus tetap dihormati?</li>
-<li><strong>Kepribadian (Trends):</strong> Apa kecenderungan target (misal: analitis, ekspresif, atau reflektif) yang perlu Anda pertimbangkan dalam nada pesan?</li>
-<li><strong>Peran Naratif Anda:</strong> Tentukan peran Anda dalam situasi ini (misal: sebagai pemimpin tim yang tegas namun adil, atau sahabat yang mendengarkan tanpa menghakimi). <em>Tanggung jawab peran ini tidak dapat didelegasikan kepada AI.</em></li>
+<li><strong>Pribadi (<em>Dignity &amp; History</em>):</strong> Pembaca di Instagram bukan sekadar angka <em>likes</em> atau target <em>clickbait</em>, melainkan pribadi yang berhak mendapatkan informasi yang jujur lengkap dengan batas simulasi. Selain itu, ada sejarah kerja sama riset MARS bersama dua rekan tim (<strong>S</strong> dan <strong>M</strong>) pada lomba <em>The Sandbox 3.0 IEEE ITB</em> yang privasi dan kontribusi bersamanya wajib tetap dihormati.</li>
+<li><strong>Kepribadian (<em>Trends</em>):</strong> Profil pembaca sangat beragam. Pembaca muda di Instagram cenderung cepat menggeser slide visual tanpa selalu membuka <em>caption</em> panjang, sedangkan dosen, juri, dan praktisi logistik cenderung analitis dan kritis dalam memeriksa ketepatan angka maupun batas klaim.</li>
+<li><strong>Peran Naratif Anda:</strong> Mahasiswa STI ITB 2025 yang berbagi catatan belajar dan ringkasan hasil simulasi riset secara pribadi (<em>student contributor</em>), bukan perwakilan resmi ITB, panitia IEEE, maupun operator pelabuhan. Tanggung jawab peran, verifikasi fakta, dan respons atas kritik pembaca tidak didelegasikan kepada AI.</li>
 </ul></li>
 </ul>
 <hr>
 </section>
 <section id="instrumen-i-matriks-lampu-lalu-lintas-risiko-ai" class="level2">
 <h2 class="anchored" data-anchor-id="instrumen-i-matriks-lampu-lalu-lintas-risiko-ai">2. Instrumen I: Matriks ‘Lampu Lalu Lintas Risiko’ AI</h2>
-<p>Gunakan matriks ini untuk menentukan batas kewenangan AI. Matriks ini merupakan sintesis dari standar etika dalam Lampiran E.4 dan E.5.</p>
+<p>Gunakan matriks ini untuk menentukan batas kewenangan AI (sintesis standar etika Lampiran E.4 dan E.5) beserta penerapannya pada perancangan <em>carousel</em> Instagram proyek MARS:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Warna/Tingkat Risiko</th>
-<th>Kriteria/Konteks Situasi</th>
-<th>Tindakan Eskalasi/Mitigasi</th>
+<th style="text-align: left;">Warna/Tingkat Risiko</th>
+<th style="text-align: left;">Kriteria/Konteks Situasi</th>
+<th style="text-align: left;">Tindakan Eskalasi/Mitigasi</th>
+<th style="text-align: left;">Penerapan pada Proyek <em>Carousel</em> MARS</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Hijau (Risiko Rendah)</td>
-<td>Tugas teknis, perbaikan tata bahasa, pengolahan format, atau simulasi ide awal yang bersifat administratif.</td>
-<td>AI dapat digunakan secara luas. Wajib melakukan pemeriksaan mandiri terhadap hasil keluaran sebelum digunakan.</td>
+<td style="text-align: left;"><strong>Hijau (Risiko Rendah)</strong></td>
+<td style="text-align: left;">Tugas teknis, perbaikan tata bahasa, pengolahan format, atau simulasi ide awal yang bersifat administratif (<em>task-driven</em>).</td>
+<td style="text-align: left;">AI dapat digunakan secara luas. Wajib melakukan pemeriksaan mandiri terhadap hasil keluaran sebelum digunakan.</td>
+<td style="text-align: left;">Memakai Gemini sebagai <strong>Translator</strong> untuk menerjemahkan istilah teknis <em>paper</em> (detoks jargon) ke analogi sehari-hari. Saya memeriksa ulang agar analogi tetap setia pada konsep <em>feasibility-first</em> dan <em>HITL</em>.</td>
 </tr>
 <tr class="even">
-<td>Kuning (Risiko Sedang)</td>
-<td>Komunikasi yang melibatkan interpretasi nilai, data sensitif, atau penyusunan draf pesan penting dalam domain profesional.</td>
-<td>Wajib melakukan tinjauan manusia yang ketat terhadap bias, asumsi tersembunyi, dan ketepatan nada (Source E.6).</td>
+<td style="text-align: left;"><strong>Kuning (Risiko Sedang)</strong></td>
+<td style="text-align: left;">Komunikasi yang melibatkan interpretasi nilai, data sensitif, atau penyusunan draf pesan penting dalam domain profesional/publik.</td>
+<td style="text-align: left;">Wajib melakukan tinjauan manusia yang ketat terhadap bias, asumsi tersembunyi, dan ketepatan nada (Source E.6).</td>
+<td style="text-align: left;">Memakai Gemini sebagai <strong>Copilot</strong> untuk menyusun draf awal 7 slide, <em>caption</em>, <em>alt-text</em>, serta opsi awal balasan komentar/koreksi, dan sebagai <strong>Mirror / Coach</strong> untuk uji <em>screenshot test</em>. Seluruh hasil disaring ketat lewat 5 revisi manusia dan verifikasi dokumen asli.</td>
 </tr>
 <tr class="odd">
-<td>Merah (Risiko Tinggi)</td>
-<td>Permintaan maaf, konflik personal, keputusan nilai/etis, penilaian karakter manusia, atau situasi dengan risiko relasi yang tinggi.</td>
-<td>DILARANG menggunakan AI dalam pengambilan keputusan atau penyusunan pesan. Komunikasi harus dilakukan secara manual dan autentik oleh manusia (Source E.4).</td>
+<td style="text-align: left;"><strong>Merah (Risiko Tinggi)</strong></td>
+<td style="text-align: left;">Permintaan maaf, konflik personal, keputusan nilai/etis, penilaian karakter manusia, atau situasi dengan risiko relasi tinggi (<em>relationship-driven</em>).</td>
+<td style="text-align: left;">DILARANG menggunakan AI dalam pengambilan keputusan atau penyusunan pesan akhir. Komunikasi harus dilakukan manual dan autentik oleh manusia (Source E.4).</td>
+<td style="text-align: left;">Menolak peran <strong>Delegate</strong> (tidak ada balasan komentar/DM otomatis atau menebak motif pengkritik). Penentuan angka riset, batas simulasi, data respons unggahan, pengakuan atas 2 kritik pembaca, dan pembaruan <em>caption</em> ditangani manual 100% oleh saya.</td>
 </tr>
 </tbody>
 </table>
@@ -253,62 +291,79 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="instrumen-ii-format-spesifikasi-kopilot-komunikasi" class="level2">
 <h2 class="anchored" data-anchor-id="instrumen-ii-format-spesifikasi-kopilot-komunikasi">3. Instrumen II: Format Spesifikasi Kopilot Komunikasi</h2>
-<p>Rancang penggunaan AI sebagai asisten (kopilot) dengan batasan yang tegas untuk melindungi integritas relasi.</p>
+<p>Rancangan penggunaan AI (Gemini) sebagai pendamping teknis dengan batasan tegas untuk melindungi integritas riset dan relasi publik:</p>
 <ul>
-<li><strong>Memori Relasi &amp; Shared History:</strong> Sebutkan poin-poin penting dari sejarah relasi atau janji sebelumnya (Source 14.12) yang tidak diketahui AI namun harus tetap tercermin dalam pesan.</li>
-<li><strong>Tujuan Transisi (TAIDA):</strong> Perubahan keadaan apa yang diinginkan?
+<li><strong>Memori Relasi &amp; <em>Shared History</em>:</strong> Proyek riset MARS dikerjakan bersama dua rekan tim (<strong>S</strong> dan <strong>M</strong>) pada ajang <em>The Sandbox 3.0 IEEE ITB</em> (Juara 2), sehingga privasi keduanya wajib dijaga dengan tidak menyebut nama asli maupun akun pribadi mereka. Selain itu, seluruh data proyek sejak awal bersifat <em>simulated proxy</em> (bukan <em>live API</em>), sehingga publikasi tidak boleh memutarbalikkan fakta seolah sistem sudah aktif di pelabuhan nyata.</li>
+<li><strong>Tujuan Transisi (TAIDA):</strong>
 <ul>
-<li><strong>Target:</strong> Siapa person spesifik yang dihadapi?</li>
-<li><strong>Attention:</strong> Apakah masalah/peluang ini sudah dibuat relevan bagi mereka?</li>
-<li><strong>Interest:</strong> Apakah solusi yang ditawarkan sudah tampak layak/feasibel?</li>
-<li><strong>Desire:</strong> Apakah mereka sudah melihat manfaat atau nilai nyata bagi mereka?</li>
-<li><strong>Action:</strong> Apakah sudah ada kesepakatan langkah nyata yang jelas?</li>
+<li><strong>Target:</strong> Mahasiswa lintas jurusan dan pembaca muda di Instagram, dengan tetap memperhitungkan pembaca sekunder (rekan tim S &amp; M, dosen, juri, dan praktisi logistik).</li>
+<li><strong>Attention:</strong> Judul pertanyaan netral tanpa <em>clickbait</em> (<em>“Gimana cara kapal kargo milih rute aman saat krisis mendadak?”</em>) agar langsung menyentuh rasa ingin tahu pembaca.</li>
+<li><strong>Interest:</strong> Menjelaskan mekanisme MARS lewat analogi aplikasi peta <em>“sadar aturan”</em> dan <em>“rem pengaman manusia”</em> saat keyakinan di bawah 95%, disertai ringkasan uji 12 pelabuhan (<span class="math inline">\(N = 50\)</span>).</li>
+<li><strong>Desire:</strong> Menyediakan Slide 6 khusus (<em>Batas Jujur</em>) dan menyebut <em>trade-off</em> jarak +7-12% agar pembaca merasakan kejujuran batas sebagai dasar kepercayaan pada teknologi berisiko tinggi.</li>
+<li><strong>Action:</strong> Mengajak pembaca berbagi pandangan, pertanyaan, atau kritik di kolom komentar mengenai tantangan lapangan di Indonesia, lalu menindaklanjutinya dengan balasan personal dan catatan koreksi terbuka di <em>caption</em>.</li>
 </ul></li>
-<li><strong>Peran AI (Pilih satu - Source 14.7):</strong>
+<li><strong>Peran AI (Source 14.7):</strong>
 <ul class="task-list">
-<li><label><input type="checkbox">Cermin (Refleksi diri) | [ ] Pelatih (Latihan respons) | [ ] Penerjemah (Alih ragam bahasa)</label></li>
-<li><label><input type="checkbox">Kopilot (Penyusun draf) | [ ] Mediator (Pencari titik temu) | [ ] Agen Terdelegasi (Tugas terbatas)</label></li>
+<li><label><input type="checkbox" checked=""><strong>Cermin</strong> (Refleksi diri / uji <em>screenshot test</em>) | [x] <strong>Pelatih</strong> (Uji sudut pandang pembaca luar) | [x] <strong>Penerjemah</strong> (Detoks jargon teknis)</label></li>
+<li><label><input type="checkbox" checked=""><strong>Kopilot</strong> (Penyusun draf awal slide, <em>caption</em>, <em>alt-text</em>, opsi balasan) | [ ] <strong>Mediator</strong> <em>(tidak dipakai karena bukan fasilitasi konflik multipihak)</em> | [ ] <strong>Agen Terdelegasi</strong> <em>(sengaja tidak digunakan)</em></label></li>
 </ul></li>
-<li><strong>Data Minimum:</strong> Informasi apa yang diberikan ke AI? <em>(Peringatan: Dilarang memasukkan data pribadi atau rahasia tanpa dasar sah sesuai Source E.7).</em></li>
+<li><strong>Data Minimum:</strong> Hanya parameter teknis umum dari dokumen riset MARS (12 pelabuhan Indonesia, kecepatan 15 knots, <em>dual-mode</em> <span class="math inline">\(\alpha = 0,15\)</span> vs <span class="math inline">\(0,75\)</span>, <em>HITL confidence gate</em> &lt;95%, hasil proksi <span class="math inline">\(N = 50\)</span>, serta status <em>simulated proxy</em>). Nama lengkap, akun pribadi, dan catatan internal rekan tim (<strong>S</strong> dan <strong>M</strong>) dilarang dimasukkan ke <em>prompt</em>.</li>
 <li><strong>Kewenangan Keterlibatan AI:</strong>
 <ul class="task-list">
-<li><label><input type="checkbox">Hanya membantu struktur/kerangka berpikir.</label></li>
-<li><label><input type="checkbox">Memperluas kosakata/repertoar bahasa.</label></li>
-<li><label><input type="checkbox">Menyusun draf sintesis pesan secara utuh.</label></li>
+<li><label><input type="checkbox" checked="">Hanya membantu struktur/kerangka berpikir (alur 7 slide).</label></li>
+<li><label><input type="checkbox" checked="">Memperluas kosakata/repertoar bahasa (analogi membumi dan <em>alt-text</em>).</label></li>
+<li><label><input type="checkbox" checked="">Menyusun draf sintesis pesan secara utuh <em>(hanya sebagai draf mentah yang wajib diverifikasi dan disunting manusia)</em>.</label></li>
 </ul></li>
-<li><strong>Larangan (Prohibitions):</strong> AI dilarang menggunakan nada agresif, dilarang membuat janji palsu, dan dilarang memberikan penilaian karakter. <em>Ingat: AI tidak memikul tanggung jawab relasional—beban tanggung jawab tetap pada Anda (Source 14.14).</em></li>
-<li><strong>Mitigasi Risiko:</strong> Langkah spesifik untuk memverifikasi halusinasi data atau bias AI.</li>
-<li><strong>Tinjauan Manusia:</strong> Mekanisme validasi akhir (misal: pembacaan ulang dengan empati) sebelum pesan dikirim.</li>
+<li><strong>Larangan (<em>Prohibitions</em>):</strong> AI dilarang membuat judul <em>clickbait</em> atau klaim mutlak (<em>overclaim</em>), dilarang mencantumkan nama asli rekan tim atau mengatasnamakan institusi (ITB, IEEE, atau operator pelabuhan), dilarang menilai karakter/motif pengomentar (<em>profiling</em>), dan dilarang mengirim balasan secara otomatis. Beban tanggung jawab relasional tetap berada sepenuhnya pada saya (Source 14.14).</li>
+<li><strong>Mitigasi Risiko:</strong> Seluruh angka teknis (80% perdagangan laut global, biaya logistik 23,8% dan estimasi 14,29% PDB, 12 pelabuhan, 15 knots, kongesti &gt;85%, <span class="math inline">\(\alpha = 0,15/0,75\)</span>, ambang <em>confidence</em> 95%, <span class="math inline">\(N = 50\)</span>, waktu proksi 12-24 jam vs 3-9 menit / 30-60 menit, dan <em>trade-off</em> jarak +7-12%) diverifikasi silang langsung dengan <em>paper</em> dan kode simulasi asli. Bahasa draf AI disunting ulang agar tetap menjaga keaslian suara mahasiswa (tidak kaku/generik) dan bebas dari bias yang meremehkan pelabuhan kecil atau prosedur kerja operator lapangan.</li>
+<li><strong>Tinjauan Manusia &amp; Kondisi Eskalasi:</strong> Sebelum tayang, seluruh slide dicek memakai <em>screenshot test</em> untuk memastikan potongan satu slide pun tidak memicu salah tafsir. <strong>Kondisi eskalasi</strong> ditetapkan tegas: setiap kali muncul komentar kritis, pertanyaan keakuratan fakta, atau potensi salah paham atas batas simulasi, saya langsung mengambil alih kendali penuh secara manual. Hal ini langsung diterapkan saat dua pembaca mengkritik absennya hitungan biaya bahan bakar (<em>bunker fuel</em>) dan batas 12 pelabuhan terhadap pelabuhan perintis serta cuaca mikro.</li>
 </ul>
 <hr>
 </section>
 <section id="panduan-operasional-prompt-berpusat-pada-manusia" class="level2">
 <h2 class="anchored" data-anchor-id="panduan-operasional-prompt-berpusat-pada-manusia">4. Panduan Operasional: Prompt Berpusat pada Manusia</h2>
-<p>Berdasarkan prinsip Bab 14.15 dan 2.12, terapkan panduan berikut saat berinteraksi dengan AI:</p>
+<p>Berdasarkan prinsip Bab 14.15 dan 2.12, keempat prinsip berikut diterapkan langsung saat berinteraksi dengan Gemini:</p>
 <ul>
-<li><strong>Gunakan AI sebagai cermin reflektif (Source 2.12), bukan sebagai hakim karakter.</strong> Jangan meminta AI menentukan identitas atau “siapa sebenarnya” seseorang.</li>
-<li><strong>Gunakan AI untuk memperluas repertoar, bukan menggantikan suara autentik.</strong> AI membantu Anda menemukan alternatif pilihan bahasa, namun Anda yang memilih mana yang paling mewakili martabat Anda.</li>
-<li><strong>Fokus pada Penciptaan Nilai.</strong> Instruksikan AI untuk mencari solusi yang menguntungkan kedua pihak, bukan strategi untuk memenangkan argumen secara sepihak.</li>
-<li><strong>Jangan mendelegasikan empati.</strong> AI bisa mensimulasikan kata-kata empati, namun kehadiran batiniah hanya bisa diberikan oleh Anda sebagai manusia.</li>
+<li><strong>Gunakan AI sebagai cermin reflektif (Source 2.12), bukan sebagai hakim karakter.</strong> AI hanya dipakai menguji potensi salah tafsir slide, tidak pernah diminta menebak motif atau kepribadian pembaca yang mengkritik.</li>
+<li><strong>Gunakan AI untuk memperluas repertoar, bukan menggantikan suara autentik.</strong> AI membantu menerjemahkan jargon, tetapi saya menyunting ulang kalimatnya agar tetap terdengar alami sebagai catatan pribadi mahasiswa.</li>
+<li><strong>Fokus pada Penciptaan Nilai.</strong> <em>Prompt</em> diarahkan pada penjelasan yang jujur dan bermanfaat bagi pembaca, bukan strategi sensasional untuk mengejar <em>likes</em>.</li>
+<li><strong>Jangan mendelegasikan empati.</strong> Pengakuan atas dua kritik pembaca dan pembaruan <em>caption</em> dilakukan langsung secara personal atas nama saya sendiri.</li>
 </ul>
+<section id="prompt-berpusat-pada-manusia-yang-digunakan" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-berpusat-pada-manusia-yang-digunakan"><strong>Prompt Berpusat pada Manusia yang Digunakan:</strong></h3>
+<blockquote class="blockquote">
+<p><em>“Bantu saya menyederhanakan konsep proyek riset MARS (12 pelabuhan Indonesia, 15 knots, dual-mode alpha 0,15 vs 0,75, HITL confidence gate di bawah 95%, hasil proksi N=50) menjadi draf carousel Instagram 7 slide plus alt-text untuk pembaca muda dan mahasiswa lintas jurusan. Gunakan bahasa yang santai tapi tetap rapi, jangan pakai nama asli dua rekan tim saya, tegaskan ini catatan pribadi mahasiswa bukan pernyataan resmi kampus, dan sertakan batas bahwa datanya masih simulated proxy.”</em></p>
+</blockquote>
+</section>
+<section id="ringkasan-5-revisi-manusia-atas-output-awal-ai" class="level3">
+<h3 class="anchored" data-anchor-id="ringkasan-5-revisi-manusia-atas-output-awal-ai"><strong>Ringkasan 5 Revisi Manusia atas Output Awal AI:</strong></h3>
+<ol type="1">
+<li><strong>Judul Slide 1 (Ditolak &amp; diubah):</strong> Draf AI <em>“MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!”</em> diganti menjadi <em>“Gimana cara kapal kargo milih rute aman saat krisis mendadak?”</em> plus catatan bahwa ini hasil simulasi riset mahasiswa, bukan sistem operasional resmi, untuk mencegah <em>clickbait</em>.</li>
+<li><strong>Slide 3-4 Mekanisme (Diubah):</strong> Jargon kaku AI <em>“filtering kepatuhan proaktif berbasis confidence gate”</em> diubah menjadi analogi aplikasi peta <em>“sadar aturan”</em> dan <em>“rem pengaman manusia”</em> saat keyakinan di bawah 95%.</li>
+<li><strong>Slide 5 Hasil (Ditolak &amp; diubah):</strong> Klaim mutlak AI <em>“LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit”</em> diganti dengan penegasan kata <strong>“proksi”</strong>, rentang <strong>30-60 menit</strong> saat tinjauan manusia, dan <em>trade-off</em> jarak <strong>+7-12%</strong> agar lulus <em>screenshot test</em>.</li>
+<li><strong>Penempatan Batas <em>Simulated Proxy</em> (Dipindah):</strong> Dari yang semula hanya ditulis kecil di akhir <em>caption</em>, diangkat menjadi <strong>satu slide khusus (Slide 6 Batas Jujur)</strong> yang porsi visualnya setara slide hasil.</li>
+<li><strong>Slide 7 &amp; Caption (Ditolak):</strong> Saran AI menyebut nama lengkap rekan tim dan afiliasi kampus secara menonjol ditolak, lalu diganti rujukan kolektif sebagai tim disertai penegasan <em>“catatan belajar pribadi mahasiswa, bukan pernyataan resmi institusi”</em>.</li>
+</ol>
 <hr>
+</section>
 </section>
 <section id="daftar-periksa-etika-the-final-gate" class="level2">
 <h2 class="anchored" data-anchor-id="daftar-periksa-etika-the-final-gate">5. Daftar Periksa Etika (The Final Gate)</h2>
-<p>Gunakan daftar ini sebagai verifikasi akhir sebelum tombol “Kirim” ditekan.</p>
+<p>Verifikasi akhir yang dilakukan sebelum mengunggah <em>carousel</em> dan membalas komentar pembaca:</p>
 <ul class="task-list">
-<li><label><input type="checkbox">Apakah saya tetap memegang tanggung jawab penuh atas dampak relasional dari pesan ini? (Source E.1)</label></li>
-<li><label><input type="checkbox">Apakah keluaran AI sudah saya periksa secara manual terhadap fakta, asumsi bias, dan ketepatan nada?</label></li>
-<li><label><input type="checkbox">Apakah pesan ini menghormati martabat penerima sebagai pribadi (person) dan bukan sekadar kategori?</label></li>
-<li><label><input type="checkbox">Apakah saya telah memastikan AI tidak digunakan untuk menangani konflik merah (konflik personal/etik)?</label></li>
-<li><label><input type="checkbox">Apakah saya telah menyamarkan data sensitif sebelum diproses oleh AI?</label></li>
+<li><label><input type="checkbox" checked=""><strong>Apakah saya tetap memegang tanggung jawab penuh atas dampak relasional dari pesan ini? (Source E.1)</strong> Ya, seluruh keputusan penerbitan, balasan atas 4 komentar, dan catatan koreksi <em>caption</em> dikirim atas nama dan tanggung jawab saya sendiri.</label></li>
+<li><label><input type="checkbox" checked=""><strong>Apakah keluaran AI sudah saya periksa secara manual terhadap fakta, asumsi bias, dan ketepatan nada?</strong> Ya, semua angka dicocokkan langsung dengan <em>paper</em> dan kode simulasi asli, 5 bagian draf yang terlalu promosional atau kaku direvisi, dan nada dijaga agar tidak meremehkan sistem pelabuhan yang ada.</label></li>
+<li><label><input type="checkbox" checked=""><strong>Apakah pesan ini menghormati martabat penerima sebagai pribadi (<em>person</em>) dan bukan sekadar kategori?</strong> Ya, audiens diajak berdiskusi kritis secara setara, bukan dipancing dengan <em>clickbait</em>, dan kedua pengkritik diberi kredit secara terbuka di <em>caption</em>.</label></li>
+<li><label><input type="checkbox" checked=""><strong>Apakah saya telah memastikan AI tidak digunakan untuk menangani konflik merah (konflik personal/etik)?</strong> Ya, peran <em>Delegate</em> ditolak. Alasan tidak memakai lebih banyak AI adalah volume komentar masih kecil (4 komentar), dua komentar berupa kritik substantif yang butuh pengakuan tulus dari pelaku risetnya, dan kepercayaan pembaca akan rusak jika kritik dibalas seperti bot.</label></li>
+<li><label><input type="checkbox" checked=""><strong>Apakah saya telah menyamarkan data sensitif sebelum diproses oleh AI?</strong> Ya, nama lengkap, akun pribadi, dan catatan internal rekan tim (<strong>S</strong> dan <strong>M</strong>) tidak pernah dimasukkan ke <em>prompt</em> maupun ke postingan.</label></li>
 </ul>
 <hr>
 </section>
 <section id="pernyataan-transparansi-sesuai-lampiran-e.7" class="level2">
 <h2 class="anchored" data-anchor-id="pernyataan-transparansi-sesuai-lampiran-e.7">6. Pernyataan Transparansi (Sesuai Lampiran E.7)</h2>
-<p>Jika konteks profesional atau akademik menuntut transparansi, gunakan format standar berikut:</p>
-<p><em>“Draf pesan ini disusun dengan bantuan AI sebagai [Sebutkan Peran AI, misal: pelatih/penerjemah], namun isi, keputusan akhir, dan tanggung jawab sepenuhnya berada pada [Nama Pengguna].”</em></p>
+<blockquote class="blockquote">
+<p><em>“Draf awal teks carousel, terjemahan istilah teknis, dan alt-text pada unggahan publik MARS ini disusun dengan bantuan AI (Gemini) sebagai translator dan copilot, namun verifikasi seluruh data riset, revisi batas klaim, keputusan akhir, balasan komentar, dan tanggung jawab penuh atas isi tetap berada pada saya (Nathanael Louis Cahyono).”</em></p>
+</blockquote>
 
 
 </section>

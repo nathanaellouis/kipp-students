@@ -8,12 +8,12 @@ title: "Lembar Kerja Bab 10"
 ---
 
 ## 1. Identitas Proyek & Pihak yang Terlibat
-*   **Nama Proyek/Gagasan:** __________________________________________________
-*   **Tanggal Diskusi:** ________________________
-*   **Pihak-Pihak yang Menyusun Kesepakatan:**
-    1.  **Pihak A (Nama & Peran):** ____________________________________________
-    2.  **Pihak B (Nama & Peran):** ____________________________________________
-    3.  **Pihak Lain/Pengamat (Jika ada):** _______________________________________
+- **Nama Proyek/Gagasan:** Persiapan Presentasi dan Sesi Q&A Final Proyek MARS (*Maritime Adaptive Rerouting System*) pada *Technovate Paper Competition The Sandbox 3.0 IEEE ITB*
+- **Tanggal Diskusi:** Minggu, 3 Mei 2026 (melalui grup WhatsApp tim)
+- **Pihak-Pihak yang Menyusun Kesepakatan:**
+  1. **Pihak A (Nama & Peran):** Nathanael Louis Cahyono (Saya) - Anggota Tim & Pengembang Prototipe Simulator MARS
+  2. **Pihak B (Nama & Peran):** Rekan S - Ketua Tim BUTEN
+  3. **Pihak Lain (Anggota Tim):** Rekan M - Anggota Tim (Penanggung Jawab Metodologi & Analisis Hasil)
 
 ---
 
@@ -21,9 +21,9 @@ title: "Lembar Kerja Bab 10"
 Dalam dunia komunikasi profesional, ketertarikan (*Interest*) atau keinginan (*Desire*) yang besar terhadap suatu solusi belumlah cukup. Komunikasi baru benar-benar menghasilkan nilai nyata ketika berhasil ditutup dengan **Kesepakatan** (*Agreement*) yang menuntun pada **Tindakan** (*Action*) yang terkoordinasi secara etis.
 
 Lembar kerja ini membantu Anda dan tim melewati transisi penting tersebut melalui tiga instrumen utama:
-1.  **Pemisahan Posisi vs. Kepentingan**: Agar negosiasi tidak terjebak dalam ego masing-masing, melainkan berfokus pada kebutuhan batin dan peran nyata.
-2.  **Formula Kesepakatan Presisi**: Membuang bahasa kabur (seperti *"nanti dibantu"* atau *"secepatnya dikirim"*) dan menggantinya dengan komitmen operasional yang jelas tanggung jawab serta ukuran selesainya.
-3.  **Kontrol Lingkar Komitmen**: Memantau janji secara berkala melalui titik pemeriksaan (*checkpoint*) sebelum hari pengumpulan agar tanggung jawab tetap terpelihara bersama.
+1. **Pemisahan Posisi vs. Kepentingan**: Agar negosiasi tidak terjebak dalam ego masing-masing, melainkan berfokus pada kebutuhan batin dan peran nyata.
+2. **Formula Kesepakatan Presisi**: Membuang bahasa kabur (seperti *"nanti dibantu"* atau *"secepatnya dikirim"*) dan menggantinya dengan komitmen operasional yang jelas tanggung jawab serta ukuran selesainya.
+3. **Kontrol Lingkar Komitmen**: Memantau janji secara berkala melalui titik pemeriksaan (*checkpoint*) sebelum hari pengumpulan agar tanggung jawab tetap terpelihara bersama.
 
 ---
 
@@ -32,15 +32,12 @@ Sebelum merumuskan tindakan, sepakati dahulu apa kebutuhan mendasar masing-masin
 
 | Pihak | Posisi (Tuntutan/Solusi Kaku yang Diajukan) | Kepentingan (Kebutuhan Dasar, Dampak, atau Alasan Batin) |
 | :--- | :--- | :--- |
-| **Contoh: Pemilik Kantin** | *"Aplikasi pemesanan harus sudah online dan dipakai semua pelanggan hari Senin depan tanpa kecuali."* | *Mencegah kerumunan antrean di depan kasir pada jam 12:00-13:00 karena keterbatasan staf kasir.* |
-| **Contoh: Tim Mahasiswa** | *"Kami butuh waktu tambahan 2 minggu lagi untuk merilis fitur pembayaran nontunai secara sempurna."* | *Menjaga keamanan data transaksi serta reputasi tim agar tidak meluncurkan sistem yang rentan error.* |
-| **Pihak A** | | |
-| **Pihak B** | | |
+| **Pihak A (Saya)** | Semula mengusulkan kumpul latihan bareng di hari Selasa atau Rabu malam. | Memastikan transisi demo simulator, pembagian durasi, dan jawaban Q&A benar-benar terlatih sebelum Minggu pagi, sambil tetap aman mengerjakan kuis Senin dan *deadline* tubes Rabu. |
+| **Pihak B (Rekan S - Ketua Tim)** | Menyatakan nyaris tidak ada waktu kosong bersama dari Senin sampai Sabtu selesai *deadline* tubes. | Menuntaskan kuis hari Kamis dan *deadline* tubes hari Sabtu secara optimal, sekaligus tetap menjaga agar tim tampil kompak dan tenang pada Minggu pagi, 10 Mei 2026. |
+| **Pihak C (Rekan M - Anggota Tim)** | Menolak latihan bersama di sela hari kerja Senin sampai Jumat. | Menyelesaikan kuis hari Selasa dan *deadline* tubes hari Jumat tepat waktu tanpa membuat persiapan presentasi lomba jadi setengah-setengah. |
 
-*   **Poin Temu Kepentingan Utama:**
-    *(Tuliskan 1-2 kalimat area kepentingan yang saling mendukung sebagai dasar kolaborasi)*
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
+- **Poin Temu Kepentingan Utama:**
+  Ketiga anggota tim sama-sama ingin seluruh kewajiban kuliah (kuis dan *deadline* tubes) dari Senin hingga Sabtu tuntas dengan aman tanpa saling membebani, sekaligus memastikan pada Minggu pagi (10 Mei 2026) setiap orang sudah menguasai bagiannya dan siap menghadapi Q&A juri.
 
 ---
 
@@ -53,17 +50,15 @@ Gunakan rumus terstruktur ini untuk mengunci setiap rencana tindakan kelompok. *
 
 | No | SIAPA (Peran & Nama Jelas) | Melakukan APA (Tindakan spesifik, operasional, & terukur) | KAPAN (Tenggat waktu: Hari, Tanggal, Jam) | Sumber Daya/Prasyarat (Alat, data, atau persetujuan yang dibutuhkan) | DEFINISI SELESAI (Kriteria konkret untuk menyatakan tugas tuntas) | Metode Tindak Lanjut (Melalui apa, kapan, dan kepada siapa dilaporkan) |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Ex** | *Budi (Developer Database)* | *Melakukan migrasi data menu kantin dari file Excel ke basis data server utama.* | *Rabu, 16 Sept 2026, Pukul 15:00 WIB.* | *Daftar menu final dalam format .xlsx dari Ibu Siti (Pemilik Kantin).* | *Data menu sukses terbaca di halaman preview aplikasi tanpa karakter aneh/error.* | *Mengirim tangkapan layar (screenshot) sukses ke grup WhatsApp Tim Teknis.* |
-| **1** | | | | | | |
-| **2** | | | | | | |
-| **3** | | | | | | |
+| **1** | Saya, M, dan S (masing-masing mandiri) | Berlatih mandiri mempresentasikan bagian slide masing-masing sambil mengukur durasi bicara sendiri. | Rentang Senin, 4 Mei sampai Jumat, 8 Mei 2026, selesai paling lambat Jumat pukul 21.00 WIB. | Slide final MARS sudah terkunci dan pembagian bagian bicara tiap anggota sudah jelas. | Masing-masing telah menyelesaikan minimal 1 kali latihan penuh bagiannya sendiri dan mencatat estimasi durasi bicaranya. | Dilaporkan dalam satu pesan singkat saat *checkpoint* di grup WhatsApp tim. |
+| **2** | Saya (Pengembang Simulator & Pemimpin *Checkpoint*) | Memimpin *checkpoint* progres persiapan di grup WhatsApp, memeriksa kesiapan berkas demo simulator lokal, dan memastikan lokasi *working space* Louvin. | Jumat, 8 Mei 2026, pukul 21.00 WIB. | Laporan singkat latihan mandiri dari M dan S serta pembaruan perkiraan jam selesai tubes S. | Kesiapan tiap bagian terkonfirmasi, berkas simulator lokal bebas *error*, dan jam mulai sesi Sabtu untuk Saya & M disepakati. | Dikonfirmasi langsung di grup WhatsApp tim pada malam yang sama. |
+| **3** | Saya dan M | Bertemu lebih dahulu di *working space* Louvin untuk menyinkronkan urutan transisi slide berdua dan menguji alur klik demo simulator MARS (Skenario C dan D). | Sabtu, 9 Mei 2026, pukul 19.30 - 21.30 WIB (sambil menunggu S menyelesaikan tubes). | M sudah mengumpulkan tubes hari Jumat, laptop dan file simulator MARS siap dijalankan. | Alur bagian Saya dan M lancar tanpa jeda bingung, serta demo Skenario C dan D berjalan mulus tanpa *bug*. | Mengirim kabar posisi tiba dan status kesiapan demo ke S lewat grup WhatsApp. |
+| **4** | S (menyusul), bersama Saya dan M | Menjalankan gladi resik presentasi penuh bertiga beserta simulasi tanya-jawab (Q&A) juri secara intensif. | Sabtu, 9 Mei 2026, dimulai segera setelah S tiba di Louvin (sekitar pukul 21.30 WIB) sampai maksimal pukul 02.30 WIB dini hari. | S telah menyelesaikan pengumpulan tubes hari Sabtu dan seluruh anggota sudah menyelesaikan latihan mandiri. | Minimal 2 kali simulasi presentasi utuh bertiga masuk batas waktu lomba dan seluruh pertanyaan kritis Q&A (proksi data, 12 pelabuhan, *middleware*, HITL) sudah terbagi penjawabnya. | Ditutup dengan konfirmasi persetujuan bersama S sebagai Ketua Tim sebelum pulang beristirahat. |
 
 ---
 
 ## Bagian 3: Kontrol Lingkar Komitmen (*Commitment Loop Checklist*)
-Komunikasi lingkar tertutup (*closed-loop communication*) menuntut kita memantau janji sejak pertama kali diucapkan hingga benar-benar diserahkan dan diterima secara memuaskan oleh penerima manfaat. 
-
-Isilah matriks ini untuk melacak kesehatan komitmen setiap butir tindakan di atas:
+Komunikasi lingkar tertutup (*closed-loop communication*) menuntut kita memantau janji sejak pertama kali diucapkan hingga benar-benar diserahkan dan diterima secara memuaskan oleh penerima manfaat.
 
 ### Alur Pelacakan Janji
 
@@ -74,29 +69,53 @@ Isilah matriks ini untuk melacak kesehatan komitmen setiap butir tindakan di ata
   [ Fase 4: PENERIMAAN ] ◄──────── [ Fase 3: BUKTI & PEMERIKSAAN ]
 ```
 
-1.  **Butir Tindakan No: ____**
-    *   **Fase 1: Janji Terbentuk (Hari/Tanggal):** ________________________
-    *   **Fase 2: Checkpoint/Pemeriksaan Awal:**
-        *   *Kapan Checkpoint dilakukan? (Minimal 2 hari sebelum tenggat):* ________________________
-        *   *Apa kemajuan/kendala yang ditemukan saat checkpoint?* ______________________________________________________________________________________
-    *   **Fase 3: Bukti & Pemeriksaan Mandiri:**
-        *   *Bukti nyata apa yang diserahkan sebagai hasil kerja?* ________________________
-        *   *Apakah hasil tersebut sudah memenuhi "Definisi Selesai" di Bagian 2?* `[ ] Ya`  `[ ] Belum`
-    *   **Fase 4: Penerimaan Resmi:**
-        *   *Siapa penerima manfaat yang memeriksa dan menyatakan puas?* ________________________
-        *   *Catatan penerimaan:* ______________________________________________________________________________________
+1. **Butir Tindakan No: 1 (Latihan Mandiri Tiap Bagian)**
+   - **Fase 1: Janji Terbentuk (Hari/Tanggal):** Minggu, 3 Mei 2026
+   - **Fase 2: Checkpoint/Pemeriksaan Awal:**
+     - *Kapan Checkpoint dilakukan?* Jumat, 8 Mei 2026, pukul 21.03 WIB di grup WhatsApp (H-2 sebelum final 10 Mei).
+     - *Apa kemajuan/kendala yang ditemukan saat checkpoint?* Saya sudah latihan bagian demo dan metodologi (pas 4 menit, file simulator aman). S sudah melatih bagian pembuka dan penutup setelah kuis Kamis. M sudah mencoba bagian latar belakang dan analisis hasil, tetapi durasinya masih kelebihan sekitar 30 detik sehingga dicatat untuk diringkas pada sesi Sabtu.
+   - **Fase 3: Bukti & Pemeriksaan Mandiri:**
+     - *Bukti nyata apa yang diserahkan sebagai hasil kerja?* Pesan laporan durasi dan kesiapan mandiri masing-masing anggota di grup WhatsApp pada 8 Mei malam.
+     - *Apakah hasil tersebut sudah memenuhi "Definisi Selesai" di Bagian 2?* `[x] Ya` `[ ] Belum`
+   - **Fase 4: Penerimaan Resmi:**
+     - *Siapa penerima manfaat yang memeriksa dan menyatakan puas?* Saya, S, dan M (seluruh anggota tim saling memverifikasi kesiapan dasar).
+     - *Catatan penerimaan:* Latihan mandiri terbukti berjalan sehingga tim tidak perlu mulai dari nol saat bertemu Sabtu malam.
 
-2.  **Butir Tindakan No: ____**
-    *   **Fase 1: Janji Terbentuk (Hari/Tanggal):** ________________________
-    *   **Fase 2: Checkpoint/Pemeriksaan Awal:**
-        *   *Kapan Checkpoint dilakukan?* ________________________
-        *   *Apa kemajuan/kendala yang ditemukan saat checkpoint?* ______________________________________________________________________________________
-    *   **Fase 3: Bukti & Pemeriksaan Mandiri:**
-        *   *Bukti nyata apa yang diserahkan sebagai hasil kerja?* ________________________
-        *   *Apakah hasil tersebut sudah memenuhi "Definisi Selesai" di Bagian 2?* `[ ] Ya`  `[ ] Belum`
-    *   **Fase 4: Penerimaan Resmi:**
-        *   *Siapa penerima manfaat yang memeriksa dan menyatakan puas?* ________________________
-        *   *Catatan penerimaan:* ______________________________________________________________________________________
+2. **Butir Tindakan No: 2 (*Checkpoint* Progres & Kesiapan Teknis)**
+   - **Fase 1: Janji Terbentuk (Hari/Tanggal):** Minggu, 3 Mei 2026
+   - **Fase 2: Checkpoint/Pemeriksaan Awal:**
+     - *Kapan Checkpoint dilakukan?* Jumat, 8 Mei 2026, pukul 21.03 WIB.
+     - *Apa kemajuan/kendala yang ditemukan saat checkpoint?* Terkonfirmasi bahwa tubes S pada hari Sabtu baru benar-benar aman dikumpulkan sekitar pukul 21.00 WIB, sehingga jam mulai Saya dan M di Louvin dikunci pukul 19.30 WIB.
+   - **Fase 3: Bukti & Pemeriksaan Mandiri:**
+     - *Bukti nyata apa yang diserahkan sebagai hasil kerja?* Rangkuman status simulator bebas *error*, catatan penyesuaian durasi M (+30 detik), dan jadwal kedatangan bertahap di Louvin pada chat grup WhatsApp.
+     - *Apakah hasil tersebut sudah memenuhi "Definisi Selesai" di Bagian 2?* `[x] Ya` `[ ] Belum`
+   - **Fase 4: Penerimaan Resmi:**
+     - *Siapa penerima manfaat yang memeriksa dan menyatakan puas?* S dan M.
+     - *Catatan penerimaan:* Kedua rekan langsung menyepakati skema kedatangan bertahap pada Sabtu malam tanpa kebingungan.
+
+3. **Butir Tindakan No: 3 (Latihan Sinkronisasi Awal Saya & M di Louvin)**
+   - **Fase 1: Janji Terbentuk (Hari/Tanggal):** Minggu, 3 Mei 2026
+   - **Fase 2: Checkpoint/Pemeriksaan Awal:**
+     - *Kapan Checkpoint dilakukan?* Sabtu, 9 Mei 2026, pukul 19.35 WIB lewat kabar di grup WhatsApp.
+     - *Apa kemajuan/kendala yang ditemukan saat checkpoint?* Saya dan M tiba sesuai jadwal dan langsung mencocokkan transisi slide, meringkas 30 detik bagian M, serta mengetes klik demo Skenario C dan D tanpa kendala teknis.
+   - **Fase 3: Bukti & Pemeriksaan Mandiri:**
+     - *Bukti nyata apa yang diserahkan sebagai hasil kerja?* Pesan kabar tiba pukul 19.35 WIB serta hasil sinkronisasi transisi dan uji demo yang sudah siap ketika S datang.
+     - *Apakah hasil tersebut sudah memenuhi "Definisi Selesai" di Bagian 2?* `[x] Ya` `[ ] Belum`
+   - **Fase 4: Penerimaan Resmi:**
+     - *Siapa penerima manfaat yang memeriksa dan menyatakan puas?* S (saat tiba menyusul di Louvin pukul 21.35 WIB).
+     - *Catatan penerimaan:* Waktu tunggu tidak terbuang sia-sia sehingga sesi gabungan bertiga bisa langsung masuk ke gladi resik penuh.
+
+4. **Butir Tindakan No: 4 (Gladi Resik Penuh & Simulasi Q&A Bertiga di Louvin)**
+   - **Fase 1: Janji Terbentuk (Hari/Tanggal):** Minggu, 3 Mei 2026
+   - **Fase 2: Checkpoint/Pemeriksaan Awal:**
+     - *Kapan Checkpoint dilakukan?* Sabtu, 9 Mei 2026, pukul 21.18 WIB (saat S mengabari tubes sudah dikumpulkan dan langsung berangkat ke Louvin).
+     - *Apa kemajuan/kendala yang ditemukan saat checkpoint?* S tiba pukul 21.35 WIB sesuai perkiraan. Sesi langsung berfokus pada transisi bertiga memakai *stopwatch* dan simulasi Q&A (proksi data, parameter $\alpha=0,15/0,75$, dan arsitektur *middleware*).
+   - **Fase 3: Bukti & Pemeriksaan Mandiri:**
+     - *Bukti nyata apa yang diserahkan sebagai hasil kerja?* Dua kali simulasi presentasi utuh bertiga yang masuk batas waktu lomba dan daftar pembagian penjawab Q&A yang tuntas pada pukul 02.00 WIB (lebih cepat 30 menit dari batas maksimal 02.30 WIB).
+     - *Apakah hasil tersebut sudah memenuhi "Definisi Selesai" di Bagian 2?* `[x] Ya` `[ ] Belum`
+   - **Fase 4: Penerimaan Resmi:**
+     - *Siapa penerima manfaat yang memeriksa dan menyatakan puas?* S (Ketua Tim), M, dan Saya.
+     - *Catatan penerimaan:* Seluruh anggota masih sempat beristirahat sebelum maju pada Minggu pagi, 10 Mei 2026, dan tim berhasil menampilkan presentasi dengan baik hingga meraih Juara 2.
 
 ---
 
@@ -104,32 +123,26 @@ Isilah matriks ini untuk melacak kesehatan komitmen setiap butir tindakan di ata
 Dalam komunikasi yang bertanggung jawab, keberhasilan tindakan tidak hanya dinilai dari tercapainya target pekerjaan, tetapi juga dari bagaimana relasi antar-pribadi dirawat di sepanjang proses kerja sama tersebut.
 
 ### 1. Jalur Tugas (*Task Outcome*)
-*   Apakah semua target tindakan yang tertulis dalam dokumen kesepakatan ini berhasil diselesaikan sesuai tenggat waktu dan kriteria selesai? Jelaskan kendala nyata lapangan yang sempat dihadapi!
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
+Seluruh target tindakan pada keempat butir kesepakatan berhasil diselesaikan sesuai tenggat waktu dan kriteria selesai yang disepakati. Seluruh kuis dan *deadline* tubes akademik dari Senin hingga Sabtu tuntas tanpa saling mengganggu, sesi *checkpoint* Jumat malam berjalan tepat waktu, dan gladi resik penuh beserta simulasi Q&A di *working space* Louvin rampung pada pukul 02.00 WIB (sebelum batas berhenti pukul 02.30 WIB). Kendala nyata lapangan yang sempat dihadapi adalah kelebihan durasi bicara M sekitar 30 detik yang terdeteksi saat *checkpoint* serta baru selesainya tubes S pada Sabtu pukul 21.18 WIB. Kedua kendala tersebut berhasil diatasi karena sudah dimitigasi sejak awal melalui sesi latihan pendahuluan Saya dan M pukul 19.30-21.30 WIB.
 
 ### 2. Jalur Relasi (*Relationship Outcome*)
-*   Bagaimana kualitas batin relasi, kepercayaan, dan rasa saling menghargai di antara para pihak setelah melewati proses pengerjaan tugas ini? Apakah ada ketegangan peran yang sempat terjadi, dan bagaimana Anda meredakannya secara asertif?
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
+Kualitas relasi, rasa percaya, dan saling menghargai di antara kami bertiga tetap hangat dan justru makin solid setelah melewati tekanan H-7 final. Dua titik yang sebenarnya paling rawan memicu ketegangan adalah ketika usulan awal saya untuk latihan hari kerja terbentur jadwal padat M dan S, serta ketika S baru bisa bergabung malam hari pada Sabtu, 9 Mei. Ketegangan itu berhasil diredam secara asertif dengan mengakui sejak awal bahwa rencana hari kerja saya kurang realistis, menghormati penuh batas wewenang atas jadwal kuliah masing-masing, memberi ruang bagi S dan M untuk mengubah skema atau menolak begadang, serta tidak membuat S merasa bersalah saat menyusul malam hari ke Louvin. Meskipun diskusi awal dan *checkpoint* berlangsung lewat teks WhatsApp tanpa pengamatan nonverbal, suasana terbuka dan suportif saat bertemu langsung di Louvin membuktikan relasi tim tetap sangat baik.
 
 ---
 
 ## Rubrik Penilaian Mandiri & Umpan Balik Sejawat
 
 Evaluasilah kualitas Dokumen Kesepakatan yang Anda susun menggunakan skala nilai berikut:
-*   **Skor 1 (Kurang)**: Banyak bagian menggunakan istilah kabur, penanggung jawab tidak terperinci, atau mengabaikan relasi.
-*   **Skor 2 (Cukup)**: Tindakan sudah terperinci, tetapi kriteria selesai masih subjektif atau tidak menyertakan checkpoint komitmen.
-*   **Skor 3 (Sangat Baik)**: Memenuhi seluruh aspek formula presisi, memetakan kepentingan dengan empati, memiliki mekanisme pelacakan komitmen yang jelas, serta menjaga harmoni relasi secara etis.
+- **Skor 1 (Kurang)**: Banyak bagian menggunakan istilah kabur, penanggung jawab tidak terperinci, atau mengabaikan relasi.
+- **Skor 2 (Cukup)**: Tindakan sudah terperinci, tetapi kriteria selesai masih subjektif atau tidak menyertakan checkpoint komitmen.
+- **Skor 3 (Sangat Baik)**: Memenuhi seluruh aspek formula presisi, memetakan kepentingan dengan empati, memiliki mekanisme pelacakan komitmen yang jelas, serta menjaga harmoni relasi secara etis.
 
 | No | Aspek Penilaian Kinerja | Skor (1-3) | Bukti Perilaku / Catatan Perbaikan Mandiri |
 | :-- | :--- | :---: | :--- |
-| **1** | **Kejelasan Kepentingan (Bukan Posisi)**:<br>Mampu melampaui ego tuntutan permukaan dan merumuskan titik temu kepentingan yang saling melayani peran masing-masing. | | |
-| **2** | **Presisi Formula Kesepakatan**:<br>Semua rencana tindakan bebas dari istilah kabur, mencantumkan penanggung jawab tunggal (*Who*), tenggat waktu yang pas (*When*), dan definisi selesai yang objektif. | | |
-| **3** | **Tanggung Jawab Pemeliharaan Komitmen**:<br>Memiliki rencana titik pemeriksaan (*checkpoint*) konkret sebagai mitigasi risiko kegagalan, bukan sekadar menunggu hari H tenggat waktu. | | |
-| **4** | **Keseimbangan Jalur Ganda**:<br>Menunjukkan kepedulian yang tulus terhadap kenyamanan relasi, hak berpendapat, serta batas kemampuan etis tim (menyediakan ruang untuk berkata "tidak" tanpa intimidasi). | | |
+| **1** | **Kejelasan Kepentingan (Bukan Posisi)**:<br>Mampu melampaui ego tuntutan permukaan dan merumuskan titik temu kepentingan yang saling melayani peran masing-masing. | **3** | Saya melepaskan usulan awal latihan hari kerja setelah melihat bentrokan jadwal Senin-Sabtu, lalu menyatukan kepentingan bersama: semua kuis/tubes aman dan tim tetap siap tampil Minggu pagi. |
+| **2** | **Presisi Formula Kesepakatan**:<br>Semua rencana tindakan bebas dari istilah kabur, mencantumkan penanggung jawab tunggal (*Who*), tenggat waktu yang pas (*When*), dan definisi selesai yang objektif. | **3** | Seluruh 4 butir kesepakatan memuat pelaku jelas, tanggal dan jam pasti (termasuk batas begadang maksimal 02.30 WIB), prasyarat, serta ukuran selesai terukur tanpa kata menggantung seperti "nanti" atau "sebisanya". |
+| **3** | **Tanggung Jawab Pemeliharaan Komitmen**:<br>Memiliki rencana titik pemeriksaan (*checkpoint*) konkret sebagai mitigasi risiko kegagalan, bukan sekadar menunggu hari H tenggat waktu. | **3** | Menetapkan *checkpoint* pada Jumat, 8 Mei pukul 21.00 WIB (H-2 final) yang berhasil menangkap kelebihan durasi M (+30 detik) dan memastikan jam S menyusul ke Louvin sebelum hari Sabtu tiba. |
+| **4** | **Keseimbangan Jalur Ganda**:<br>Menunjukkan kepedulian yang tulus terhadap kenyamanan relasi, hak berpendapat, serta batas kemampuan etis tim (menyediakan ruang untuk berkata "tidak" tanpa intimidasi). | **3** | Menghormati batas wewenang atas jadwal kuliah rekan tim, menyediakan ruang menolak/mengubah jam begadang, dan membatasi sesi hingga pukul 02.30 WIB demi menjaga kesehatan dan performa tim. Catatan perbaikan ke depan: selalu kumpulkan peta jadwal kosong semua anggota lebih dulu sebelum melempar usulan hari kumpul. |
 
 ---
 *“Bahasa mengantarkan kita pada jembatan pemahaman, tetapi kesepakatan yang berpusat pada tanggung jawab bersama adalah kendaraan yang membawa kita melintasi jembatan tersebut menuju kenyataan tindakan.”*

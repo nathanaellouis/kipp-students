@@ -9,119 +9,112 @@ title: "Lembar Kerja Bab 11"
 ---
 
 ## 👥 Identitas Simulasi & Kelompok
-* **Nama Projek/Skenario Kasus:** [Contoh: Modernisasi Sistem Layanan Kantin Kampus]
-* **Nama Kelompok / Kelas:** ________________________ / __________
-* **Anggota Kelompok & Peran yang Dimainkan:**
-  1. ________________________ (Peran: Fasilitator / Moderator Meja Bundar)
-  2. ________________________ (Peran: Pemangku Kepentingan A - ________________________)
-  3. ________________________ (Peran: Pemangku Kepentingan B - ________________________)
-  4. ________________________ (Peran: Pemangku Kepentingan C - ________________________)
-  5. ________________________ (Peran: Pemangku Kepentingan D - ________________________)
-  6. ________________________ (Peran: Pemangku Kepentingan E - ________________________)
+- **Nama Projek/Skenario Kasus:** Penentuan Ruang Lingkup Fitur Bonus *Class Diagram* dan Keseimbangan Beban Kerja Milestone 1 Tugas Besar IF2010 OOP (*Nangor Blast*, Map *Black Fortress*)
+- **Tanggal & Media Diskusi:** Sabtu, 14 November 2026, pukul 20.00-20.50 WIB, melalui *WhatsApp Group* kelompok
+- **Anggota Kelompok & Peran yang Dimainkan:**
+  1. **Nathanael Louis Cahyono / Saya** (Peran: Fasilitator diskusi sekaligus Pemangku Kepentingan A - Penanggung Jawab Modul *Player & Bomb* dan Setup GitHub)
+  2. **Rekan D** (Peran: Pemangku Kepentingan B - Penanggung Jawab Modul *Core & Flow* dan Dokumen Pembagian Tugas)
+  3. **Rekan R** (Peran: Pemangku Kepentingan C - Penanggung Jawab Modul *Map & Infra* dan Dokumen Pembagian Tugas)
+  4. **Rekan A** (Peran: Pemangku Kepentingan D - Penanggung Jawab Modul *Enemy & Boss* dan Setup GitHub)
 
 ---
 
 ## 🎯 Esensi Pembelajaran Bab 11
-Di dunia kerja nyata, keputusan besar tidak pernah terjadi dalam ruang hampa satu-lawan-satu. Anda akan berhadapan dengan **jaring pemangku kepentingan (stakeholders)** yang memiliki posisi, batasan wewenang, kendala, dan nilai batin yang saling bertabrakan. 
+Di dunia kerja nyata, keputusan besar tidak pernah terjadi dalam ruang hampa satu-lawan-satu. Anda akan berhadapan dengan **jaring pemangku kepentingan (*stakeholders*)** yang memiliki posisi, batasan wewenang, kendala, dan nilai batin yang saling bertabrakan.
 
-Lembar kerja ini dirancang untuk melatih kemampuan Anda dalam memimpin **Deliberasi**—sebuah proses komunikasi kolaboratif untuk mencari tindakan bersama secara jujur, bertanggung jawab, dan bermartabat, alih-alih melakukan debat kusir demi mencari siapa yang menang atau kalah.
+Lembar kerja ini dirancang untuk melatih kemampuan Anda dalam memimpin **Deliberasi**, yaitu sebuah proses komunikasi kolaboratif untuk mencari tindakan bersama secara jujur, bertanggung jawab, dan bermartabat, alih-alih melakukan debat kusir demi mencari siapa yang menang atau kalah.
 
 ---
 
 ## 📌 BAGIAN 1: Memetakan Jaring Pemangku Kepentingan (Stakeholder Mapping)
-*Petunjuk: Sebelum memulai simulasi negosiasi lisan, setiap anggota kelompok yang memegang peran wajib mengisi kolom barisnya secara mandiri berdasarkan skenario peran masing-masing. Fasilitator bertugas memandu pengisian agar data awal terpetakan secara objektif.*
+*Pemetaan objektif keempat anggota kelompok Tugas Besar IF2010 OOP sebelum proses deliberasi pengambilan keputusan paket fitur bonus Milestone 1 (tenggat 17 November 2026 pukul 20.10 WIB):*
 
 ### **Matriks Peta Pemangku Kepentingan**
 
 | Pemangku Kepentingan | 🛑 POSISI (Tuntutan Kaku/Solusi Sepihak yang Disuarakan) | 🔑 KEPENTINGAN (Kebutuhan Batin, Rasa Aman, atau Harapan Nyata) | ⚠️ KENDALA & BATASAN (Wewenang, Anggaran, Waktu, Aturan) | 💎 NILAI (Mengapa masa depan ini berharga bagi perannya?) | 📈 Keadaan TAIDA Awal (T / A / I / D / A)* |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **A: Pengguna** *(Contoh: Mahasiswa)* | "Semua pemesanan harus digital, cepat, dan ada diskon promo lewat aplikasi." | Kecepatan antrean pada jam makan siang; kepastian mendapatkan porsi makanan. | Uang saku harian terbatas; kuota internet tidak stabil di area kantin bawah. | Kepastian waktu agar tidak terlambat masuk kuliah berikutnya. | **Interest (I)** *(Sangat tertarik solusi digital tapi belum berkomitmen)* |
-| **B: Pelaksana** *(Contoh: Pemilik Warung)* | "Tetap pakai sistem tunai biasa. Jangan pakai sistem baru yang bikin pusing." | Beban kerja harian tetap terkendali; tidak kehilangan pelanggan karena gaptek. | Harus memasak sekaligus melayani kasir; modal harian harus cair tunai hari itu juga. | Ketenangan kerja dan kelangsungan pendapatan harian warung. | **Attention (A)** *(Sadar antrean adalah masalah, tapi skeptis pada solusi digital)* |
-| **C: Tim Teknis** *(Contoh: Developer Sistem)* | "Aplikasi harus rilis penuh minggu depan dengan database terpusat." | Sistem berjalan andal, tanpa bug, dan arsitektur data aman terkendali. | Waktu pengembangan sangat mepet; keterbatasan server lokal kampus. | Reputasi profesional dan keandalan sistem yang mereka rancang. | **Desire (D)** *(Sangat ingin sistem segera dipakai penuh)* |
-| **D: Pengelola** *(Contoh: Manajemen Kampus)* | "Sistem baru wajib memotong biaya sewa kantin 5% sebagai retribusi." | Laporan keuangan kantin transparan dan akuntabel; ketertiban area kampus terjaga. | Terikat aturan birokrasi kampus; harus menjaga stabilitas sosial kantin. | Transparansi tata kelola dan reputasi kampus yang modern. | **Attention (A)** *(Sadar perlunya efisiensi, tapi hati-hati pada gejolak sosial)* |
-| **E: Pihak Terdampak** *(Contoh: Kasir Manual)* | "Batalkan sistem otomatisasi pemesanan." | Keamanan pekerjaan; rasa dihargai oleh lingkungan tempat bekerja selama bertahun-tahun. | Kurang memiliki keahlian teknis komputerisasi; usia produktif terbatas. | Jaminan mata pencaharian untuk menghidupi keluarga. | **Target (T)** *(Defensif; merasa terancam dan tidak dilibatkan sejak awal)* |
+| **A: Saya (Modul *Player & Bomb* & Fasilitator)** | "Ambil GUI, Bomb Kick, Local Multiplayer, dan 5 Design Pattern, tapi jangan ambil Map Maker." | Fitur di modul sendiri (*Factory Pattern*, *Bomb Kick*, efek *Power-Up* per pemain) rapi dan sinkron sejak awal, serta seluruh luaran Milestone 1 kelar sebelum 17 November. | Juga memegang setup repositori GitHub bersama A. Tidak punya wewenang memaksakan ruang lingkup sepihak karena keputusan milik berempat. | Keterpaduan desain antar-modul dan kelancaran kerja tim tanpa konflik saat masuk pengkodean. | **Desire (D)** *(Sudah ingin paket bonus selektif, tetapi perlu menyelaraskan dengan beban tim)* |
+| **B: Rekan D (Modul *Core & Flow*)** | "Ambil semua bonus besar sekalian dari Milestone 1: GUI MVC, Local Multiplayer, 5 Design Pattern, plus Map Maker (B03)." | Meraih poin bonus maksimal dan tidak ingin merombak arsitektur *Core & Flow* dua kali saat masuk Milestone 2. | Harus mengurus *concurrency*, merancang arsitektur MVC dan *State Pattern*, sekaligus menulis dokumen pembagian tugas bersama R. | Kualitas arsitektur yang matang dan hasil penilaian tugas besar yang optimal. | **Attention (A)** *(Sadar perlu sepakat, tetapi khawatir poin bonus kurang jika Map Maker dicoret)* |
+| **C: Rekan R (Modul *Map & Infra*)** | "Fokus fitur wajib CLI dan 2 design pattern minimum dulu aja, jangan banyak bonus di Milestone 1." | Beban modul *Map & Infra* tetap realistis dan tidak *overload*, serta dokumen pembagian tugas dan *Class Diagram* selesai rapi tepat waktu. | Modul *Black Fortress* sudah sangat padat (*Switch*, *Gate*, *Laser Trap*, *MapValidator*, *Observer* dan *Command Pattern*), ditambah kewajiban menulis dokumen pembagian tugas. | Ketenangan kerja, kerapian struktur kode, dan ketepatan pengumpulan sebelum 17 November. | **Target / Attention (T/A)** *(Defensif terhadap penambahan bonus yang membebani modulnya)* |
+| **D: Rekan A (Modul *Enemy & Boss*)** | Awalnya diam 12 menit lalu membalas singkat: "Aku ikut aja deh enaknya gimana." | Mendapat kepastian kontrak antarmuka lintas modul (*Renderable* dan penargetan 2 pemain di *Local Multiplayer*) sebelum menggambar agar *Class Diagram* tidak bongkar ulang. | Memegang modul *Cerberus*, *Altair*, dan *Strategy Pattern* sambil mengurus setup GitHub bersama saya. Cenderung sungkan memotong perdebatan di grup. | Efisiensi tenaga agar tidak kerja dua kali di waktu yang mepet. | **Target (T)** *(Pasif dan diam di awal diskusi karena sungkan memotong perdebatan)* |
 
 *\*Keterangan Keadaan TAIDA Awal:*
-* **Target (T):** Belum tahu atau menolak berkomunikasi.
-* **Attention (A):** Sadar ada masalah tetapi belum tentu tertarik dengan solusi Anda.
-* **Interest (I):** Tertarik dengan gagasan solusi, tetapi belum melihat hubungan nyata dengan bebannya.
-* **Desire (D):** Sangat menginginkan masa depan yang ditawarkan, tetapi masih khawatir akan risiko/biaya.
-* **Action (A):** Sudah siap berkomitmen mengambil tindakan nyata bersama.
+- **Target (T):** Belum tahu, diam/pasif, atau defensif menolak berkomunikasi.
+- **Attention (A):** Sadar ada masalah tetapi belum tentu sepakat dengan usulan solusi.
+- **Interest (I):** Tertarik dengan gagasan solusi, tetapi belum melihat kecocokannya dengan beban sendiri.
+- **Desire (D):** Menginginkan masa depan yang ditawarkan, tetapi masih menimbang risiko dan kelayakan bersama.
+- **Action (A):** Sudah siap berkomitmen mengambil tindakan nyata bersama.
+
+**Common Ground (Kriteria Bersama untuk Menilai Opsi):**
+Keempat anggota sepakat bahwa (1) seluruh fitur wajib dan 7 konsep OOP harus tercakup utuh di *Class Diagram*, (2) seluruh luaran Milestone 1 (repositori GitHub, dokumen pembagian tugas, dan *Class Diagram*) harus rampung sebelum tenggat 17 November 2026 pukul 20.10 WIB, dan (3) tidak boleh ada satu modul pun yang jumlah kelas atau beban dokumentasinya timpang dibanding anggota lain.
 
 ---
 
-## 📌 BAGIAN 2: Proses Deliberasi — Menggali Kepentingan Tersembunyi (The Hidden Agenda)
-*Petunjuk: Fasilitator memimpin diskusi meja bundar selama 10 menit pertama. Fasilitator dilarang langsung menawarkan solusi kompromi. Fokus utama adalah menggunakan teknik mendengarkan tiga tingkat (Kata, Makna, Pribadi) untuk membedakan Posisi dari Kepentingan yang sebenarnya.*
+## 📌 BAGIAN 2: Proses Deliberasi - Menggali Kepentingan Tersembunyi (The Hidden Agenda)
+Di awal diskusi WhatsApp Group, perdebatan mulai didominasi oleh saya, D, dan R, sementara A diam selama 12 menit lalu hanya menjawab *"Aku ikut aja deh enaknya gimana"*. Saya menyadari bahwa saya tadi terlalu cepat mendorong preferensi pribadi dan jawaban singkat A berisiko menjadi kepatuhan semu (*false consensus*). Saya lalu menghentikan pembahasan fitur sejenak, mengakui bahwa saya terlalu terburu-buru, dan langsung memeriksa kondisi A secara aman.
 
-### **Daftar Pertanyaan Penyelidikan Fasilitator (Saran Repertoar):**
-1. *"Jika posisi atau tuntutan Anda [X] tidak sepenuhnya terpenuhi hari ini, perubahan buruk apa yang paling Anda khawatirkan akan terjadi pada pekerjaan/kehidupan Anda?"*
-2. *"Di balik tuntutan Anda untuk mempertahankan/mengubah sistem ini, apa kebutuhan terdalam yang ingin Anda amankan?"*
-3. *"Adakah kekhawatiran mengenai risiko, biaya, atau usaha ekstra yang belum sempat Anda suarakan kepada kami?"*
+### **Pertanyaan Penyelidikan yang Digunakan:**
+1. *"Khusus buat A, kamu tadi bilang 'ikut aja', jujur aja ya nggak usah sungkan, kalau GUI sama Local Multiplayer masuk, bagian Enemy & Boss sama kerjaan GitHub kita aman nggak? Ada yang bakal bikin ribet di diagram kamu?"*
+2. *"Daripada debat mana yang paling ideal, gimana kalau kita bandingin opsi pakai ukuran beban tiap modul dan tenggat 17 November?"*
 
 ### **Catatan Temuan Kepentingan Tersembunyi (Diisi oleh Fasilitator):**
-* **Temuan pada Pemilik Warung:** Keberatan mereka bukan pada digitalisasinya, melainkan ketakutan jika uang hasil penjualan ditahan sistem selama berminggu-minggu, padahal mereka butuh modal tunai setiap pagi untuk membeli bahan masakan segar di pasar.
-* **Temuan pada Kasir Manual:** Ketakutan batin terdalam mereka adalah di-PHK (kehilangan pekerjaan) akibat digantikan oleh mesin otomatis, bukan karena mereka menolak teknologi.
-* **Temuan lainnya:** __________________________________________________________________________________________
-  __________________________________________________________________________________________
+- **Temuan pada Rekan A (*Enemy & Boss*):** Sikap diam dan kalimat *"ikut aja"* bukan berarti A tidak peduli atau benar-benar setuju tanpa syarat. A sebenarnya tidak keberatan dengan GUI dan *Local Multiplayer*, tetapi ia khawatir kontrak antar-kelas (seperti cara *Boss* memilih target dari 2 pemain dan antarmuka gambar untuk GUI) belum dikunci di awal sehingga ia terpaksa membongkar ulang *Class Diagram* di saat juga sedang mengerjakan repositori GitHub bersama saya.
+- **Temuan pada Rekan R (*Map & Infra*):** Penolakan awal R terhadap fitur bonus bukan karena malas mengejar nilai, melainkan rasa khawatir modul *Black Fortress* membengkak parah jika *Map Maker* (B03) ikut masuk, ditambah kekhawatiran dokumen pembagian tugas bersama D tidak selesai rapi sebelum 17 November.
+- **Temuan pada Rekan D (*Core & Flow*):** Dorongan D untuk mengambil semua bonus besar berakar pada kekhawatiran harus merombak arsitektur MVC dua kali di Milestone 2 serta rasa sayang melepas potensi nilai bonus dari B03 (*Map Maker*).
 
 ---
 
 ## 📌 BAGIAN 3: Menciptakan Pilihan Solusi Tanpa Menilai (Brainstorming Sandbox)
-*Petunjuk: Di tahap ini, seluruh anggota kelompok dilarang keras mengkritik, memotong, atau menilai kelayakan ide yang masuk. Tuliskan sebanyak mungkin alternatif solusi kreatif yang mampu mempertemukan kepentingan-kepentingan yang tampaknya bertolak belakang di atas.*
+Setelah seluruh kepentingan tersembunyi terbuka, tim membandingkan alternatif solusi berdasarkan *common ground* (keseimbangan beban modul dan tenggat 17 November) beserta *trade-off* masing-masing:
 
 ### **Kotak Pasir Ide (Ideation Sandbox)**
-* **Ide Alternatif 1 (Menjembatani Pemilik Warung & Mahasiswa):** 
-  Sistem pembayaran digital dikonfigurasi agar melakukan transfer otomatis (*auto-settlement*) langsung ke rekening pemilik warung setiap pukul 17.00 WIB, sehingga mereka tetap memiliki modal tunai untuk pasar esok pagi.
-* **Ide Alternatif 2 (Menjembatani Kasir Manual & Otomatisasi):**
-  Kasir manual tidak diberhentikan, melainkan dialihfungsikan menjadi *Duta Layanan Kantin* yang bertugas memandu mahasiswa senior atau tamu yang belum terbiasa menggunakan aplikasi mandiri, sekaligus mengelola titik bantuan fisik (*helpdesk*).
-* **Ide Alternatif 3 (Menjembatani Developer & Keterbatasan Server):**
-  Rilis sistem dilakukan secara bertahap (*phased roll-out*). Minggu pertama diuji coba hanya pada 2 warung makan terbesar, sembari tim teknis menstabilkan server sebelum diterapkan ke seluruh kantin kampus.
-* **Ide Alternatif 4 (Tulis Ide Orisinal Kelompok Anda):**
-  __________________________________________________________________________________________
-  __________________________________________________________________________________________
+- **Ide Alternatif 1 (Minimalis - CLI Wajib + 2 Design Pattern):**
+  Fokus pada fitur wajib CLI dan jumlah minimal 2 *design pattern* agar *Class Diagram* selesai paling cepat dan beban modul R paling ringan. Namun, opsi ini ditolak karena melewatkan saran asisten pembimbing untuk merancang GUI MVC sejak awal sehingga akan sangat sulit ditambahkan mendadak di Milestone 2.
+- **Ide Alternatif 2 (Semua Bonus Penuh - B01, B02, B03 Map Maker, B04, B05):**
+  Memasukkan seluruh fitur bonus besar ke rancangan Milestone 1 demi potensi nilai bonus tertinggi. Opsi ini ditolak karena membuat modul *Map & Infra* milik R membengkak parah dan berisiko tinggi menggagalkan ketepatan waktu pengumpulan dokumen dan diagram Milestone 1.
+- **Ide Alternatif 3 (Paket Bonus Selektif + Penguncian Kontrak Antarmuka):**
+  Memilih paket bonus yang realistis (B01 GUI MVC, B02 *Bomb Kick*, B04 *Local Multiplayer*, dan B05 5 *Design Pattern*) sambil mencoret B03 (*Map Maker*) dari ruang lingkup Milestone 1. Untuk menjawab kekhawatiran A, tim langsung mengunci kontrak antarmuka lintas modul (*Renderable*, *playerId* pada *Power-Up*, serta *chooseTarget/pickTarget* pada *Enemy & Boss*) pada 14 November malam sebelum menggambar *Class Diagram*.
+- **Ide Alternatif 4 (Dukungan Silang Dokumen + Pencatatan *Dissent* & *Stop Rule*):**
+  Untuk meringankan beban R dan D, saya langsung turun membantu merapikan dokumen pembagian tugas begitu setup repositori GitHub bersama A selesai. Keberatan (*dissent*) dari D soal B03 (*Map Maker*) tidak dihapus, melainkan dicatat terbuka sebagai opsi cadangan bila fitur utama Milestone 2 selesai lebih awal, disertai *checkpoint* 16 November dan *stop rule* jika ada modul bonus yang memicu konflik besar.
 
 ---
 
 ## 📌 BAGIAN 4: Perumusan Dokumen Kesepakatan Bersama
-*Petunjuk: Setelah mengevaluasi kelayakan ide di Bagian 3, rumuskan kesepakatan tindakan nyata yang disetujui bersama oleh semua pihak. Ingat, kesepakatan tidak menuntut kesamaan pikiran, melainkan kesepakatan tindakan terkoordinasi yang adil dan dapat dipertanggungjawabkan.*
+Keempat anggota menyetujui gabungan **Ide Alternatif 3 dan 4 (Paket Bonus Selektif tanpa B03 + dukungan silang dokumen)** disertai syarat eksplisit dari R dan A serta pencatatan *dissent* dari D.
 
 ### **Matriks Komitmen Tindakan Nyata**
 
 | SIAPA (Penanggung Jawab Utama) | MELAKUKAN APA (Tindakan Spesifik & Jelas) | KAPAN (Tenggat Waktu Konkret) | PRASYARAT & SYARAT (Sumber daya/kondisi yang harus ada) | UKURAN SELESAI (Kapan tugas ini dinyatakan 100% tuntas?) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Pihak A (Mahasiswa)** | Melakukan kampanye sosialisasi penggunaan aplikasi mandiri di kalangan mahasiswa. | Minggu ke-12 s.d. Minggu ke-13 | Disediakan materi infografis siap sebar oleh tim teknis. | 80% mahasiswa aktif mengetahui tata cara memesan lewat aplikasi. |
-| **Pihak B (Pemilik Warung)** | Memasang QR-Code pembayaran di meja saji dan mengikuti pelatihan operasional 1 jam. | Hari Jumat, Minggu ke-12 | Didampingi oleh asisten mahasiswa saat transaksi pertama. | Berhasil melayani 5 transaksi digital berturut-turut tanpa kendala. |
-| **Pihak C (Tim Teknis)** | Mengonfigurasi modul transfer harian otomatis (*auto-disbursement*) pukul 17.00 WIB. | Hari Rabu, Minggu ke-12 | Rekening bank seluruh pemilik warung telah terverifikasi. | Transfer uji coba senilai Rp10.000 sukses mendarat di rekening semua warung. |
-| **Pihak D (Manajemen)** | Menerbitkan surat keputusan pengalihan peran kasir manual menjadi Duta Layanan Kantin. | Hari Senin, Minggu ke-12 | Draf peran baru telah disetujui oleh perwakilan staf kantin. | Dokumen keputusan ditandatangani oleh Rektorat/Dekanat. |
-| **Pihak E (Staf/Kasir)** | Mengikuti pelatihan kepanduan sistem dan mengelola meja bantuan fisik (*helpdesk*). | Hari Sabtu, Minggu ke-12 | Disediakan modul panduan bergambar yang sederhana oleh tim teknis. | Kasir siap bertugas di pos bantuan fisik sejak hari pertama peluncuran. |
+| **Semua Anggota (Saya, D, R, A)** | Mengunci kontrak antarmuka lintas modul (*Renderable*, *playerId*, dan *chooseTarget/pickTarget*) sebelum menggambar diagram masing-masing. | Sabtu, 14 November 2026 malam (langsung setelah diskusi) | Kesepakatan paket bonus selektif (B01, B02, B04, B05 tanpa B03 *Map Maker*). | Nama *interface* dan *method* penghubung antar-modul disetujui tertulis di grup WhatsApp. |
+| **Saya & Rekan A** | Menyelesaikan setup repositori GitHub (*src*, *config*, *doc*, *Makefile*, *README.md*) dan mengundang akun GitHub asisten pembimbing. | Senin, 16 November 2026 sebelum pukul 20.00 WIB | Struktur folder sesuai pedoman spesifikasi Milestone 1. | Repositori siap, struktur lengkap, asisten sudah diundang, lalu Saya langsung membantu dokumen R & D. |
+| **Rekan R & Rekan D** (dibantu **Saya** pasca-GitHub) | Menyusun dan menyelaraskan dokumen pembagian tugas (*PembagianTugas.pdf*) mencakup fitur F00-F09, B01, B02, B04, B05, 7 konsep OOP, 5 *pattern*, dan daftar kelas. | Draf 80% pada *checkpoint* 16 November 20.00 WIB, final sebelum 17 November 20.10 WIB | B03 (*Map Maker*) dikeluarkan dari Milestone 1 dan daftar kelas tiap modul sudah masuk. | Dokumen *PembagianTugas.pdf* konsisten 100% dengan *Class Diagram* final tanpa selisih nama kelas. |
+| **Semua Anggota (Saya, D, R, A)** | Menggambar potongan *Class Diagram* sesuai modul masing-masing lalu menggabungkannya menjadi *ClassDiagram.pdf*, disertai pengecekan pada *checkpoint*. | *Checkpoint* Senin, 16 November 20.00 WIB, pengumpulan final Selasa, 17 November 2026 pukul 20.10 WIB | Kontrak antarmuka sudah terkunci. *Stop rule*: jika pada *checkpoint* 16 November ada bonus yang memicu konflik besar atau dokumen belum 80%, fitur bonus penghambat dipangkas. | Seluruh berkas Milestone 1 (link GitHub, *PembagianTugas.pdf*, dan *ClassDiagram.pdf*) terkumpul tepat waktu sebelum 17 November pukul 20.10 WIB. |
+
+**Catatan Syarat & *Dissent* yang Dinyatakan Terbuka:**
+- **Syarat R:** B03 (*Map Maker*) dikeluarkan dari Milestone 1 dan dokumen dibantu setelah setup GitHub selesai.
+- **Syarat A:** Kontrak antarmuka lintas modul dikunci sejak 14 November malam sebelum menggambar diagram.
+- **Dissent D:** D tetap menilai B03 (*Map Maker*) bernilai tinggi untuk poin bonus. Pendapatnya dicatat resmi sebagai opsi cadangan pengembangan jika seluruh fitur utama pada Milestone 2 selesai lebih awal.
 
 ---
 
 ## 📌 BAGIAN 5: Evaluasi Jalur Ganda (Dual-Track Evaluation)
-*Petunjuk: Negosiasi yang bertanggung jawab dan ksatria diukur melalui dua jalur yang seimbang. Setiap anggota kelompok memberikan penilaian mandiri (Skala 1 - 5) setelah simulasi berakhir.*
 
 ### **1. JALUR TUGAS (Apakah target tindakan tercapai secara efektif?)**
-*   **Skor Kelompok (1 s.d. 5):** _____ / 5
-*   *Bukti Nyata:* Apakah kesepakatan yang tertulis di Bagian 4 benar-benar operasional, realistis, dan menyelesaikan masalah nyata di lapangan secara objektif? Jelaskan buktinya:
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
+- **Skor Kelompok (1 s.d. 5):** **5 / 5**
+- **Bukti Nyata:** Seluruh kesepakatan terbukti operasional dan berjalan tuntas. Pada *checkpoint* Senin, 16 November malam, setup repositori GitHub yang saya kerjakan bersama A selesai lebih cepat. Sesuai komitmen dukungan silang, saya langsung membantu R dan D merapikan rincian daftar kelas di dokumen pembagian tugas agar selaras dengan *Class Diagram*. Seluruh luaran Milestone 1 (repositori GitHub, *PembagianTugas.pdf*, dan *ClassDiagram.pdf*) berhasil dikumpulkan tepat waktu sebelum tenggat Selasa, 17 November 2026 pukul 20.10 WIB tanpa perlu mengaktifkan *stop rule*.
 
 ### **2. JALUR RELASI (Apakah rasa hormat, martabat batin, dan kerja sama terpelihara?)**
-*   **Skor Kelompok (1 s.d. 5):** _____ / 5
-*   *Bukti Nyata:* Apakah ada pihak yang merasa terancam, terpaksa, atau dibungkam suaranya selama perundingan? Bagaimana fasilitator memastikan pihak yang paling sunyi tetap memiliki ruang aman untuk menyuarakan pendapat? Jelaskan buktinya:
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
+- **Skor Kelompok (1 s.d. 5):** **5 / 5**
+- **Bukti Nyata:** Tidak ada anggota yang dibungkam atau dipaksa menerima keputusan sepihak. A menyampaikan setelah diskusi bahwa ia merasa jauh lebih lega saat ditanya langsung mengenai kontrak antarmuka, karena sebelumnya ia sungkan memotong perdebatan antara D dan R. R merasa terbantu dengan dukungan silang di malam menjelang pengumpulan dan tidak merasa modulnya dibebani sepihak. D juga tetap merasa suaranya dihargai karena keberatannya (*dissent*) soal *Map Maker* dicatat terbuka sebagai opsi cadangan, bukan dihapus demi kesan sepakat bulat.
 
 ---
 
 ## 🖋️ Lembar Refleksi Akhir Fasilitator (300 kata)
-*(Diisi secara mandiri oleh Fasilitator Kelompok setelah simulasi selesai)*
-> *"Komunikasi profesional yang bertanggung jawab adalah komunikasi lingkar tertutup yang menghargai kebebasan memilih orang lain tanpa manipulasi. Refleksikan bagaimana Anda membaca kejutan di lapangan, menangkap makna nonverbal dari pihak-pihak yang defensif, serta bagaimana Anda mengelola ego kelompok agar tidak terjebak dalam perangkap debat kusir."*
->
-> **Tuliskan refleksi Anda di bawah ini:**
-> __________________________________________________________________________________________
-> __________________________________________________________________________________________
-> __________________________________________________________________________________________
-> __________________________________________________________________________________________
-> __________________________________________________________________________________________
-> __________________________________________________________________________________________
+Pengalaman memfasilitasi negosiasi empat pihak di grup WhatsApp pada 14 November 2026 mengajarkan saya bahwa hambatan terbesar dalam kerja kelompok sering kali bukan perbedaan pendapat yang keras, melainkan kepatuhan semu dari anggota yang memilih diam. Di awal percakapan, saya sempat melakukan kekeliruan karena terlalu cepat mendorong paket bonus pilihan saya sendiri sebelum benar-benar memeriksa beban modul R dan kondisi A. Saat A baru membalas setelah 12 menit dengan kalimat singkat *"Aku ikut aja deh enaknya gimana"*, saya tersadar bahwa diskusi mulai timpang dan sangat rawan terjebak ilusi keheningan.
+
+Karena seluruh negosiasi berjalan lewat teks WhatsApp, saya tidak bisa melihat ekspresi wajah maupun nada bicara rekan tim secara langsung. Sebagai gantinya, saya membaca jeda balasan yang lama dan pilihan kata defensif dari R maupun kalimat pasrah dari A sebagai sinyal untuk berhenti sejenak. Saya melakukan perbaikan langsung di tengah diskusi dengan mengakui bahwa saya terlalu terburu-buru, lalu membuka ruang aman bagi A untuk menyampaikan kekhawatirannya soal perubahan kontrak antarmuka di *Class Diagram*.
+
+Menggeser perdebatan dari adu pendapat menjadi perbandingan tiga opsi berdasarkan kriteria bersama (keseimbangan beban modul dan tenggat 17 November) langsung meredakan ketegangan. Setiap anggota akhirnya mau membuka kepentingan aslinya sehingga lahirlah solusi yang realistis: mengunci kontrak *Renderable* dan target pemain sejak malam itu, mencoret *Map Maker* agar beban R aman, menambahkan komitmen saya membantu dokumen pembagian tugas setelah GitHub selesai, serta tetap mencatat *dissent* D secara terbuka sebagai opsi cadangan di Milestone 2.
+
+Pada tahap integrasi kode Milestone 2 menuju 4 Desember 2026 nanti, kebiasaan yang akan saya pegang adalah selalu menyepakati kriteria keputusan bersama dan menanyakan kendala anggota yang paling pendiam terlebih dahulu sebelum melontarkan preferensi saya sendiri.

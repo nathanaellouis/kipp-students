@@ -11,9 +11,9 @@ title: "Lembar Kerja Bab 07"
 Sebagai pencipta gagasan, pembuat program, atau pengembang teknologi, kita sangat mudah jatuh cinta pada solusi yang kita bangun. Kita berasumsi bahwa kecanggihan teknis dan panjangnya daftar fitur otomatis akan membuat orang lain tertarik. Namun, buku ajar kita mengingatkan sebuah kebenaran krusial:
 > **"Orang jarang tertarik pada kecanggihan solusi sebelum melihat hubungannya dengan persoalan yang sungguh mereka alami."** (Bab 7.1)
 
-Kesalahan komunikasi terbesar dalam tahap penumbuhan minat (*Interest*) adalah **Pembuangan Fitur (*Feature Dumping*)**—yaitu menumpuk daftar kemampuan teknis tanpa menghubungkannya dengan masalah yang telah diakui oleh sasaran komunikasi kita (Bab 7.12). 
+Kesalahan komunikasi terbesar dalam tahap penumbuhan minat (*Interest*) adalah **Pembuangan Fitur (*Feature Dumping*)**, yaitu menumpuk daftar kemampuan teknis tanpa menghubungkannya dengan masalah yang telah diakui oleh sasaran komunikasi kita (Bab 7.12).
 
-Lembar kerja ini dirancang untuk membantu Anda melakukan **Detoks Fitur** (Bab 7.14): membuang fitur-fitur yang tidak relevan, menyederhanakan bahasa komunikasi, dan menerjemahkan kemampuan teknis menjadi **Nilai Rihat** yang dapat dipahami secara instan oleh peran penerima yang berbeda.
+Lembar kerja ini dirancang untuk membantu Anda melakukan **Detoks Fitur** (Bab 7.14): membuang fitur-fitur yang tidak relevan, menyederhanakan bahasa komunikasi, dan menerjemahkan kemampuan teknis menjadi **Nilai Riil** yang dapat dipahami secara instan oleh peran penerima yang berbeda.
 
 ---
 
@@ -28,75 +28,66 @@ Sebelum memulai detoks, Anda harus mampu membedakan tiga lapisan pesan ini secar
 ## 🛠️ Langkah-Langkah Melakukan Detoks Fitur
 
 ### **Fase 1: Konteks Masalah Terkonfirmasi**
-Sebelum membedah solusi, tuliskan kembali **Pernyataan Masalah Pelanggan (*Customer Problem Statement*)** yang telah Anda konfirmasikan pada Bab 5. Solusi Anda harus "menempel" secara tepat pada masalah ini (Bab 7.6).
+Sebelum membedah solusi, tuliskan kembali konteks masalah yang sudah terkonfirmasi dari hasil bedah *commit log* Sprint 3 (27-31 Juli 2026) pada Divisi Information, Bidang IT, kepanitiaan OSKM ITB 2026:
 
-*   **Siapa perannya?** (Contoh: Ibu-ibu pengelola kantin kampus)
-*   **Masalah konkret apa yang dialami?** (Contoh: Kewalahan mencatat pesanan sekaligus menjawab pertanyaan mahasiswa tentang status makanan saat jam sibuk)
-*   **Apa dampaknya?** (Contoh: Antrean menumpuk, kasir stres, mahasiswa terlambat masuk kelas karena ketidakpastian)
-*   **Kendala nyata apa yang harus dipertimbangkan?** (Contoh: Kasir tidak paham teknologi rumit, pemilik kantin sensitif terhadap biaya tambahan)
+- **Siapa perannya?** Koordinator Teknis / *Product Manager* sub-tim (Rekan R) dan pengembang modul hilir (*Buddy* modul *Leaderboard*, Rekan F pada *task* S3-BE-11).
+- **Masalah konkret apa yang dialami?** Perubahan skema tabel atau *payload* mendadak pada H-1 *merge* (3 dari 4 kasus gagalnya *query* integrasi di Sprint 3 terjadi saat *rush* malam terakhir) hanya terkubur di obrolan grup LINE atau baru ketahuan setelah kode rekan lain terkena *error*.
+- **Apa dampaknya?** Proses integrasi dan *code review* tertahan sekitar 20-30 menit karena waktu kerja terbuang untuk *debugging* dan tanya-jawab ulang di grup LINE.
+- **Kendala nyata apa yang harus dipertimbangkan?** *Developer* hulu sedang terburu-buru mengejar *green CI* dan batas waktu *merge*, sehingga mereka enggan mengisi dokumen terpisah yang panjang dan rawan lupa jika prosedurnya terlalu rumit.
 
 ---
 
 ### **Fase 2: Matriks Analisis Detoks Fitur**
-Tuliskan semua fitur yang ada pada rancangan solusi Anda, lalu bedah menggunakan matriks di bawah ini. Jika sebuah fitur **tidak terhubung langsung** dengan masalah yang telah disepakati di atas, fitur tersebut **wajib didelegasikan ke daftar arsip (DIPANGKAS)** agar tidak membebani bahasa komunikasi Anda (Bab 7.14).
+Berikut hasil pemilahan seluruh ide fitur sebelum mekanisme solusi ditawarkan kepada Rekan R pada Sabtu, 1 Agustus 2026. Fitur yang tidak menempel langsung pada masalah dan kendala tim dipangkas agar tidak membebani komunikasi.
 
 | No | Fitur Teknis | Manfaat Langsung | Nilai Relasional (Bagi Peran Tertentu) | Bukti yang Diperlukan | Keputusan (Pertahankan / Pangkas) |
 |:--:|:---|:---|:---|:---|:---|
-| *Contoh* | *Estimasi waktu tunggu dinamis pada layar antrean.* | *Pengguna mengetahui kapan pesanan mereka akan selesai dimasak.* | * **Bagi Mahasiswa:** Kepastian waktu agar bisa makan tanpa terlambat masuk kuliah.<br>* **Bagi Kasir:** Mengurangi interupsi pertanyaan berulang dari antrean mahasiswa. | *Hasil uji coba pada 5 transaksi di jam sibuk.* | **PERTAHANKAN** (Sangat menempel pada masalah antrean dan interupsi kasir). |
-| *Contoh* | *Login akun menggunakan autentikasi multi-faktor media sosial.* | *Memudahkan pengguna masuk ke sistem dengan aman.* | *Tidak memberikan nilai langsung bagi kasir kantin maupun mahasiswa yang sedang terburu-buru.* | *Belum ada bukti relevansi bagi transaksi mikro kantin.* | **PANGKAS** (Beban bahasa yang tidak relevan bagi masalah utama). |
-| **1** | | | | | |
-| **2** | | | | | |
-| **3** | | | | | |
+| **1** | **Blok Catatan 3 Baris *Schema Diff* di Atas Deskripsi PR GitHub** (lalu diadaptasi dengan baris Status & Commit *Green CI* serta aturan *tag* setelah CI hijau) | Menampilkan bagian yang diubah, dampak ke modul lain, status *Green CI*, dan *tag* rekan terkait secara instan di halaman PR dengan waktu tulis di bawah 1 menit | **Bagi Koordinator Teknis (R):** Mempercepat *code review* ke *staging* tanpa perlu menengahi kebingungan di grup LINE.<br>**Bagi Developer Hilir (F / S3-BE-11):** Menghindari buang waktu 20-30 menit untuk *debugging* dan memastikan skema sudah final (*Green CI*).<br>**Bagi Developer Hulu:** Beban kerja tetap ringan saat mengejar *deadline*. | Uji coba (*micro-trial*) pada PR penyesuaian indeks tabel *scores* modul *Leaderboard* tanggal 2 Agustus 2026 bersama R dan F | **PERTAHANKAN** (Menempel langsung pada masalah keterlambatan info H-1 *merge* sekaligus menghormati batas waktu *developer*) |
+| **2** | **Bot Webhook Otomatis GitHub ke Grup LINE** | Mengirim pesan otomatis ke grup LINE setiap kali ada *commit* baru di repositori | Tidak memberi nilai tambah bagi R maupun pengembang lain, karena notifikasi bot yang terlalu sering justru membuat grup LINE bising dan akhirnya di-*mute* oleh anggota | Pengalaman grup LINE tim yang sudah sangat padat saat *rush* Sprint 3, ditambah butuh waktu pengembangan bot | **PANGKAS** (Berisiko menjadi gangguan baru dan termasuk *feature dumping*) |
+| **3** | **Halaman Tabel *Changelog* Terpisah di Notion** | Menyimpan arsip lengkap riwayat perubahan skema di luar GitHub | Mengurangi nilai bagi *developer* hulu karena memaksa mereka membuka dan mengedit aplikasi lain di tengah tekanan mengejar *green CI* | Kekhawatiran langsung dari Rekan R di akhir Sprint 3 bahwa aturan dokumen panjang akan membuat tim keteteran | **PANGKAS** (Melanggar kendala waktu dan tenaga *developer* pada jam padat) |
 
 ---
 
 ### **Fase 3: Menyusun Pitch Masalah-Solusi 60 Detik**
-Gunakan hasil detoks di atas untuk merajut **Pitch Minat** menggunakan **Komunikasi Berlapis** (Bab 7.9). Sampaikan pesan secara bertahap: mulailah dari kalimat kemungkinan yang memikat, mekanisme ringkas yang masuk akal, demonstrasi/analogi visual, lalu baru rincian teknis jika ditanyakan.
-
-Gunakan **5 Langkah Pitch Minat** berikut (Bab 7.7.2):
-1. **Hubungkan kembali dengan masalah**: *"Kemarin Ibu menceritakan bahwa kasir sering kewalahan mencatat pesanan sekaligus meladeni pertanyaan mahasiswa..."*
-2. **Perkenalkan kemungkinan solusi**: *"Untuk membantu mengatasi hal itu, kita bisa mencoba papan antrean digital sederhana di dekat kasir..."*
-3. **Jelaskan mekanisme secara sederhana (tanpa jargon)**: *"Cara kerjanya, kasir hanya perlu memasukkan nomor pesanan ke tablet. Status pengerjaan makanan akan langsung tampil di layar TV antrean, berubah dari 'Sedang Dimasak' menjadi 'Siap Diambil'..."*
-4. **Nyatakan manfaat & nilai riil**: *"Dengan cara ini, kasir bisa fokus mencatat tanpa diganggu pertanyaan berulang, sementara mahasiswa mendapatkan kepastian waktu makan tanpa takut terlambat kelas."*
-5. **Undang tanggapan (Cek Minat)**: *"Apakah mekanisme sesederhana ini layak kita uji coba dalam skala kecil besok siang?"*
+Hasil detoks di atas dirangkai dengan **Komunikasi Berlapis** (membuka dari kaitan masalah yang sudah disepakati, mengenalkan solusi ringkas, menunjukkan prototipe teks 3 baris, menyatakan manfaat sekaligus batas jujurnya, lalu mengundang tanggapan). Rincian lengkap dan draf lisannya dituliskan pada lembar latihan mandiri di bawah ini.
 
 ---
 
 ## 📝 Lembar Kerja Latihan Mandiri
 
 ### **Bagian 1: Pernyataan Masalah Sasaran**
-> *Tuliskan Pernyataan Masalah Pelanggan (CPS) secara presisi berdasarkan formula Bab 5:*
-> 
-> **[Pribadi/Peran]** mengalami **[Keadaan yang teramati]** ketika **[Konteks]**, sehingga **[Dampak]**. Ia membutuhkan **[Hasil/Kemampuan]**, dengan mempertimbangkan **[Kendala]**.
-> 
-> **Tulis jawaban Anda di sini:**
-> 
-> 
-> 
+> **Pernyataan Masalah Pelanggan (*Customer Problem Statement*):**
+>
+> **Koordinator Teknis (R) dan pengembang modul hilir (F)** mengalami **tertahannya proses integrasi dan *review* selama 20-30 menit** ketika **terjadi perubahan skema tabel atau *payload* mendadak pada H-1 *merge***, sehingga **waktu kerja terbuang untuk *debugging* dan tanya-jawab ulang di grup LINE**. Mereka membutuhkan **cara cepat dan akurat untuk melihat perubahan skema yang berdampak langsung pada modulnya**, dengan mempertimbangkan **kondisi *developer* yang sedang terburu-buru mengejar *green CI* dan enggan mengisi dokumen terpisah**.
+
+---
 
 ### **Bagian 2: Matriks Detoks Fitur Anda**
-> *Gunakan tabel ini untuk memotong fitur-fitur yang hanya memuaskan ego pembuat tetapi tidak melayani kebutuhan pendengar.*
+> *Tabel ringkasan pemangkasan fitur agar solusi tetap sederhana, menjawab akar masalah, dan menjaga kenyamanan seluruh anggota Divisi Information:*
 
 | Nama Fitur | Manfaat Langsung | Nilai Relasional (Sebutkan Perannya) | Bukti yang Anda Miliki/Perlukan | Keputusan Anda (Pertahankan / Pangkas) |
 |:---|:---|:---|:---|:---|
-| **Fitur A:** | | | | |
-| **Fitur B:** | | | | |
-| **Fitur C:** | | | | |
+| **Fitur A: Blok 3 Baris *Schema Diff* di Atas PR GitHub** (+ penanda *Status & Commit Green CI*) | Menampilkan perubahan kolom/tabel, dampak lintas modul, status *Green CI*, dan *tag* PIC hilir langsung di tempat *review* berlangsung | **Koordinator Teknis (R):** *Review* ke *staging* lebih cepat dan terarah.<br>**Developer Hilir (F):** Tidak salah mengacu ke skema mentah dan hemat waktu *debugging* 20-30 menit.<br>**Developer Hulu:** Cukup tulis kurang dari 1 menit tanpa pindah aplikasi. | Sudah dibuktikan lewat uji coba PR modul *Leaderboard* pada 2 Agustus 2026 (commit a4f82c1), PR langsung disetujui F tanpa tanya ulang di grup LINE | **PERTAHANKAN** |
+| **Fitur B: Bot Webhook Otomatis GitHub ke Grup LINE** | Mengirim notifikasi otomatis setiap ada *commit* ke grup LINE | Tidak relevan bagi R maupun pengembang karena notifikasi berulang justru membisingkan grup dan rawan di-*mute* | Evaluasi kepadatan obrolan grup LINE saat *rush* Sprint 3 dan pertimbangan waktu pembuatan bot | **PANGKAS** |
+| **Fitur C: Tabel *Changelog* Terpisah di Notion** | Mencatat riwayat perubahan skema di halaman dokumentasi terpisah | Membebani *developer* hulu yang sedang fokus mengejar *green CI* dan menambah langkah administratif bagi R | Masukan langsung dari R tanggal 30 Juli 2026 soal risiko tim keteteran jika harus mengisi dokumen terpisah | **PANGKAS** |
 
-*Catatan Etis: Menyembunyikan risiko atau keterbatasan solusi demi terlihat menarik adalah pelanggaran integritas profesional. Jika solusi Anda memiliki keterbatasan (misalnya: tidak berjalan lancar tanpa jaringan internet), sampaikan hal itu secara jujur. Kejujuran terhadap batas justru meningkatkan kredibilitas Anda (Bab 7.8, 9.8).*
+*Catatan Etis dan Batas Jujur:* Mekanisme catatan 3 baris ini tetap punya keterbatasan nyata, yaitu pengembang masih berpeluang lupa menuliskannya saat sedang panik mengejar batas akhir *merge*. Saya menyampaikan keterbatasan ini secara terbuka kepada Rekan R (tanpa janji berlebihan) dan juga menolak saran AI untuk memasang *script GitHub Action* pemblokir PR otomatis karena terlalu kaku bagi PR biasa yang tidak mengubah skema. Sebagai mitigasi realistis, penerapannya dimulai dari uji coba skala kecil pada satu PR modul *Leaderboard* bersama Rekan F terlebih dahulu, dilengkapi catatan batas bahwa blok ini hanya diisi saat ada perubahan nama kolom, tipe data, atau struktur JSON.
+
+---
 
 ### **Bagian 3: Draf Pitch Minat 60 Detik**
-> *Tuliskan draf lisan Anda (maksimal 120 kata) berdasarkan 5 langkah Pitch Minat Bab 7:*
-> 
-> 
-> 
-> 
-> 
+> **Draf Pitch Minat (110 kata, mengikuti 5 langkah Pitch Minat):**
+>
+> "Siang R, nyambung obrolan kita semalam soal perubahan skema mendadak pas H-1 *merge* yang bikin integrasi ketahan 20-30 menit, aku kepikiran cara simpel tanpa perlu bikin dokumen baru atau buka Notion. Khusus kalau ada ubah tabel atau kontrak mepet *deadline*, pembuat PR cukup tempel catatan 3 baris di bagian paling atas deskripsi PR GitHub. Isinya cuma bagian yang diubah, dampaknya ke modul lain, sama *tag* rekan terkait. Jadi pas kamu atau anak modul lain buka PR buat *review*, infonya langsung kebaca tanpa nyari di grup LINE dan nulisnya nggak sampai semenit. Memang tantangannya orang bisa lupa pas lagi panik, makanya gimana kalau kita tes dulu di satu PR modul *Leaderboard*?"
+
+**Prototipe Teks yang Ditunjukkan ke Target dan Hasil Adaptasinya:**
+
+- **Prototipe awal (1 Agustus 2026):** Memuat 3 baris utama, yaitu *Bagian yang diubah* (tabel *scores* dengan *unique constraint*), *Dampak ke modul lain* (*re-ingest* data otomatis *update*, bukan duplikat), dan *Tag rekan terkait* (@F / S3-BE-11).
+- **Hasil adaptasi setelah menangkap *hidden concern* R (2 Agustus 2026):** Karena R mengangkat kekhawatiran soal *commit* revisi beruntun di H-1 yang membuat info di PR cepat basi, saya menambahkan baris **Status & Commit** (*Green CI* | Commit a4f82c1, 2 Agustus 16.10 WIB) serta aturan main bahwa pembuat PR baru melakukan *tag* ke rekan modul hilir di kolom komentar **setelah** status pengujian otomatis hijau (*Green CI*).
 
 ---
 
 ## 📊 Rubrik Evaluasi Mandiri (*Self-Assessment*)
-Setelah menyelesaikan lembar kerja ini, ujilah draf pitch Anda bersama rekan sejawat. Mintalah mereka memberikan skor berdasarkan rubrik berikut (Bab 7.15):
 
 | Kriteria | Skor 1 (Awal) | Skor 2 (Berkembang) | Skor 3 (Cakap) | Skor 4 (Unggul) |
 |:---|:---|:---|:---|:---|
@@ -104,6 +95,12 @@ Setelah menyelesaikan lembar kerja ini, ujilah draf pitch Anda bersama rekan sej
 | **Kejelasan Mekanisme** | Menjejalkan daftar fitur teknis (terjadi *Feature Dumping*). | Cara kerja mulai dijelaskan tetapi masih didominasi jargon teknis. | Cara kerja dijelaskan secara ringkas dan mudah dibayangkan oleh pendengar awam. | Cara kerja sangat jernih, didukung analogi membumi atau prototipe yang siap dicoba. |
 | **Penerjemahan Nilai** | Manfaat/nilai dianggap sama saja bagi semua peran yang terlibat. | Mulai menyebutkan manfaat, tetapi belum membedakan nilai spesifik tiap peran. | Mampu menerjemahkan fitur menjadi nilai fungsional yang berbeda bagi tiap peran. | Nilai relasional disampaikan secara presisi dan bermakna bagi tanggung jawab spesifik sasaran. |
 | **Kejujuran & Batas** | Mengklaim solusi sempurna tanpa cela (janji berlebihan / *overpromise*). | Mengakui adanya batas kemampuan solusi tetapi hanya jika ditanya. | Menyatakan batas kemampuan dan risiko solusi secara terbuka dan realistis sejak awal. | Menunjukkan batas solusi secara ksatria serta menawarkan rencana mitigasi atau bukti pendukung. |
+
+**Penilaian Mandiri:**
+- **Kecocokan (4/4):** Mekanisme blok 3 baris di atas PR menempel langsung pada masalah perubahan skema H-1 *merge* sekaligus menghormati kendala waktu *developer* yang enggan membuka aplikasi tambahan.
+- **Kejelasan Mekanisme (4/4):** Bebas dari *feature dumping* (bot LINE dan Notion dipangkas), didukung prototipe teks nyata yang langsung diuji pada PR tanggal 2 Agustus 2026.
+- **Penerjemahan Nilai (4/4):** Nilai dibedakan secara spesifik untuk Koordinator Teknis (R), pengembang modul hilir (F), dan pengembang hulu sesuai tanggung jawab masing-masing.
+- **Kejujuran & Batas (4/4):** Risiko anggota lupa saat panik diakui secara terbuka sejak awal, *hidden concern* R soal *commit* berulang langsung dijawab dengan penanda *Green CI* dan aturan waktu *tag*, serta pengujian dimulai dari lingkup kecil satu PR terlebih dahulu.
 
 ---
 *Komunikasi yang berpusat pada manusia tidak menuntut Anda membawa solusi yang sempurna tanpa cela. Ia hanya meminta Anda jujur terhadap apa yang dapat dilakukan oleh solusi Anda hari ini demi membangun relasi kepercayaan yang langgeng.* (Bab 7.18)

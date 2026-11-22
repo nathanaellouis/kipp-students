@@ -7,89 +7,97 @@ title: "Lembar Kerja Bab 14"
 
 Lembar kerja ini dirancang untuk memastikan bahwa integrasi Kecerdasan Buatan (AI) dalam komunikasi tetap menempatkan martabat manusia sebagai pusat. Sebagai arsitek komunikasi, Anda bertanggung jawab menjaga keaslian suara dan memelihara relasi, sementara AI berperan sebagai pendamping teknis. Gunakan instrumen ini sebagai arsitektur etis sebelum Anda memproses pesan apa pun melalui AI.
 
-* * *
+---
 
-## 1\. Identitas Pengguna dan Konteks Komunikasi
+## 1. Identitas Pengguna dan Konteks Komunikasi
 
 Sebelum melibatkan AI, Anda harus memetakan tiga lapis keberadaan manusia (Source 1.7) untuk memastikan komunikasi tidak tereduksi menjadi sekadar data teknis.
 
--   **Nama Pengguna:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
--   **Nama Pribadi (Target):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
--   **Domain Komunikasi (Source 1.9):** (Pilih salah satu)
-    -   \[ \] **Diri Sendiri (Intrapribadi):** Percakapan batin dan refleksi.
-    -   \[ \] **Keluarga dan Sahabat (Relasi Dekat):** Kehadiran dan dukungan emosional.
-    -   \[ \] **Rekan Kerja dan Pelanggan (Profesional):** Penciptaan nilai dan koordinasi.
-    -   \[ \] **Tetangga dan Komunitas (Sosial/Kolektif):** Deliberasi dan tindakan bersama.
-    -   \[ \] **Dunia (Publik):** Kontribusi gagasan dan dampak luas.
--   **Analisis Tiga Lapis Komunikasi:**
-    -   **Pribadi (Dignity & History):** Siapa target Anda sebagai manusia yang bernilai? Apa sejarah relasi atau janji sebelumnya (Source 3.5) yang harus tetap dihormati?
-    -   **Kepribadian (Trends):** Apa kecenderungan target (misal: analitis, ekspresif, atau reflektif) yang perlu Anda pertimbangkan dalam nada pesan?
-    -   **Peran Naratif Anda:** Tentukan peran Anda dalam situasi ini (misal: sebagai pemimpin tim yang tegas namun adil, atau sahabat yang mendengarkan tanpa menghakimi). _Tanggung jawab peran ini tidak dapat didelegasikan kepada AI._
+- **Nama Pengguna:** Nathanael Louis Cahyono (18225015)
+- **Nama Pribadi (Target):** Target utama adalah mahasiswa lintas jurusan dan pembaca muda di Instagram, sedangkan audiens sekunder mencakup dosen, juri kompetisi, praktisi logistik, para pengomentar, serta dua rekan tim (**S** dan **M**) yang karya bersamanya dibahas pada unggahan tanggal 22 November 2026.
+- **Domain Komunikasi (Source 1.9):**
+  - [ ] **Diri Sendiri (Intrapribadi):** Percakapan batin dan refleksi.
+  - [ ] **Keluarga dan Sahabat (Relasi Dekat):** Kehadiran dan dukungan emosional.
+  - [ ] **Rekan Kerja dan Pelanggan (Profesional):** Penciptaan nilai dan koordinasi.
+  - [ ] **Tetangga dan Komunitas (Sosial/Kolektif):** Deliberasi dan tindakan bersama.
+  - [x] **Dunia (Publik):** Kontribusi gagasan dan dampak luas.
+- **Analisis Tiga Lapis Komunikasi:**
+  - **Pribadi (*Dignity & History*):** Pembaca di Instagram bukan sekadar angka *likes* atau target *clickbait*, melainkan pribadi yang berhak mendapatkan informasi yang jujur lengkap dengan batas simulasi. Selain itu, ada sejarah kerja sama riset MARS bersama dua rekan tim (**S** dan **M**) pada lomba *The Sandbox 3.0 IEEE ITB* yang privasi dan kontribusi bersamanya wajib tetap dihormati.
+  - **Kepribadian (*Trends*):** Profil pembaca sangat beragam. Pembaca muda di Instagram cenderung cepat menggeser slide visual tanpa selalu membuka *caption* panjang, sedangkan dosen, juri, dan praktisi logistik cenderung analitis dan kritis dalam memeriksa ketepatan angka maupun batas klaim.
+  - **Peran Naratif Anda:** Mahasiswa STI ITB 2025 yang berbagi catatan belajar dan ringkasan hasil simulasi riset secara pribadi (*student contributor*), bukan perwakilan resmi ITB, panitia IEEE, maupun operator pelabuhan. Tanggung jawab peran, verifikasi fakta, dan respons atas kritik pembaca tidak didelegasikan kepada AI.
 
-* * *
+---
 
-## 2\. Instrumen I: Matriks 'Lampu Lalu Lintas Risiko' AI
+## 2. Instrumen I: Matriks 'Lampu Lalu Lintas Risiko' AI
 
-Gunakan matriks ini untuk menentukan batas kewenangan AI. Matriks ini merupakan sintesis dari standar etika dalam Lampiran E.4 dan E.5.
+Gunakan matriks ini untuk menentukan batas kewenangan AI (sintesis standar etika Lampiran E.4 dan E.5) beserta penerapannya pada perancangan *carousel* Instagram proyek MARS:
 
-| Warna/Tingkat Risiko | Kriteria/Konteks Situasi | Tindakan Eskalasi/Mitigasi |
-| --- | --- | --- |
-| Hijau (Risiko Rendah) | Tugas teknis, perbaikan tata bahasa, pengolahan format, atau simulasi ide awal yang bersifat administratif. | AI dapat digunakan secara luas. Wajib melakukan pemeriksaan mandiri terhadap hasil keluaran sebelum digunakan. |
-| Kuning (Risiko Sedang) | Komunikasi yang melibatkan interpretasi nilai, data sensitif, atau penyusunan draf pesan penting dalam domain profesional. | Wajib melakukan tinjauan manusia yang ketat terhadap bias, asumsi tersembunyi, dan ketepatan nada (Source E.6). |
-| Merah (Risiko Tinggi) | Permintaan maaf, konflik personal, keputusan nilai/etis, penilaian karakter manusia, atau situasi dengan risiko relasi yang tinggi. | DILARANG menggunakan AI dalam pengambilan keputusan atau penyusunan pesan. Komunikasi harus dilakukan secara manual dan autentik oleh manusia (Source E.4). |
+| Warna/Tingkat Risiko | Kriteria/Konteks Situasi | Tindakan Eskalasi/Mitigasi | Penerapan pada Proyek *Carousel* MARS |
+| :--- | :--- | :--- | :--- |
+| **Hijau (Risiko Rendah)** | Tugas teknis, perbaikan tata bahasa, pengolahan format, atau simulasi ide awal yang bersifat administratif (*task-driven*). | AI dapat digunakan secara luas. Wajib melakukan pemeriksaan mandiri terhadap hasil keluaran sebelum digunakan. | Memakai Gemini sebagai **Translator** untuk menerjemahkan istilah teknis *paper* (detoks jargon) ke analogi sehari-hari. Saya memeriksa ulang agar analogi tetap setia pada konsep *feasibility-first* dan *HITL*. |
+| **Kuning (Risiko Sedang)** | Komunikasi yang melibatkan interpretasi nilai, data sensitif, atau penyusunan draf pesan penting dalam domain profesional/publik. | Wajib melakukan tinjauan manusia yang ketat terhadap bias, asumsi tersembunyi, dan ketepatan nada (Source E.6). | Memakai Gemini sebagai **Copilot** untuk menyusun draf awal 7 slide, *caption*, *alt-text*, serta opsi awal balasan komentar/koreksi, dan sebagai **Mirror / Coach** untuk uji *screenshot test*. Seluruh hasil disaring ketat lewat 5 revisi manusia dan verifikasi dokumen asli. |
+| **Merah (Risiko Tinggi)** | Permintaan maaf, konflik personal, keputusan nilai/etis, penilaian karakter manusia, atau situasi dengan risiko relasi tinggi (*relationship-driven*). | DILARANG menggunakan AI dalam pengambilan keputusan atau penyusunan pesan akhir. Komunikasi harus dilakukan manual dan autentik oleh manusia (Source E.4). | Menolak peran **Delegate** (tidak ada balasan komentar/DM otomatis atau menebak motif pengkritik). Penentuan angka riset, batas simulasi, data respons unggahan, pengakuan atas 2 kritik pembaca, dan pembaruan *caption* ditangani manual 100% oleh saya. |
 
-* * *
+---
 
-## 3\. Instrumen II: Format Spesifikasi Kopilot Komunikasi
+## 3. Instrumen II: Format Spesifikasi Kopilot Komunikasi
 
-Rancang penggunaan AI sebagai asisten (kopilot) dengan batasan yang tegas untuk melindungi integritas relasi.
+Rancangan penggunaan AI (Gemini) sebagai pendamping teknis dengan batasan tegas untuk melindungi integritas riset dan relasi publik:
 
--   **Memori Relasi & Shared History:** Sebutkan poin-poin penting dari sejarah relasi atau janji sebelumnya (Source 14.12) yang tidak diketahui AI namun harus tetap tercermin dalam pesan.
--   **Tujuan Transisi (TAIDA):** Perubahan keadaan apa yang diinginkan?
-    -   **Target:** Siapa person spesifik yang dihadapi?
-    -   **Attention:** Apakah masalah/peluang ini sudah dibuat relevan bagi mereka?
-    -   **Interest:** Apakah solusi yang ditawarkan sudah tampak layak/feasibel?
-    -   **Desire:** Apakah mereka sudah melihat manfaat atau nilai nyata bagi mereka?
-    -   **Action:** Apakah sudah ada kesepakatan langkah nyata yang jelas?
--   **Peran AI (Pilih satu - Source 14.7):**
-    -   \[ \] Cermin (Refleksi diri) | \[ \] Pelatih (Latihan respons) | \[ \] Penerjemah (Alih ragam bahasa)
-    -   \[ \] Kopilot (Penyusun draf) | \[ \] Mediator (Pencari titik temu) | \[ \] Agen Terdelegasi (Tugas terbatas)
--   **Data Minimum:** Informasi apa yang diberikan ke AI? _(Peringatan: Dilarang memasukkan data pribadi atau rahasia tanpa dasar sah sesuai Source E.7)._
--   **Kewenangan Keterlibatan AI:**
-    -   \[ \] Hanya membantu struktur/kerangka berpikir.
-    -   \[ \] Memperluas kosakata/repertoar bahasa.
-    -   \[ \] Menyusun draf sintesis pesan secara utuh.
--   **Larangan (Prohibitions):** AI dilarang menggunakan nada agresif, dilarang membuat janji palsu, dan dilarang memberikan penilaian karakter. _Ingat: AI tidak memikul tanggung jawab relasional—beban tanggung jawab tetap pada Anda (Source 14.14)._
--   **Mitigasi Risiko:** Langkah spesifik untuk memverifikasi halusinasi data atau bias AI.
--   **Tinjauan Manusia:** Mekanisme validasi akhir (misal: pembacaan ulang dengan empati) sebelum pesan dikirim.
+- **Memori Relasi & *Shared History*:** Proyek riset MARS dikerjakan bersama dua rekan tim (**S** dan **M**) pada ajang *The Sandbox 3.0 IEEE ITB* (Juara 2), sehingga privasi keduanya wajib dijaga dengan tidak menyebut nama asli maupun akun pribadi mereka. Selain itu, seluruh data proyek sejak awal bersifat *simulated proxy* (bukan *live API*), sehingga publikasi tidak boleh memutarbalikkan fakta seolah sistem sudah aktif di pelabuhan nyata.
+- **Tujuan Transisi (TAIDA):**
+  - **Target:** Mahasiswa lintas jurusan dan pembaca muda di Instagram, dengan tetap memperhitungkan pembaca sekunder (rekan tim S & M, dosen, juri, dan praktisi logistik).
+  - **Attention:** Judul pertanyaan netral tanpa *clickbait* (*"Gimana cara kapal kargo milih rute aman saat krisis mendadak?"*) agar langsung menyentuh rasa ingin tahu pembaca.
+  - **Interest:** Menjelaskan mekanisme MARS lewat analogi aplikasi peta *"sadar aturan"* dan *"rem pengaman manusia"* saat keyakinan di bawah 95%, disertai ringkasan uji 12 pelabuhan ($N = 50$).
+  - **Desire:** Menyediakan Slide 6 khusus (*Batas Jujur*) dan menyebut *trade-off* jarak +7-12% agar pembaca merasakan kejujuran batas sebagai dasar kepercayaan pada teknologi berisiko tinggi.
+  - **Action:** Mengajak pembaca berbagi pandangan, pertanyaan, atau kritik di kolom komentar mengenai tantangan lapangan di Indonesia, lalu menindaklanjutinya dengan balasan personal dan catatan koreksi terbuka di *caption*.
+- **Peran AI (Source 14.7):**
+  - [x] **Cermin** (Refleksi diri / uji *screenshot test*) | [x] **Pelatih** (Uji sudut pandang pembaca luar) | [x] **Penerjemah** (Detoks jargon teknis)
+  - [x] **Kopilot** (Penyusun draf awal slide, *caption*, *alt-text*, opsi balasan) | [ ] **Mediator** *(tidak dipakai karena bukan fasilitasi konflik multipihak)* | [ ] **Agen Terdelegasi** *(sengaja tidak digunakan)*
+- **Data Minimum:** Hanya parameter teknis umum dari dokumen riset MARS (12 pelabuhan Indonesia, kecepatan 15 knots, *dual-mode* $\alpha = 0,15$ vs $0,75$, *HITL confidence gate* <95%, hasil proksi $N = 50$, serta status *simulated proxy*). Nama lengkap, akun pribadi, dan catatan internal rekan tim (**S** dan **M**) dilarang dimasukkan ke *prompt*.
+- **Kewenangan Keterlibatan AI:**
+  - [x] Hanya membantu struktur/kerangka berpikir (alur 7 slide).
+  - [x] Memperluas kosakata/repertoar bahasa (analogi membumi dan *alt-text*).
+  - [x] Menyusun draf sintesis pesan secara utuh *(hanya sebagai draf mentah yang wajib diverifikasi dan disunting manusia)*.
+- **Larangan (*Prohibitions*):** AI dilarang membuat judul *clickbait* atau klaim mutlak (*overclaim*), dilarang mencantumkan nama asli rekan tim atau mengatasnamakan institusi (ITB, IEEE, atau operator pelabuhan), dilarang menilai karakter/motif pengomentar (*profiling*), dan dilarang mengirim balasan secara otomatis. Beban tanggung jawab relasional tetap berada sepenuhnya pada saya (Source 14.14).
+- **Mitigasi Risiko:** Seluruh angka teknis (80% perdagangan laut global, biaya logistik 23,8% dan estimasi 14,29% PDB, 12 pelabuhan, 15 knots, kongesti >85%, $\alpha = 0,15/0,75$, ambang *confidence* 95%, $N = 50$, waktu proksi 12-24 jam vs 3-9 menit / 30-60 menit, dan *trade-off* jarak +7-12%) diverifikasi silang langsung dengan *paper* dan kode simulasi asli. Bahasa draf AI disunting ulang agar tetap menjaga keaslian suara mahasiswa (tidak kaku/generik) dan bebas dari bias yang meremehkan pelabuhan kecil atau prosedur kerja operator lapangan.
+- **Tinjauan Manusia & Kondisi Eskalasi:** Sebelum tayang, seluruh slide dicek memakai *screenshot test* untuk memastikan potongan satu slide pun tidak memicu salah tafsir. **Kondisi eskalasi** ditetapkan tegas: setiap kali muncul komentar kritis, pertanyaan keakuratan fakta, atau potensi salah paham atas batas simulasi, saya langsung mengambil alih kendali penuh secara manual. Hal ini langsung diterapkan saat dua pembaca mengkritik absennya hitungan biaya bahan bakar (*bunker fuel*) dan batas 12 pelabuhan terhadap pelabuhan perintis serta cuaca mikro.
 
-* * *
+---
 
-## 4\. Panduan Operasional: Prompt Berpusat pada Manusia
+## 4. Panduan Operasional: Prompt Berpusat pada Manusia
 
-Berdasarkan prinsip Bab 14.15 dan 2.12, terapkan panduan berikut saat berinteraksi dengan AI:
+Berdasarkan prinsip Bab 14.15 dan 2.12, keempat prinsip berikut diterapkan langsung saat berinteraksi dengan Gemini:
 
--   **Gunakan AI sebagai cermin reflektif (Source 2.12), bukan sebagai hakim karakter.** Jangan meminta AI menentukan identitas atau "siapa sebenarnya" seseorang.
--   **Gunakan AI untuk memperluas repertoar, bukan menggantikan suara autentik.** AI membantu Anda menemukan alternatif pilihan bahasa, namun Anda yang memilih mana yang paling mewakili martabat Anda.
--   **Fokus pada Penciptaan Nilai.** Instruksikan AI untuk mencari solusi yang menguntungkan kedua pihak, bukan strategi untuk memenangkan argumen secara sepihak.
--   **Jangan mendelegasikan empati.** AI bisa mensimulasikan kata-kata empati, namun kehadiran batiniah hanya bisa diberikan oleh Anda sebagai manusia.
+- **Gunakan AI sebagai cermin reflektif (Source 2.12), bukan sebagai hakim karakter.** AI hanya dipakai menguji potensi salah tafsir slide, tidak pernah diminta menebak motif atau kepribadian pembaca yang mengkritik.
+- **Gunakan AI untuk memperluas repertoar, bukan menggantikan suara autentik.** AI membantu menerjemahkan jargon, tetapi saya menyunting ulang kalimatnya agar tetap terdengar alami sebagai catatan pribadi mahasiswa.
+- **Fokus pada Penciptaan Nilai.** *Prompt* diarahkan pada penjelasan yang jujur dan bermanfaat bagi pembaca, bukan strategi sensasional untuk mengejar *likes*.
+- **Jangan mendelegasikan empati.** Pengakuan atas dua kritik pembaca dan pembaruan *caption* dilakukan langsung secara personal atas nama saya sendiri.
 
-* * *
+### **Prompt Berpusat pada Manusia yang Digunakan:**
+> *"Bantu saya menyederhanakan konsep proyek riset MARS (12 pelabuhan Indonesia, 15 knots, dual-mode alpha 0,15 vs 0,75, HITL confidence gate di bawah 95%, hasil proksi N=50) menjadi draf carousel Instagram 7 slide plus alt-text untuk pembaca muda dan mahasiswa lintas jurusan. Gunakan bahasa yang santai tapi tetap rapi, jangan pakai nama asli dua rekan tim saya, tegaskan ini catatan pribadi mahasiswa bukan pernyataan resmi kampus, dan sertakan batas bahwa datanya masih simulated proxy."*
 
-## 5\. Daftar Periksa Etika (The Final Gate)
+### **Ringkasan 5 Revisi Manusia atas Output Awal AI:**
+1. **Judul Slide 1 (Ditolak & diubah):** Draf AI *"MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!"* diganti menjadi *"Gimana cara kapal kargo milih rute aman saat krisis mendadak?"* plus catatan bahwa ini hasil simulasi riset mahasiswa, bukan sistem operasional resmi, untuk mencegah *clickbait*.
+2. **Slide 3-4 Mekanisme (Diubah):** Jargon kaku AI *"filtering kepatuhan proaktif berbasis confidence gate"* diubah menjadi analogi aplikasi peta *"sadar aturan"* dan *"rem pengaman manusia"* saat keyakinan di bawah 95%.
+3. **Slide 5 Hasil (Ditolak & diubah):** Klaim mutlak AI *"LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit"* diganti dengan penegasan kata **"proksi"**, rentang **30-60 menit** saat tinjauan manusia, dan *trade-off* jarak **+7-12%** agar lulus *screenshot test*.
+4. **Penempatan Batas *Simulated Proxy* (Dipindah):** Dari yang semula hanya ditulis kecil di akhir *caption*, diangkat menjadi **satu slide khusus (Slide 6 Batas Jujur)** yang porsi visualnya setara slide hasil.
+5. **Slide 7 & Caption (Ditolak):** Saran AI menyebut nama lengkap rekan tim dan afiliasi kampus secara menonjol ditolak, lalu diganti rujukan kolektif sebagai tim disertai penegasan *"catatan belajar pribadi mahasiswa, bukan pernyataan resmi institusi"*.
 
-Gunakan daftar ini sebagai verifikasi akhir sebelum tombol "Kirim" ditekan.
+---
 
--   \[ \] Apakah saya tetap memegang tanggung jawab penuh atas dampak relasional dari pesan ini? (Source E.1)
--   \[ \] Apakah keluaran AI sudah saya periksa secara manual terhadap fakta, asumsi bias, dan ketepatan nada?
--   \[ \] Apakah pesan ini menghormati martabat penerima sebagai pribadi (person) dan bukan sekadar kategori?
--   \[ \] Apakah saya telah memastikan AI tidak digunakan untuk menangani konflik merah (konflik personal/etik)?
--   \[ \] Apakah saya telah menyamarkan data sensitif sebelum diproses oleh AI?
+## 5. Daftar Periksa Etika (The Final Gate)
 
-* * *
+Verifikasi akhir yang dilakukan sebelum mengunggah *carousel* dan membalas komentar pembaca:
 
-## 6\. Pernyataan Transparansi (Sesuai Lampiran E.7)
+- [x] **Apakah saya tetap memegang tanggung jawab penuh atas dampak relasional dari pesan ini? (Source E.1)** Ya, seluruh keputusan penerbitan, balasan atas 4 komentar, dan catatan koreksi *caption* dikirim atas nama dan tanggung jawab saya sendiri.
+- [x] **Apakah keluaran AI sudah saya periksa secara manual terhadap fakta, asumsi bias, dan ketepatan nada?** Ya, semua angka dicocokkan langsung dengan *paper* dan kode simulasi asli, 5 bagian draf yang terlalu promosional atau kaku direvisi, dan nada dijaga agar tidak meremehkan sistem pelabuhan yang ada.
+- [x] **Apakah pesan ini menghormati martabat penerima sebagai pribadi (*person*) dan bukan sekadar kategori?** Ya, audiens diajak berdiskusi kritis secara setara, bukan dipancing dengan *clickbait*, dan kedua pengkritik diberi kredit secara terbuka di *caption*.
+- [x] **Apakah saya telah memastikan AI tidak digunakan untuk menangani konflik merah (konflik personal/etik)?** Ya, peran *Delegate* ditolak. Alasan tidak memakai lebih banyak AI adalah volume komentar masih kecil (4 komentar), dua komentar berupa kritik substantif yang butuh pengakuan tulus dari pelaku risetnya, dan kepercayaan pembaca akan rusak jika kritik dibalas seperti bot.
+- [x] **Apakah saya telah menyamarkan data sensitif sebelum diproses oleh AI?** Ya, nama lengkap, akun pribadi, dan catatan internal rekan tim (**S** dan **M**) tidak pernah dimasukkan ke *prompt* maupun ke postingan.
 
-Jika konteks profesional atau akademik menuntut transparansi, gunakan format standar berikut:
+---
 
-_"Draf pesan ini disusun dengan bantuan AI sebagai \[Sebutkan Peran AI, misal: pelatih/penerjemah\], namun isi, keputusan akhir, dan tanggung jawab sepenuhnya berada pada \[Nama Pengguna\]."_
+## 6. Pernyataan Transparansi (Sesuai Lampiran E.7)
+
+> *"Draf awal teks carousel, terjemahan istilah teknis, dan alt-text pada unggahan publik MARS ini disusun dengan bantuan AI (Gemini) sebagai translator dan copilot, namun verifikasi seluruh data riset, revisi batas klaim, keputusan akhir, balasan komentar, dan tanggung jawab penuh atas isi tetap berada pada saya (Nathanael Louis Cahyono)."*

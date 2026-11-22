@@ -1,8 +1,8 @@
 ---
 title: "Action & Agreement Challenge"
 week: 10
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "Barrier, authority, negotiation, agreement, dan action evidence."
 categories: [TAIDA, Action]
@@ -12,14 +12,146 @@ categories: [TAIDA, Action]
 
 Menemukan desire–action gap dan menghasilkan agreement yang feasible serta eksplisit.
 
-## Evidence wajib
+## Desire–action gap
 
-- Barrier dan authority map.
-- Options dan trade-off yang dibahas.
-- Agreement dengan owner/deadline serta bukti action atau review.
+Target komunikasi masih rekan satu tim yang sama dari Minggu 9, yaitu inisial **S** (Ketua Tim) dan **M** (anggota tim) pada babak final *Technovate Paper Competition The Sandbox 3.0 IEEE ITB* untuk proyek **MARS (*Maritime Adaptive Rerouting System*)**. Pada evaluasi 28 April 2026 (Minggu 9), S sudah memastikan strategi presentasi final kami, yaitu demo simulator lokal berlabel transparan, penegasan metrik proksi, dan slide arsitektur *Interoperability Middleware*, untuk presentasi pada **Minggu pagi, 10 Mei 2026**.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 10](../examples/week-10.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+Namun, saat memasuki satu minggu sebelum final (**Minggu malam, 3 Mei 2026**), kesediaan tersebut ternyata masih berhenti di tingkat *desire* dan *intention* ("nanti minggu depan kita sering latihan bareng buat presentasi sama Q&A"). Belum ada jadwal pasti, belum ada pembagian target latihan, dan belum ada kesepakatan bagaimana tim menyiasati jadwal akademik yang padat. Saya membuka diskusi di grup WhatsApp tim untuk mengecek kondisi nyata masing-masing sebelum jadwal latihan semakin tergeser.
+
+> **Saya:** "S, M, besok udah masuk H-7 final 10 Mei nih. Kemarin kan kita udah fix soal isi PPT sama strategi demonya, nah buat latihan presentasi sama Q&A enaknya kita ketemu hari apa aja ya? Gimana kalau mulai Selasa atau Rabu malam kita kumpul bentar buat latihan bareng?"
+>
+> **M:** "Waduh, kalau Selasa aku ada kuis Tan, terus Jumat aku juga ada deadline tubes. Jadi Senin malam sampai Jumat tuh agak berat kalau disuruh kumpul lama."
+>
+> **S:** "Sama nih, aku Kamis ada kuis terus Sabtu ada deadline tubes. Kayaknya kalau nyari waktu yang bener-bener kosong bertiga di hari Senin sampai Sabtu hampir nggak ada deh. Kamu sendiri gimana Tan?"
+>
+> **Saya:** "Aku juga Senin ada kuis, terus Rabu ada deadline tubes. Berarti dari Senin sampai Sabtu jadwal kita kepenuhan bergantian semua ya, sementara Minggu pagi udah harus maju di depan juri."
+
+Dari pengecekan awal ini terlihat jelas letak *desire–action gap*-nya. Keinginan untuk tampil siap di final 10 Mei sudah tinggi pada ketiga anggota, tetapi keinginan tersebut terhadang bentrokan jadwal penuh sepanjang Senin (4 Mei) hingga Sabtu (9 Mei) sehingga usulan awal saya untuk latihan bersama di hari kerja langsung mentok.
+
+## Barrier dan authority map
+
+Sebelum mengajukan ulang skema latihan, saya memetakan seluruh penghalang kelayakan (*affordability*) dan batas wewenang di dalam tim agar rencana yang disusun tidak melampaui kapasitas siapa pun.
+
+| Unsur | Temuan |
+|---|---|
+| **Time (Waktu)** | Penghalang utama: tidak ada satu pun hari dari Senin hingga Sabtu yang kosong serentak bagi bertiga, Senin (4 Mei) saya kuis, Selasa (5 Mei) M kuis, Rabu (6 Mei) saya *deadline* tubes, Kamis (7 Mei) S kuis, Jumat (8 Mei) M *deadline* tubes, dan Sabtu (9 Mei) S *deadline* tubes, sedangkan Minggu pagi (10 Mei) sudah jadwal presentasi final |
+| **Effort (Usaha)** | Beban kognitif dan fisik tinggi karena seluruh anggota harus membagi fokus antara kuis/tubes kuliah dan persiapan lomba, memaksakan rapat berulang di hari kerja berisiko membuat semua orang kelelahan sebelum hari-H |
+| **Risk (Risiko)** | Jika seluruh latihan ditunda sampai Sabtu malam tanpa persiapan sebelumnya, materi belum hafal dan sesi Q&A berisiko berantakan. Di sisi lain, begadang terlalu berat tanpa struktur yang jelas berisiko menurunkan fokus pada Minggu pagi |
+| **Capability (Kemampuan)** | Bukan penghalang utama: setiap anggota sudah memahami isi *paper*, alur simulator MARS, dan bagian slide masing-masing sejak *mock Q&A* 28 April, yang belum terlatih adalah kelancaran transisi antar-pembicara dan ketepatan durasi |
+| **Money (Uang)** | Membutuhkan ruang kerja (*working space*) yang terjangkau untuk sesi malam hingga dini hari agar nyaman berlatih luring bersama, dipilih **working space Louvin** yang mudah dijangkau dan memadai untuk kerja kelompok panjang |
+| **Change (Perubahan)** | Tim perlu mengubah kebiasaan dari ekspektasi "harus selalu latihan luring bertiga sejak awal minggu" menjadi pola latihan mandiri per bagian yang disiplin, baru digabungkan secara intensif di akhir pekan |
+| **Authority (Wewenang)** | S sebagai Ketua Tim berwenang mengunci alur akhir presentasi dan pembagian waktu panggung, tetapi **masing-masing anggota memegang wewenang penuh atas prioritas kuis dan deadline tubes kuliahnya sendiri**. Saya tidak berwenang menuntut S atau M mengorbankan jadwal kuliahnya demi latihan lomba |
+
+Pemetaan **posisi vs. kepentingan** membantu menghindari perdebatan soal siapa yang paling sibuk dan memindahkan fokus ke kebutuhan bersama:
+
+| Pihak | Posisi | Kepentingan |
+|---|---|---|
+| **Saya** | Semula mengusulkan latihan bersama di hari Selasa/Rabu malam | Memastikan transisi demo simulator, pembagian durasi, dan jawaban Q&A benar-benar terlatih sebelum Minggu pagi |
+| **M** | Menolak latihan bersama di sela persiapan kuis (Selasa) dan *deadline* tubes (Jumat) | Menyelesaikan kewajiban akademik tepat waktu tanpa membuat persiapan presentasi lomba jadi setengah-setengah |
+| **S (Ketua Tim)** | Menyatakan nyaris tidak ada waktu kosong bersama sampai Sabtu selesai *deadline* tubes | Menuntaskan kuis (Kamis) dan tubes (Sabtu) secara tuntas, sekaligus tetap menjaga agar tim tampil kompak dan tenang pada Minggu pagi |
+
+**Titik temu kepentingan:** Ketiga pihak sama-sama ingin kewajiban kuliah Senin–Sabtu selesai aman tanpa saling membebani, sambil memastikan pada Minggu pagi (10 Mei) setiap anggota sudah menguasai bagiannya dan siap menghadapi Q&A juri.
+
+## Options, trade-off, dan negosiasi
+
+Setelah melihat bentrokan jadwal Senin–Sabtu, saya menimbang tiga opsi sebelum membalas di grup WhatsApp:
+
+| Opsi | Trade-off | Keputusan |
+|---|---|---|
+| Memaksakan latihan daring singkat lewat *call* setiap malam Senin–Jumat | Semua orang tetap bertemu lebih awal, tetapi mengganggu fokus kuis dan tubes anggota yang sedang punya *deadline* esok harinya (berisiko merusak relasi dan kualitas kuliah) | Ditolak |
+| Tidak berlatih sama sekali sampai Sabtu malam setelah S selesai tubes | Bebas gangguan sepanjang hari kerja, tetapi Sabtu malam akan habis untuk menghafal materi dasar dari nol sehingga waktu Q&A tidak cukup | Ditolak |
+| **Skema bertahap:** latihan mandiri tiap bagian sepanjang Senin–Jumat dengan *checkpoint* WhatsApp, lalu latihan luring gabungan di *working space* Louvin pada Sabtu (9 Mei) saya dan M mulai dulu jika S belum selesai tubes, lalu S menyusul | Mengorbankan jam tidur pada Sabtu malam (begadang), tetapi melindungi seluruh kuis dan *deadline* tubes Senin–Sabtu serta memastikan Sabtu malam langsung fokus ke sinkronisasi transisi, demo, dan Q&A | **Dipilih** |
+
+Saya memulai negosiasi dengan mengakui bahwa usulan awal saya untuk kumpul hari kerja memang tidak realistis, lalu menawarkan opsi bertahap sambil memberi ruang bagi S dan M untuk mengubah atau menolak bagian yang terasa memberatkan.
+
+> **Saya:** "Oke, baru kebaca jelas nih jadwal kita yang beneran padat bergantian. Salah aku juga tadi langsung ngajakin kumpul hari kerja tanpa cek jadwal kuis sama tubes kalian dulu. Kalau kita maksain ketemu Senin–Jumat kayaknya malah bikin kuliah keteteran semua."
+>
+> **Saya:** "Gimana kalau kita bagi dua tahap aja? Sepanjang Senin sampai Jumat (4–8 Mei), nggak usah ada jadwal kumpul, masing-masing fokus beresin kuis sama tubes dulu, tapi sambil latihan mandiri buat bagian slide masing-masing. Terus pas Sabtu (9 Mei) begitu S kelar tubes, kita langsung kumpul bertiga di working space Louvin buat latihan full presentasi, demo, sama Q&A untuk besok paginya. Kalau misal S baru kelarnya malam, aku sama M bisa duluan ketemu di Louvin buat nyocokin alur sama demo, nanti S tinggal nyusul. Gimana menurut kalian? Kalau ada yang keberatan begadang Sabtu malam atau mau atur jamnya beda, bilang aja ya."
+>
+> **M:** "Nah, kalau sistemnya mandiri dulu Senin–Jumat aku aman banget sih, jadi Selasa kuis sama Jumat tubes nggak keganggu. Sabtu sore aku udah kosong total, jadi gas aja kalau mau duluan ke Louvin bareng kamu Tan sambil nunggu S kelar tubes."
+>
+> **S:** "Aku setuju banget sama skema ini, jujur jauh lebih lega karena nggak perlu merasa bersalah ninggalin latihan pas lagi kejar kuis Kamis sama tubes Sabtu. Cuma aku konfirmasi dari awal ya, tubes aku Sabtu itu kemungkinan baru beres agak malam, sekitar jam 8 atau 9. Nggak apa-apa nih kalian nunggu duluan terus kita agak begadang buat Q&A?"
+>
+> **Saya:** "Aman banget S, justru makanya biar Sabtu malam kita nggak mulai dari nol dan nggak terlalu larut begadangnya, gimana kalau Jumat malam (8 Mei) jam 21.00 kita bikin checkpoint singkat di grup ini? Cuma buat mastiin masing-masing udah coba latihan mandiri bagiannya sendiri plus ngecek estimasi durasi, sama S ngabarin progres tubes buat perkiraan jam nyusul hari Sabtu. Kalau ternyata ada slide yang masih perlu diubah sebelum Sabtu, bisa ketahuan dari Jumat. Cocok nggak?"
+>
+> **S:** "Cocok banget Tan. Jadi Sabtu malam pas aku nyusul ke Louvin, kita tinggal gabungin transisi bertiga, tes klik demo, sama latihan tanya-jawab aja."
+>
+> **M:** "Setuju, Jumat jam 21.00 kita cek di grup ya."
+
+## Agreement: owner, deadline, dan definisi selesai
+
+Seluruh hasil negosiasi dikunci menjadi kesepakatan operasional dengan pelaku tunggal, tenggat waktu absolut, prasyarat, definisi selesai yang dapat diperiksa, dan tindak lanjut, tanpa memakai kata kabur seperti "sebisanya" atau "nanti".
+
+| No | Siapa | Melakukan apa | Kapan | Prasyarat / Sumber daya | Definisi selesai | Tindak lanjut |
+|---|---|---|---|---|---|---|
+| 1 | **Saya, M, dan S** (masing-masing mandiri) | Berlatih mandiri mempresentasikan bagian slide masing-masing sambil mengukur durasi bicara sendiri | Rentang Senin, 4 Mei – Jumat, 8 Mei 2026, selesai paling lambat Jumat pukul 21.00 WIB | Slide final MARS sudah terkunci dan pembagian bagian bicara sudah jelas | Masing-masing telah menyelesaikan minimal 1 kali latihan penuh bagiannya sendiri dan mencatat durasi bicaranya | Dilaporkan dalam satu pesan singkat saat *checkpoint* di grup WhatsApp |
+| 2 | **Saya** | Memimpin *checkpoint* progres persiapan di grup WhatsApp dan memastikan kesiapan tempat (*working space* Louvin) serta berkas demo simulator lokal | Jumat, 8 Mei 2026, pukul 21.00 WIB | Laporan singkat latihan mandiri dari M dan S serta pembaruan estimasi selesai tubes S | Terkonfirmasi kesiapan bagian masing-masing, berkas simulator bebas *error*, dan jam mulai sesi Sabtu untuk saya & M disepakati | Dikonfirmasi langsung di grup WhatsApp tim |
+| 3 | **Saya dan M** | Bertemu lebih dahulu di *working space* Louvin untuk latihan sinkronisasi bagian berdua, cek urutan transisi, dan uji coba alur klik demo simulator MARS | Sabtu, 9 Mei 2026, pukul 19.30 – 21.30 WIB (menunggu S selesai tubes) | M sudah menyelesaikan *deadline* tubes hari Jumat, laptop dan file simulator MARS siap | Alur bagian saya & M lancar tanpa jeda bingung dan demo Skenario C–D berjalan mulus tanpa *bug* | Memberi kabar posisi dan hasil cek demo ke S melalui WhatsApp |
+| 4 | **S** (menyusul), bersama **Saya dan M** | Latihan presentasi penuh bertiga (termasuk transisi antar-pembicara, demo, dan simulasi tanya-jawab/Q&A juri) hingga siap untuk presentasi Minggu pagi | Sabtu, 9 Mei 2026, dimulai segera setelah S tiba di Louvin (sekitar pukul 21.30 WIB) hingga dini hari (maksimal 02.30 WIB agar tetap ada waktu istirahat sebelum final pagi) | S telah menyelesaikan pengumpulan tubes hari Sabtu | Minimal 2 kali simulasi presentasi utuh bertiga masuk batas waktu lomba dan seluruh daftar pertanyaan kritis Q&A (proksi data, 12 pelabuhan, *middleware*, HITL) sudah terbagi penjawabnya | Ditutup dengan persetujuan bersama S sebagai Ketua Tim sebelum pulang beristirahat |
+
+**Pembatas dan ruang aman yang disepakati:** tidak ada jadwal rapat/latihan bersama pada Senin–Jumat agar kuis dan tubes tidak terganggu, jika S selesai tubes lebih malam dari perkiraan, saya dan M tidak menunggu pasif melainkan tetap menjalankan butir 3 lebih dahulu, dan apabila di tengah sesi begadang Sabtu malam konsentrasi sudah terlalu turun, latihan langsung dihentikan sesuai batas pukul 02.30 WIB demi menjaga performa Minggu pagi.
+
+## Action evidence dan status pelaksanaan
+
+Seluruh butir kesepakatan dipantau melalui lingkar komitmen (**Janji → Pelaksanaan → Checkpoint → Bukti → Penerimaan**) hingga tuntas menjelang final 10 Mei 2026.
+
+> **[Checkpoint : Jumat, 8 Mei 2026, 21.03 WIB di Grup WhatsApp]**
+> **Saya:** "Halo S, M, sesuai kesepakatan kita checkpoint bentar ya. Aku udah latihan mandiri bagian demo sama metodologi, durasinya pas di sekitar 4 menit dan file simulator udah aman. Kalian gimana progresnya?"
+>
+> **M:** "Tubesku barusan banget kelar submit. Tadi sore aku udah nyoba latihan bagian latar belakang sama analisis hasil, masih agak kepanjangan dikit sekitar 30 detik tapi besok bisa diringkas pas di Louvin."
+>
+> **S:** "Aku udah sempat baca-baca dan latihan alur pembuka sama penutup kemarin malam abis kuis. Cuma buat besok Sabtu tubesku kayaknya baru beneran aman di-submit sekitar jam 9 malam. Jadi kalian mulai duluan aja di Louvin jam 19.30, nanti begitu kelar aku langsung nyusul ke sana ya."
+
+> **[Pelaksanaan & Adaptasi Lapangan : Sabtu, 9 Mei 2026, di Grup WhatsApp & Working Space Louvin]**
+> **Saya (19.35 WIB):** "S, aku sama M udah di Louvin ya. Kita mulai nyocokin transisi slide sama latihan klik Skenario C & D dulu biar nanti pas kamu datang tinggal gabung full."
+>
+> **S (21.18 WIB):** "Alhamdulillah tubes udah submit! Aku OTW Louvin sekarang ya, sekitar 15 menit lagi nyampe."
+
+Sesampainya S di *working space* Louvin sekitar pukul 21.35 WIB, tim langsung masuk ke tahap gabungan (butir 4). Karena materi dasar sudah dilatih mandiri dan transisi awal saya–M sudah rapi, sesi begadang tidak terbuang untuk membaca slide dari awal, melainkan langsung berfokus pada 2 kali gladi resik penuh bertiga dengan *stopwatch* serta simulasi Q&A (menguji pertanyaan seputar *Simulated Proxy*, parameter $\alpha=0.15/0.75$, dan arsitektur *Interoperability Middleware*). Sesi selesai sekitar pukul 02.00 WIB—lebih cepat dari batas maksimal 02.30 WIB, sehingga seluruh anggota masih sempat beristirahat sebelum tampil pada Minggu pagi, 10 Mei 2026.
+
+| Butir | Fase lingkar komitmen | Status |
+|---|---|---|
+| **1. Latihan mandiri tiap bagian** | Janji 3 Mei → Pelaksanaan 4–8 Mei → *Checkpoint* 8 Mei 21.03 WIB → Bukti: laporan durasi & kesiapan masing-masing di WhatsApp → Diterima | **Terlaksana dan terverifikasi** |
+| **2. *Checkpoint* & kesiapan teknis** | Janji 3 Mei → Pelaksanaan Jumat, 8 Mei 21.03 WIB → Bukti: catatan penyesuaian durasi M (+30 detik) dan kepastian jam S menyusul (21.00 WIB) → Diterima | **Terlaksana dan terverifikasi** |
+| **3. Latihan awal Saya & M di Louvin** | Janji 3 Mei → Pelaksanaan Sabtu, 9 Mei 19.30–21.30 WIB di Louvin → Bukti: kabar tiba pukul 19.35 dan sinkronisasi demo selesai sebelum S tiba → Diterima | **Terlaksana dan terverifikasi** |
+| **4. Latihan penuh & Q&A bertiga (begadang)** | Janji 3 Mei → S menyusul pukul 21.35 WIB → Pelaksanaan simulasi penuh + Q&A hingga 02.00 WIB → Bukti: 2 kali *run-through* masuk batas waktu & pembagian penjawab Q&A rampung → Diterima oleh S, M, dan saya berhasil tampil di final 10 Mei 2026 (meraih Juara 2) | **Terlaksana dan terverifikasi** |
+
+## Relationship outcome
+
+Penilaian keberhasilan pada minggu ini dilihat melalui **evaluasi jalur ganda (*dual-track evaluation*)**:
+
+1. **Jalur Tugas (*Task Track*):** Seluruh jadwal kuis dan *deadline* tubes akademik Senin–Sabtu berhasil diselesaikan tanpa bentrok, sementara keempat butir kesepakatan latihan presentasi tuntas sebelum batas maksimal 02.30 WIB sehingga tim tampil siap pada Minggu pagi, 10 Mei 2026.
+2. **Jalur Relasi (*Relationship Track*):** Titik paling rawan gesekan ada pada dua momen, ketika usulan awal saya untuk latihan hari kerja terbentur jadwal padat M dan S, serta ketika S baru bisa bergabung malam hari pada Sabtu, 9 Mei. Dengan mengakui sejak awal bahwa rencana hari kerja kurang realistis, menghormati batas wewenang jadwal kuliah masing-masing, dan tidak membuat S merasa bersalah saat menyusul malam hari di Louvin, suasana tim tetap hangat dan suportif selama sesi begadang hingga hari final.
+
+Secara jujur, bagian negosiasi awal (3 Mei) dan *checkpoint* (8 Mei) berlangsung lewat teks WhatsApp sehingga ekspresi lelah atau nada bicara S dan M tidak dapat diamati langsung. Namun, kualitas relasi tersebut terkonfirmasi secara langsung saat pertemuan luring di *working space* Louvin pada 9 Mei malam, diskusi berjalan terbuka tanpa saling menyalahkan dan justru menumbuhkan rasa percaya yang baik untuk kerja sama kami pada kesempatan berikutnya.
+
+## Evidence, AI, dan feedback
+
+- Perbedaan antara *desire* (kesiapan strategi pada 28 April), *intention* ("nanti minggu depan latihan bareng"), *commitment*, *agreement* presisi, dan *action* nyata terdokumentasi secara berurutan dari 3 Mei hingga 10 Mei 2026.
+- Seluruh 7 dimensi penghalang (*time, effort, risk, capability, money, change, authority*) dipetakan sebelum menyusun ulang jadwal, tidak ada pemaksaan yang melampaui wewenang terhadap kewajiban kuis dan tubes masing-masing anggota.
+- Usulan awal yang tidak realistis (latihan hari kerja) tidak dipertahankan secara kaku, melainkan diakui kurang tepat lalu diganti lewat negosiasi opsi bertahap (*latihan mandiri + checkpoint Jumat + sesi luring bertahap di Louvin*).
+- Seluruh butir kesepakatan bebas dari bahasa menggantung, memuat pelaku tunggal, tanggal dan jam pasti, prasyarat, definisi selesai yang terukur, serta pembatas durasi begadang.
+- Keterbatasan bukti: bukti diskusi 3 Mei dan *checkpoint* 8 Mei berupa teks WhatsApp (tanpa pengamatan nonverbal), dan latihan mandiri Senin–Jumat dilaporkan melalui laporan diri (*self-report*) sebelum diverifikasi secara luring pada Sabtu malam di Louvin.
+- **Penggunaan AI dan batasannya:** Saya menggunakan Gemini untuk membantu memetakan 7 kategori *barrier*, menyusun tabel pemisahan *posisi vs. kepentingan*, menguji apakah rumusan kesepakatan masih mengandung kata kabur, serta merapikan struktur laporan portofolio. AI tidak digunakan untuk mengarang jadwal kuliah, memalsukan percakapan WhatsApp, atau mengada-adakan lokasi dan hasil pelaksanaan, seluruh kronologi (jadwal kuis/tubes Senin–Sabtu, latihan mandiri, pertemuan di *working space* Louvin pada 9 Mei malam, dan final 10 Mei 2026) berasal dari pengalaman nyata tim kami.
+- **Next practice:** Pada kerja tim dengan tenggat mepet berikutnya, saya akan langsung mengumpulkan peta jadwal kosong dan *deadline* pribadi seluruh anggota terlebih dahulu sebelum melontarkan usulan hari kumpul, agar proses negosiasi lebih cepat dan langsung berangkat dari kondisi kelayakan nyata.
+
+## Self-assessment
+
+| Dimensi | Skor | Evidence singkat |
+|---|---:|---|
+| Person & Character | 4 | Memetakan jadwal, beban kuis/tubes, dan batas wewenang S, M, dan saya, memisahkan posisi dari kepentingan sehingga tidak ada anggota yang merasa dipaksa mengorbankan kuliahnya |
+| Objective & State | 4 | Mengenali *desire–action gap* secara tepat (keinginan siap tinggi tetapi jadwal Senin–Sabtu penuh bergantian) dan membedakan *desire*, *intention*, *agreement*, serta *action* |
+| Repertoire, Language & AI | 4 | Negosiasi via WhatsApp disampaikan dengan bahasa non-formal yang lugas tanpa tekanan, tabel kesepakatan memuat 6 unsur presisi tanpa kata kabur, dan batas penggunaan AI dinyatakan transparan |
+| Response & Adaptation | 4 | Penolakan S dan M terhadap latihan hari kerja diterima sebagai informasi hambatan, bukan diabaikan, skema diadaptasi menjadi latihan mandiri + *checkpoint* Jumat + sesi bertahap di Louvin saat S selesai tubes malam |
+| Agreement, Action & Relationship | 4 | Keempat butir kesepakatan melewati seluruh fase lingkar komitmen hingga terlaksana dan terverifikasi pada 9–10 Mei 2026, sekaligus menjaga kepercayaan dan kenyamanan relasi tim |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
 :::
-
-{{< include ../includes/evidence-template.md >}}

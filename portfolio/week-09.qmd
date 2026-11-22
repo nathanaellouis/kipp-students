@@ -1,8 +1,8 @@
 ---
 title: "Desire-State Communication"
 week: 9
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "Current state, desired state, value, evidence, dan risk."
 categories: [TAIDA, Desire]
@@ -12,14 +12,124 @@ categories: [TAIDA, Desire]
 
 Membangun desired state bersama target dan menghubungkannya dengan solution secara kredibel.
 
-## Evidence wajib
+## Current state dan desired state
 
-- Current dan desired state milik person.
-- Feature–benefit–value–outcome chain.
-- Risk, evidence threshold, response, dan adaptation.
+Target komunikasi pada minggu ini adalah inisial **S**, Ketua Tim BUTEN dalam ajang *Technovate Paper Competition The Sandbox 3.0 IEEE ITB* (pendaftaran 16 Maret 2026, pengumuman finalis 23 April 2026, menuju final dan *awarding* pada 10 Mei 2026). Tim kami terdiri dari tiga orang: S sebagai ketua tim, **M** yang banyak menggarap metodologi dan penulisan *paper*, serta saya yang turut mengembangkan *prototype* simulator web **MARS (*Maritime Adaptive Rerouting System*)**.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 9](../examples/week-09.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+Dua hari setelah lolos ke babak final (25 April 2026), saya menghubungi S lewat WhatsApp untuk menyepakati strategi demo dan *framing* teknis saat presentasi final. Sebelum menawarkan pendekatan apa pun, saya mengecek dulu keadaan nyata dan ganjalan yang sedang dirasakan S agar *current state* berangkat dari keterangannya sendiri, bukan tebakan saya.
+
+> **Saya:** "S, lagi santai nggak? Mau nanya jujur aja soal persiapan final 10 Mei nanti. Menurut kamu, simulator web MARS yang kemarin kita lampirin di paper udah cukup bikin kamu tenang buat dibawa demo di depan juri, atau sebenarnya masih ada bagian yang bikin kamu ragu?"
+>
+> **S:** "Lagi santai kok Tan. Jujur kalau dari tampilannya aku suka, petanya jalan lancar. Tapi aku masih agak ragu sih, soalnya data regulasi sama kongesti kita kan masih simulasi semua."
+
+Penelusuran singkat berikutnya memperlihatkan kecemasan spesifik dan pertimbangan yang sedang dipikirkan S.
+
+> **Saya:** "Ragu di bagian apanya S? Sempat kepikiran mau kita ubah jadi narik data live sebelum 10 Mei?"
+>
+> **S:** "Iya sempat kepikiran gitu sih, minimal nyambungin satu API beneran atau nyoba model NLP beneran biar nggak kelihatan kayak simulasi doang. Cuma aku juga mikir waktu kita tinggal dua minggu sambil kuliah, takutnya malah nggak kelar, pas demo error, terus waktu buat nyiapin PPT sama latihan Q&A malah keteteran."
+
+Dua batas keputusan langsung saya tetapkan dari keterangan S. Pertama, saya **tidak** mendorong pemaksaan integrasi *live API* maupun pelatihan model LegalBERT secara *end-to-end* dalam sisa waktu dua minggu, karena bertabrakan dengan kendala waktu tim dan risiko kestabilan panggung. Kedua, saya **tidak** mengklaim MARS siap diterapkan langsung ke operasi pelayaran nyata (*carrier-grade deployment*), karena di bagian *Scope and Limitation* pada *paper* kami sendiri sistem ini memang dibatasi sebagai *simulation testbed* 12 pelabuhan Indonesia.
+
+| | Isi |
+|---|---|
+| **Current state** | *Prototype* simulator HTML MARS sudah berjalan stabil secara lokal, tetapi S ragu membawanya ke final 10 Mei karena khawatir status data simulasi menjadi celah serangan juri teknis, sementara memaksakan *live API* berisiko merusak kestabilan demo dan menyita waktu latihan |
+| **Desired state** | Presentasi dan demo final pada 10 Mei berjalan stabil tanpa risiko *error* teknis, sambil memberi S pegangan argumen yang jujur, konsisten, dan tahan uji saat juri menanyakan validitas simulasi maupun jalur penerapan industrinya |
+
+## Feature–benefit–value–outcome chain
+
+| Feature | Benefit | Value bagi S | Outcome |
+|---|---|---|---|
+| Demo simulator web lokal (12 pelabuhan Indonesia, kalkulasi fisika Haversine 15 knots, *dual-mode* $\alpha=0.15$ vs $0.75$, *HITL confidence gate* <95%) dengan label eksplisit `Simulated Proxy` | Perbandingan Skenario C (*Regulatory Shock*) dan D (*Perfect Storm*) berjalan stabil tanpa bergantung pada koneksi/API eksternal, sementara batas input langsung transparan sejak awal | Mengamankan kelancaran demo di panggung dan menjaga kredibilitas tim dari tuduhan *overclaim* di hadapan juri IEEE | S dan tim dapat fokus mematangkan penyampaian materi tanpa panik menghadapi kegagalan teknis saat final |
+| Pemisahan tegas di materi presentasi antara metrik terhitung (jarak Haversine, *transit days*, penalti kongesti >85%) dan proksi alur kerja (*batch lead-time* $N=50$ serta skor *confidence* NLP), ditambah slide khusus *Batasan Sistem & Future Work* | Menutup kontradiksi antara pengakuan data simulasi dengan angka hasil pengujian sebelum juri menjadikannya titik serang di Q&A | Memberi S kendali dan ketenangan saat memimpin sesi tanya-jawab karena setiap angka memiliki batas klaim yang jelas | Diskusi Q&A bergerak ke kualitas desain logika *feasibility-first*, bukan terjebak perdebatan soal data tiruan |
+| Diagram arsitektur *Interoperability Middleware* (API Gateway penghubung 3 *stream*: OFAC/IMO GISIS, Pelindo VMS/BOR, BMKG/JWC) yang memposisikan MARS sebagai *add-on* ERP/TMS eksisting | Menunjukkan peta jalan integrasi yang masuk akal tanpa harus merombak infrastruktur perusahaan pelayaran maupun memaksakan *coding* API mentah dalam 2 minggu | Menjawab kekhawatiran S agar MARS tidak terkesan "sekadar tugas simulasi" dan tetap terlihat punya arah implementasi nyata | Tim memiliki narasi utuh dari bukti simulasi hari ini menuju skalabilitas *enterprise* di babak final |
+
+## Demonstrasi: jembatan batin dan mekanisme
+
+Demonstrasi dijalankan secara bertahap lewat WhatsApp dalam empat fase. Setiap pesan dikirim ringkas untuk satu fokus bahasan, dan pesan berikutnya baru ditulis setelah S memberikan respons.
+
+> **Saya:** "Jadi dari cerita kamu tadi, yang aku tangkep: kamu sebenarnya pengen demo kita nanti aman dari error dan kita tetap punya cukup waktu buat latihan Q&A, tapi kamu nggak mau kita kelihatan cuma bikin simulasi biasa pas ditanya juri. Bener nggak nangkep aku?"
+>
+> **S:** "Iya bener banget, intinya itu."
+
+Setelah S mengonfirmasi jembatan kondisi tersebut, saya hanya membawa **satu alur mekanisme utama** terlebih dahulu, yakni transparansi label `Simulated Proxy` pada demo Skenario C dan D, serta sengaja tidak menjejalkan fitur lain seperti perhitungan *emissions proxy* atau rencana *Deep Reinforcement Learning* agar tidak terjadi *feature dumping*. Di akhir pesan ini, saya menguji hipotesis awal saya tentang sumber keraguan S.
+
+> **Saya:** "Nah, kalau gitu aku kepikiran kita tetap pakai simulator HTML lokal yang sekarang, tapi kita pasang label 'Simulated Proxy' yang jelas di bagian atas layar demo. Jadi pas demo Skenario C sama D, juri fokus lihat logika filter sanksi proaktif sama tombol konfirmasi manusia pas confidence di bawah 95%. Aku nebak yang paling bikin kamu ragu itu takut kalau label proxy-nya kelihatan jelas, juri malah nganggep kita kurang usaha karena nggak nyambungin ke live API, bener nggak?"
+
+## Hidden concern dan adaptasi rancangan
+
+Jawaban S langsung membantah dugaan saya.
+
+> **S:** "Sebenarnya bukan soal takut dianggap kurang usaha ngoding API sih Tan. Kalau lomba paper mahasiswa, juri pasti ngerti batas waktu kita. Yang bikin aku ganjel tuh justru di bagian angka klaim kita. Di satu sisi kita nulis 'Simulated Proxy', tapi di slide hasil kita nulis MARS memangkas waktu keputusan dari 24 jam jadi 9 menit atau turun >90%. Aku takut juri malah nanya: 'Angka 9 menit sama 24 jam itu kan angka simulasi buatan kalian sendiri, terus kalau beneran mau dipakai perusahaan pelayaran nanti cara masuk ke sistem mereka gimana?'"
+
+Hipotesis awal saya meleset. Saya mengira keberatan S berada pada kekhawatiran soal persepsi usaha teknis (*effort*), padahal *hidden concern* yang sesungguhnya adalah **risiko inkonsistensi klaim (*trust & risk*)** antara pengakuan `Simulated Proxy` dengan cara kami menyajikan angka pengurangan *lead-time*, ditambah belum jelasnya jembatan menuju sistem operasional perusahaan pelayaran.
+
+Saya tidak membela rancangan awal tersebut, melainkan mengakui kekeliruan tebakan saya lebih dahulu lalu mengajukan revisi yang langsung menempel pada ganjalan S.
+
+> **Saya:** "Oh oke, berarti tebakan aku tadi salah ya. Kirain kamu khawatir soal nggak pakai live API-nya, ternyata ganjelannya justru di kontradiksi cara kita nyajiin angka lead-time sama pertanyaan soal integrasi ke sistem perusahaan. Bener juga sih, kalau kita nulis 'memangkas 24 jam jadi 9 menit' tanpa penjelasan batasnya, terus di layar sebelah ada tulisan 'Simulated Proxy', itu malah jadi celah buat diserang.
+>
+> Gimana kalau rancangannya kita revisi jadi dua penyesuaian aja? Pertama, di slide hasil kita bingkai jelas bahwa angka batch N=50 itu adalah perbandingan proksi alur kerja (siklus rework manual 12–24 jam vs filter proaktif 3–9 menit atau 30–60 menit review manusia), bukan klaim pengukuran lapangan. Kedua, kita tambah satu slide khusus *Implementation Readiness* pakai diagram *Interoperability Middleware* jadi kita jelasin MARS jalan sebagai add-on di atas ERP/TMS lewat 3 jalur data: OFAC/IMO GISIS buat regulasi, Pelindo VMS/BOR buat kongesti, sama BMKG/JWC buat cuaca/risiko."
+
+| Unsur | Rancangan awal | Setelah adaptasi |
+|---|---|---|
+| Asumsi sumber keberatan S | Takut dianggap kurang usaha karena tidak membuat integrasi *live API* | Takut terjadi kontradiksi antara label `Simulated Proxy` dengan klaim angka *lead-time*, serta lemahnya jawaban soal integrasi industri |
+| Cakupan materi demo & *slide* | Demo HTML lokal berlabel `Simulated Proxy` + menonjolkan angka penurunan latensi >90% | Demo HTML lokal berlabel `Simulated Proxy`, penegasan *lead-time* sebagai proksi alur kerja ($N=50$), slide khusus *Batasan Sistem*, dan diagram *Interoperability Middleware* sebagai *add-on* ERP/TMS |
+
+## Tangga bukti, risk, dan evidence threshold
+
+Pada fase berikutnya, saya mengirimkan tangkapan layar prototipe simulator Skenario C dan D beserta ringkasan angka *batch* uji coba, lalu menyatakan keterbatasan bukti serta tiga risiko secara terbuka sebelum S menanyakannya.
+
+> **Saya:** "Ini aku kirim screenshot demo Skenario C (Belawan–Balikpapan) sama Skenario D (Belawan–Sorong) plus ringkasan uji batch N=50 kita biar kamu bisa lihat langsung alurnya. Dua pegangan kita jelas: pertama prototipe HTML-nya sendiri bisa langsung diklik dan nunjukin trade-off jarak nambah 7–12% demi 0 pelanggaran hukum plus munculnya peringatan manual review pas confidence <95%, kedua data simulasi 4 skenario kita konsisten di 12 pelabuhan dengan perhitungan fisika Haversine 15 knots.
+>
+> Tapi jujur dari awal ya S, ada tiga batas yang nggak bisa kita tutupin: (1) strategi ini tetap belum narik live API, (2) skor confidence LegalBERT masih proksi simulasi bukan hasil uji model terlatih end-to-end, dan (3) uji coba kita baru di 12 pelabuhan buat rute satu kapal, belum multi-kapal. Kalau kamu mau, sebelum kita kunci PPT-nya, kita uji dulu argumen revisi ini lewat mock Q&A bareng M tanggal 28 April nanti."
+>
+> **S:** "Nah, kalau angka lead-time-nya dibingkai sebagai proksi alur kerja terus langsung disambung ke slide middleware add-on ERP/TMS, itu baru kena ke ganjelan aku tadi. Pas lihat screenshot Skenario D yang ada peringatan human review-nya juga kelihatan kita nggak asal mengotomatisasi semuanya. Kayaknya bisa nutup celah pertanyaan juri sih, mungkin kita pakai strategi ini aja buat final."
+
+| Bukti | Tingkat | Isi | Keterbatasan yang dinyatakan |
+|---|---|---|---|
+| A | 2 : prototipe interaktif | Simulator web lokal (`TPC-MARS-Simulation.html`) pada Skenario C & D yang memperlihatkan filter koridor `sanction_X`, penalti kongesti Sorong (+2 hari pada utilisasi 95%), dan tombol *Approve/Override* HITL saat *confidence* <95% | Sumber data regulasi, utilisasi pelabuhan, dan skor *confidence* NLP masih berupa *simulated proxy* deterministik, bukan *live feed* operasional |
+| B | 4 : data uji coba simulasi skala terbatas | Hasil perbandingan 4 skenario (A–D) dengan *batch* $N=50$ sampel pada 12 pelabuhan Indonesia (jarak Haversine pada 15 knots, *trade-off* jarak +7–12%, 100% *compliance*, pengurangan latensi alur kerja >90%) | Terbatas pada 12 pelabuhan representatif dan rute kapal tunggal (*single-vessel*), angka *lead-time* dan emisi adalah indikator proksi dalam batas asumsi simulasi, bukan pengukuran lapangan |
+
+**Risiko yang diakui:** juri tetap dapat menilai bahwa rancangan *Interoperability Middleware* masih berada di level arsitektur konseptual karena belum diuji langsung terhadap API Pelindo maupun OFAC. **Evidence threshold (ambang bukti):** strategi ini belum langsung dikunci sebagai keputusan final pada 25 April, melainkan harus melewati sesi *mock Q&A* internal bersama M pada 28 April 2026 di mana M menguji pertanyaan tersulit terkait data *proxy* dan kesiapan industri sambil menjalankan demo Skenario C dan D.
+
+## Etika kebebasan memilih
+
+Respons S berhenti pada kata *"kayaknya bisa"* dan *"mungkin"*. Saya tidak langsung menganggap itu sebagai persetujuan final dan tidak menciptakan urgensi palsu. Sebaliknya, saya justru mempertanyakan kembali celah dari desain *middleware* yang saya usulkan sendiri dan memberi S kebebasan penuh untuk menolaknya.
+
+> **Saya:** "Bentar S, aku nggak mau buru-buru anggap ini udah fix ya, soalnya kamu tadi masih bilang 'kayaknya' sama 'mungkin'. Jujur aja, diagram middleware yang aku usulin tadi kan juga masih di level desain arsitektur, kalau juri tetap nanya 'kalian udah pernah nyoba narik data publik Pelindo atau OFAC beneran belum?', jawabannya tetap belum. Bagian mana lagi yang masih bikin kamu kurang sreg? Kalau kamu sebagai ketua tim ngerasa ini masih terlalu riskan dan mutusin kita lebih baik coba nyambungin satu sumber data publik beneran sebelum 10 Mei, bilang aja nggak apa-apa. Aku siap ngikutin keputusan yang paling aman buat tim."
+>
+> **S:** "Nggak kok Tan, justru pas kamu ngingetin kemungkinan pertanyaan 'udah pernah narik data beneran belum' itu, aku jadi kebayang persis batas jawaban yang harus kita pegang. Daripada nekat bikin integrasi mentah dalam dua minggu yang malah bikin demo error di panggung dan waktu latihan kita habis, aku pastiin kita pakai strategi simulasi transparan plus slide middleware ini. Aku pengen pas final 10 Mei nanti kita tampil rapi, jujur sama batas riset kita, dan nggak kelihatan mengada-ada di depan juri. Tanggal 28 April kita tes Q&A bareng M ya buat matengin jawabannya."
+
+Pada balasan penutup ini terjadi pergeseran yang tegas dari **Interest** menuju **Desire**. S tidak lagi berhenti pada penilaian tentatif (*"kayaknya bisa"*, *"mungkin"*), melainkan mengambil keputusan sadar (*"aku pastiin kita pakai strategi ini"*) disertai alasan batin miliknya sendiri, yaitu keinginan tampil rapi, jujur terhadap batas riset, dan tidak terkesan mengada-ada di hadapan juri pada final 10 Mei 2026.
+
+Sebagai tindak lanjut atas ambang bukti yang disepakati, sesi *mock Q&A* dilaksanakan bersama M pada 28 April 2026. Setelah M menguji pertanyaan kritis mengenai alasan penggunaan 12 pelabuhan dan *simulated proxy*, M mencatat bahwa transisi dari label *proxy* pada demo menuju diagram *Interoperability Middleware* dan slide *Batasan Sistem* berhasil menghilangkan kesan *overclaim*, sehingga S resmi mengunci struktur presentasi tersebut hingga hari final (yang kemudian mengantarkan tim kami meraih Juara 2).
+
+## Evidence, AI, dan feedback
+
+- Pemeriksaan kondisi dan keraguan S dilakukan terlebih dahulu di awal obrolan WhatsApp, sehingga *current state* dan *desired state* berasal dari keterangan S sendiri, bukan proyeksi sepihak.
+- Pemaksaan integrasi *live API* atau pelatihan LegalBERT sengaja tidak diambil karena bertentangan dengan batas waktu dua minggu dan prioritas kestabilan demo panggung yang disepakati bersama S.
+- Hipotesis awal saya mengenai sumber keraguan S dibantah langsung oleh S, saya tidak membela dugaan tersebut, melainkan mengakuinya keliru dan menjadikannya dasar revisi *framing* angka *lead-time* serta penambahan diagram *Interoperability Middleware*.
+- Dua tingkat *Tangga Bukti* (prototipe simulator web HTML + data komparatif $N=50$ pada 4 skenario) disajikan bersama tiga batasan jujur sebelum ditanya, dan celah dari usulan *middleware* sendiri ikut diuji balik pada fase akhir agar S memiliki *informed choice*.
+- Seluruh diskusi tanggal 25 April berlangsung dalam modalitas teks WhatsApp, sehingga intonasi suara, jeda ragu, dan bahasa tubuh S tidak dapat diamati langsung. Pengujian lisan baru terverifikasi pada sesi *mock Q&A* bersama M tanggal 28 April 2026.
+- **Penggunaan AI dan batasannya:** Saya menggunakan Gemini untuk membantu menyusun struktur *Feature–Benefit–Value–Outcome*, merumuskan pertanyaan diagnostik tiap fase setelah mengetahui balasan S, serta mengecek konsistensi antara klaim presentasi dengan bagian *Limitations* pada *paper* asli MARS. AI tidak digunakan untuk mengarang angka simulasi, memalsukan respons S, atau mengambil keputusan strategi tim, seluruh angka teknis (12 pelabuhan, 15 knots, $\alpha=0.15/0.75$, *confidence* 95%, $N=50$) diverifikasi langsung dari berkas *paper*, kode HTML, dan *slide* Tim BUTEN, serta usulan kalimat promosi yang terlalu bombastis dari AI ditolak demi menjaga *honest limits*.
+- **Next practice:** Pada diskusi strategis tim berikutnya, saya akan langsung menanyakan bagian spesifik mana dari materi atau data yang terasa paling rentan di mata lawan bicara sejak fase pertama, alih-alih melontarkan tebakan pribadi lebih dulu yang berisiko meleset dari *hidden concern* sebenarnya.
+
+## Self-assessment
+
+| Dimensi | Skor | Evidence singkat |
+|---|---:|---|
+| Person & Character | 4 | Memetakan tekanan peran S sebagai ketua tim pada lomba pertama kami, menghormati otoritas keputusannya, dan menggali nilai batin S sendiri (tampil rapi, jujur, tidak mengada-ada di final) |
+| Objective & State | 4 | Membedakan secara tegas *Interest* dan *Desire*: S bergeser dari tentatif ("kayaknya bisa", "mungkin") menjadi komitmen sadar ("aku pastiin") dengan alasan miliknya sendiri dan *must-keep conditions* yang jelas |
+| Repertoire, Language & AI | 4 | Menggunakan bahasa WhatsApp non-formal yang wajar, membawa 2 tingkat *Tangga Bukti* termasuk artefak prototipe HTML interaktif + diagram *middleware*, menyatakan 3 batas jujur di depan, serta menetapkan batas penggunaan AI dengan menolak klaim *overpromise* |
+| Response & Adaptation | 4 | Bantahan S terhadap hipotesis awal tidak didebat, melainkan diakui keliru lalu dipakai merevisi *framing* proksi *lead-time* dan menambahkan slide *Interoperability Middleware* |
+| Agreement, Action & Relationship | 4 | Menetapkan *evidence threshold* (*mock Q&A* 28 April bersama M), menguji balik celah argumen sendiri, menjaga hak menolak (*informed choice*) tanpa tekanan waktu palsu, dan memperkuat kepercayaan tim hingga final 10 Mei |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
 :::
-
-{{< include ../includes/evidence-template.md >}}

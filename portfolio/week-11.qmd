@@ -1,8 +1,8 @@
 ---
 title: "Multi-Person Negotiation Challenge"
 week: 11
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "Stakeholder map, interests, options, trade-offs, dan agreement."
 categories: [Negotiation, Stakeholder]
@@ -18,8 +18,131 @@ Memfasilitasi beberapa person dengan objective, constraint, authority, dan state
 - Position–interest analysis, common ground, dan options.
 - Negotiation evidence, agreement/dissent, dan relationship review.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 11](../examples/week-11.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+## Konteks performance
+
+**Tanggal dan setting:** Sabtu, 14 November 2026, pukul 20.00–20.50 WIB, melalui diskusi di **WhatsApp Group** kelompok Tugas Besar IF2010 Pemrograman Berorientasi Objek (*Nangor Blast*), dengan rentang pengerjaan Milestone 1 dari **9 November 2026** hingga tenggat pengumpulan **17 November 2026 pukul 20.10 WIB**.
+
+**Persons dan relationship:** Empat mahasiswa seangkatan dalam satu kelompok dengan posisi setara: **Saya** (modul *Player & Bomb*), **R** (modul *Map & Infra*), **D** (modul *Core & Flow*), dan **A** (modul *Enemy & Boss*). Untuk luaran Milestone 1 yang mencakup repositori GitHub (*src*, *config*, *doc*, *Makefile*, *README.md*), dokumen pembagian tugas dalam PDF, dan *Class Diagram* dalam PDF, tim sudah membagi tugas awal: Saya dan A memegang repositori GitHub, R dan D memegang dokumen pembagian tugas, sedangkan *Class Diagram* digarap bersama sesuai modul implementasi masing-masing.
+
+**Objective dan initial state:** Memfasilitasi kesepakatan ruang lingkup fitur bonus yang wajib masuk ke rancangan *Class Diagram* Milestone 1 sekaligus menyeimbangkan beban penyusunan dokumen dan repositori sebelum tenggat 17 November 2026, tanpa memaksakan pilihan pribadi dan tanpa mengabaikan anggota yang lebih pendiam. *Initial state*: setelah membaca spesifikasi lengkap dan saran asisten pembimbing untuk merencanakan GUI (MVC) sejak awal, muncul perbedaan preferensi yang tajam antara anggota yang ingin mengejar banyak bonus, anggota yang khawatir beban modulnya membengkak, dan anggota yang memilih diam di grup.
+
+## Evidence
+
+::: {.callout-note appearance="simple" icon=false}
+### 1. Stakeholder Person Map & Multi-State TAIDA
+
+| Person | Character & Objective | Position | Underlying Interest & Constraint | Authority | TAIDA State terhadap Paket Bonus Selektif (awal → akhir) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Saya (Player & Bomb)** | Cenderung fokus pada keterpaduan desain antar-modul, ingin *Class Diagram* sejak Milestone 1 sudah sinkron dengan fitur bonus yang realistis | "Ambil GUI, Bomb Kick, Local Multiplayer, dan 5 Design Pattern, tapi jangan ambil Map Maker" | Ingin fitur di modul sendiri (*Factory Pattern*, *Bomb Kick*, efek *Power-Up* per pemain) rapi sejak awal, memegang setup GitHub bersama A dan ingin seluruh luaran Milestone 1 kelar sebelum 17 November | Mengusulkan struktur integrasi modul *Player & Bomb* dan menyiapkan repositori GitHub, keputusan ruang lingkup tetap milik berempat | *Desire* → *Action* |
+| **D (Core & Flow)** | Ambisius pada kualitas arsitektur dan poin bonus, ingin rancangan MVC dan *game state* langsung matang | "Ambil semua bonus besar sekalian dari Milestone 1 (GUI, Local Multiplayer, 5 Pattern, plus Map Maker)" | Ingin nilai bonus maksimal dan tidak mau merombak arsitektur *Core & Flow* dua kali di Milestone 2, kendala: juga harus menulis dokumen pembagian tugas bersama R dan mengurus *concurrency* | Menentukan rancangan alur *GameEngine*, *GUI MVC*, dan *State Pattern* serta ikut menyusun dokumen pembagian tugas | *Attention* (khawatir poin bonus kurang jika Map Maker dicoret) → *Action* dengan *dissent* |
+| **R (Map & Infra)** | Realistis dan berhati-hati terhadap beban kerja, menjaga kerapian struktur dan ketepatan waktu | "Fokus fitur wajib CLI dan 2 design pattern minimum dulu aja, jangan banyak bonus di Milestone 1" | Modul *Map & Infra* (*Black Fortress*: *Switch*, *Gate*, *Laser Trap*, *Observer* + *Command Pattern*, *MapValidator*) sudah sangat padat kelasnya, khawatir dokumen pembagian tugas dan diagram tidak selesai rapi sebelum 17 November | Menentukan kapasitas pengerjaan modul *Map & Infra* serta penulisan dokumen pembagian tugas | *Target/Attention* (defensif terhadap penambahan bonus) → *Action* bersyarat |
+| **A (Enemy & Boss)** | Lebih tenang dan jarang memotong diskusi, cenderung mengalah jika tidak ditanya langsung | Awalnya diam lalu membalas singkat: "Aku ikut aja deh enaknya gimana" | Modul *Enemy & Boss* (*Cerberus*, *Altair*, *Strategy Pattern*) butuh kepastian kontrak antarmuka (seperti *Renderable* dan penargetan pemain di *Local Multiplayer*) agar diagramnya tidak revisi berulang, juga memegang setup GitHub bersama saya | Menentukan rancangan kelas *Enemy & Boss* dan penyelesaian bagian repositori GitHub | *Target* (pasif/diam) → *Action* bersyarat |
+
+**Common ground (spesifik untuk menilai opsi):** keempat anggota sepakat bahwa (1) seluruh fitur wajib dan 7 konsep OOP harus tercakup utuh di *Class Diagram*, (2) seluruh luaran Milestone 1 (GitHub, dokumen pembagian tugas, dan *Class Diagram*) harus rampung sebelum tenggat 17 November 2026 pukul 20.10 WIB, dan (3) tidak boleh ada satu modul pun yang jumlah kelas atau beban dokumentasinya timpang dibandingkan anggota lain.
+
+---
+
+### 2. Negotiation Evidence
+
+**Rekonstruksi percakapan WhatsApp Group (Sabtu, 14 November 2026, pukul 20.00–20.50 WIB):**
+
+- **D:** *"Guys, habis denger saran asisten kemarin soal GUI harus dirancang dari awal, menurutku sekalian aja kita masukin semua bonus besar ke Class Diagram Milestone 1: GUI MVC, Local Multiplayer, 5 Design Pattern, sama Map Maker (B03). Biar nanti di Milestone 2 tinggal ngoding tanpa rombak desain."*
+- **R:** *"Waduh, kalau sampai Map Maker dimasukin juga, bagian Map & Infra bakal bengkak banget D. Ini aja Black Fortress udah ada Switch, Gate, Laser Trap, Validator, terus pakai Observer sama Command Pattern, ditambah aku sama kamu masih harus ngerjain dokumen pembagian tugas. Mending kita main aman di fitur wajib CLI sama 2 design pattern minimum dulu aja nggak sih?"*
+- **Saya:** *"Kalau menurutku GUI sama Local Multiplayer justru sayang kalau nggak diambil sekarang, soalnya di modul Player & Bomb aku juga bisa sekalian masukin Bomb Kick sama Factory Pattern. Asal Map Maker nggak usah diambil, harusnya masih keburu."*
+- **A:** *(baru membalas setelah 12 menit)* *"Aku ikut aja deh enaknya gimana."*
+
+**Pemeriksaan *Ilusi Keheningan* & *Power Imbalance* (fasilitasi yang saya lakukan):**
+
+Saya menyadari dua hal saat itu: pertama, saya tadi terlalu cepat mendorong preferensi saya sebelum benar-benar mendengar kendala R dan A. kedua, diskusi mulai didominasi oleh saya, D, dan R, sementara balasan *"ikut aja"* dari A sangat rawan menjadi *false consensus* (kepatuhan semu karena sungkan memotong perdebatan). Saya menghentikan pembahasan fitur sejenak untuk memeriksa suara A dan membingkai ulang diskusi ke kriteria bersama.
+
+- **Saya:** *"Bentar guys, aku tadi kecepetan langsung dukung paket bonus tanpa cek kondisi kalian semua. Khusus buat A, kamu tadi bilang 'ikut aja' jujur aja ya, nggak usah sungkan, kalau GUI sama Local Multiplayer masuk, bagian Enemy & Boss sama kerjaan GitHub kita aman nggak? Ada yang bakal bikin ribet di diagram kamu?"*
+- **A:** *"Jujur sih kalau GUI sama Local Multiplayer masuk aku nggak keberatan, cuma aku agak khawatir nanti kontrak antar-kelasnya berubah-ubah pas udah mepet deadline. Misalnya gimana Boss milih target dari 2 pemain, atau interface buat gambar musuh di GUI. Kalau itu belum disepakatin dari awal, takutnya aku udah bikin Class Diagram terus harus bongkar lagi, padahal aku juga lagi ngerjain repo GitHub bareng kamu."*
+- **Saya:** *"Oke, makasih udah jujur A. Berarti sekarang kelihatan jelas ya kepentingan kita masing-masing: D pengen nilai bonus optimal dan arsitektur MVC nggak bongkar ulang di Milestone 2. R pengen modul Map nggak overload dan dokumen pembagian tugas selesai rapi. A butuh kontrak antar-modul dikunci dulu biar nggak kerja dua kali. aku sendiri pengen desain fitur lintas modul sinkron sebelum 17 November. Daripada debat mana yang paling ideal, gimana kalau kita bandingin 3 opsi pakai ukuran beban tiap modul dan tenggat 17 November?"*
+- **R:** *"Nah kalau dibandinginnya pakai beban kerja gini lebih masuk akal. Intinya kalau Map Maker dicoret dan beban dokumen pembagian tugasnya nggak bikin aku sama D keteteran, aku mau aja masukin GUI, Local Multiplayer, sama Observer–Command Pattern."*
+- **D:** *"Jujur menurutku Map Maker (B03) tuh masih sayang banget kalau dilepas karena poin bonusnya lumayan. Tapi kalau memang itu bikin modul R terlalu berat dan berisiko ke dokumen Milestone 1, ya udah aku ikut nyoret B03 dulu, asal nanti kalau masih ada sisa waktu di Milestone 2 tetap boleh dibahas lagi ya."*
+- **Saya:** *"Deal D, catatanmu soal B03 kita simpan sebagai opsi cadangan, nggak kita hapus. Terus buat jawab kekhawatiran R soal dokumen: begitu aku selesai beresin setup repo GitHub bareng A, aku langsung turun bantu R dan D ngerapihin dokumen pembagian tugas sebelum deadline. Buat A, malam ini juga kita kunci dulu nama interface Renderable sama method pemilihan target pemain sebelum kita gambar Class Diagram masing-masing. Gimana menurut kalian berempat?"*
+- **A:** *"Kalau kontrak interface-nya dikunci malam ini, aku gas banget."*
+- **R:** *"Sip, kalau dibantu pas GitHub udah beres dan B03 dicoret, aku aman."*
+- **D:** *"Oke sepakat, kita pakai paket ini buat Milestone 1."*
+
+---
+
+### 3. Options, Agreement & Dissent
+
+| Opsi | Kelebihan | Trade-off | Keputusan |
+| :--- | :--- | :--- | :--- |
+| **Opsi 1: Minimalis (CLI wajib + 2 Design Pattern)** | Pengerjaan *Class Diagram* paling cepat dan beban modul R paling ringan | Melewatkan saran asisten untuk merancang GUI MVC sejak awal, sulit ditambahkan mendadak di Milestone 2 | Ditolak |
+| **Opsi 2: Semua Bonus Penuh (B01, B02, B03 Map Maker, B04, B05)** | Potensi nilai bonus paling tinggi sejak rancangan awal | Modul *Map & Infra* (R) membengkak parah, berisiko tinggi membuat dokumen dan diagram Milestone 1 tidak tuntas tepat waktu | Ditolak |
+| **Opsi 3: Paket Bonus Selektif (B01 GUI MVC, B02 Bomb Kick, B04 Local Multiplayer, B05 5 Pattern tanpa B03 Map Maker) + dukungan silang dokumen** | Memenuhi saran asisten soal MVC sejak awal, beban modul tetap seimbang, dan seluruh artefak Milestone 1 realistis selesai sebelum 17 November | Melepas potensi poin bonus B03 (*Map Maker*) pada fase Milestone 1 dan memerlukan penguncian kontrak antar-modul sejak awal | **Dipilih** |
+
+**Kesepakatan pembagian kerja Milestone 1 (tenggat 17 November 2026, pukul 20.10 WIB):**
+
+- **Saya & A:** Menyelesaikan setup repositori GitHub (*src*, *config*, *doc*, *Makefile*, *README.md*, serta mengundang asisten pembimbing), lalu saya ikut membantu R dan D merampungkan dokumen pembagian tugas begitu repositori siap.
+- **R & D:** Menyusun draf utama dokumen pembagian tugas (pemetaan fitur, konsep OOP, *design pattern*, dan daftar kelas tiap modul).
+- **Semua anggota (Saya, R, D, A):** Menggambar bagian *Class Diagram* sesuai modul implementasi masing-masing (*Player & Bomb*, *Map & Infra*, *Core & Flow*, *Enemy & Boss*) dengan mengacu pada kontrak antarmuka yang sudah dikunci bersama (*Renderable*, *playerId* pada *Power-Up*, serta *chooseTarget/pickTarget* pada *Enemy & Boss*).
+
+**Agreement bersyarat dan dissent yang dicatat secara eksplisit:**
+
+- **Syarat dari R:** B03 (*Map Maker*) dikeluarkan dari ruang lingkup Milestone 1, dan penyusunan dokumen pembagian tugas dibantu setelah setup GitHub selesai.
+- **Syarat dari A:** Kontrak antarmuka lintas modul (*Renderable* dan pemilihan target pemain untuk *Local Multiplayer*) dikunci lebih dahulu pada 14 November malam sebelum masing-masing menggambar *Class Diagram*.
+- **Dissent dari D:** D menyetujui Opsi 3 demi keseimbangan beban tim, tetapi **tetap berpendapat bahwa B03 (*Map Maker*) bernilai tinggi untuk poin bonus**. Pendapat ini dicatat terbuka sebagai opsi pengembangan cadangan bila seluruh fitur utama pada Milestone 2 selesai lebih awal, bukan dihapus demi kesan sepakat bulat.
+
+---
+
+### 4. Evaluation Threshold, Review & Tindak Lanjut
+
+**Jadwal evaluasi (*checkpoint*) pertama:** Senin, 16 November 2026, pukul 20.00 WIB di WhatsApp Group (24 jam sebelum tenggat Milestone 1), dengan ambang batas (*threshold*):
+
+- Struktur dasar repositori GitHub (*src*, *config*, *doc*, *Makefile*, *README.md*) sudah siap dan asisten sudah diundang.
+- Keempat potongan *Class Diagram* per modul sudah saling terhubung tanpa konflik nama antarmuka atau kelas.
+- Draf dokumen pembagian tugas sudah mencocokkan seluruh kode fitur (F00–F09, B01, B02, B04, B05) dengan isi *Class Diagram*.
+
+**Stop rule:** Jika pada *checkpoint* 16 November pukul 20.00 WIB salah satu modul bonus (misalnya *Local Multiplayer* atau *Bomb Kick*) masih memicu konflik besar di *Class Diagram* atau dokumen belum mencapai 80% selesai, tim sepakat memangkas fitur bonus yang menghambat tersebut ke luar Milestone 1 agar pengumpulan tetap tepat waktu dan konsisten.
+
+**Hasil evaluasi & realisasi (16–17 November 2026):** Pada *checkpoint* 16 November malam, setup repositori GitHub yang saya kerjakan bersama A selesai lebih cepat, sementara R dan D masih perlu menyelaraskan daftar kelas dari keempat modul ke dalam dokumen pembagian tugas. Sesuai kesepakatan dukungan silang, saya langsung turun membantu R dan D merapikan rincian dokumen pembagian tugas hingga konsisten dengan *Class Diagram* final. Seluruh berkas Milestone 1 (repositori GitHub, *PembagianTugas.pdf*, dan *ClassDiagram.pdf*) berhasil dikumpulkan tepat waktu sebelum tenggat 17 November 2026 pukul 20.10 WIB tanpa harus mengaktifkan *stop rule*.
 :::
 
-{{< include ../includes/evidence-template.md >}}
+## Analisis komunikasi
+
+| Elemen | Evidence dan analisis |
+| :--- | :--- |
+| **Person & character** | Keempat anggota dipetakan secara terpisah dengan karakter, modul, kendala, dan wewenang nyata masing-masing, bukan dianggap satu kelompok yang seragam. Ketimpangan partisipasi (A yang diam) dikenali sejak awal. |
+| **Objective & state** | Mengelola beberapa *objective* sekaligus (memenuhi saran asisten soal MVC, menjaga keseimbangan beban modul, dan mengejar tenggat 17 November) serta memantau pergeseran *multi-state TAIDA* yang berbeda pada D, R, A, dan saya. |
+| **Repertoire & language** | Menggunakan bahasa WhatsApp kelompok yang santai namun terstruktur: membingkai ulang debat menjadi 3 kriteria bersama, memverifikasi *ilusi keheningan* A secara langsung, merangkum kepentingan tiap orang, dan membandingkan opsi lewat *trade-off*. |
+| **Response & adaptation** | Dua masukan langsung mengubah rancangan kesepakatan: kekhawatiran A melahirkan penguncian kontrak antarmuka sejak 14 November malam, sedangkan kekhawatiran beban R melahirkan pemangkasan B03 (*Map Maker*) sekaligus komitmen saya membantu dokumen pembagian tugas setelah GitHub selesai. |
+| **Agreement/action** | Kesepakatan eksplisit memuat pembagian tugas, syarat dari R dan A, catatan *dissent* dari D, *checkpoint* 16 November, dan *stop rule*, realisasi bantuan silang pada dokumen pembagian tugas terbukti berjalan sebelum tenggat 17 November. |
+| **Relationship outcome** | Jalur tugas dan jalur relasi terjaga seimbang: A merasa aman menyuarakan kekhawatirannya, R tidak merasa dibebani sepihak, dan D tidak merasa pendapatnya dibungkam karena *dissent*-nya tetap dicatat sebagai opsi cadangan. |
+
+## Penggunaan AI
+
+- **Alat dan peran AI:** Saya menggunakan Gemini setelah seluruh proses Milestone 1 selesai untuk membantu menstrukturkan catatan diskusi WhatsApp Group ke dalam tabel *Stakeholder Person Map*, memisahkan *position* dari *underlying interest* keempat anggota, dan merapikan alur evaluasi portofolio.
+- **Prompt kunci:** *"Bantu petakan posisi, kepentingan, kendala, dan tahap TAIDA untuk 4 anggota kelompok Tubes OOP dari catatan diskusi pembagian fitur bonus dan tugas Milestone 1 ini, lalu periksa apakah aspek ilusi keheningan dan catatan dissent sudah jelas."*
+- **Verifikasi dan batas penggunaan:** Seluruh detail teknis dan kronologi rentang 9–17 November 2026, spesifikasi *Black Fortress*, daftar fitur (F00–F09, B01, B02, B04, B05), 5 *design pattern*, pembagian kerja GitHub (Saya & A) serta dokumen pembagian tugas (R & D yang kemudian saya bantu), hingga *Class Diagram* per modul diverifikasi langsung dari spesifikasi resmi dan dokumen kelompok kami. AI tidak digunakan untuk memilih fitur bonus, mengarang hasil diskusi, atau menggantikan keputusan tim. Seluruh nama rekan disamarkan menjadi inisial (R, A, D).
+
+## Feedback dan tindak lanjut
+
+- **Feedback yang diterima:** A menyampaikan setelah diskusi bahwa ia merasa jauh lebih lega ketika ditanya langsung mengenai kontrak antarmuka di grup, karena sebelumnya ia ragu memotong perdebatan antara D dan R. R juga mengapresiasi bantuan langsung pada perapian dokumen pembagian tugas di malam menjelang pengumpulan sehingga keselarasan antara dokumen dan *Class Diagram* terjaga.
+- **Relationship review & repair:** Pada awal percakapan WhatsApp, saya sempat ikut larut mendukung paket bonus favorit saya sebelum benar-benar memeriksa beban R dan keheningan A. Saya melakukan *repair* langsung di tengah diskusi dengan mengakui secara terbuka bahwa saya terlalu cepat melompat ke solusi, menghentikan pembahasan fitur, lalu memberi ruang khusus bagi A untuk berbicara terlebih dahulu.
+- **Keterbatasan modalitas:** Karena seluruh negosiasi berlangsung lewat teks di WhatsApp Group, ekspresi wajah dan nada bicara R, D, dan A tidak dapat diamati langsung, keterbatasan ini diimbangi dengan pengecekan eksplisit pada jeda balasan dan konfirmasi tertulis dari setiap anggota sebelum keputusan dikunci.
+- **Next practice:** Pada negosiasi kelompok berikutnya (terutama saat memasuki integrasi kode Milestone 2 menuju 4 Desember 2026), saya akan selalu menyepakati kriteria keputusan bersama dan menanyakan kendala anggota yang paling pendiam terlebih dahulu sebelum menyampaikan preferensi saya sendiri.
+
+## Self-assessment
+
+| Dimensi | Skor 1–4 | Evidence singkat |
+| :--- | :---: | :--- |
+| **Person & Character** | 4 | Keempat anggota (Saya, D, R, A) dipetakan dengan karakter, modul, kendala beban kerja, dan wewenang masing-masing, *power imbalance* halus dan keheningan A terdeteksi serta difasilitasi secara aman. |
+| **Objective & State** | 4 | Beberapa *objective* dan *multi-state TAIDA* (dari *Target*, *Attention*, hingga *Desire* menuju *Action* bersyarat/dengan *dissent*) dikelola secara terpisah tanpa memaksakan konsensus semu. |
+| **Repertoire, Language & AI** | 4 | Menggunakan bahasa WhatsApp yang natural, reframing debat ke *common ground* yang terukur, perbandingan 3 opsi beserta *trade-off*, serta batasan peran AI dan privasi inisial yang ketat. |
+| **Response & Adaptation** | 4 | Kekhawatiran A dan R mengubah bentuk kesepakatan: B03 dicoret, kontrak antarmuka dikunci sejak 14 November malam, dan saya menambahkan komitmen bantuan silang pada dokumen pembagian tugas setelah GitHub rampung. |
+| **Agreement, Action & Relationship** | 4 | Seluruh kesepakatan, syarat R & A, *dissent* D, *checkpoint* 16 November, *stop rule*, realisasi bantuan dokumen sebelum 17 November, serta *repair* relasi terdokumentasi utuh. |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
+:::

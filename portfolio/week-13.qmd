@@ -1,8 +1,8 @@
 ---
 title: "Public Contribution Challenge"
 week: 13
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "Public artifact, evidence, context, response, dan reputation."
 categories: [Public, Contribution]
@@ -18,8 +18,119 @@ Mengomunikasikan core meaning kepada public secara sederhana, benar, dan bertang
 - Public artifact serta sumber evidence.
 - Context-collapse/reputation check, response, dan correction bila diperlukan.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 13](../examples/week-13.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+## Konteks performance
+
+**Tanggal dan setting:** Minggu, 22 November 2026, berupa unggahan *carousel* tujuh slide di akun Instagram pribadi.
+
+**Persons dan relationship:** Saya tampil sebagai mahasiswa yang membagikan ringkasan belajar dan hasil simulasi riset lomba (*student contributor*), bukan perwakilan resmi ITB, panitia IEEE, maupun instansi maritim mana pun. Target utama saya adalah mahasiswa lintas jurusan dan pembaca muda di Instagram yang tertarik pada topik teknologi, AI, atau logistik Indonesia. Pembaca lain di luar target utama yang berpotensi melihat konten ini mencakup dua rekan tim saya (**S** dan **M**), kakak tingkat, dosen, peserta atau juri kompetisi, serta praktisi logistik yang membaca unggahan tanpa melihat dokumen *paper* lengkapnya.
+
+**Objective dan initial state:** Menyederhanakan gagasan inti proyek **MARS (*Maritime Adaptive Rerouting System*)**, yaitu pentingnya menyaring aturan hukum pelayaran sebelum menghitung rute serta menjaga kendali manusia saat sistem ragu, ke bahasa sehari-hari tanpa menghilangkan batas simulasi (*honest limits*). *Initial state* target: pembaca umum yang akrab dengan aplikasi peta darat, tetapi belum memahami risiko pengecekan aturan di akhir pada logistik laut atau berpotensi mengira sistem riset mahasiswa sudah siap beroperasi di pelabuhan nyata.
+
+## Evidence
+
+::: {.callout-note appearance="simple" icon=false}
+### 1. Public Character, Target & TAIDA Map
+
+- **Public character:** Mahasiswa yang berbagi catatan riset dan pengalaman proyek tim secara pribadi (*student contributor*), bukan juru bicara resmi kampus atau penyedia sistem komersial.
+- **Target & keberagaman audiens:** Target utama adalah mahasiswa lintas jurusan dan pembaca muda yang tertarik pada teknologi serta logistik, audiens sekunder meliputi rekan tim (S & M), dosen, kakak tingkat, juri kompetisi, dan praktisi industri.
+- **TAIDA map:**
+  - *Target:* Pembaca muda/mahasiswa di Instagram yang belum mengenal mekanisme perutean maritim berbasis kepatuhan hukum.
+  - *Attention:* Judul pertanyaan netral tanpa *clickbait*, *"Gimana cara kapal kargo milih rute aman saat krisis mendadak?"*
+  - *Interest:* Analogi aplikasi peta "sadar aturan", penjelasan dua mode navigasi dan "rem pengaman" manusia (*Human-in-the-Loop*), serta hasil perbandingan simulasi.
+  - *Desire:* Kesadaran bahwa pada sistem berisiko tinggi, kejelasan batas dan kendali manusia sama pentingnya dengan kecepatan komputasi.
+  - *Action:* Mengajak pembaca menuliskan pertanyaan, pandangan, atau kritik di kolom komentar mengenai tantangan lapangan jika konsep ini dibawa ke kondisi nyata di Indonesia.
+
+---
+
+### 2. Public Artifact & Sumber Evidence
+
+**Penyederhanaan istilah (detoks jargon):** Istilah teknis dari *paper* diterjemahkan tanpa mengubah maknanya, *post-check compliance* menjadi "cek aturan hukum belakangan", *feasibility-first filtering* menjadi "saring jalur terlarang dulu di awal", *dual-mode weighting* ($\alpha = 0,15$ vs $0,75$) menjadi "dua mode navigasi: hemat waktu saat aman, hindari bahaya saat krisis", *HITL confidence gate* (<95%) menjadi "rem pengaman manusia saat sistem ragu", dan *simulated proxy* menjadi "data simulasi terkendali".
+
+**Isi carousel (7 slide):**
+
+1. **Slide 1 (Cover):** *"Gimana cara kapal kargo milih rute aman saat krisis mendadak?"* Ringkasan sederhana riset tim kami (**MARS**) yang meraih Juara 2 di *Technovate Paper Competition The Sandbox 3.0 IEEE ITB*, dilengkapi catatan sejak sampul bahwa ini merupakan pengalaman dan hasil simulasi riset mahasiswa, bukan sistem operasional resmi.
+2. **Slide 2 (Masalah):** Menyajikan konteks bahwa sekitar 80% perdagangan barang global melalui jalur laut, sementara beban biaya logistik Indonesia sempat tercatat 23,8% PDB (2018) dan diperkirakan 14,29% PDB (realisasi hingga 2022). Alur tradisional yang mencari rute terpendek lalu mengecek aturan belakangan berisiko melanggar sanksi dan memicu hitung ulang manual selama 12–24 jam dalam skenario simulasi kami.
+3. **Slide 3 (Mekanisme):** Menggunakan analogi aplikasi peta "sadar aturan" dengan tiga langkah: memblokir jalur terlarang sebelum rute dihitung, berpindah otomatis antara mode hemat waktu ($\alpha = 0,15$) dan mode keselamatan saat krisis ($\alpha = 0,75$), serta memasukkan waktu tunggu antrean jika kepadatan pelabuhan tujuan melewati 85% (contoh Sorong 95%).
+4. **Slide 4 (Kendali Manusia):** Menjelaskan mekanisme *Human-in-the-Loop*: ketika tingkat keyakinan sistem membaca aturan jatuh di bawah 95%, rekomendasi ditahan dan sistem menampilkan peringatan agar operator manusia memeriksa dokumen aturan terlebih dahulu sebelum menekan *Approve* atau *Override*.
+5. **Slide 5 (Hasil Simulasi & Trade-Off):** Merangkum hasil uji pada 12 pelabuhan Indonesia (kecepatan 15 knots, $N = 50$ sampel per uji): *Baseline* melanggar jalur sanksi pada skenario krisis regulasi dengan waktu keputusan proksi 4–8 jam (normal) atau 12–24 jam (*rework*), sedangkan MARS menghindari jalur terlarang dengan waktu proksi 3–9 menit (keyakinan tinggi) atau 30–60 menit (tinjauan manusia), dengan *trade-off* penambahan jarak tempuh sekitar 7–12%.
+6. **Slide 6 (Batas Jujur / Honest Limits):** Satu slide khusus yang menyatakan tiga keterbatasan secara terbuka: (1) input regulasi, kepadatan pelabuhan, dan skor keyakinan LegalBERT masih berupa simulasi terkendali (*simulated proxy*), belum tersambung ke *live API*, (2) skala uji terbatas pada 12 pelabuhan representatif untuk satu kapal per simulasi, serta (3) angka emisi dan waktu tunggu merupakan proksi pembanding dan MARS dirancang sebagai konsep *middleware* tambahan, bukan produk siap pakai.
+7. **Slide 7 (Penutup & Primary Action):** Menegaskan bahwa pada teknologi berisiko tinggi, kejelasan batas dan kendali manusia justru yang menjaga kepercayaan. Ditutup dengan ajakan diskusi di komentar: *"Kalau sistem seperti ini suatu saat dicoba di pelabuhan Indonesia, tantangan lapangan apa yang paling krusial untuk diselesaikan duluan?"* disertai penegasan bahwa tulisan ini adalah catatan pribadi mahasiswa.
+
+**Sumber evidence dan aksesibilitas:** Data latar belakang mengacu pada referensi yang terdokumentasi di *paper* tim kami (laporan UNCTAD, EIA, CIA World Factbook, dan World Bank/Bappenas), sedangkan perbandingan rute dan tangkapan antarmuka berasal langsung dari purwarupa simulator web MARS serta uji *batch* $N = 50$ tim kami. *Caption* mencantumkan sumber data dan batas riset. *Alt-text* ditambahkan pada ketujuh slide melalui pengaturan Instagram agar peta rute, tabel, dan isi teks dapat diakses oleh pembaca layar (*screen reader*).
+
+---
+
+### 3. Context-Collapse & Reputation Check
+
+Unggahan Instagram bisa di-*screenshot* per slide dan tersebar ke dosen, juri, rekan tim, maupun praktisi logistik tanpa menyertakan *caption* lengkapnya. Sebelum publikasi, saya menjalankan *screenshot test* dan merevisi empat bagian berikut:
+
+| Bagian | Sebelum (Draf Awal) | Sesudah (Versi Terbit) | Alasan Revisi |
+| :--- | :--- | :--- | :--- |
+| **Slide 1 (Cover)** | *"MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!"* | Judul pertanyaan netral + keterangan *"hasil simulasi riset mahasiswa, bukan sistem operasional resmi"* | Menghindari *clickbait* dan mencegah salah tafsir seolah sistem sudah dipakai di pelabuhan nyata. |
+| **Slide 5 (Hasil)** | *"LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit."* | Menyebut tegas kata **"proksi"**, menyertakan rentang **30–60 menit** saat tinjauan manusia, dan *trade-off* jarak **+7–12%** | Jika hanya slide 5 yang di-*screenshot* tanpa konteks lain, pembaca tetap melihat batas dan risikonya sehingga tidak terbaca sebagai *overclaim*. |
+| **Slide 6 (Batas)** | Keterbatasan *simulated proxy* hanya diletakkan di paragraf akhir *caption* | Dijadikan **satu slide khusus** yang setara ukurannya dengan slide hasil | Banyak pembaca Instagram hanya menggeser slide tanpa membaca *caption*, batas jujur harus terlihat langsung di visual utama. |
+| **Slide 7 & Caption** | Menyebut nama lengkap rekan tim dan afiliasi seolah mewakili posisi resmi kampus | Merujuk karya secara kolektif sebagai tim tanpa menyebut nama pribadi rekan + penegasan *"catatan belajar pribadi mahasiswa"* | Melindungi privasi rekan tim (S & M) dan mencegah anggapan bahwa konten mewakili sikap resmi ITB atau IEEE. |
+
+---
+
+### 4. Response & Correction
+
+**Respons publik (per 22 November 2026):** 64 *likes*, 4 komentar, 6 *shares*, dan 9 *saves*. Angka *likes* (*reach*) tidak saya anggap bukti keberhasilan pemahaman publik, indikator *impact* yang lebih relevan justru terlihat dari dua pertanyaan penerapan dan dua kritik isi di kolom komentar:
+
+| Komentar Pembaca | Jenis | Balasan Saya |
+| :--- | :--- | :--- |
+| *"Menarik sih, tapi kalau pas keyakinannya di bawah 95% terus harus dicek manusia 30–60 menit, itu nggak kelamaan buat kapal yang lagi jalan di laut?"* | Pertanyaan lanjutan | Makasih pertanyaannya! Buat pelayaran kargo antarpulau yang durasinya 3–10 hari, jeda 30–60 menit buat memastikan aturan hukum jauh lebih aman dibanding salah masuk jalur lalu kena tahan atau hitung ulang manual 12–24 jam. Tapi memang angka 30–60 menit ini masih proksi simulasi, di lapangan tetap sangat bergantung pada kesiapan tim operasional dan legal perusahaan. |
+| *"Kalau suatu saat mau dicoba di pelabuhan Indonesia beneran, menurutmu data mana yang paling susah didapat buat gantiin data simulasi itu?"* | Pertanyaan lanjutan | Dari catatan riset tim kami, tantangan terbesarnya ada di sinkronisasi aturan lokal yang sering terbit dalam bentuk surat edaran PDF tidak terstruktur dan data kepadatan sandar pelabuhan secara *real-time*, karena standar sistem informasi tiap pelabuhan belum tentu seragam. |
+| *"Di slide 5 disebut jarak tempuh nambah 7–12% demi aman, tapi belum bahas tambahan biaya bahan bakarnya ya. Buat perusahaan pelayaran, tambahan jarak segitu bisa lumayan mahal lho."* | **Kritik isi** | Setuju banget, poin ini memang kelewat di slide 5. Di simulasi kemarin kami baru memakai estimasi emisi proksi yang linier dengan waktu tempuh, belum memodelkan harga bahan bakar kapal (*bunker fuel*) dan biaya operasional riil per pelayaran. Jadi *trade-off* 7–12% itu memang belum menghitung untung-rugi finansial aslinya. Makasih masukannya, aku tambahin catatan ini di *caption* ya! |
+| *"Itu kan baru 12 pelabuhan besar ya? Di Indonesia banyak pelabuhan kecil dan cuaca lokal cepat berubah, takutnya kalau orang awam baca dikira 12 pelabuhan udah cukup mewakili semua jalur laut kita."* | **Kritik isi** | Bener banget, makasih sudah diingetin! Walaupun di slide 6 sudah disebut 12 pelabuhan representatif, di slide 3 dan 5 memang belum ditegaskan lagi kalau model ini belum mencakup pelabuhan perintis dan dinamika cuaca mikro secara *real-time*. Aku tambahin penegasan ini di catatan koreksi *caption* biar nggak bikin salah paham. |
+
+**Correction log:** Dua kritik di atas memperlihatkan bahwa penyederhanaan pada slide 3 dan slide 5 masih membuka ruang salah tafsir soal biaya bahan bakar dan cakupan pelabuhan. Saya memperbarui bagian bawah *caption* secara terbuka tanpa menghapus isi awal maupun komentar kritik:
+
+> 📝 **Catatan tambahan & koreksi dari diskusi komentar:**
+> • Soal *trade-off* jarak +7–12% di slide 5: simulasi kami belum memodelkan biaya bahan bakar (*bunker fuel*) dan ongkos operasional kapal secara riil, baru menghitung waktu tempuh dan proksi emisi sederhana. Di kondisi nyata, keputusan memutar rute tetap harus menimbang kalkulasi biaya tersebut.
+> • Soal cakupan peta di slide 3 & 5: 12 pelabuhan yang diuji hanya contoh jalur utama representatif, belum mewakili seluruh pelabuhan perintis Indonesia maupun perubahan cuaca lokal secara *real-time*.
+> Terima kasih banyak buat teman-teman yang sudah ikut mengkritisi dan melengkapi batas riset ini!
 :::
 
-{{< include ../includes/evidence-template.md >}}
+## Analisis komunikasi
+
+| Elemen | Evidence dan analisis |
+| :--- | :--- |
+| **Person & character** | *Public character* dinyatakan tegas sejak slide pertama dan *caption* sebagai mahasiswa yang berbagi catatan riset pribadi, bukan perwakilan resmi ITB, IEEE, atau instansi pelayaran, keberagaman audiens (awam, rekan tim, dosen, praktisi) diperhitungkan sebelum terbit. |
+| **Objective & state** | *TAIDA map* menyelaraskan judul non-*clickbait*, analogi mekanisme, batas jujur, dan ajakan diskusi, komentar yang menguji jeda 30–60 menit dan kendala data lapangan menunjukkan pembaca bergerak dari *Attention* ke *Interest* secara kritis. |
+| **Repertoire & language** | Mengubah jargon teknis menjadi analogi peta "sadar aturan" dan "rem pengaman", melengkapi tujuh slide dengan *alt-text*, serta menyediakan satu slide khusus *honest limits* agar penyederhanaan tidak berubah menjadi distorsi. |
+| **Response & adaptation** | Uji *context collapse* sebelum terbit merevisi empat bagian draf yang rawan *overclaim* atau menyentuh privasi tim. setelah tayang, dua kritik substantif dijawab tanpa defensif dan langsung memicu pembaruan terbuka pada *caption*. |
+| **Agreement/action** | *Primary action* (mengajak diskusi celah penerapan di Indonesia) selaras dengan tujuan edukatif, seluruh komentar dibalas secara spesifik, dan *correction log* tercatat terbuka di *caption*. |
+| **Relationship outcome** | Pengomentar yang memberi kritik dihargai dan diberi kredit secara terbuka, privasi rekan tim (S & M) terjaga, dan kredibilitas riset tetap terpelihara tanpa melebih-lebihkan kesiapan purwarupa. |
+
+## Penggunaan AI
+
+- **Alat dan peran AI:** Saya menggunakan Gemini untuk membantu melakukan detoks jargon dari *paper* MARS, menyusun draf awal teks tujuh slide *carousel* beserta *alt-text*, serta menguji risiko *context collapse* (*screenshot test*) dari sudut pandang pembaca di luar bidang informatika.
+- **Verifikasi dan batas penggunaan:** Seluruh angka dan fakta teknis (80% perdagangan laut global, 23,8% dan 14,29% PDB, 12 pelabuhan, 15 knots, kongesti >85%, $\alpha = 0,15/0,75$, ambang *confidence* 95%, $N = 50$, waktu proksi 12–24 jam vs 3–9 menit / 30–60 menit, serta *trade-off* jarak 7–12%) diverifikasi langsung dari berkas *paper*, kode HTML simulasi, dan *slide* asli tim kami. Saya menolak draf judul awal yang bernada promosional agar tetap menjaga kejujuran batas, serta meninjau sendiri setiap balasan komentar dan catatan koreksi.
+
+## Feedback dan tindak lanjut
+
+- **Feedback yang diterima:** Pembaca menyoroti dua batas penting dari penyederhanaan konten: (1) *trade-off* penambahan jarak 7–12% belum memasukkan biaya bahan bakar riil kapal, dan (2) penyebutan 12 pelabuhan pada slide awal perlu ditegaskan ulang batas cakupannya agar tidak dikira mewakili seluruh pelabuhan perintis dan cuaca mikro Indonesia.
+- **Adaptation/replay:** Kedua kritik diakui secara jujur pada balasan komentar dan ditambahkan sebagai *correction log* di bagian bawah *caption* dengan ucapan terima kasih kepada pemberi masukan.
+- **Next practice:** Sebelum memublikasikan ringkasan proyek teknis ke media sosial di lain waktu, saya akan meminta minimal satu teman nonteknis dan satu rekan yang kritis terhadap aspek bisnis/ekonomi untuk membaca draf lebih dahulu agar celah asumsi (seperti biaya bahan bakar) sudah tertangkap sebelum konten tayang.
+
+## Self-assessment
+
+| Dimensi | Skor 1–4 | Evidence singkat |
+| :--- | :---: | :--- |
+| **Person & Character** | 4 | *Public character* dan batas otoritas pribadi dinyatakan tegas sejak slide 1 dan *caption*, audiens dipetakan sebagai *persons* dengan konteks beragam (awam, rekan tim, dosen, praktisi). |
+| **Objective & State** | 4 | *TAIDA map* selaras dengan *primary action* yang terbuka dan non-manipulatif, penyederhanaan mempertahankan makna inti, sumber data, dan *uncertainty* secara jujur. |
+| **Repertoire, Language & AI** | 4 | Detoks jargon dengan analogi membumi, *alt-text* aksesibilitas lengkap, slide khusus *honest limits*, serta transparansi peran AI dan penolakan terhadap draf bombastis. |
+| **Response & Adaptation** | 4 | Uji *screenshot test* merevisi empat bagian sebelum publikasi, dua kritik isi setelah tayang dijawab tenang dan langsung ditindaklanjuti menjadi koreksi terbuka di *caption*. |
+| **Agreement, Action & Relationship** | 4 | Membedakan *reach* dari *impact*, membalas seluruh komentar secara substantif, memberi kredit kepada pengkritik di *correction log*, serta menjaga privasi rekan tim dan reputasi institusi. |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
+:::

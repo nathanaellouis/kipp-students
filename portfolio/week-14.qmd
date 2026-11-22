@@ -1,8 +1,8 @@
 ---
 title: "AI-Mediated Communication Design"
 week: 14
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "AI role, prompt, output, human revision, boundary, dan risk."
 categories: [AI, Ethics]
@@ -18,8 +18,118 @@ Memilih dan membatasi peran AI sambil menjaga human competence, authority, dan r
 - AI role, prompt/output, serta human revision.
 - Privacy/authority/risk review dan alasan tidak menggunakan lebih banyak AI.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 14](../examples/week-14.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+## Konteks performance
+
+**Tanggal dan setting:** Minggu, 22 November 2026. Proses perancangan komunikasi publik untuk *carousel* Instagram tujuh slide yang menjelaskan proyek riset **MARS (*Maritime Adaptive Rerouting System*)** dengan bantuan AI (Gemini), lalu diunggah di akun Instagram pribadi dan ditindaklanjuti melalui balasan komentar serta pembaruan *caption* (kelanjutan proses di balik layar dari Minggu 13).
+
+**Persons dan relationship:** Saya berperan sebagai mahasiswa STI ITB 2025 sekaligus penulis yang bertanggung jawab penuh atas isi publikasi, audiens utama adalah mahasiswa lintas jurusan dan pembaca muda di Instagram, audiens sekunder mencakup dosen, juri kompetisi, dan praktisi logistik, dua rekan tim saya (**S** dan **M**) adalah pihak yang karya bersamanya dibahas tanpa menyingkap identitas pribadi mereka, serta para pengomentar adalah pembaca yang menguji keakuratan isi setelah unggahan tayang.
+
+**Objective dan initial state:** Menghasilkan artefak publik yang sederhana, akurat, jujur pada keterbatasan simulasi (*honest limits*), dan bebas dari pelanggaran privasi maupun klaim berlebihan, dengan memposisikan AI sebatas alat bantu bahasa dan struktur, bukan penentu fakta atau pemilik relasi. *Initial state*: seluruh data, hasil uji *batch* $N = 50$, dan purwarupa simulator MARS sudah ada pada dokumen *paper* dan *slide* kompetisi tim kami, tetapi bahasanya masih dipenuhi istilah teknis akademis sehingga terlalu berat jika langsung dibagikan ke pembaca umum di Instagram.
+
+## Evidence
+
+::: {.callout-note appearance="simple" icon=false}
+### 1. Pembagian Peran AI, Matriks Risiko, dan Tanggung Jawab Manusia
+
+Sebelum memakai AI, setiap subtugas dipetakan berdasarkan **tingkat risiko relasi dan otoritas** (*Hijau = rendah, Kuning = sedang, Merah = tinggi*) agar pemilihan peran AI tetap proporsional:
+
+| Subtugas komunikasi | Tingkat risiko | AI role | Tanggung jawab manusia |
+| :--- | :--- | :--- | :--- |
+| Menerjemahkan istilah teknis *paper* (detoks jargon) ke analogi sehari-hari | **Hijau** (Rendah) | **Translator** | Memeriksa apakah analogi tetap setia pada makna teknis *feasibility-first* dan *HITL* tanpa mendistorsi konsep |
+| Menyusun draf awal struktur tujuh slide, *caption*, dan *alt-text* aksesibilitas | **Kuning** (Sedang) | **Copilot** | Menentukan sudut pandang pribadi, mencocokkan seluruh angka dengan dokumen asli, dan merevisi kalimat yang terlalu promosional |
+| Menguji potensi salah tafsir jika satu slide di-*screenshot* terpisah (*screenshot test*) | **Kuning** (Sedang) | **Mirror / Coach** | Menilai sendiri dampak terhadap privasi rekan tim (**S** dan **M**) serta batas otoritas agar tidak terbaca mewakili institusi resmi |
+| Menyusun draf awal balasan untuk empat komentar dan catatan koreksi *caption* | **Kuning** (Sedang) | **Copilot** | Menilai secara mandiri mana kritik yang sah, menyesuaikan nada agar hangat dan personal, lalu mengirim balasan atas nama sendiri |
+| Membalas komentar/DM secara otomatis atau menebak motif pengkritik | **Merah** (Tinggi) | **Delegate: tidak digunakan** | Pengelolaan relasi, pengakuan jujur atas celah riset, dan interaksi dengan pembaca ditangani manual 100% oleh saya |
+| Menentukan angka riset, batas simulasi, dan data respons unggahan | **Merah** (Tinggi) | **Tidak digunakan** | Seluruh fakta diambil langsung dari *paper*, purwarupa simulator MARS, dan *Insight* Instagram, bukan hasil karangan AI |
+
+*(Peran **Mediator** tidak dipakai karena konteks ini bukan fasilitasi konflik langsung multipihak, melainkan perancangan komunikasi publik satu-ke-banyak yang tetap berada di bawah kendali saya).*
+
+---
+
+### 2. Prompt & Output Awal AI
+
+**Instruksi berpusat pada manusia (*person-centered prompt*) yang saya berikan:**
+
+> *"Bantu saya menyederhanakan konsep proyek riset MARS (12 pelabuhan Indonesia, 15 knots, dual-mode alpha 0,15 vs 0,75, HITL confidence gate di bawah 95%, hasil proksi N=50) menjadi draf carousel Instagram 7 slide plus alt-text untuk pembaca muda dan mahasiswa lintas jurusan. Gunakan bahasa yang santai tapi tetap rapi, jangan pakai nama asli dua rekan tim saya, tegaskan ini catatan pribadi mahasiswa bukan pernyataan resmi kampus, dan sertakan batas bahwa datanya masih simulated proxy."*
+
+**Cuplikan output awal AI yang kemudian saya evaluasi:**
+
+Output awal Gemini berhasil menyusun alur tujuh slide dan *alt-text* dengan cepat, tetapi saat saya periksa ulang (*human review*), masih terdapat lima bagian yang berisiko menimbulkan *overclaim*, distorsi makna, atau masalah privasi:
+
+- Judul sampul terlalu promosional: *"MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!"*
+- Kalimat hasil di slide 5 terlalu mutlak: *"LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit."*
+- Keterbatasan *simulated proxy* hanya ditaruh sebagai catatan kecil di bagian bawah *caption*, tidak hadir sebagai slide tersendiri.
+- Bahasa pada slide mekanisme masih menyimpan jargon kaku: *"filtering kepatuhan proaktif berbasis confidence gate"*.
+- Penutup *caption* menyarankan penyebutan nama lengkap rekan tim dan afiliasi kampus secara menonjol di bawah judul.
+
+---
+
+### 3. Human Revision (Diterima, Diubah, dan Ditolak)
+
+| Output awal AI | Keputusan & revisi saya | Alasan revisi |
+| :--- | :--- | :--- |
+| **Judul Slide 1:** *"MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!"* | **Ditolak & diubah:** *"Gimana cara kapal kargo milih rute aman saat krisis mendadak?"* + catatan *"hasil simulasi riset mahasiswa, bukan sistem operasional resmi"* | Versi AI berbau *clickbait* dan bisa membuat pembaca awam maupun praktisi mengira sistem sudah aktif di pelabuhan nyata. |
+| **Slide 3–4 (Mekanisme):** *"filtering kepatuhan proaktif berbasis confidence gate"* | **Diubah:** Analogi aplikasi peta *"sadar aturan"* (*saring jalur terlarang dulu di awal*) dan *"rem pengaman manusia"* saat keyakinan di bawah 95% | Mengurangi jarak bahasa dengan pembaca lintas jurusan tanpa menghilangkan cara kerja inti sistem. |
+| **Slide 5 (Hasil):** *"LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit."* | **Ditolak & diubah:** Menyebut tegas kata **"proksi"**, menyertakan rentang **30–60 menit** saat tinjauan manusia, dan menambahkan *trade-off* jarak **+7–12%** | Versi AI menghilangkan ketidakpastian (*uncertainty*) dan konsekuensi jarak tempuh, jika di-*screenshot* terpisah akan terbaca sebagai *overclaim*. |
+| **Batas *Simulated Proxy*:** Hanya ditulis ringkas di akhir *caption* | **Diterima sebagian lalu dipindah:** Dijadikan **satu slide khusus (Slide 6 Batas Jujur)** dengan porsi visual setara slide hasil | Banyak pembaca Instagram hanya menggeser gambar tanpa membuka *caption*, keterbatasan simulasi harus terlihat langsung di artefak visual. |
+| **Slide 7 & Caption:** Saran menyebut nama lengkap rekan tim dan afiliasi institusi secara menonjol | **Ditolak:** Merujuk karya secara kolektif sebagai tim tanpa menyebut nama pribadi rekan + penegasan *"catatan belajar pribadi mahasiswa, bukan pernyataan resmi institusi"* | Melindungi privasi rekan tim (**S** dan **M**) dan menjaga batas otoritas agar unggahan tidak terbaca mewakili sikap resmi ITB atau IEEE. |
+
+**Tinjauan manusia setelah publikasi:** Ketika dua pembaca menyampaikan kritik di kolom komentar bahwa *trade-off* jarak +7–12% belum menghitung biaya bahan bakar riil (*bunker fuel*) dan 12 pelabuhan belum mewakili pelabuhan perintis serta cuaca mikro AI membantu menyusun opsi kalimat balasan dan ringkasan koreksi. Saya menolak nada jawaban yang terdengar defensif atau terlalu kaku, memutuskan sendiri bahwa kedua kritik tersebut valid, lalu membalas komentar dan memperbarui *caption* secara terbuka atas nama saya sendiri.
+
+---
+
+### 4. Privacy, Authority & Risk Review
+
+- **Privacy:** Nama lengkap, akun pribadi, dan catatan internal rekan tim (**S** dan **M**) tidak dimasukkan ke dalam *prompt* maupun teks publikasi, mereka hanya dirujuk secara kolektif sebagai tim agar privasi tetap terlindungi.
+- **Authority boundary:** Sejak slide pertama hingga *caption*, batas otoritas dinyatakan jelas sebagai catatan belajar pribadi mahasiswa (*student contributor*), bukan juru bicara resmi ITB, IEEE, atau operator pelabuhan. AI tidak diizinkan menyusun klaim yang mengatasnamakan institusi mana pun.
+- **Data, akurasi, dan *uncertainty*:** Seluruh angka teknis (80% perdagangan laut global, biaya logistik 23,8% dan estimasi 14,29% PDB, 12 pelabuhan, 15 knots, kongesti >85%, $\alpha = 0,15/0,75$, ambang *confidence* 95%, $N = 50$, waktu proksi 12–24 jam vs 3–9 menit / 30–60 menit, serta *trade-off* jarak +7–12%) saya verifikasi langsung terhadap *paper* dan kode simulasi asli. Ketidakpastian model justru ditampilkan terang-terangan di Slide 6, bukan disembunyikan.
+- **Risiko *profiling*, manipulasi, dan *dependency*:** AI tidak diminta menilai karakter atau motif pengomentar (menghindari *profiling*), dan draf judul *clickbait* yang manipulatif langsung saya buang. Untuk mencegah ketergantungan (*dependency*), saya tetap menguasai sendiri mekanisme teknis MARS sehingga dapat menjawab pertanyaan lanjutan pembaca (seperti perbandingan jeda 30–60 menit pada pelayaran 3–10 hari dan kendala surat edaran PDF pelabuhan) berdasarkan pemahaman sendiri.
+- **Risiko hilangnya keaslian dan bias:** Saya menyunting ulang bahasa draf AI pada slide dan balasan komentar agar tetap terdengar seperti suara alami mahasiswa bukan bahasa generik yang kaku sekaligus memastikan tidak ada sudut pandang bias yang meremehkan sistem operasional pelabuhan kecil atau prosedur kerja operator lapangan yang sudah ada.
+- **Batas tugas vs. relasi dan kondisi eskalasi:** AI hanya dipakai pada komunikasi pembawa tugas (*task-driven*) seperti perapian struktur slide dan *alt-text*, sementara komunikasi pembawa relasi (*relationship-driven*) seperti menanggapi kritik pembaca dan mengakui kekurangan riset dipegang penuh oleh saya. **Kondisi eskalasi** ditetapkan tegas: setiap kali muncul komentar kritis, pertanyaan tentang keakuratan fakta, atau potensi salah paham atas batas simulasi, saya langsung mengambil alih kendali penuh tanpa menyerahkan respons akhir ke AI.
+
+**Alasan tidak menggunakan lebih banyak AI:** Saya sengaja tidak mengaktifkan peran **Delegate** (misalnya balasan komentar otomatis atau menyerahkan seluruh draf tanpa pengecekan ulang) karena tiga alasan konkret: (1) volume interaksi masih kecil (4 komentar) sehingga sangat realistis ditangani langsung, (2) dua komentar berupa kritik substantif yang menuntut pengakuan jujur dari manusia yang benar-benar mengerjakan risetnya, dan (3) relasi serta kepercayaan pembaca akan cepat rusak bila jawaban atas kritik terasa seperti respons bot yang dingin.
+
+**Pernyataan transparansi:** *"Draf awal teks carousel, terjemahan istilah teknis, dan alt-text pada unggahan publik MARS ini disusun dengan bantuan AI (Gemini) sebagai translator dan copilot, namun verifikasi seluruh data riset, revisi batas klaim, keputusan akhir, balasan komentar, dan tanggung jawab penuh atas isi tetap berada pada saya."*
 :::
 
-{{< include ../includes/evidence-template.md >}}
+## Analisis komunikasi
+
+| Elemen | Evidence dan analisis |
+| :--- | :--- |
+| **Person & character** | Peran saya sebagai penulis yang bertanggung jawab, AI sebagai *translator/copilot* di zona Hijau–Kuning, rekan tim (**S** dan **M**) yang privasinya dijaga, serta pembaca umum dan pengkritik dipisahkan secara tegas. |
+| **Objective & state** | *Objective* menerjemahkan konsep MARS secara jujur tanpa *overclaim* dijaga sepanjang proses dari penulisan *prompt* berpusat pada manusia, revisi pra-publikasi, hingga koreksi terbuka setelah komentar masuk. |
+| **Repertoire & language** | Perbandingan langsung antara *prompt*, *output* mentah AI, lima keputusan revisi (diterima, diubah, ditolak), serta alasan tiap revisi terdokumentasi utuh, bahasa disunting agar menjaga keaslian suara manusia. |
+| **Response & adaptation** | Baik risiko sebelum tayang (judul *clickbait*, klaim mutlak 9 menit, batas *simulated proxy* yang tersembunyi) maupun dua kritik pembaca setelah tayang direspons lewat keputusan manusia sesuai kondisi eskalasi. |
+| **Agreement/action** | Artefak publik terbit dengan batas wewenang yang jernih, seluruh balasan komentar dan *correction log* dikirim atas nama saya sendiri, serta seluruh komunikasi pembawa relasi (*relationship-driven*) tetap ditangani manual. |
+| **Relationship outcome** | Privasi rekan tim terjaga, pengkritik diperlakukan setara dan diberi kredit secara personal, dan kepercayaan pembaca dibangun di atas transparansi batas manusia bukan klaim bombastis buatan AI. |
+
+## Penggunaan AI
+
+Gemini digunakan dalam proses penyusunan draf awal *carousel* MARS (sebagai *translator*, *copilot*, dan *mirror* untuk uji *screenshot test*), draf awal opsi balasan komentar, serta penstrukturan catatan ini ke format portofolio Minggu 14. Seluruh verifikasi angka riset, lima revisi utama pada tabel *Human Revision*, keputusan mengakui kritik pembaca, pengiriman balasan, dan tanggung jawab penuh atas konten dilakukan oleh saya sendiri.
+
+## Feedback dan tindak lanjut
+
+- **Feedback yang diterima:** Dua kritik dari pembaca setelah unggahan tayang soal belum dimodelkannya biaya bahan bakar riil pada *trade-off* jarak +7–12% dan batas representasi 12 pelabuhan terhadap pelabuhan perintis menunjukkan bahwa meski saya sudah melakukan lima revisi terhadap *output* AI, sudut pandang manusia dari luar tim tetap mampu menangkap celah asumsi yang terlewat oleh saya maupun AI.
+- **Adaptation/replay:** Kedua kritik saya akui secara terbuka pada balasan komentar dan saya tambahkan sebagai catatan koreksi di bagian bawah *caption*, sembari memberi kredit kepada pemberi masukan.
+- **Next practice:** Saat menggunakan AI sebagai *copilot* untuk komunikasi publik berikutnya, saya akan menggabungkan dua lapis pemeriksaan sebelum terbit: pemeriksaan mandiri memakai matriks risiko Hijau–Kuning–Merah, lalu uji baca cepat oleh minimal satu teman dari luar bidang informatika agar celah asumsi non-teknis (seperti aspek ekonomi atau kondisi lapangan) sudah terlihat sebelum dipublikasikan.
+
+## Self-assessment
+
+| Dimensi | Skor 1–4 | Evidence singkat |
+| :--- | :---: | :--- |
+| **Person & Character** | 4 | Peran manusia, batas otoritas pribadi, privasi rekan tim (**S** dan **M**), serta pemisahan komunikasi pembawa tugas dan pembawa relasi dipetakan tegas memakai matriks risiko Hijau–Kuning–Merah. |
+| **Objective & State** | 4 | Pilihan peran AI (*Translator*, *Copilot*, *Mirror/Coach*, serta menolak *Delegate*) selaras dengan *objective* edukatif, tingkat risiko relasi, dan kondisi eskalasi pada tiap subtugas. |
+| **Repertoire, Language & AI** | 4 | *Prompt*, cuplikan *output* awal, lima butir *human revision* (diterima/diubah/ditolak beserta alasan), penjagaan keaslian suara, serta pernyataan transparansi tercatat jelas dan dapat dibandingkan langsung. |
+| **Response & Adaptation** | 4 | Draf AI yang *clickbait* atau *overclaim* ditolak sebelum terbit, dan dua kritik pembaca setelah publikasi diterima serta dikoreksi atas keputusan manusia sendiri. |
+| **Agreement, Action & Relationship** | 4 | Seluruh pemeriksaan privasi, otoritas, *uncertainty*, *profiling*, manipulasi, *dependency*, bias, alasan membatasi AI, dan kepemilikan relasi dengan pembaca terdokumentasi utuh. |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
+:::

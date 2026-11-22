@@ -1,8 +1,8 @@
 ---
 title: "Community Communication Challenge"
 week: 12
-status: "Belum dimulai"
-self_score: "—"
+status: "Siap dinilai"
+self_score: "20"
 assessor_score: "—"
 description: "Framing, deliberation, sufficient agreement, dan collective action."
 categories: [Community, Deliberation]
@@ -18,8 +18,159 @@ Memfasilitasi community communication melintasi perbedaan dan power menuju actio
 - Sedikitnya tiga frames dan lima options.
 - Deliberation evidence, safeguard, action, dan review plan.
 
-::: {.callout-tip title="Lihat contoh pengisian"}
-[Buka contoh fiktif Minggu 12](../examples/week-12.qmd) untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.
+## Konteks performance
+
+**Tanggal dan setting:** Rapat koordinasi Divisi Fundraising pada Sabtu, 19 September 2026 (pukul 19.30–20.45 WIB) melalui Google Meet, dilanjutkan pemantauan dan evaluasi uji coba (*pilot*) dua minggu melalui grup WhatsApp divisi pada rentang 21 September – 5 Oktober 2026.
+
+**Persons dan relationship:** Delapan anggota Divisi Fundraising di bawah Bidang Finance kepanitiaan IMPACT 6.0, terdiri dari **K** (Ketua Bidang Finance), **V** (Ketua Divisi Fundraising), **Saya** (staf), serta lima staf lainnya (**A**, **B**, **C**, **E**, dan **F**). Secara struktural terdapat perbedaan kuasa (*power imbalance*) yang jelas: K dan V memegang otoritas formal atas target dana bidang dan persetujuan program kerja, sedangkan saya dan lima rekan lain berstatus staf pelaksana. Posisi saya sebagai staf menuntut saya menjaga batas wewenang dan tidak mengambil alih pimpinan rapat dari V, melainkan membantu memfasilitasi dialog antarstaf agar keberatan tidak tertahan karena rasa sungkan kepada atasan struktural.
+
+**Objective dan initial state:** Membantu divisi keluar dari perdebatan kaku mengenai metode pencarian dana (jualan luring vs. *pre-order* daring) dan mencapai kesepakatan tindakan kolektif yang adil, realistis terhadap jadwal kuliah, dan tetap mengejar target kas IMPACT 6.0. *Initial state*: pada awal rapat, V mengajukan skema jualan makanan (*danusan*) luring merata untuk seluruh staf dengan modal talangan awal pribadi, usulan ini langsung memicu perdebatan antara beberapa staf sementara anggota lain memilih diam.
+
+## Evidence
+
+::: {.callout-note appearance="simple" icon=false}
+### 1. Community Person Map: Fact / Story / Value / Position
+
+| Person | Fact yang dibawa | Story / interpretasi | Value | Position awal |
+| :--- | :--- | :--- | :--- | :--- |
+| **K (Ketua Bidang Finance)** | Target pemasukan divisi dari BPH sudah dikunci dan dibutuhkan bertahap mulai akhir September | Jika skema tidak tegas sejak awal, arus kas kepanitiaan berisiko tersendat menjelang hari-H | Akuntabilitas target keuangan dan kelancaran acara | Target pemasukan mingguan divisi tidak bisa diturunkan |
+| **V (Ketua Divisi Fundraising)** | Periode pencarian dana efektif tinggal beberapa pekan divisi perlu segera bergerak | Pembagian tugas yang seragam ke semua staf dianggap cara paling cepat dan terasa adil | Ketertiban operasional dan rasa adil antarstaf | Seluruh 6 staf wajib jualan *danusan* luring rutin tiap minggu dengan kuota setoran sama rata |
+| **Saya (Staf)** | Jadwal kuliah, lokasi tempat tinggal, dan kekuatan jaringan tiap staf berbeda-beda | Memaksakan satu cara jualan yang sama untuk 8 orang justru rawan memicu ketegangan dan putus di tengah jalan | Keadilan proporsional dan keberlangsungan relasi divisi | Skema penggalangan dana dibagi sesuai kapasitas dan diuji dulu sebagai *pilot* singkat |
+| **Staf A** | Jadwal praktikum dan kuliah padat di pagi–siang hari tinggal agak jauh dari area kampus utama | "Skema jualan keliling pagi–siang tidak memikirkan mahasiswa yang jadwalnya penuh" | Beban kerja yang realistis tanpa mengorbankan kuliah | Minta target mingguan dilonggarkan dan tidak diwajibkan jaga *booth* luring |
+| **Staf B** | Punya jaringan luas di media sosial dan pengalaman membuka *pre-order* (PO) camilan serta *merchandise* | "Jualan keliling manual itu kurang efektif dibanding sistem PO daring" | Efektivitas kerja dan pemanfaatan kekuatan masing-masing | Alihkan seluruh fokus divisi ke sistem PO daring dan *merchandise* saja |
+| **Staf C** | Sering berada di sekitar kampus dan nyaman berjualan langsung ke teman sebaya/kantin | "Sistem PO terlalu lama cair uangnya, kalau cuma mengandalkan PO, anak lapangan yang akhirnya kerja ekstra" | Kecepatan hasil nyata dan kontribusi aktif semua anggota | Tetap utamakan jualan langsung di kampus karena uangnya langsung masuk hari itu juga |
+| **Staf E** | Memegang rekap transaksi dan catatan kas keluar-masuk divisi | "Kalau kanal jualannya terlalu banyak tanpa aturan input yang sama, laporan keuangan bakal selisih" | Ketelitian, transparansi, dan keamanan kas | Batasi kanal atau pakai satu format pencatatan yang rapi sebelum jalan |
+| **Staf F** | Belum pernah menyuarakan keberatan di rapat, memiliki keterbatasan uang saku untuk menalangi modal barang di muka | "Kalau aku bilang nggak sanggup nalangin modal awal, nanti dikira nggak komitmen sama kepanitiaan" | Rasa aman finansial pribadi dan tetap ingin berkontribusi | Awalnya diam saja di rapat (hanya mengangguk saat ditanya umum) |
+
+**Common ground:** Kedelapan anggota sama-sama ingin target dana IMPACT 6.0 tercapai tanpa selisih pencatatan kas, tidak ada staf yang tertekan secara finansial maupun akademik, dan suasana kerja divisi tetap nyaman hingga akhir kepanitiaan.
+
+---
+
+### 2. Tiga Frames & Enam Options
+
+**Detoks bingkai serangan menjadi tiga frames yang diuji:**
+
+Pada awal rapat sempat muncul bingkai yang saling menyalahkan (*"staf yang nggak mau jualan luring itu kurang usaha"* atau *"aturan jualan merata nggak peduli jadwal kuliah"*). Saya meminta izin kepada V untuk merangkum ulang persoalan ke dalam tiga bingkai masalah bersama (*collaborative frames*) tanpa mendistorsi kepentingan pihak mana pun:
+
+1. **Frame Pencapaian Kas & Kepastian Target (perspektif K, V, dan C):** Bagaimana pemasukan divisi bisa masuk stabil setiap minggu sesuai tenggat bidang Finance tanpa menunggu terlalu lama?
+2. **Frame Keadilan Akses & Kapasitas Pribadi (perspektif A, B, F, dan Saya):** Bagaimana setiap staf bisa berkontribusi nyata sesuai jadwal kuliah, keahlian, dan batas kemampuan finansial pribadinya tanpa harus memakai cara yang sama persis?
+3. **Frame Tata Kelola & Kemudahan Pencatatan (perspektif E dan V):** Bagaimana variasi metode jualan tetap terkendali dalam satu alur pembukuan yang rapi agar tidak memicu selisih kas?
+
+Frame kedua (**keadilan akses dan kapasitas pribadi**) yang dipadukan dengan frame pertama terbukti paling membuka ruang dialog, karena mengubah debat "luring vs. PO" menjadi pertanyaan bersama: *bagaimana memadukan kekuatan tiap anggota agar target kas tercapai tanpa membebani modal pribadi maupun jadwal kuliah?*
+
+**Enam options yang muncul selama deliberasi:**
+
+| No | Opsi | Asal usulan | Pertimbangan kuasa & dampak | Hasil |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Semua staf wajib jualan *danusan* luring sama rata dengan modal talangan pribadi | Usulan awal Kadiv V | Paling mudah dikontrol secara struktural, tetapi membebani A (jadwal) dan F (uang saku pribadi) yang cenderung sungkan menolak | Tidak dipilih |
+| 2 | Pindah 100% ke *pre-order* daring dan *merchandise* tanpa jualan luring | Usulan Staf B | Menguntungkan staf berkemampuan promosi daring, tetapi memperlambat arus kas mingguan dan meminggirkan kekuatan C | Tidak dipilih |
+| 3 | Menurunkan target pemasukan mingguan divisi | Usulan spontan Staf A | Berada di luar wewenang staf dan Kadiv karena target bidang sudah dikunci BPH melalui Kabid K | Tidak dipilih |
+| 4 | Membagi divisi menjadi dua jalur kolaboratif (**Tim Lapangan/Luring** dan **Tim PO & Promosi Daring**) dengan target kolektif divisi, bukan seragam per metode | Fasilitasi saya, dikembangkan bersama B dan C | Mengurangi ketegangan peran: C & staf lapangan fokus arus kas cepat, A & B fokus PO/promosi sesuai jadwal, target tetap terkejar bersama | **Dipilih** |
+| 5 | Menggunakan dana talangan kas awal bidang (*revolving fund*) untuk modal barang, bukan uang pribadi staf | Muncul setelah menggali suara diam Staf F, disetujui Kabid K | Menghapus ketimpangan beban ekonomi antarstaf dan melindungi anggota dengan keterbatasan uang saku | **Dipilih** |
+| 6 | Menjalankan skema dua jalur + satu format rekap kas terpadu sebagai **Pilot 2 minggu** sebelum ditetapkan permanen | Usulan saya bersama Staf E dan Kadiv V | Menurunkan ketakutan atas perbedaan prediksi antara B dan C karena semua pihak sepakat belajar dari data nyata dulu | **Dipilih** |
+
+---
+
+### 3. Deliberation Evidence
+
+**Rekonstruksi alur percakapan rapat Google Meet (Sabtu, 19 September 2026):**
+
+- **V (Kadiv):** *"Biar adil dan uangnya cepat muter, gimana kalau mulai minggu depan 6 staf sama-sama megang kuota jualan danusan luring tiap minggu? Modal awalnya kita talangin dulu barengan, nanti langsung balik pas laku."*
+- **C (Staf):** *"Aku setuju sih, jualan langsung di kampus uangnya langsung kelihatan hari itu juga. Kalau PO biasanya lama banget baru kekumpul."*
+- **A (Staf):** *"Bentar, kalau wajib jualan pagi sampai siang tiap minggu aku agak berat sih V, praktikumku padat banget dan tempat tinggalku lumayan jauh. Boleh nggak target mingguannya diturunin aja?"*
+- **B (Staf):** *"Iya, menurutku daripada maksain keliling yang makan waktu, mending kita fokus di PO camilan sama merchandise aja sekalian. Lebih rapi dan jangkauannya nggak cuma di kampus."*
+- **K (Kabid):** *"Kalau soal nurunin target dari bidang jujur nggak bisa ya teman-teman, karena alokasi buat acara IMPACT 6.0 udah dikunci di RAB. Tapi untuk caranya aku balikin ke diskusi divisi selama target mingguannya tetap aman."*
+- **E (Staf):** *"Aku sebenarnya nggak masalah mau luring atau PO, cuma kalau dua-duanya jalan bareng tanpa aturan setor nota yang jelas, nanti pas rekap kas aku bakal pusing sendiri kalau ada selisih."*
+
+Pada titik ini diskusi mulai berputar di perdebatan B vs. C, sementara **F** dari awal rapat hanya diam mematikan mikrofon. Saya menyadari dua hal: sebagai staf saya harus menghormati posisi V sebagai pemimpin rapat, dan keheningan F tidak boleh langsung dibaca sebagai persetujuan.
+
+- **Saya (Staf):** *"Izin nambahin ya V, K. Dari tadi aku denger sebenarnya tujuan kita semua sama kok, target kas dari K tetap aman, terus nggak ada yang sampai keteteran kuliah atau rekapnya berantakan kayak kekhawatiran E. Sebelum kita milih antara luring atau PO, boleh nggak kita denger dulu pendapat F? Soalnya F dari tadi belum sempat cerita kondisi atau kendalanya."*
+- **V (Kadiv):** *"Oh iya bener juga, F gimana menurut kamu soal skema tadi? Santai aja kalau ada yang ganjel."*
+- **F (Staf):** *"Sebenarnya aku nggak masalah bantu ambil barang atau bantu rekap PO sih, cuma jujur aku agak berat kalau harus nalangin modal awal dari uang pribadi dulu setiap minggu. Takutnya kalau barang belum langsung habis, uang makanku ikut kepakai."*
+- **Saya (Staf):** *"Makasih udah jujur F, untung kita cek dulu ya. Berarti sekarang jelas nih kendalanya beda-beda: A di jadwal kampus, B kekuatannya di PO daring, C di jualan cepat lapangan, E di kerapian rekap, dan F di modal talangan awal. Gimana kalau kita coba jalan tengah sebagai uji coba 2 minggu dulu? Kita bagi dua jalur, jalur luring buat yang sering di kampus sama jalur PO daring buat yang jadwalnya padat, tapi targetnya tetap target bareng satu divisi, bukan per metode. Terus soal modal awal, K kira-kira memungkinkan nggak kalau pakai dana talangan kas awal bidang dulu biar nggak ada staf yang keluar uang pribadi?"*
+- **K (Kabid):** *"Kalau buat modal awal muter dan ada pencatatan ketat dari E, dari kas bidang bisa aku keluarkan dana talangan awal kok, asal tiap Minggu malam laporannya rapi dan uang modalnya dipisah dari profit."*
+- **C (Staf):** *"Jujur aku masih agak sangsi jalur PO bisa nutup target secepat jualan langsung, tapi kalau dicoba 2 minggu dulu terus kita lihat angkanya bareng-bareng, aku mau coba."*
+- **B (Staf):** *"Setuju, 2 minggu itu pas banget buat ngebuktiin data mana yang paling efektif."*
+- **V (Kadiv):** *"Oke, makasih banget masukannya teman-teman. Berarti rencana awal aku soal jualan luring merata kita revisi jadi skema pilot dua jalur pakai dana talangan bidang ya."*
+
+Masukan dari staf mengubah dua bagian inti dari rencana awal Kadiv V: pembagian kerja berubah dari jualan luring seragam menjadi dua jalur kolaboratif sesuai kapasitas, dan sumber modal awal berpindah dari talangan pribadi staf ke dana *revolving* bidang Finance.
+
+---
+
+### 4. Sufficient Agreement, Dissent & Safeguard
+
+**Kesepakatan uji coba (*Pilot Agreement*) 2 minggu (21 September – 4 Oktober 2026):**
+
+| Pihak | Tanggung jawab selama *pilot* | Tenggat / Ritme | Ukuran selesai |
+| :--- | :--- | :--- | :--- |
+| **K (Kabid)** | Menyediakan dana talangan awal (*revolving fund*) bidang dan memvalidasi laporan mingguan | Cair paling lambat Senin, 21 September 2026 pukul 12.00 WIB | Dana modal diterima dan tercatat di *spreadsheet* kas divisi |
+| **V (Kadiv)** | Memantau keseimbangan beban dua jalur dan memimpin evaluasi tengah serta akhir *pilot* | Evaluasi 27 September & 5 Oktober 2026 | Laporan perbandingan pemasukan jalur luring vs. PO tersedia untuk dibahas bersama |
+| **C & Saya (Tim Luring)** | Menjalankan jualan *danusan* langsung di area kampus sesuai jadwal kosong (saya juga membantu koordinasi serah terima barang) | 2 kali seminggu (Selasa & Kamis) selama periode *pilot* | Seluruh stok terjual/tercatat dan setoran masuk ke rekap E setiap Minggu pukul 20.00 WIB |
+| **A & B (Tim PO & Promosi)** | Mengelola kampanye promosi daring, rekap pesanan PO camilan/*merchandise*, dan distribusi terjadwal | Buka PO mingguan, tutup setiap Jumat pukul 18.00 WIB | Daftar pesanan beserta bukti bayar terinput rapi sebelum batas setor mingguan |
+| **E & F (Tim Kas & Logistik)** | E menjaga satu *spreadsheet* kas terpadu (memisahkan modal bidang dan profit), F membantu koordinasi pengambilan barang dari vendor dan pengecekan paket PO tanpa keluar modal pribadi | Rekap mingguan setiap Minggu pukul 20.00 WIB | Selisih kas Rp0 dan seluruh bukti nota/transfer terarsip |
+
+**Keberatan (*dissent*) yang tetap dicatat secara jujur:**
+
+1. **Keberatan Staf A:** Permintaan A agar total target pemasukan mingguan divisi diturunkan tidak dapat dikabulkan karena terikat RAB bidang Finance. Keberatan ini tidak dihapus, melainkan dicatat dan dijawab melalui pemindahan A ke jalur PO daring yang lebih fleksibel terhadap jadwal praktikum.
+2. **Keraguan Staf C:** C tetap mencatat keraguannya bahwa jalur PO daring belum tentu secepat jualan lapangan dalam mendatangkan kas. Catatan ini disimpan sebagai pertanyaan uji utama pada evaluasi *pilot* 5 Oktober 2026.
+
+**Safeguards (aturan pelindung risiko & batas toleransi):**
+
+1. **Perlindungan finansial pribadi:** Nol rupiah modal talangan pribadi dari staf, seluruh pembelian stok awal wajib menggunakan dana *revolving* bidang agar F maupun staf lain tidak terbebani uang saku.
+2. **Aturan lapor kendala tanpa penghakiman:** Staf yang menghadapi kuis/tugas mendadak wajib memberi tahu di grup WhatsApp minimal H-2 agar bisa bertukar tugas operasional dengan anggota lain tanpa dicap kurang berkontribusi.
+3. **Satu pintu pembukuan:** Semua transaksi luring maupun PO wajib masuk ke satu *spreadsheet* milik E dengan batas setor bukti setiap Minggu pukul 20.00 WIB untuk melindungi E dari risiko selisih kas.
+4. **Tombol darurat (*stop rule*):** Jika pada *checkpoint* akhir minggu pertama (27 September 2026) terjadi selisih kas yang tidak terlacak atau pemasukan jalur PO di bawah 30% proyeksi, skema langsung dihentikan sementara dan direvisi bersama V dan K.
+
+---
+
+### 5. Collective Action, Pilot & Review
+
+- **Pelaksanaan minggu pertama (21–26 September 2026):** Dana talangan bidang cair tepat waktu pada 21 September. Jalur luring (Saya & C) berjalan dua kali seminggu di sekitar kampus, sementara A & B menjalankan PO camilan daring dengan bantuan pengurusan logistik oleh F.
+- **Checkpoint & *repair/adaptation* (Minggu, 27 September 2026 di grup WhatsApp):** Pemasukan minggu pertama mencapai 52% dari target 2 minggu dan jalur PO menyumbang 41% pemasukan (*stop rule* tidak terpicu). Namun, E melaporkan ada dua bukti transfer pembeli PO yang terlambat diinput sehingga rekap sempat tertunda dua jam. Tim tidak menyalahkan individu, melainkan langsung melakukan adaptasi kecil: menambahkan kolom "Penanggung Jawab Pesanan" di *spreadsheet* dan saya berinisiatif mengirim pengingat ringan tiap Jumat pukul 19.00 WIB sebelum penutupan PO.
+- **Review akhir *pilot* (Senin, 5 Oktober 2026):** Total pemasukan 2 minggu mencapai 104% dari target divisi dengan selisih kas Rp0. Data menunjukkan jalur luring menyumbang sekitar 55% pemasukan (arus kas cepat) dan jalur PO menyumbang sekitar 45% pemasukan (margin lebih stabil). Melihat angka nyata tersebut, C menyatakan keberatannya terjawab karena kedua jalur saling melengkapi, A merasa jadwal praktikumnya tetap aman, dan F aktif berkontribusi di logistik tanpa tertekan modal pribadi. Kadiv V dan Kabid K menyepakati skema dua jalur ini dilanjutkan hingga akhir periode penggalangan dana IMPACT 6.0.
 :::
 
-{{< include ../includes/evidence-template.md >}}
+## Analisis komunikasi
+
+| Elemen | Evidence dan analisis |
+| :--- | :--- |
+| **Person & character** | Kedelapan anggota dipetakan sebagai pribadi dengan fakta, interpretasi, nilai, dan kendala masing-masing (jadwal praktikum A, kekuatan PO B, orientasi kas cepat C, ketelitian kas E, batas uang saku F, serta wewenang formal K dan V), bukan disederhanakan menjadi kubu "rajin vs. malas". |
+| **Objective & state** | Mengelola beberapa *objective* secara simultan: memenuhi target RAB bidang Finance (K), menjaga keadilan beban staf (A, B, F), mempertahankan kecepatan kas (C), dan menjaga nol selisih pembukuan (E). |
+| **Repertoire & language** | Menggunakan bahasa rapat yang santai namun tetap menghormati struktur (meminta izin ke Kadiv V sebelum merangkum), menguji 3 *frames* tanpa distorsi, menawarkan 6 *options*, serta memancing suara F dengan pertanyaan terbuka yang aman. |
+| **Response & adaptation** | Tiga respons konkret mengubah rencana awal: keheningan F melahirkan skema dana talangan bidang (*revolving fund*), benturan A/B vs. C melahirkan *pilot* dua jalur, dan kendala telat input pada *checkpoint* 27 September melahirkan kolom penanggung jawab pesanan + pengingat Jumat malam. |
+| **Agreement/action** | *Sufficient agreement* terdokumentasi lengkap dengan pembagian peran 8 anggota, dua *dissent* yang tidak dihapus (A dan C), empat *safeguards*, tombol darurat, *checkpoint* 27 September, dan evaluasi akhir *pilot* 5 Oktober dengan capaian 104% target dan Rp0 selisih kas. |
+| **Relationship outcome** | Modal sosial divisi meningkat: F tidak merasa tersisih karena kondisi finansialnya dilindungi secara bermartabat, A dan C tetap merasa dihargai meski usulan awalnya tidak dipenuhi 100%, serta V tetap dihormati perannya sebagai pemimpin divisi. |
+
+## Penggunaan AI
+
+- **Alat dan peran AI:** Saya menggunakan Gemini setelah periode *pilot* selesai untuk membantu menstrukturkan catatan rapat Google Meet dan grup WhatsApp ke dalam tabel *Fact/Story/Value/Position*, merapikan rumusan tiga *frames* kolaboratif, serta mengecek kelengkapan komponen *safeguard* dan *dissent* sesuai fokus portofolio Minggu 12.
+- **Prompt kunci:** *"Bantu petakan fakta, interpretasi, nilai, dan posisi dari 8 anggota divisi fundraising ini berdasarkan catatan rapat, lalu cek apakah unsur power imbalance dari sudut pandang staf dan catatan dissent sudah tergambar jelas."*
+- **Verifikasi dan batas penggunaan:** Seluruh konteks struktur kepanitiaan IMPACT 6.0 (8 anggota Divisi Fundraising Bidang Finance dengan saya sebagai staf), kendala yang dihadapi, skema dua jalur + dana talangan bidang, serta hasil evaluasi diverifikasi sesuai pengalaman divisi. AI tidak digunakan untuk mengambil keputusan rapat atau menghapus keberatan anggota, saran kalimat AI yang terkesan menjadikan saya seolah-olah "ketua rapat" saya sunting ulang agar tetap sesuai batas peran saya sebagai staf biasa. Identitas seluruh rekan disamarkan menjadi inisial (K, V, A, B, C, E, F).
+
+## Feedback dan tindak lanjut
+
+- **Feedback yang diterima:** Setelah rapat 19 September, F mengirim pesan singkat secara pribadi bahwa ia merasa sangat terbantu karena ditanya langsung dan tidak dipaksa menalangi modal dari uang pribadi. Kadiv V juga mengapresiasi cara saya merangkum perbedaan pendapat tanpa mengambil alih forum maupun menyudutkan usulan awalnya.
+- **Adaptation/repair:** Ketika terjadi keterlambatan input dua bukti transaksi PO pada *checkpoint* 27 September yang sempat membuat E kewalahan, tim langsung melakukan perbaikan sistem (*kolom penanggung jawab + pengingat Jumat malam*) alih-alih menyalahkan staf tertentu, sehingga pada minggu kedua seluruh rekap masuk tepat waktu.
+- **Keterbatasan pengamatan:** Karena rapat 19 September berlangsung lewat Google Meet (beberapa anggota mematikan kamera) dan pemantauan harian berlangsung lewat teks WhatsApp, ekspresi nonverbal seluruh anggota tidak dapat diamati secara penuh, pengecekan dilakukan lewat konfirmasi verbal/tertulis di tiap *checkpoint*.
+- **Next practice:** Saat mengikuti rapat komunitas atau divisi kepanitiaan sebagai staf, saya akan lebih peka memperhatikan anggota yang sejak awal diam atau hanya mengangguk, lalu meminta izin kepada pemimpin rapat untuk membuka ruang pengecekan kendala sebelum keputusan disahkan.
+
+## Self-assessment
+
+| Dimensi | Skor 1–4 | Evidence singkat |
+| :--- | :---: | :--- |
+| **Person & Character** | 4 | Kedelapan anggota (Kabid K, Kadiv V, Saya, dan 5 staf) dipetakan dengan fakta, interpretasi, nilai, kendala, dan batas kuasa masing-masing, suara diam Staf F dideteksi dan dilindungi tanpa melampaui wewenang saya sebagai staf. |
+| **Objective & State** | 4 | Memisahkan *fact*, *story/interpretation*, *value*, dan *position* secara jernih serta menyelaraskan target kas bidang dengan kapasitas individu yang beragam. |
+| **Repertoire, Language & AI** | 4 | Menguji 3 *frames* kolaboratif dan 6 *options* secara terbuka dengan bahasa natural yang sopan, penggunaan AI dibatasi pada penstrukturan catatan dan draf yang melewati batas peran staf telah disunting ulang. |
+| **Response & Adaptation** | 4 | Masukan F, A, B, C, dan E mengubah usulan awal Kadiv V menjadi *pilot* dua jalur berbasis dana talangan bidang, kendala telat input di *checkpoint* 27 September langsung diperbaiki secara sistematis. |
+| **Agreement, Action & Relationship** | 4 | *Sufficient agreement*, dua catatan *dissent* (A & C), empat *safeguards*, tombol darurat, hasil *pilot* terukur (104% target, Rp0 selisih), serta penguatan modal sosial divisi terdokumentasi utuh. |
+
+**Total: 20/20 — Lanjut.**
+
+::: {.assessor-only}
+### Assessment dosen
+
+**Skor:** — / 20  
+**Evidence yang mendukung:** —  
+**Prioritas perbaikan:** —  
+**Keputusan:** Belum dinilai / Perlu revisi / Tercapai
+:::

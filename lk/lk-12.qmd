@@ -11,119 +11,121 @@ Mata Kuliah: Komunikasi Interpersonal dan Publik: Membangun Relasi di Era AI
 
 ## PENGANTAR: ILUSI KESERAGAMAN VS. MODAL SOSIAL
 
-Dalam kehidupan komunitas, kita sering kali terjebak dalam ilusi bahwa untuk bekerja sama, semua orang harus memiliki keyakinan batin, nilai, atau pendapat yang sama. Ketika perbedaan tajam muncul, rapat warga atau komunitas sering kali berubah menjadi arena **Debat** (saling menyerang posisi untuk mencari pemenang) yang merusak **Modal Sosial**—yaitu jaringan kepercayaan, rasa hormat, dan norma timbal balik yang menjadi perekat utama komunitas.
+Dalam kehidupan komunitas, kita sering kali terjebak dalam ilusi bahwa untuk bekerja sama, semua orang harus memiliki keyakinan batin, nilai, atau pendapat yang sama. Ketika perbedaan tajam muncul, rapat warga atau komunitas sering kali berubah menjadi arena **Debat** (saling menyerang posisi untuk mencari pemenang) yang merusak **Modal Sosial**, yaitu jaringan kepercayaan, rasa hormat, dan norma timbal balik yang menjadi perekat utama komunitas.
 
-Lembar kerja ini dirancang untuk melatih peran Anda sebagai **Fasilitator** atau **Penggerak Komunitas** yang mampu memandu proses **Deliberasi**—sebuah proses komunikasi yang berpusat pada manusia untuk memahami perspektif batin yang berbeda, memindahkan fokus dari konflik posisi ke penyelarasan kepentingan, dan menyepakati tindakan bersama yang konkret serta adil.
+Lembar kerja ini dirancang untuk melatih peran Anda sebagai **Fasilitator** atau **Penggerak Komunitas** yang mampu memandu proses **Deliberasi**, sebuah proses komunikasi yang berpusat pada manusia untuk memahami perspektif batin yang berbeda, memindahkan fokus dari konflik posisi ke penyelarasan kepentingan, dan menyepakati tindakan bersama yang konkret serta adil.
 
 ---
 
 ## IDENTITAS KELOMPOK
-*   **Kasus/Isu Komunitas:** __________________________________________________
-*   **Nama Anggota Kelompok (Peran):**
-    1.  ___________________________________ (Fasilitator)
-    2.  ___________________________________ (Peran Pemangku Kepentingan A: ______________)
-    3.  ___________________________________ (Peran Pemangku Kepentingan B: ______________)
-    4.  ___________________________________ (Peran Pemangku Kepentingan C: ______________)
-    5.  ___________________________________ (Peran Pemangku Kepentingan D: ______________)
+- **Kasus/Isu Komunitas:** Penentuan skema penggalangan dana (jualan luring vs. *pre-order* daring) dan sumber modal awal pada Divisi Fundraising, Bidang Finance, kepanitiaan IMPACT 6.0 (rapat Google Meet 19 September 2026 dilanjutkan *pilot* 2 minggu hingga 5 Oktober 2026).
+- **Nama Anggota Kelompok (Peran):**
+  1. **Nathanael Louis Cahyono / Saya** (Staf pelaksana yang membantu memfasilitasi dialog antarstaf tanpa mengambil alih pimpinan rapat)
+  2. **Rekan K** (Ketua Bidang Finance - pemegang otoritas target dana bidang dan dana talangan)
+  3. **Rekan V** (Ketua Divisi Fundraising - pemimpin rapat dan pemegang otoritas operasional divisi)
+  4. **Staf A** (Staf dengan jadwal praktikum padat dan tempat tinggal jauh dari kampus)
+  5. **Staf B** (Staf dengan kekuatan jaringan media sosial dan pengalaman PO daring)
+  6. **Staf C** (Staf yang sering berada di area kampus dan nyaman berjualan langsung)
+  7. **Staf E** (Staf penanggung jawab rekap transaksi dan catatan kas keluar-masuk divisi)
+  8. **Staf F** (Staf yang diam di awal rapat dan memiliki keterbatasan uang saku untuk menalangi modal awal)
 
 ---
 
 ## FASE 1: MEMBEDAKAN LAPISAN PERBEDAAN (FAKTA, INTERPRETASI, NILAI)
-Sebelum memulai diskusi kelompok, petakan batin dan latar belakang masing-masing pemangku kepentingan secara objektif. Ingat, konflik sering kali terjadi bukan karena perbedaan fakta, melainkan karena perbedaan interpretasi dan nilai-nilai hidup yang dijunjung tinggi.
+Pemetaan kondisi, sudut pandang, dan nilai batin kedelapan anggota Divisi Fundraising IMPACT 6.0 secara objektif:
 
 | Pemangku Kepentingan | Posisi Kaku (Tuntutan Eksplisit) | Fakta Objektif (Apa yang benar-benar terjadi/terlihat) | Interpretasi Subjektif (Apa narasi/asumsi batin mereka) | Nilai Hidup / Kebutuhan Dasar (Mengapa hal ini penting bagi mereka) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Pihak A:**<br>*(Contoh: Warga Lansia)* | *"Taman harus ditutup total setelah jam 9 malam!"* | Taman menjadi tempat berkumpul anak muda hingga pukul 11 malam. | *"Anak muda zaman sekarang tidak punya sopan santun dan merusak ketertiban."* | Ketenangan istirahat, kesehatan fisik, rasa aman di hari tua. |
-| **Pihak B:**<br>*(Contoh: Remaja/Anak Muda)* | *"Jangan batasi jam taman, kami butuh ruang berkumpul!"* | Tidak ada ruang publik alternatif selain taman tersebut yang gratis. | *"Orang tua terlalu kaku dan selalu mencurigai aktivitas anak muda."* | Ruang ekspresi diri, koneksi sosial, kebebasan berekreasi. |
-| **Pihak C:**<br>*(Contoh: Pedagang Kecil)* | *"Kami bebas berjualan kapan saja di area dalam taman."* | Pendapatan harian dari pengunjung taman menyokong kebutuhan pokok keluarga. | *"Jika dilarang, mereka ingin mematikan mata pencaharian rakyat kecil."* | Kelangsungan hidup ekonomi keluarga, kemandirian finansial. |
-| **Pihak D:**<br>*(Contoh: Pengelola Taman)* | *"Kami tidak bertanggung jawab atas ketertiban malam hari."* | Anggaran pemeliharaan terbatas, tidak ada petugas keamanan malam. | *"Warga terlalu banyak menuntut tanpa mau berkontribusi menjaga taman."* | Efisiensi operasional, kepatuhan aturan, keterbatasan sumber daya. |
+| **Kabid K (Ketua Bidang Finance)** | *"Target pemasukan mingguan divisi tidak bisa diturunkan."* | Target pemasukan divisi dari BPH sudah dikunci di RAB dan dibutuhkan bertahap mulai akhir September. | Jika skema tidak tegas sejak awal, arus kas kepanitiaan berisiko tersendat menjelang hari-H acara. | Akuntabilitas target keuangan dan kelancaran acara. |
+| **Kadiv V (Ketua Divisi Fundraising)** | *"Seluruh 6 staf wajib jualan danusan luring rutin tiap minggu dengan kuota setoran sama rata dan modal talangan bersama."* | Periode pencarian dana efektif tinggal beberapa pekan sehingga divisi perlu segera bergerak. | Pembagian tugas yang seragam ke semua staf dianggap cara paling cepat dan terasa paling adil. | Ketertiban operasional dan rasa adil antarstaf. |
+| **Saya (Staf / Pendukung Fasilitasi)** | *"Skema penggalangan dana dibagi sesuai kapasitas dan diuji dulu sebagai pilot singkat."* | Jadwal kuliah, lokasi tempat tinggal, dan kekuatan jaringan tiap staf berbeda-beda. | Memaksakan satu cara jualan yang sama untuk 8 orang justru rawan memicu ketegangan dan putus di tengah jalan. | Keadilan proporsional dan keberlangsungan relasi divisi. |
+| **Staf A** | *"Target mingguan dilonggarkan dan tidak usah diwajibkan jaga booth luring."* | Jadwal praktikum dan kuliah padat di pagi-siang hari, serta tinggal agak jauh dari area kampus utama. | *"Skema jualan keliling pagi-siang tidak memikirkan mahasiswa yang jadwalnya penuh."* | Beban kerja yang realistis tanpa mengorbankan kuliah. |
+| **Staf B** | *"Alihkan seluruh fokus divisi ke sistem PO daring dan merchandise saja."* | Punya jaringan luas di media sosial dan pengalaman membuka *pre-order* (PO) camilan serta *merchandise*. | *"Jualan keliling manual itu kurang efektif dibanding sistem PO daring."* | Efektivitas kerja dan pemanfaatan kekuatan masing-masing. |
+| **Staf C** | *"Tetap utamakan jualan langsung di kampus karena uangnya langsung masuk hari itu juga."* | Sering berada di sekitar kampus dan nyaman berjualan langsung ke teman sebaya atau area kantin. | *"Sistem PO terlalu lama cair uangnya, kalau cuma mengandalkan PO, anak lapangan yang akhirnya kerja ekstra."* | Kecepatan hasil nyata dan kontribusi aktif semua anggota. |
+| **Staf E** | *"Batasi kanal jualan atau pakai satu format pencatatan yang rapi sebelum jalan."* | Memegang rekap transaksi dan catatan kas keluar-masuk divisi. | *"Kalau kanal jualannya terlalu banyak tanpa aturan input yang sama, laporan keuangan bakal selisih."* | Ketelitian, transparansi, dan keamanan kas. |
+| **Staf F** | Awalnya diam saja di rapat (mematikan mikrofon dan hanya mengangguk saat ditanya umum). | Belum pernah menyuarakan keberatan di rapat dan memiliki keterbatasan uang saku untuk menalangi modal barang di muka. | *"Kalau aku bilang nggak sanggup nalangin modal awal, nanti dikira nggak komitmen sama kepanitiaan."* | Rasa aman finansial pribadi sambil tetap ingin berkontribusi. |
+
+**Common Ground (Titik Temu Bersama):** Kedelapan anggota sama-sama ingin target dana IMPACT 6.0 tercapai tanpa selisih pencatatan kas, tidak ada staf yang tertekan secara finansial maupun akademik, dan suasana kerja divisi tetap nyaman hingga akhir kepanitiaan.
 
 ---
 
 ## FASE 2: DETOKS BINGKAI MASALAH (REFRAMING)
-"Bingkai Serangan" (*Attack Frame*) biasanya berpusat pada menyalahkan orang lain atau memaksakan satu posisi sepihak. Tugas Anda sebagai komunikator adalah melakukan **Reframing** untuk mengubahnya menjadi "Bingkai Masalah Bersama" (*Collaborative Frame*) yang netral dan dapat dipecahkan bersama tanpa mengorbankan martabat pihak mana pun.
+Pada awal rapat sempat muncul bingkai serangan yang saling menyalahkan antarstaf. Dengan meminta izin terlebih dahulu kepada Kadiv V, saya merangkum ulang persoalan menjadi bingkai kolaboratif yang melindungi martabat semua pihak.
 
-### **Latihan Reframing Mandiri:**
-1.  **Bingkai Serangan Awal:** *"Pedagang kaki lima liar itu mengotori lingkungan taman dan membuat lansia tidak nyaman!"*
-    *   **Reframing Kolaboratif:** *"Bagaimana kita bisa menjaga kebersihan dan ketenangan lingkungan taman untuk warga, sekaligus memastikan pedagang memiliki ruang yang layak untuk mencari nafkah?"*
-2.  **Bingkai Serangan Awal:** *"Anak-anak muda berisik itu merusak fasilitas taman dan mengganggu jam tidur malam!"*
-    *   **Reframing Kolaboratif:** *"Bagaimana kita bisa menyediakan ruang ekspresi malam yang aman bagi anak muda, tanpa mengorbankan hak istirahat dan ketenangan malam warga sekitar?"*
+### **Latihan Reframing dari Kasus Divisi Fundraising:**
+1. **Bingkai Serangan Awal:** *"Staf yang nggak mau ikut jualan luring keliling kampus itu kurang usaha, sementara sistem PO bikin anak lapangan kerja ekstra."*
+   - **Reframing Kolaboratif (Frame Pencapaian Kas & Kepastian Target):** *"Bagaimana pemasukan divisi bisa masuk stabil setiap minggu sesuai tenggat bidang Finance tanpa menunggu terlalu lama, sambil tetap menghargai variasi kontribusi tiap anggota?"*
+2. **Bingkai Serangan Awal:** *"Aturan jualan luring merata dan modal talangan pribadi itu nggak peduli sama jadwal praktikum dan kondisi keuangan staf."*
+   - **Reframing Kolaboratif (Frame Keadilan Akses & Kapasitas Pribadi):** *"Bagaimana setiap staf bisa berkontribusi nyata sesuai jadwal kuliah, keahlian, dan batas kemampuan finansial pribadinya tanpa harus memakai cara yang sama persis?"*
+3. **Bingkai Tambahan (Frame Tata Kelola & Kemudahan Pencatatan):**
+   - **Reframing Kolaboratif:** *"Bagaimana variasi metode jualan tetap terkendali dalam satu alur pembukuan yang rapi agar tidak memicu selisih kas bagi pengelola keuangan?"*
 
 ### **Draf Bingkai Masalah Bersama Kelompok Anda:**
-Sempurnakan kalimat masalah bersama yang akan didebatkan dalam sesi deliberasi kelompok Anda:
-> *"Bagaimana kita bisa..."*
-> __________________________________________________________________________________________
-> __________________________________________________________________________________________
+> *"Bagaimana kita bisa memadukan kekuatan tiap anggota (jualan luring dan PO daring) dalam satu alur pembukuan yang rapi agar target kas mingguan IMPACT 6.0 tercapai stabil tanpa membebani modal pribadi maupun mengganggu jadwal kuliah staf?"*
 
 ---
 
 ## FASE 3: PANDUAN DELIBERASI FASILITATOR (MENGELOLA PROSES SECARA ETIS)
-Fasilitator memiliki tanggung jawab mutlak untuk menjaga keadilan proses komunikasi. Gunakan panduan taktis berikut selama memandu deliberasi 20 menit:
+Meskipun posisi saya hanya staf pelaksana (bukan ketua rapat), saya membantu menjaga keadilan proses dialog dengan tetap menghormati otoritas Kadiv V dan Kabid K.
 
-1.  **Ingat Aturan Emas:** Kehadiran fisik tidak sama dengan partisipasi, dan keheningan seseorang sama sekali bukan tanda persetujuan.
-2.  **Intervensi Suara Sunyi:** Jika ada pihak yang mendominasi dan pihak lain terdiam, ajukan pertanyaan penyelidikan yang aman:
-    *   *“Pak/Ibu [Nama Pihak yang Diam], kami ingin mendengar pandangan Anda dari sudut pandang peran Anda. Apa yang paling Anda khawatirkan jika opsi ini dijalankan?”*
-3.  **Parafrasa Netral:** Ketika perdebatan mulai memanas, terjemahkan kalimat emosional menjadi kebutuhan dasar:
-    *   *“Saya mendengar bahwa yang Anda butuhkan sebenarnya adalah rasa aman terhadap pendapatan keluarga Anda, benarkah demikian?”*
+1. **Ingat Aturan Emas:** Kehadiran di Google Meet tidak sama dengan partisipasi, dan keheningan Staf F tidak boleh langsung dianggap sebagai tanda setuju.
+2. **Intervensi Suara Sunyi:** Sebelum forum memilih antara luring atau PO, saya meminta izin kepada V dan K lalu membuka ruang aman bagi F untuk bercerita.
+3. **Parafrasa Netral:** Mengubah perdebatan kubu B (PO) vs. C (luring) menjadi pemetaan kendala nyata masing-masing (jadwal A, kekuatan daring B, kecepatan kas C, kerapian rekap E, dan modal awal F) sehingga semua pihak melihat bahwa kebutuhan mereka saling melengkapi.
 
-### **Catatan Observasi Jalannya Deliberasi (Diisi oleh Fasilitator):**
-*   *Siapa pemangku kepentingan yang paling dominan di awal?* ___________________________________
-*   *Siapa pemangku kepentingan yang paling pasif/diam?* _______________________________________
-*   *Bagaimana cara Anda memunculkan suara yang sunyi tersebut?*
-    __________________________________________________________________________________________
-    __________________________________________________________________________________________
+### **Catatan Observasi Jalannya Deliberasi:**
+- **Siapa pemangku kepentingan yang paling dominan di awal?** Kadiv V (pembuka usulan jualan luring merata), Staf C (pendukung jualan langsung di kampus), dan Staf B (pendorong sistem PO daring penuh).
+- **Siapa pemangku kepentingan yang paling pasif/diam?** Staf F, yang sejak awal rapat mematikan mikrofon dan hanya mengangguk saat forum ditanya secara umum.
+- **Bagaimana cara Anda memunculkan suara yang sunyi tersebut?** Saya menyela perdebatan B dan C secara sopan dengan meminta izin kepada V dan K terlebih dahulu, merangkum tujuan bersama yang sudah disepakati, lalu berkata: *"Sebelum kita milih antara luring atau PO, boleh nggak kita denger dulu pendapat F? Soalnya F dari tadi belum sempat cerita kondisi atau kendalanya."* Kadiv V langsung menyambut dan mempersilakan F berbicara santai. Dari situlah F akhirnya berani mengaku bahwa ia siap membantu logistik dan rekap PO, tetapi berat jika harus menalangi modal barang dari uang saku pribadi setiap minggu.
 
 ---
 
 ## FASE 4: MERANCANG KESEPAKATAN PILOT (PILOT AGREEMENT) UNTUK BELAJAR
-Ketika para pemangku kepentingan memiliki kekhawatiran dan prediksi risiko yang bertolak belakang, jangan paksa mereka menyetujui kebijakan permanen yang menakutkan. Rancanglah sebuah **Pilot Project**—sebuah kesepakatan jangka pendek yang terukur sebagai wadah untuk belajar bersama di lapangan.
+Karena masih ada perbedaan prediksi efektivitas antara jalur luring (C) dan jalur PO daring (B), forum sepakat tidak langsung mengunci aturan permanen, melainkan menguji skema gabungan selama dua minggu terlebih dahulu.
 
 ### **Formulir Desain Kesepakatan Pilot Komunitas:**
 
-1.  **Nama Program Uji Coba (Pilot):**
-    __________________________________________________________________________________________
-2.  **Durasi Eksperimen (Maksimal 2-4 minggu):**
-    *   Tanggal Mulai: _______________ s/d Tanggal Selesai: _______________
-3.  **Tindakan Nyata dan Pembagian Tanggung Jawab (Formula Presisi):**
-    *   **Siapa** melakukan **Apa**, **Kapan**, dan apa **Definisi Selesai**-nya?
-    
+1. **Nama Program Uji Coba (Pilot):**
+   Pilot Dua Jalur Penggalangan Dana (Tim Lapangan/Luring dan Tim PO & Promosi Daring) Berbasis Dana Talangan Bidang (*Revolving Fund*) dan Satu Pintu Pembukuan.
+2. **Durasi Eksperimen (Maksimal 2-4 minggu):**
+   - Tanggal Mulai: **Senin, 21 September 2026** s/d Tanggal Selesai: **Minggu, 4 Oktober 2026** (2 minggu).
+3. **Tindakan Nyata dan Pembagian Tanggung Jawab (Formula Presisi):**
+
 | Peran/Pihak | Tindakan Nyata yang Disepakati | Tenggat Waktu | Definisi Selesai & Indikator Keberhasilan |
 | :--- | :--- | :--- | :--- |
-| **Pihak A:** | | | |
-| **Pihak B:** | | | |
-| **Pihak C:** | | | |
-| **Pihak D:** | | | |
+| **Kabid K (Finance)** | Menyediakan dana talangan awal (*revolving fund*) dari kas bidang dan memvalidasi laporan mingguan divisi. | Cair paling lambat Senin, 21 September 2026 pukul 12.00 WIB. | Dana modal diterima dan tercatat jelas di *spreadsheet* kas divisi (terpisah dari profit). |
+| **Kadiv V (Fundraising)** | Memantau keseimbangan beban kerja kedua jalur dan memimpin evaluasi tengah serta akhir *pilot*. | Evaluasi tengah 27 September 2026 & evaluasi akhir 5 Oktober 2026. | Laporan perbandingan pemasukan jalur luring vs. PO tersedia untuk dibahas bersama seluruh anggota. |
+| **Staf C & Saya (Tim Luring)** | Menjalankan jualan *danusan* langsung di area kampus sesuai jadwal kosong (saya juga membantu koordinasi serah terima barang). | 2 kali seminggu (Selasa & Kamis) selama masa *pilot*. | Seluruh stok terjual/tercatat dan setoran masuk ke rekap E setiap Minggu pukul 20.00 WIB. |
+| **Staf A & Staf B (Tim PO & Promosi)** | Mengelola kampanye promosi daring, rekap pesanan PO camilan/*merchandise*, dan distribusi terjadwal. | Buka PO mingguan, tutup setiap Jumat pukul 18.00 WIB. | Daftar pesanan beserta seluruh bukti bayar terinput rapi sebelum batas setor mingguan. |
+| **Staf E & Staf F (Tim Kas & Logistik)** | E menjaga satu *spreadsheet* kas terpadu (memisahkan modal bidang dan profit). F membantu pengambilan barang dari vendor dan pengecekan paket PO tanpa keluar modal pribadi. | Rekap mingguan setiap Minggu pukul 20.00 WIB. | Selisih kas Rp0 dan seluruh bukti nota maupun transfer terarsip rapi. |
 
-4.  **Perlindungan Risiko (Batas Toleransi Dampak Buruk):**
-    *   *Apa risiko terbesar yang dikhawatirkan warga selama uji coba ini?*
-        ______________________________________________________________________________________
-    *   *Apa tindakan darurat (tombol darurat) jika batas toleransi risiko tersebut terlewati di tengah jalan?*
-        ______________________________________________________________________________________
-5.  **Jadwal Evaluasi Bersama (Kapan semua pihak akan duduk kembali untuk meninjau data hasil uji coba?):**
-    *   Hari/Tanggal: _______________________ Waktu & Tempat: _______________________
+**Catatan Keberatan (*Dissent*) yang Tetap Dicatat Jujur:**
+- **Keberatan Staf A:** Usulan penurunan target mingguan divisi tidak dapat dipenuhi karena terikat RAB bidang Finance, tetapi dicatat terbuka dan diatasi dengan memindahkan A ke jalur PO daring yang fleksibel terhadap jadwal praktikum.
+- **Keraguan Staf C:** C tetap mencatat keraguannya soal kecepatan arus kas jalur PO dibanding jualan lapangan, dan catatan ini dijadikan pertanyaan uji utama pada evaluasi 5 Oktober 2026.
+
+4. **Perlindungan Risiko (Safeguards & Tombol Darurat):**
+   - **Risiko terbesar yang dikhawatirkan selama uji coba:** Beban uang saku pribadi staf jika barang belum habis, bentrok mendadak dengan kuis/tugas kuliah, selisih pembukuan kas akibat dua kanal berjalan bersamaan, serta pemasukan jalur PO yang terlalu lambat.
+   - **Aturan pelindung (*safeguards*):** (1) Nol rupiah modal talangan pribadi staf karena seluruh modal awal wajib memakai dana *revolving* bidang, (2) aturan lapor kendala kuis/tugas minimal H-2 di grup WhatsApp tanpa penghakiman untuk bertukar tugas, dan (3) satu pintu pembukuan di *spreadsheet* E dengan batas setor bukti setiap Minggu pukul 20.00 WIB.
+   - **Tindakan darurat (*stop rule*):** Jika pada *checkpoint* akhir minggu pertama (Minggu, 27 September 2026) terjadi selisih kas yang tidak terlacak atau pemasukan jalur PO berada di bawah 30% proyeksi, skema langsung dihentikan sementara dan direvisi bersama V dan K.
+5. **Jadwal Evaluasi Bersama:**
+   - **Evaluasi Tengah (*Checkpoint*):** Minggu, 27 September 2026, malam hari melalui grup WhatsApp Divisi Fundraising.
+   - **Evaluasi Akhir *Pilot*:** Senin, 5 Oktober 2026, bersama seluruh anggota divisi dan Kabid K untuk meninjau data dua minggu.
 
 ---
 
 ## FASE 5: EVALUASI JALUR GANDA (DUAL-TRACK EVALUATION)
-Keberhasilan pengelolaan komunitas diukur dari dua jalur secara seimbang. Isilah lembar evaluasi refleksi batin ini setelah sesi kesepakatan pilot selesai dirumuskan:
 
 ### **1. JALUR TUGAS (Task Outcome): Skor Mandiri (1 - 5)**
-Apakah kesepakatan pilot yang dirancang realistis, terukur, adil, dan mampu mengatasi akar masalah bersama?
-*   [ ] **Skor: ___ / 5**
-*   *Justifikasi Bukti:* ________________________________________________________________________
+- [x] **Skor: 5 / 5**
+- **Justifikasi Bukti:** Kesepakatan *pilot* terbukti operasional dan melampaui target. Dana talangan cair tepat waktu pada 21 September. Pada *checkpoint* 27 September, pemasukan sudah mencapai 52% dari target 2 minggu (jalur PO menyumbang 41%, *stop rule* tidak terpicu). Ketika E melaporkan ada dua bukti transfer PO yang telat diinput sehingga rekap tertunda 2 jam, tim langsung memperbaiki sistem dengan menambah kolom "Penanggung Jawab Pesanan" dan saya mengirim pengingat rutin setiap Jumat pukul 19.00 WIB. Pada evaluasi akhir 5 Oktober 2026, total pemasukan mencapai **104% dari target divisi** (sekitar 55% luring dan 45% PO) dengan **selisih kas Rp0**, sehingga V dan K menetapkan skema dua jalur ini berlanjut hingga akhir kepanitiaan IMPACT 6.0.
 
 ### **2. JALUR RELASI (Relationship Outcome): Skor Mandiri (1 - 5)**
-Apakah selama proses negosiasi, rasa hormat, kenyamanan emosional, kebebasan memilih, dan martabat batin masing-masing pihak tetap terjaga dengan utuh? Apakah mereka siap bekerja sama kembali di masa depan?
-*   [ ] **Skor: ___ / 5**
-*   *Justifikasi Bukti:* ________________________________________________________________________
+- [x] **Skor: 5 / 5**
+- **Justifikasi Bukti:** Modal sosial dan kepercayaan di dalam divisi meningkat tanpa mengorbankan struktur kepanitiaan. Setelah rapat 19 September, F mengirim pesan pribadi bahwa ia merasa sangat terbantu karena ditanya langsung dan tidak dipaksa menalangi modal pribadi. Kadiv V mengapresiasi cara saya merangkum perbedaan tanpa mengambil alih forum maupun menyudutkan usulan awalnya. A tetap aman menjalani jadwal praktikumnya, keraguan C terjawab langsung oleh data nyata 5 Oktober, dan kendala telat input di minggu pertama diselesaikan lewat perbaikan sistem tanpa menyalahkan individu. Sebagai catatan jujur, karena rapat Google Meet sebagian mematikan kamera dan koordinasi harian lewat WhatsApp, pengamatan nonverbal tidak penuh sehingga kepercayaan dijaga lewat pengecekan verbal dan tertulis di tiap *checkpoint*.
 
 ---
 
 ### **Pernyataan Penggunaan AI secara Bertanggung Jawab (AI Transparency Statement)**
-*Petunjuk: Jika Anda menggunakan bantuan AI (seperti chatbot) dalam menyusun kalimat reframing, menganalisis peran, atau menyusun draf kesepakatan ini, deklarasikan secara jujur di bawah ini.*
 
-*   *Apakah kelompok Anda menggunakan AI dalam persiapan lembar kerja ini?* **[Ya / Tidak]**
-*   *Jika Ya, apa peran AI dalam membantu kelompok Anda? (Contoh: Menyarankan alternatif kalimat reframing kolaboratif)*
-    __________________________________________________________________________________________
-*   *Bagian mana dari saran AI yang akhirnya Anda tolak atau sunting karena tidak sesuai dengan konteks kemanusiaan riil kelompok Anda?*
-    __________________________________________________________________________________________
+- **Apakah kelompok Anda menggunakan AI dalam persiapan lembar kerja ini?** **Ya** (menggunakan **Gemini** setelah periode *pilot* selesai).
+- **Jika Ya, apa peran AI dalam membantu kelompok Anda?** Membantu menstrukturkan catatan rapat Google Meet dan grup WhatsApp ke dalam tabel *Fact/Story/Value/Position*, merapikan rumusan tiga bingkai kolaboratif (*frames*), serta mengecek kelengkapan komponen *safeguard* dan pencatatan *dissent*.
+- **Bagian mana dari saran AI yang akhirnya Anda tolak atau sunting karena tidak sesuai dengan konteks kemanusiaan riil kelompok Anda?** Saya menyunting ulang beberapa saran kalimat AI yang menggambarkan peran saya terlalu dominan seolah-olah saya adalah "ketua rapat", agar narasi tetap jujur sesuai batas wewenang nyata saya sebagai staf biasa yang menghormati Kadiv V dan Kabid K. Selain itu, seluruh keputusan rapat, data hasil *pilot*, dan penyamaran nama rekan menjadi inisial (K, V, A, B, C, E, F) diverifikasi penuh oleh saya sendiri.
