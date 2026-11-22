@@ -80,6 +80,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -278,12 +307,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#kompetensi-target" id="toc-kompetensi-target" class="nav-link active" data-scroll-target="#kompetensi-target">Kompetensi target</a></li>
-  <li><a href="#evidence-wajib" id="toc-evidence-wajib" class="nav-link" data-scroll-target="#evidence-wajib">Evidence wajib</a></li>
-  <li><a href="#konteks-performance" id="toc-konteks-performance" class="nav-link" data-scroll-target="#konteks-performance">Konteks performance</a></li>
-  <li><a href="#evidence" id="toc-evidence" class="nav-link" data-scroll-target="#evidence">Evidence</a></li>
-  <li><a href="#analisis-komunikasi" id="toc-analisis-komunikasi" class="nav-link" data-scroll-target="#analisis-komunikasi">Analisis komunikasi</a></li>
-  <li><a href="#penggunaan-ai" id="toc-penggunaan-ai" class="nav-link" data-scroll-target="#penggunaan-ai">Penggunaan AI</a></li>
-  <li><a href="#feedback-dan-tindak-lanjut" id="toc-feedback-dan-tindak-lanjut" class="nav-link" data-scroll-target="#feedback-dan-tindak-lanjut">Feedback dan tindak lanjut</a></li>
+  <li><a href="#desireaction-gap" id="toc-desireaction-gap" class="nav-link" data-scroll-target="#desireaction-gap">Desire–action gap</a></li>
+  <li><a href="#barrier-dan-authority-map" id="toc-barrier-dan-authority-map" class="nav-link" data-scroll-target="#barrier-dan-authority-map">Barrier dan authority map</a></li>
+  <li><a href="#options-trade-off-dan-negosiasi" id="toc-options-trade-off-dan-negosiasi" class="nav-link" data-scroll-target="#options-trade-off-dan-negosiasi">Options, trade-off, dan negosiasi</a></li>
+  <li><a href="#agreement-owner-deadline-dan-definisi-selesai" id="toc-agreement-owner-deadline-dan-definisi-selesai" class="nav-link" data-scroll-target="#agreement-owner-deadline-dan-definisi-selesai">Agreement: owner, deadline, dan definisi selesai</a></li>
+  <li><a href="#action-evidence-dan-status-pelaksanaan" id="toc-action-evidence-dan-status-pelaksanaan" class="nav-link" data-scroll-target="#action-evidence-dan-status-pelaksanaan">Action evidence dan status pelaksanaan</a></li>
+  <li><a href="#relationship-outcome" id="toc-relationship-outcome" class="nav-link" data-scroll-target="#relationship-outcome">Relationship outcome</a></li>
+  <li><a href="#evidence-ai-dan-feedback" id="toc-evidence-ai-dan-feedback" class="nav-link" data-scroll-target="#evidence-ai-dan-feedback">Evidence, AI, dan feedback</a></li>
   <li><a href="#self-assessment" id="toc-self-assessment" class="nav-link" data-scroll-target="#self-assessment">Self-assessment</a>
   <ul class="collapse">
   <li><a href="#assessment-dosen" id="toc-assessment-dosen" class="nav-link" data-scroll-target="#assessment-dosen">Assessment dosen</a></li>
@@ -326,132 +356,322 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="kompetensi-target">Kompetensi target</h2>
 <p>Menemukan desire–action gap dan menghasilkan agreement yang feasible serta eksplisit.</p>
 </section>
-<section id="evidence-wajib" class="level2">
-<h2 class="anchored" data-anchor-id="evidence-wajib">Evidence wajib</h2>
-<ul>
-<li>Barrier dan authority map.</li>
-<li>Options dan trade-off yang dibahas.</li>
-<li>Agreement dengan owner/deadline serta bukti action atau review.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Lihat contoh pengisian
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="../examples/week-10.html">Buka contoh fiktif Minggu 10</a> untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.</p>
-</div>
-</div>
+<section id="desireaction-gap" class="level2">
+<h2 class="anchored" data-anchor-id="desireaction-gap">Desire–action gap</h2>
+<p>Target komunikasi masih rekan satu tim yang sama dari Minggu 9, yaitu inisial <strong>S</strong> (Ketua Tim) dan <strong>M</strong> (anggota tim) pada babak final <em>Technovate Paper Competition The Sandbox 3.0 IEEE ITB</em> untuk proyek <strong>MARS (<em>Maritime Adaptive Rerouting System</em>)</strong>. Pada evaluasi 28 April 2026 (Minggu 9), S sudah memastikan strategi presentasi final kami, yaitu demo simulator lokal berlabel transparan, penegasan metrik proksi, dan slide arsitektur <em>Interoperability Middleware</em>, untuk presentasi pada <strong>Minggu pagi, 10 Mei 2026</strong>.</p>
+<p>Namun, saat memasuki satu minggu sebelum final (<strong>Minggu malam, 3 Mei 2026</strong>), kesediaan tersebut ternyata masih berhenti di tingkat <em>desire</em> dan <em>intention</em> (“nanti minggu depan kita sering latihan bareng buat presentasi sama Q&amp;A”). Belum ada jadwal pasti, belum ada pembagian target latihan, dan belum ada kesepakatan bagaimana tim menyiasati jadwal akademik yang padat. Saya membuka diskusi di grup WhatsApp tim untuk mengecek kondisi nyata masing-masing sebelum jadwal latihan semakin tergeser.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “S, M, besok udah masuk H-7 final 10 Mei nih. Kemarin kan kita udah fix soal isi PPT sama strategi demonya, nah buat latihan presentasi sama Q&amp;A enaknya kita ketemu hari apa aja ya? Gimana kalau mulai Selasa atau Rabu malam kita kumpul bentar buat latihan bareng?”</p>
+<p><strong>M:</strong> “Waduh, kalau Selasa aku ada kuis Tan, terus Jumat aku juga ada deadline tubes. Jadi Senin malam sampai Jumat tuh agak berat kalau disuruh kumpul lama.”</p>
+<p><strong>S:</strong> “Sama nih, aku Kamis ada kuis terus Sabtu ada deadline tubes. Kayaknya kalau nyari waktu yang bener-bener kosong bertiga di hari Senin sampai Sabtu hampir nggak ada deh. Kamu sendiri gimana Tan?”</p>
+<p><strong>Saya:</strong> “Aku juga Senin ada kuis, terus Rabu ada deadline tubes. Berarti dari Senin sampai Sabtu jadwal kita kepenuhan bergantian semua ya, sementara Minggu pagi udah harus maju di depan juri.”</p>
+</blockquote>
+<p>Dari pengecekan awal ini terlihat jelas letak <em>desire–action gap</em>-nya. Keinginan untuk tampil siap di final 10 Mei sudah tinggi pada ketiga anggota, tetapi keinginan tersebut terhadang bentrokan jadwal penuh sepanjang Senin (4 Mei) hingga Sabtu (9 Mei) sehingga usulan awal saya untuk latihan bersama di hari kerja langsung mentok.</p>
 </section>
-<section id="konteks-performance" class="level2">
-<h2 class="anchored" data-anchor-id="konteks-performance">Konteks performance</h2>
-<p><strong>Tanggal dan setting:</strong> Ganti dengan tanggal, tempat, dan bentuk kegiatan.</p>
-<p><strong>Persons dan relationship:</strong> Jelaskan siapa yang terlibat tanpa membuka data pribadi yang tidak diperlukan.</p>
-<p><strong>Objective dan initial state:</strong> Nyatakan perubahan yang ingin dicapai serta evidence state awal.</p>
-</section>
-<section id="evidence" class="level2">
-<h2 class="anchored" data-anchor-id="evidence">Evidence</h2>
-<div class="evidence-block">
-<p>Tambahkan link, gambar, video, transcript, artefak, catatan observer, atau bukti tindakan. Jelaskan bagian mana yang merupakan kontribusi Anda.</p>
-</div>
-</section>
-<section id="analisis-komunikasi" class="level2">
-<h2 class="anchored" data-anchor-id="analisis-komunikasi">Analisis komunikasi</h2>
+<section id="barrier-dan-authority-map" class="level2">
+<h2 class="anchored" data-anchor-id="barrier-dan-authority-map">Barrier dan authority map</h2>
+<p>Sebelum mengajukan ulang skema latihan, saya memetakan seluruh penghalang kelayakan (<em>affordability</em>) dan batas wewenang di dalam tim agar rencana yang disusun tidak melampaui kapasitas siapa pun.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Elemen</th>
-<th>Evidence dan analisis</th>
+<th>Unsur</th>
+<th>Temuan</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Person &amp; character</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Time (Waktu)</strong></td>
+<td>Penghalang utama: tidak ada satu pun hari dari Senin hingga Sabtu yang kosong serentak bagi bertiga, Senin (4 Mei) saya kuis, Selasa (5 Mei) M kuis, Rabu (6 Mei) saya <em>deadline</em> tubes, Kamis (7 Mei) S kuis, Jumat (8 Mei) M <em>deadline</em> tubes, dan Sabtu (9 Mei) S <em>deadline</em> tubes, sedangkan Minggu pagi (10 Mei) sudah jadwal presentasi final</td>
 </tr>
 <tr class="even">
-<td>Objective &amp; state</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Effort (Usaha)</strong></td>
+<td>Beban kognitif dan fisik tinggi karena seluruh anggota harus membagi fokus antara kuis/tubes kuliah dan persiapan lomba, memaksakan rapat berulang di hari kerja berisiko membuat semua orang kelelahan sebelum hari-H</td>
 </tr>
 <tr class="odd">
-<td>Repertoire &amp; language</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Risk (Risiko)</strong></td>
+<td>Jika seluruh latihan ditunda sampai Sabtu malam tanpa persiapan sebelumnya, materi belum hafal dan sesi Q&amp;A berisiko berantakan. Di sisi lain, begadang terlalu berat tanpa struktur yang jelas berisiko menurunkan fokus pada Minggu pagi</td>
 </tr>
 <tr class="even">
-<td>Response &amp; adaptation</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Capability (Kemampuan)</strong></td>
+<td>Bukan penghalang utama: setiap anggota sudah memahami isi <em>paper</em>, alur simulator MARS, dan bagian slide masing-masing sejak <em>mock Q&amp;A</em> 28 April, yang belum terlatih adalah kelancaran transisi antar-pembicara dan ketepatan durasi</td>
 </tr>
 <tr class="odd">
-<td>Agreement/action</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Money (Uang)</strong></td>
+<td>Membutuhkan ruang kerja (<em>working space</em>) yang terjangkau untuk sesi malam hingga dini hari agar nyaman berlatih luring bersama, dipilih <strong>working space Louvin</strong> yang mudah dijangkau dan memadai untuk kerja kelompok panjang</td>
 </tr>
 <tr class="even">
-<td>Relationship outcome</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Change (Perubahan)</strong></td>
+<td>Tim perlu mengubah kebiasaan dari ekspektasi “harus selalu latihan luring bertiga sejak awal minggu” menjadi pola latihan mandiri per bagian yang disiplin, baru digabungkan secara intensif di akhir pekan</td>
+</tr>
+<tr class="odd">
+<td><strong>Authority (Wewenang)</strong></td>
+<td>S sebagai Ketua Tim berwenang mengunci alur akhir presentasi dan pembagian waktu panggung, tetapi <strong>masing-masing anggota memegang wewenang penuh atas prioritas kuis dan deadline tubes kuliahnya sendiri</strong>. Saya tidak berwenang menuntut S atau M mengorbankan jadwal kuliahnya demi latihan lomba</td>
+</tr>
+</tbody>
+</table>
+<p>Pemetaan <strong>posisi vs.&nbsp;kepentingan</strong> membantu menghindari perdebatan soal siapa yang paling sibuk dan memindahkan fokus ke kebutuhan bersama:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pihak</th>
+<th>Posisi</th>
+<th>Kepentingan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Saya</strong></td>
+<td>Semula mengusulkan latihan bersama di hari Selasa/Rabu malam</td>
+<td>Memastikan transisi demo simulator, pembagian durasi, dan jawaban Q&amp;A benar-benar terlatih sebelum Minggu pagi</td>
+</tr>
+<tr class="even">
+<td><strong>M</strong></td>
+<td>Menolak latihan bersama di sela persiapan kuis (Selasa) dan <em>deadline</em> tubes (Jumat)</td>
+<td>Menyelesaikan kewajiban akademik tepat waktu tanpa membuat persiapan presentasi lomba jadi setengah-setengah</td>
+</tr>
+<tr class="odd">
+<td><strong>S (Ketua Tim)</strong></td>
+<td>Menyatakan nyaris tidak ada waktu kosong bersama sampai Sabtu selesai <em>deadline</em> tubes</td>
+<td>Menuntaskan kuis (Kamis) dan tubes (Sabtu) secara tuntas, sekaligus tetap menjaga agar tim tampil kompak dan tenang pada Minggu pagi</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Titik temu kepentingan:</strong> Ketiga pihak sama-sama ingin kewajiban kuliah Senin–Sabtu selesai aman tanpa saling membebani, sambil memastikan pada Minggu pagi (10 Mei) setiap anggota sudah menguasai bagiannya dan siap menghadapi Q&amp;A juri.</p>
+</section>
+<section id="options-trade-off-dan-negosiasi" class="level2">
+<h2 class="anchored" data-anchor-id="options-trade-off-dan-negosiasi">Options, trade-off, dan negosiasi</h2>
+<p>Setelah melihat bentrokan jadwal Senin–Sabtu, saya menimbang tiga opsi sebelum membalas di grup WhatsApp:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Opsi</th>
+<th>Trade-off</th>
+<th>Keputusan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Memaksakan latihan daring singkat lewat <em>call</em> setiap malam Senin–Jumat</td>
+<td>Semua orang tetap bertemu lebih awal, tetapi mengganggu fokus kuis dan tubes anggota yang sedang punya <em>deadline</em> esok harinya (berisiko merusak relasi dan kualitas kuliah)</td>
+<td>Ditolak</td>
+</tr>
+<tr class="even">
+<td>Tidak berlatih sama sekali sampai Sabtu malam setelah S selesai tubes</td>
+<td>Bebas gangguan sepanjang hari kerja, tetapi Sabtu malam akan habis untuk menghafal materi dasar dari nol sehingga waktu Q&amp;A tidak cukup</td>
+<td>Ditolak</td>
+</tr>
+<tr class="odd">
+<td><strong>Skema bertahap:</strong> latihan mandiri tiap bagian sepanjang Senin–Jumat dengan <em>checkpoint</em> WhatsApp, lalu latihan luring gabungan di <em>working space</em> Louvin pada Sabtu (9 Mei) saya dan M mulai dulu jika S belum selesai tubes, lalu S menyusul</td>
+<td>Mengorbankan jam tidur pada Sabtu malam (begadang), tetapi melindungi seluruh kuis dan <em>deadline</em> tubes Senin–Sabtu serta memastikan Sabtu malam langsung fokus ke sinkronisasi transisi, demo, dan Q&amp;A</td>
+<td><strong>Dipilih</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Saya memulai negosiasi dengan mengakui bahwa usulan awal saya untuk kumpul hari kerja memang tidak realistis, lalu menawarkan opsi bertahap sambil memberi ruang bagi S dan M untuk mengubah atau menolak bagian yang terasa memberatkan.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Oke, baru kebaca jelas nih jadwal kita yang beneran padat bergantian. Salah aku juga tadi langsung ngajakin kumpul hari kerja tanpa cek jadwal kuis sama tubes kalian dulu. Kalau kita maksain ketemu Senin–Jumat kayaknya malah bikin kuliah keteteran semua.”</p>
+<p><strong>Saya:</strong> “Gimana kalau kita bagi dua tahap aja? Sepanjang Senin sampai Jumat (4–8 Mei), nggak usah ada jadwal kumpul, masing-masing fokus beresin kuis sama tubes dulu, tapi sambil latihan mandiri buat bagian slide masing-masing. Terus pas Sabtu (9 Mei) begitu S kelar tubes, kita langsung kumpul bertiga di working space Louvin buat latihan full presentasi, demo, sama Q&amp;A untuk besok paginya. Kalau misal S baru kelarnya malam, aku sama M bisa duluan ketemu di Louvin buat nyocokin alur sama demo, nanti S tinggal nyusul. Gimana menurut kalian? Kalau ada yang keberatan begadang Sabtu malam atau mau atur jamnya beda, bilang aja ya.”</p>
+<p><strong>M:</strong> “Nah, kalau sistemnya mandiri dulu Senin–Jumat aku aman banget sih, jadi Selasa kuis sama Jumat tubes nggak keganggu. Sabtu sore aku udah kosong total, jadi gas aja kalau mau duluan ke Louvin bareng kamu Tan sambil nunggu S kelar tubes.”</p>
+<p><strong>S:</strong> “Aku setuju banget sama skema ini, jujur jauh lebih lega karena nggak perlu merasa bersalah ninggalin latihan pas lagi kejar kuis Kamis sama tubes Sabtu. Cuma aku konfirmasi dari awal ya, tubes aku Sabtu itu kemungkinan baru beres agak malam, sekitar jam 8 atau 9. Nggak apa-apa nih kalian nunggu duluan terus kita agak begadang buat Q&amp;A?”</p>
+<p><strong>Saya:</strong> “Aman banget S, justru makanya biar Sabtu malam kita nggak mulai dari nol dan nggak terlalu larut begadangnya, gimana kalau Jumat malam (8 Mei) jam 21.00 kita bikin checkpoint singkat di grup ini? Cuma buat mastiin masing-masing udah coba latihan mandiri bagiannya sendiri plus ngecek estimasi durasi, sama S ngabarin progres tubes buat perkiraan jam nyusul hari Sabtu. Kalau ternyata ada slide yang masih perlu diubah sebelum Sabtu, bisa ketahuan dari Jumat. Cocok nggak?”</p>
+<p><strong>S:</strong> “Cocok banget Tan. Jadi Sabtu malam pas aku nyusul ke Louvin, kita tinggal gabungin transisi bertiga, tes klik demo, sama latihan tanya-jawab aja.”</p>
+<p><strong>M:</strong> “Setuju, Jumat jam 21.00 kita cek di grup ya.”</p>
+</blockquote>
+</section>
+<section id="agreement-owner-deadline-dan-definisi-selesai" class="level2">
+<h2 class="anchored" data-anchor-id="agreement-owner-deadline-dan-definisi-selesai">Agreement: owner, deadline, dan definisi selesai</h2>
+<p>Seluruh hasil negosiasi dikunci menjadi kesepakatan operasional dengan pelaku tunggal, tenggat waktu absolut, prasyarat, definisi selesai yang dapat diperiksa, dan tindak lanjut, tanpa memakai kata kabur seperti “sebisanya” atau “nanti”.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>No</th>
+<th>Siapa</th>
+<th>Melakukan apa</th>
+<th>Kapan</th>
+<th>Prasyarat / Sumber daya</th>
+<th>Definisi selesai</th>
+<th>Tindak lanjut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Saya, M, dan S</strong> (masing-masing mandiri)</td>
+<td>Berlatih mandiri mempresentasikan bagian slide masing-masing sambil mengukur durasi bicara sendiri</td>
+<td>Rentang Senin, 4 Mei – Jumat, 8 Mei 2026, selesai paling lambat Jumat pukul 21.00 WIB</td>
+<td>Slide final MARS sudah terkunci dan pembagian bagian bicara sudah jelas</td>
+<td>Masing-masing telah menyelesaikan minimal 1 kali latihan penuh bagiannya sendiri dan mencatat durasi bicaranya</td>
+<td>Dilaporkan dalam satu pesan singkat saat <em>checkpoint</em> di grup WhatsApp</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Saya</strong></td>
+<td>Memimpin <em>checkpoint</em> progres persiapan di grup WhatsApp dan memastikan kesiapan tempat (<em>working space</em> Louvin) serta berkas demo simulator lokal</td>
+<td>Jumat, 8 Mei 2026, pukul 21.00 WIB</td>
+<td>Laporan singkat latihan mandiri dari M dan S serta pembaruan estimasi selesai tubes S</td>
+<td>Terkonfirmasi kesiapan bagian masing-masing, berkas simulator bebas <em>error</em>, dan jam mulai sesi Sabtu untuk saya &amp; M disepakati</td>
+<td>Dikonfirmasi langsung di grup WhatsApp tim</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Saya dan M</strong></td>
+<td>Bertemu lebih dahulu di <em>working space</em> Louvin untuk latihan sinkronisasi bagian berdua, cek urutan transisi, dan uji coba alur klik demo simulator MARS</td>
+<td>Sabtu, 9 Mei 2026, pukul 19.30 – 21.30 WIB (menunggu S selesai tubes)</td>
+<td>M sudah menyelesaikan <em>deadline</em> tubes hari Jumat, laptop dan file simulator MARS siap</td>
+<td>Alur bagian saya &amp; M lancar tanpa jeda bingung dan demo Skenario C–D berjalan mulus tanpa <em>bug</em></td>
+<td>Memberi kabar posisi dan hasil cek demo ke S melalui WhatsApp</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>S</strong> (menyusul), bersama <strong>Saya dan M</strong></td>
+<td>Latihan presentasi penuh bertiga (termasuk transisi antar-pembicara, demo, dan simulasi tanya-jawab/Q&amp;A juri) hingga siap untuk presentasi Minggu pagi</td>
+<td>Sabtu, 9 Mei 2026, dimulai segera setelah S tiba di Louvin (sekitar pukul 21.30 WIB) hingga dini hari (maksimal 02.30 WIB agar tetap ada waktu istirahat sebelum final pagi)</td>
+<td>S telah menyelesaikan pengumpulan tubes hari Sabtu</td>
+<td>Minimal 2 kali simulasi presentasi utuh bertiga masuk batas waktu lomba dan seluruh daftar pertanyaan kritis Q&amp;A (proksi data, 12 pelabuhan, <em>middleware</em>, HITL) sudah terbagi penjawabnya</td>
+<td>Ditutup dengan persetujuan bersama S sebagai Ketua Tim sebelum pulang beristirahat</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pembatas dan ruang aman yang disepakati:</strong> tidak ada jadwal rapat/latihan bersama pada Senin–Jumat agar kuis dan tubes tidak terganggu, jika S selesai tubes lebih malam dari perkiraan, saya dan M tidak menunggu pasif melainkan tetap menjalankan butir 3 lebih dahulu, dan apabila di tengah sesi begadang Sabtu malam konsentrasi sudah terlalu turun, latihan langsung dihentikan sesuai batas pukul 02.30 WIB demi menjaga performa Minggu pagi.</p>
+</section>
+<section id="action-evidence-dan-status-pelaksanaan" class="level2">
+<h2 class="anchored" data-anchor-id="action-evidence-dan-status-pelaksanaan">Action evidence dan status pelaksanaan</h2>
+<p>Seluruh butir kesepakatan dipantau melalui lingkar komitmen (<strong>Janji → Pelaksanaan → Checkpoint → Bukti → Penerimaan</strong>) hingga tuntas menjelang final 10 Mei 2026.</p>
+<blockquote class="blockquote">
+<p><strong>[Checkpoint : Jumat, 8 Mei 2026, 21.03 WIB di Grup WhatsApp]</strong> <strong>Saya:</strong> “Halo S, M, sesuai kesepakatan kita checkpoint bentar ya. Aku udah latihan mandiri bagian demo sama metodologi, durasinya pas di sekitar 4 menit dan file simulator udah aman. Kalian gimana progresnya?”</p>
+<p><strong>M:</strong> “Tubesku barusan banget kelar submit. Tadi sore aku udah nyoba latihan bagian latar belakang sama analisis hasil, masih agak kepanjangan dikit sekitar 30 detik tapi besok bisa diringkas pas di Louvin.”</p>
+<p><strong>S:</strong> “Aku udah sempat baca-baca dan latihan alur pembuka sama penutup kemarin malam abis kuis. Cuma buat besok Sabtu tubesku kayaknya baru beneran aman di-submit sekitar jam 9 malam. Jadi kalian mulai duluan aja di Louvin jam 19.30, nanti begitu kelar aku langsung nyusul ke sana ya.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>[Pelaksanaan &amp; Adaptasi Lapangan : Sabtu, 9 Mei 2026, di Grup WhatsApp &amp; Working Space Louvin]</strong> <strong>Saya (19.35 WIB):</strong> “S, aku sama M udah di Louvin ya. Kita mulai nyocokin transisi slide sama latihan klik Skenario C &amp; D dulu biar nanti pas kamu datang tinggal gabung full.”</p>
+<p><strong>S (21.18 WIB):</strong> “Alhamdulillah tubes udah submit! Aku OTW Louvin sekarang ya, sekitar 15 menit lagi nyampe.”</p>
+</blockquote>
+<p>Sesampainya S di <em>working space</em> Louvin sekitar pukul 21.35 WIB, tim langsung masuk ke tahap gabungan (butir 4). Karena materi dasar sudah dilatih mandiri dan transisi awal saya–M sudah rapi, sesi begadang tidak terbuang untuk membaca slide dari awal, melainkan langsung berfokus pada 2 kali gladi resik penuh bertiga dengan <em>stopwatch</em> serta simulasi Q&amp;A (menguji pertanyaan seputar <em>Simulated Proxy</em>, parameter <span class="math inline">\(\alpha=0.15/0.75\)</span>, dan arsitektur <em>Interoperability Middleware</em>). Sesi selesai sekitar pukul 02.00 WIB—lebih cepat dari batas maksimal 02.30 WIB, sehingga seluruh anggota masih sempat beristirahat sebelum tampil pada Minggu pagi, 10 Mei 2026.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Butir</th>
+<th>Fase lingkar komitmen</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Latihan mandiri tiap bagian</strong></td>
+<td>Janji 3 Mei → Pelaksanaan 4–8 Mei → <em>Checkpoint</em> 8 Mei 21.03 WIB → Bukti: laporan durasi &amp; kesiapan masing-masing di WhatsApp → Diterima</td>
+<td><strong>Terlaksana dan terverifikasi</strong></td>
+</tr>
+<tr class="even">
+<td><strong>2. <em>Checkpoint</em> &amp; kesiapan teknis</strong></td>
+<td>Janji 3 Mei → Pelaksanaan Jumat, 8 Mei 21.03 WIB → Bukti: catatan penyesuaian durasi M (+30 detik) dan kepastian jam S menyusul (21.00 WIB) → Diterima</td>
+<td><strong>Terlaksana dan terverifikasi</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Latihan awal Saya &amp; M di Louvin</strong></td>
+<td>Janji 3 Mei → Pelaksanaan Sabtu, 9 Mei 19.30–21.30 WIB di Louvin → Bukti: kabar tiba pukul 19.35 dan sinkronisasi demo selesai sebelum S tiba → Diterima</td>
+<td><strong>Terlaksana dan terverifikasi</strong></td>
+</tr>
+<tr class="even">
+<td><strong>4. Latihan penuh &amp; Q&amp;A bertiga (begadang)</strong></td>
+<td>Janji 3 Mei → S menyusul pukul 21.35 WIB → Pelaksanaan simulasi penuh + Q&amp;A hingga 02.00 WIB → Bukti: 2 kali <em>run-through</em> masuk batas waktu &amp; pembagian penjawab Q&amp;A rampung → Diterima oleh S, M, dan saya berhasil tampil di final 10 Mei 2026 (meraih Juara 2)</td>
+<td><strong>Terlaksana dan terverifikasi</strong></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="penggunaan-ai" class="level2">
-<h2 class="anchored" data-anchor-id="penggunaan-ai">Penggunaan AI</h2>
-<p>Nyatakan <code>Tidak menggunakan AI</code> atau jelaskan:</p>
-<ul>
-<li>alat dan peran AI;</li>
-<li>prompt atau instruksi penting;</li>
-<li>bagian output yang digunakan, diubah, atau ditolak;</li>
-<li>pemeriksaan accuracy, privacy, dan authority;</li>
-<li>apa yang tetap Anda pelajari sebagai manusia.</li>
-</ul>
+<section id="relationship-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-outcome">Relationship outcome</h2>
+<p>Penilaian keberhasilan pada minggu ini dilihat melalui <strong>evaluasi jalur ganda (<em>dual-track evaluation</em>)</strong>:</p>
+<ol type="1">
+<li><strong>Jalur Tugas (<em>Task Track</em>):</strong> Seluruh jadwal kuis dan <em>deadline</em> tubes akademik Senin–Sabtu berhasil diselesaikan tanpa bentrok, sementara keempat butir kesepakatan latihan presentasi tuntas sebelum batas maksimal 02.30 WIB sehingga tim tampil siap pada Minggu pagi, 10 Mei 2026.</li>
+<li><strong>Jalur Relasi (<em>Relationship Track</em>):</strong> Titik paling rawan gesekan ada pada dua momen, ketika usulan awal saya untuk latihan hari kerja terbentur jadwal padat M dan S, serta ketika S baru bisa bergabung malam hari pada Sabtu, 9 Mei. Dengan mengakui sejak awal bahwa rencana hari kerja kurang realistis, menghormati batas wewenang jadwal kuliah masing-masing, dan tidak membuat S merasa bersalah saat menyusul malam hari di Louvin, suasana tim tetap hangat dan suportif selama sesi begadang hingga hari final.</li>
+</ol>
+<p>Secara jujur, bagian negosiasi awal (3 Mei) dan <em>checkpoint</em> (8 Mei) berlangsung lewat teks WhatsApp sehingga ekspresi lelah atau nada bicara S dan M tidak dapat diamati langsung. Namun, kualitas relasi tersebut terkonfirmasi secara langsung saat pertemuan luring di <em>working space</em> Louvin pada 9 Mei malam, diskusi berjalan terbuka tanpa saling menyalahkan dan justru menumbuhkan rasa percaya yang baik untuk kerja sama kami pada kesempatan berikutnya.</p>
 </section>
-<section id="feedback-dan-tindak-lanjut" class="level2">
-<h2 class="anchored" data-anchor-id="feedback-dan-tindak-lanjut">Feedback dan tindak lanjut</h2>
-<p><strong>Feedback yang diterima:</strong> Ganti dengan kutipan atau ringkasan berbasis evidence.</p>
-<p><strong>Adaptation/replay:</strong> Jelaskan apa yang Anda ubah dan response setelah perubahan.</p>
-<p><strong>Next practice:</strong> Tetapkan satu perilaku spesifik yang akan dilatih berikutnya.</p>
+<section id="evidence-ai-dan-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-ai-dan-feedback">Evidence, AI, dan feedback</h2>
+<ul>
+<li>Perbedaan antara <em>desire</em> (kesiapan strategi pada 28 April), <em>intention</em> (“nanti minggu depan latihan bareng”), <em>commitment</em>, <em>agreement</em> presisi, dan <em>action</em> nyata terdokumentasi secara berurutan dari 3 Mei hingga 10 Mei 2026.</li>
+<li>Seluruh 7 dimensi penghalang (<em>time, effort, risk, capability, money, change, authority</em>) dipetakan sebelum menyusun ulang jadwal, tidak ada pemaksaan yang melampaui wewenang terhadap kewajiban kuis dan tubes masing-masing anggota.</li>
+<li>Usulan awal yang tidak realistis (latihan hari kerja) tidak dipertahankan secara kaku, melainkan diakui kurang tepat lalu diganti lewat negosiasi opsi bertahap (<em>latihan mandiri + checkpoint Jumat + sesi luring bertahap di Louvin</em>).</li>
+<li>Seluruh butir kesepakatan bebas dari bahasa menggantung, memuat pelaku tunggal, tanggal dan jam pasti, prasyarat, definisi selesai yang terukur, serta pembatas durasi begadang.</li>
+<li>Keterbatasan bukti: bukti diskusi 3 Mei dan <em>checkpoint</em> 8 Mei berupa teks WhatsApp (tanpa pengamatan nonverbal), dan latihan mandiri Senin–Jumat dilaporkan melalui laporan diri (<em>self-report</em>) sebelum diverifikasi secara luring pada Sabtu malam di Louvin.</li>
+<li><strong>Penggunaan AI dan batasannya:</strong> Saya menggunakan Gemini untuk membantu memetakan 7 kategori <em>barrier</em>, menyusun tabel pemisahan <em>posisi vs.&nbsp;kepentingan</em>, menguji apakah rumusan kesepakatan masih mengandung kata kabur, serta merapikan struktur laporan portofolio. AI tidak digunakan untuk mengarang jadwal kuliah, memalsukan percakapan WhatsApp, atau mengada-adakan lokasi dan hasil pelaksanaan, seluruh kronologi (jadwal kuis/tubes Senin–Sabtu, latihan mandiri, pertemuan di <em>working space</em> Louvin pada 9 Mei malam, dan final 10 Mei 2026) berasal dari pengalaman nyata tim kami.</li>
+<li><strong>Next practice:</strong> Pada kerja tim dengan tenggat mepet berikutnya, saya akan langsung mengumpulkan peta jadwal kosong dan <em>deadline</em> pribadi seluruh anggota terlebih dahulu sebelum melontarkan usulan hari kumpul, agar proses negosiasi lebih cepat dan langsung berangkat dari kondisi kelayakan nyata.</li>
+</ul>
 </section>
 <section id="self-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="self-assessment">Self-assessment</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Dimensi</th>
-<th style="text-align: right;">Skor 1–4</th>
+<th style="text-align: right;">Skor</th>
 <th>Evidence singkat</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Person &amp; Character</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Memetakan jadwal, beban kuis/tubes, dan batas wewenang S, M, dan saya, memisahkan posisi dari kepentingan sehingga tidak ada anggota yang merasa dipaksa mengorbankan kuliahnya</td>
 </tr>
 <tr class="even">
 <td>Objective &amp; State</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Mengenali <em>desire–action gap</em> secara tepat (keinginan siap tinggi tetapi jadwal Senin–Sabtu penuh bergantian) dan membedakan <em>desire</em>, <em>intention</em>, <em>agreement</em>, serta <em>action</em></td>
 </tr>
 <tr class="odd">
 <td>Repertoire, Language &amp; AI</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Negosiasi via WhatsApp disampaikan dengan bahasa non-formal yang lugas tanpa tekanan, tabel kesepakatan memuat 6 unsur presisi tanpa kata kabur, dan batas penggunaan AI dinyatakan transparan</td>
 </tr>
 <tr class="even">
 <td>Response &amp; Adaptation</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Penolakan S dan M terhadap latihan hari kerja diterima sebagai informasi hambatan, bukan diabaikan, skema diadaptasi menjadi latihan mandiri + <em>checkpoint</em> Jumat + sesi bertahap di Louvin saat S selesai tubes malam</td>
 </tr>
 <tr class="odd">
 <td>Agreement, Action &amp; Relationship</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Keempat butir kesepakatan melewati seluruh fase lingkar komitmen hingga terlaksana dan terverifikasi pada 9–10 Mei 2026, sekaligus menjaga kepercayaan dan kenyamanan relasi tim</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Total:</strong> — / 20</p>
+<p><strong>Total: 20/20 — Lanjut.</strong></p>
 <section id="assessment-dosen" class="level3 assessor-only">
 <h3 class="anchored" data-anchor-id="assessment-dosen">Assessment dosen</h3>
 <p><strong>Skor:</strong> — / 20<br>

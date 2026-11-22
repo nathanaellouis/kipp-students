@@ -80,6 +80,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -278,12 +307,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#kompetensi-target" id="toc-kompetensi-target" class="nav-link active" data-scroll-target="#kompetensi-target">Kompetensi target</a></li>
-  <li><a href="#evidence-wajib" id="toc-evidence-wajib" class="nav-link" data-scroll-target="#evidence-wajib">Evidence wajib</a></li>
-  <li><a href="#konteks-performance" id="toc-konteks-performance" class="nav-link" data-scroll-target="#konteks-performance">Konteks performance</a></li>
-  <li><a href="#evidence" id="toc-evidence" class="nav-link" data-scroll-target="#evidence">Evidence</a></li>
-  <li><a href="#analisis-komunikasi" id="toc-analisis-komunikasi" class="nav-link" data-scroll-target="#analisis-komunikasi">Analisis komunikasi</a></li>
-  <li><a href="#penggunaan-ai" id="toc-penggunaan-ai" class="nav-link" data-scroll-target="#penggunaan-ai">Penggunaan AI</a></li>
-  <li><a href="#feedback-dan-tindak-lanjut" id="toc-feedback-dan-tindak-lanjut" class="nav-link" data-scroll-target="#feedback-dan-tindak-lanjut">Feedback dan tindak lanjut</a></li>
+  <li><a href="#current-state-dan-desired-state" id="toc-current-state-dan-desired-state" class="nav-link" data-scroll-target="#current-state-dan-desired-state">Current state dan desired state</a></li>
+  <li><a href="#featurebenefitvalueoutcome-chain" id="toc-featurebenefitvalueoutcome-chain" class="nav-link" data-scroll-target="#featurebenefitvalueoutcome-chain">Feature–benefit–value–outcome chain</a></li>
+  <li><a href="#demonstrasi-jembatan-batin-dan-mekanisme" id="toc-demonstrasi-jembatan-batin-dan-mekanisme" class="nav-link" data-scroll-target="#demonstrasi-jembatan-batin-dan-mekanisme">Demonstrasi: jembatan batin dan mekanisme</a></li>
+  <li><a href="#hidden-concern-dan-adaptasi-rancangan" id="toc-hidden-concern-dan-adaptasi-rancangan" class="nav-link" data-scroll-target="#hidden-concern-dan-adaptasi-rancangan">Hidden concern dan adaptasi rancangan</a></li>
+  <li><a href="#tangga-bukti-risk-dan-evidence-threshold" id="toc-tangga-bukti-risk-dan-evidence-threshold" class="nav-link" data-scroll-target="#tangga-bukti-risk-dan-evidence-threshold">Tangga bukti, risk, dan evidence threshold</a></li>
+  <li><a href="#etika-kebebasan-memilih" id="toc-etika-kebebasan-memilih" class="nav-link" data-scroll-target="#etika-kebebasan-memilih">Etika kebebasan memilih</a></li>
+  <li><a href="#evidence-ai-dan-feedback" id="toc-evidence-ai-dan-feedback" class="nav-link" data-scroll-target="#evidence-ai-dan-feedback">Evidence, AI, dan feedback</a></li>
   <li><a href="#self-assessment" id="toc-self-assessment" class="nav-link" data-scroll-target="#self-assessment">Self-assessment</a>
   <ul class="collapse">
   <li><a href="#assessment-dosen" id="toc-assessment-dosen" class="nav-link" data-scroll-target="#assessment-dosen">Assessment dosen</a></li>
@@ -326,132 +356,239 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="kompetensi-target">Kompetensi target</h2>
 <p>Membangun desired state bersama target dan menghubungkannya dengan solution secara kredibel.</p>
 </section>
-<section id="evidence-wajib" class="level2">
-<h2 class="anchored" data-anchor-id="evidence-wajib">Evidence wajib</h2>
-<ul>
-<li>Current dan desired state milik person.</li>
-<li>Feature–benefit–value–outcome chain.</li>
-<li>Risk, evidence threshold, response, dan adaptation.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Lihat contoh pengisian
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="../examples/week-09.html">Buka contoh fiktif Minggu 9</a> untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.</p>
-</div>
-</div>
-</section>
-<section id="konteks-performance" class="level2">
-<h2 class="anchored" data-anchor-id="konteks-performance">Konteks performance</h2>
-<p><strong>Tanggal dan setting:</strong> Ganti dengan tanggal, tempat, dan bentuk kegiatan.</p>
-<p><strong>Persons dan relationship:</strong> Jelaskan siapa yang terlibat tanpa membuka data pribadi yang tidak diperlukan.</p>
-<p><strong>Objective dan initial state:</strong> Nyatakan perubahan yang ingin dicapai serta evidence state awal.</p>
-</section>
-<section id="evidence" class="level2">
-<h2 class="anchored" data-anchor-id="evidence">Evidence</h2>
-<div class="evidence-block">
-<p>Tambahkan link, gambar, video, transcript, artefak, catatan observer, atau bukti tindakan. Jelaskan bagian mana yang merupakan kontribusi Anda.</p>
-</div>
-</section>
-<section id="analisis-komunikasi" class="level2">
-<h2 class="anchored" data-anchor-id="analisis-komunikasi">Analisis komunikasi</h2>
+<section id="current-state-dan-desired-state" class="level2">
+<h2 class="anchored" data-anchor-id="current-state-dan-desired-state">Current state dan desired state</h2>
+<p>Target komunikasi pada minggu ini adalah inisial <strong>S</strong>, Ketua Tim BUTEN dalam ajang <em>Technovate Paper Competition The Sandbox 3.0 IEEE ITB</em> (pendaftaran 16 Maret 2026, pengumuman finalis 23 April 2026, menuju final dan <em>awarding</em> pada 10 Mei 2026). Tim kami terdiri dari tiga orang: S sebagai ketua tim, <strong>M</strong> yang banyak menggarap metodologi dan penulisan <em>paper</em>, serta saya yang turut mengembangkan <em>prototype</em> simulator web <strong>MARS (<em>Maritime Adaptive Rerouting System</em>)</strong>.</p>
+<p>Dua hari setelah lolos ke babak final (25 April 2026), saya menghubungi S lewat WhatsApp untuk menyepakati strategi demo dan <em>framing</em> teknis saat presentasi final. Sebelum menawarkan pendekatan apa pun, saya mengecek dulu keadaan nyata dan ganjalan yang sedang dirasakan S agar <em>current state</em> berangkat dari keterangannya sendiri, bukan tebakan saya.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “S, lagi santai nggak? Mau nanya jujur aja soal persiapan final 10 Mei nanti. Menurut kamu, simulator web MARS yang kemarin kita lampirin di paper udah cukup bikin kamu tenang buat dibawa demo di depan juri, atau sebenarnya masih ada bagian yang bikin kamu ragu?”</p>
+<p><strong>S:</strong> “Lagi santai kok Tan. Jujur kalau dari tampilannya aku suka, petanya jalan lancar. Tapi aku masih agak ragu sih, soalnya data regulasi sama kongesti kita kan masih simulasi semua.”</p>
+</blockquote>
+<p>Penelusuran singkat berikutnya memperlihatkan kecemasan spesifik dan pertimbangan yang sedang dipikirkan S.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Ragu di bagian apanya S? Sempat kepikiran mau kita ubah jadi narik data live sebelum 10 Mei?”</p>
+<p><strong>S:</strong> “Iya sempat kepikiran gitu sih, minimal nyambungin satu API beneran atau nyoba model NLP beneran biar nggak kelihatan kayak simulasi doang. Cuma aku juga mikir waktu kita tinggal dua minggu sambil kuliah, takutnya malah nggak kelar, pas demo error, terus waktu buat nyiapin PPT sama latihan Q&amp;A malah keteteran.”</p>
+</blockquote>
+<p>Dua batas keputusan langsung saya tetapkan dari keterangan S. Pertama, saya <strong>tidak</strong> mendorong pemaksaan integrasi <em>live API</em> maupun pelatihan model LegalBERT secara <em>end-to-end</em> dalam sisa waktu dua minggu, karena bertabrakan dengan kendala waktu tim dan risiko kestabilan panggung. Kedua, saya <strong>tidak</strong> mengklaim MARS siap diterapkan langsung ke operasi pelayaran nyata (<em>carrier-grade deployment</em>), karena di bagian <em>Scope and Limitation</em> pada <em>paper</em> kami sendiri sistem ini memang dibatasi sebagai <em>simulation testbed</em> 12 pelabuhan Indonesia.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Elemen</th>
-<th>Evidence dan analisis</th>
+<th></th>
+<th>Isi</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Person &amp; character</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Current state</strong></td>
+<td><em>Prototype</em> simulator HTML MARS sudah berjalan stabil secara lokal, tetapi S ragu membawanya ke final 10 Mei karena khawatir status data simulasi menjadi celah serangan juri teknis, sementara memaksakan <em>live API</em> berisiko merusak kestabilan demo dan menyita waktu latihan</td>
 </tr>
 <tr class="even">
-<td>Objective &amp; state</td>
-<td>Ganti dengan analisis Anda.</td>
-</tr>
-<tr class="odd">
-<td>Repertoire &amp; language</td>
-<td>Ganti dengan analisis Anda.</td>
-</tr>
-<tr class="even">
-<td>Response &amp; adaptation</td>
-<td>Ganti dengan analisis Anda.</td>
-</tr>
-<tr class="odd">
-<td>Agreement/action</td>
-<td>Ganti dengan analisis Anda.</td>
-</tr>
-<tr class="even">
-<td>Relationship outcome</td>
-<td>Ganti dengan analisis Anda.</td>
+<td><strong>Desired state</strong></td>
+<td>Presentasi dan demo final pada 10 Mei berjalan stabil tanpa risiko <em>error</em> teknis, sambil memberi S pegangan argumen yang jujur, konsisten, dan tahan uji saat juri menanyakan validitas simulasi maupun jalur penerapan industrinya</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="penggunaan-ai" class="level2">
-<h2 class="anchored" data-anchor-id="penggunaan-ai">Penggunaan AI</h2>
-<p>Nyatakan <code>Tidak menggunakan AI</code> atau jelaskan:</p>
-<ul>
-<li>alat dan peran AI;</li>
-<li>prompt atau instruksi penting;</li>
-<li>bagian output yang digunakan, diubah, atau ditolak;</li>
-<li>pemeriksaan accuracy, privacy, dan authority;</li>
-<li>apa yang tetap Anda pelajari sebagai manusia.</li>
-</ul>
+<section id="featurebenefitvalueoutcome-chain" class="level2">
+<h2 class="anchored" data-anchor-id="featurebenefitvalueoutcome-chain">Feature–benefit–value–outcome chain</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Benefit</th>
+<th>Value bagi S</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Demo simulator web lokal (12 pelabuhan Indonesia, kalkulasi fisika Haversine 15 knots, <em>dual-mode</em> <span class="math inline">\(\alpha=0.15\)</span> vs <span class="math inline">\(0.75\)</span>, <em>HITL confidence gate</em> &lt;95%) dengan label eksplisit <code>Simulated Proxy</code></td>
+<td>Perbandingan Skenario C (<em>Regulatory Shock</em>) dan D (<em>Perfect Storm</em>) berjalan stabil tanpa bergantung pada koneksi/API eksternal, sementara batas input langsung transparan sejak awal</td>
+<td>Mengamankan kelancaran demo di panggung dan menjaga kredibilitas tim dari tuduhan <em>overclaim</em> di hadapan juri IEEE</td>
+<td>S dan tim dapat fokus mematangkan penyampaian materi tanpa panik menghadapi kegagalan teknis saat final</td>
+</tr>
+<tr class="even">
+<td>Pemisahan tegas di materi presentasi antara metrik terhitung (jarak Haversine, <em>transit days</em>, penalti kongesti &gt;85%) dan proksi alur kerja (<em>batch lead-time</em> <span class="math inline">\(N=50\)</span> serta skor <em>confidence</em> NLP), ditambah slide khusus <em>Batasan Sistem &amp; Future Work</em></td>
+<td>Menutup kontradiksi antara pengakuan data simulasi dengan angka hasil pengujian sebelum juri menjadikannya titik serang di Q&amp;A</td>
+<td>Memberi S kendali dan ketenangan saat memimpin sesi tanya-jawab karena setiap angka memiliki batas klaim yang jelas</td>
+<td>Diskusi Q&amp;A bergerak ke kualitas desain logika <em>feasibility-first</em>, bukan terjebak perdebatan soal data tiruan</td>
+</tr>
+<tr class="odd">
+<td>Diagram arsitektur <em>Interoperability Middleware</em> (API Gateway penghubung 3 <em>stream</em>: OFAC/IMO GISIS, Pelindo VMS/BOR, BMKG/JWC) yang memposisikan MARS sebagai <em>add-on</em> ERP/TMS eksisting</td>
+<td>Menunjukkan peta jalan integrasi yang masuk akal tanpa harus merombak infrastruktur perusahaan pelayaran maupun memaksakan <em>coding</em> API mentah dalam 2 minggu</td>
+<td>Menjawab kekhawatiran S agar MARS tidak terkesan “sekadar tugas simulasi” dan tetap terlihat punya arah implementasi nyata</td>
+<td>Tim memiliki narasi utuh dari bukti simulasi hari ini menuju skalabilitas <em>enterprise</em> di babak final</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="feedback-dan-tindak-lanjut" class="level2">
-<h2 class="anchored" data-anchor-id="feedback-dan-tindak-lanjut">Feedback dan tindak lanjut</h2>
-<p><strong>Feedback yang diterima:</strong> Ganti dengan kutipan atau ringkasan berbasis evidence.</p>
-<p><strong>Adaptation/replay:</strong> Jelaskan apa yang Anda ubah dan response setelah perubahan.</p>
-<p><strong>Next practice:</strong> Tetapkan satu perilaku spesifik yang akan dilatih berikutnya.</p>
+<section id="demonstrasi-jembatan-batin-dan-mekanisme" class="level2">
+<h2 class="anchored" data-anchor-id="demonstrasi-jembatan-batin-dan-mekanisme">Demonstrasi: jembatan batin dan mekanisme</h2>
+<p>Demonstrasi dijalankan secara bertahap lewat WhatsApp dalam empat fase. Setiap pesan dikirim ringkas untuk satu fokus bahasan, dan pesan berikutnya baru ditulis setelah S memberikan respons.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Jadi dari cerita kamu tadi, yang aku tangkep: kamu sebenarnya pengen demo kita nanti aman dari error dan kita tetap punya cukup waktu buat latihan Q&amp;A, tapi kamu nggak mau kita kelihatan cuma bikin simulasi biasa pas ditanya juri. Bener nggak nangkep aku?”</p>
+<p><strong>S:</strong> “Iya bener banget, intinya itu.”</p>
+</blockquote>
+<p>Setelah S mengonfirmasi jembatan kondisi tersebut, saya hanya membawa <strong>satu alur mekanisme utama</strong> terlebih dahulu, yakni transparansi label <code>Simulated Proxy</code> pada demo Skenario C dan D, serta sengaja tidak menjejalkan fitur lain seperti perhitungan <em>emissions proxy</em> atau rencana <em>Deep Reinforcement Learning</em> agar tidak terjadi <em>feature dumping</em>. Di akhir pesan ini, saya menguji hipotesis awal saya tentang sumber keraguan S.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Nah, kalau gitu aku kepikiran kita tetap pakai simulator HTML lokal yang sekarang, tapi kita pasang label ‘Simulated Proxy’ yang jelas di bagian atas layar demo. Jadi pas demo Skenario C sama D, juri fokus lihat logika filter sanksi proaktif sama tombol konfirmasi manusia pas confidence di bawah 95%. Aku nebak yang paling bikin kamu ragu itu takut kalau label proxy-nya kelihatan jelas, juri malah nganggep kita kurang usaha karena nggak nyambungin ke live API, bener nggak?”</p>
+</blockquote>
+</section>
+<section id="hidden-concern-dan-adaptasi-rancangan" class="level2">
+<h2 class="anchored" data-anchor-id="hidden-concern-dan-adaptasi-rancangan">Hidden concern dan adaptasi rancangan</h2>
+<p>Jawaban S langsung membantah dugaan saya.</p>
+<blockquote class="blockquote">
+<p><strong>S:</strong> “Sebenarnya bukan soal takut dianggap kurang usaha ngoding API sih Tan. Kalau lomba paper mahasiswa, juri pasti ngerti batas waktu kita. Yang bikin aku ganjel tuh justru di bagian angka klaim kita. Di satu sisi kita nulis ‘Simulated Proxy’, tapi di slide hasil kita nulis MARS memangkas waktu keputusan dari 24 jam jadi 9 menit atau turun &gt;90%. Aku takut juri malah nanya: ‘Angka 9 menit sama 24 jam itu kan angka simulasi buatan kalian sendiri, terus kalau beneran mau dipakai perusahaan pelayaran nanti cara masuk ke sistem mereka gimana?’”</p>
+</blockquote>
+<p>Hipotesis awal saya meleset. Saya mengira keberatan S berada pada kekhawatiran soal persepsi usaha teknis (<em>effort</em>), padahal <em>hidden concern</em> yang sesungguhnya adalah <strong>risiko inkonsistensi klaim (<em>trust &amp; risk</em>)</strong> antara pengakuan <code>Simulated Proxy</code> dengan cara kami menyajikan angka pengurangan <em>lead-time</em>, ditambah belum jelasnya jembatan menuju sistem operasional perusahaan pelayaran.</p>
+<p>Saya tidak membela rancangan awal tersebut, melainkan mengakui kekeliruan tebakan saya lebih dahulu lalu mengajukan revisi yang langsung menempel pada ganjalan S.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Oh oke, berarti tebakan aku tadi salah ya. Kirain kamu khawatir soal nggak pakai live API-nya, ternyata ganjelannya justru di kontradiksi cara kita nyajiin angka lead-time sama pertanyaan soal integrasi ke sistem perusahaan. Bener juga sih, kalau kita nulis ‘memangkas 24 jam jadi 9 menit’ tanpa penjelasan batasnya, terus di layar sebelah ada tulisan ‘Simulated Proxy’, itu malah jadi celah buat diserang.</p>
+<p>Gimana kalau rancangannya kita revisi jadi dua penyesuaian aja? Pertama, di slide hasil kita bingkai jelas bahwa angka batch N=50 itu adalah perbandingan proksi alur kerja (siklus rework manual 12–24 jam vs filter proaktif 3–9 menit atau 30–60 menit review manusia), bukan klaim pengukuran lapangan. Kedua, kita tambah satu slide khusus <em>Implementation Readiness</em> pakai diagram <em>Interoperability Middleware</em> jadi kita jelasin MARS jalan sebagai add-on di atas ERP/TMS lewat 3 jalur data: OFAC/IMO GISIS buat regulasi, Pelindo VMS/BOR buat kongesti, sama BMKG/JWC buat cuaca/risiko.”</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Unsur</th>
+<th>Rancangan awal</th>
+<th>Setelah adaptasi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Asumsi sumber keberatan S</td>
+<td>Takut dianggap kurang usaha karena tidak membuat integrasi <em>live API</em></td>
+<td>Takut terjadi kontradiksi antara label <code>Simulated Proxy</code> dengan klaim angka <em>lead-time</em>, serta lemahnya jawaban soal integrasi industri</td>
+</tr>
+<tr class="even">
+<td>Cakupan materi demo &amp; <em>slide</em></td>
+<td>Demo HTML lokal berlabel <code>Simulated Proxy</code> + menonjolkan angka penurunan latensi &gt;90%</td>
+<td>Demo HTML lokal berlabel <code>Simulated Proxy</code>, penegasan <em>lead-time</em> sebagai proksi alur kerja (<span class="math inline">\(N=50\)</span>), slide khusus <em>Batasan Sistem</em>, dan diagram <em>Interoperability Middleware</em> sebagai <em>add-on</em> ERP/TMS</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tangga-bukti-risk-dan-evidence-threshold" class="level2">
+<h2 class="anchored" data-anchor-id="tangga-bukti-risk-dan-evidence-threshold">Tangga bukti, risk, dan evidence threshold</h2>
+<p>Pada fase berikutnya, saya mengirimkan tangkapan layar prototipe simulator Skenario C dan D beserta ringkasan angka <em>batch</em> uji coba, lalu menyatakan keterbatasan bukti serta tiga risiko secara terbuka sebelum S menanyakannya.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Ini aku kirim screenshot demo Skenario C (Belawan–Balikpapan) sama Skenario D (Belawan–Sorong) plus ringkasan uji batch N=50 kita biar kamu bisa lihat langsung alurnya. Dua pegangan kita jelas: pertama prototipe HTML-nya sendiri bisa langsung diklik dan nunjukin trade-off jarak nambah 7–12% demi 0 pelanggaran hukum plus munculnya peringatan manual review pas confidence &lt;95%, kedua data simulasi 4 skenario kita konsisten di 12 pelabuhan dengan perhitungan fisika Haversine 15 knots.</p>
+<p>Tapi jujur dari awal ya S, ada tiga batas yang nggak bisa kita tutupin: (1) strategi ini tetap belum narik live API, (2) skor confidence LegalBERT masih proksi simulasi bukan hasil uji model terlatih end-to-end, dan (3) uji coba kita baru di 12 pelabuhan buat rute satu kapal, belum multi-kapal. Kalau kamu mau, sebelum kita kunci PPT-nya, kita uji dulu argumen revisi ini lewat mock Q&amp;A bareng M tanggal 28 April nanti.”</p>
+<p><strong>S:</strong> “Nah, kalau angka lead-time-nya dibingkai sebagai proksi alur kerja terus langsung disambung ke slide middleware add-on ERP/TMS, itu baru kena ke ganjelan aku tadi. Pas lihat screenshot Skenario D yang ada peringatan human review-nya juga kelihatan kita nggak asal mengotomatisasi semuanya. Kayaknya bisa nutup celah pertanyaan juri sih, mungkin kita pakai strategi ini aja buat final.”</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bukti</th>
+<th>Tingkat</th>
+<th>Isi</th>
+<th>Keterbatasan yang dinyatakan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>2 : prototipe interaktif</td>
+<td>Simulator web lokal (<code>TPC-MARS-Simulation.html</code>) pada Skenario C &amp; D yang memperlihatkan filter koridor <code>sanction_X</code>, penalti kongesti Sorong (+2 hari pada utilisasi 95%), dan tombol <em>Approve/Override</em> HITL saat <em>confidence</em> &lt;95%</td>
+<td>Sumber data regulasi, utilisasi pelabuhan, dan skor <em>confidence</em> NLP masih berupa <em>simulated proxy</em> deterministik, bukan <em>live feed</em> operasional</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>4 : data uji coba simulasi skala terbatas</td>
+<td>Hasil perbandingan 4 skenario (A–D) dengan <em>batch</em> <span class="math inline">\(N=50\)</span> sampel pada 12 pelabuhan Indonesia (jarak Haversine pada 15 knots, <em>trade-off</em> jarak +7–12%, 100% <em>compliance</em>, pengurangan latensi alur kerja &gt;90%)</td>
+<td>Terbatas pada 12 pelabuhan representatif dan rute kapal tunggal (<em>single-vessel</em>), angka <em>lead-time</em> dan emisi adalah indikator proksi dalam batas asumsi simulasi, bukan pengukuran lapangan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Risiko yang diakui:</strong> juri tetap dapat menilai bahwa rancangan <em>Interoperability Middleware</em> masih berada di level arsitektur konseptual karena belum diuji langsung terhadap API Pelindo maupun OFAC. <strong>Evidence threshold (ambang bukti):</strong> strategi ini belum langsung dikunci sebagai keputusan final pada 25 April, melainkan harus melewati sesi <em>mock Q&amp;A</em> internal bersama M pada 28 April 2026 di mana M menguji pertanyaan tersulit terkait data <em>proxy</em> dan kesiapan industri sambil menjalankan demo Skenario C dan D.</p>
+</section>
+<section id="etika-kebebasan-memilih" class="level2">
+<h2 class="anchored" data-anchor-id="etika-kebebasan-memilih">Etika kebebasan memilih</h2>
+<p>Respons S berhenti pada kata <em>“kayaknya bisa”</em> dan <em>“mungkin”</em>. Saya tidak langsung menganggap itu sebagai persetujuan final dan tidak menciptakan urgensi palsu. Sebaliknya, saya justru mempertanyakan kembali celah dari desain <em>middleware</em> yang saya usulkan sendiri dan memberi S kebebasan penuh untuk menolaknya.</p>
+<blockquote class="blockquote">
+<p><strong>Saya:</strong> “Bentar S, aku nggak mau buru-buru anggap ini udah fix ya, soalnya kamu tadi masih bilang ‘kayaknya’ sama ‘mungkin’. Jujur aja, diagram middleware yang aku usulin tadi kan juga masih di level desain arsitektur, kalau juri tetap nanya ‘kalian udah pernah nyoba narik data publik Pelindo atau OFAC beneran belum?’, jawabannya tetap belum. Bagian mana lagi yang masih bikin kamu kurang sreg? Kalau kamu sebagai ketua tim ngerasa ini masih terlalu riskan dan mutusin kita lebih baik coba nyambungin satu sumber data publik beneran sebelum 10 Mei, bilang aja nggak apa-apa. Aku siap ngikutin keputusan yang paling aman buat tim.”</p>
+<p><strong>S:</strong> “Nggak kok Tan, justru pas kamu ngingetin kemungkinan pertanyaan ‘udah pernah narik data beneran belum’ itu, aku jadi kebayang persis batas jawaban yang harus kita pegang. Daripada nekat bikin integrasi mentah dalam dua minggu yang malah bikin demo error di panggung dan waktu latihan kita habis, aku pastiin kita pakai strategi simulasi transparan plus slide middleware ini. Aku pengen pas final 10 Mei nanti kita tampil rapi, jujur sama batas riset kita, dan nggak kelihatan mengada-ada di depan juri. Tanggal 28 April kita tes Q&amp;A bareng M ya buat matengin jawabannya.”</p>
+</blockquote>
+<p>Pada balasan penutup ini terjadi pergeseran yang tegas dari <strong>Interest</strong> menuju <strong>Desire</strong>. S tidak lagi berhenti pada penilaian tentatif (<em>“kayaknya bisa”</em>, <em>“mungkin”</em>), melainkan mengambil keputusan sadar (<em>“aku pastiin kita pakai strategi ini”</em>) disertai alasan batin miliknya sendiri, yaitu keinginan tampil rapi, jujur terhadap batas riset, dan tidak terkesan mengada-ada di hadapan juri pada final 10 Mei 2026.</p>
+<p>Sebagai tindak lanjut atas ambang bukti yang disepakati, sesi <em>mock Q&amp;A</em> dilaksanakan bersama M pada 28 April 2026. Setelah M menguji pertanyaan kritis mengenai alasan penggunaan 12 pelabuhan dan <em>simulated proxy</em>, M mencatat bahwa transisi dari label <em>proxy</em> pada demo menuju diagram <em>Interoperability Middleware</em> dan slide <em>Batasan Sistem</em> berhasil menghilangkan kesan <em>overclaim</em>, sehingga S resmi mengunci struktur presentasi tersebut hingga hari final (yang kemudian mengantarkan tim kami meraih Juara 2).</p>
+</section>
+<section id="evidence-ai-dan-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-ai-dan-feedback">Evidence, AI, dan feedback</h2>
+<ul>
+<li>Pemeriksaan kondisi dan keraguan S dilakukan terlebih dahulu di awal obrolan WhatsApp, sehingga <em>current state</em> dan <em>desired state</em> berasal dari keterangan S sendiri, bukan proyeksi sepihak.</li>
+<li>Pemaksaan integrasi <em>live API</em> atau pelatihan LegalBERT sengaja tidak diambil karena bertentangan dengan batas waktu dua minggu dan prioritas kestabilan demo panggung yang disepakati bersama S.</li>
+<li>Hipotesis awal saya mengenai sumber keraguan S dibantah langsung oleh S, saya tidak membela dugaan tersebut, melainkan mengakuinya keliru dan menjadikannya dasar revisi <em>framing</em> angka <em>lead-time</em> serta penambahan diagram <em>Interoperability Middleware</em>.</li>
+<li>Dua tingkat <em>Tangga Bukti</em> (prototipe simulator web HTML + data komparatif <span class="math inline">\(N=50\)</span> pada 4 skenario) disajikan bersama tiga batasan jujur sebelum ditanya, dan celah dari usulan <em>middleware</em> sendiri ikut diuji balik pada fase akhir agar S memiliki <em>informed choice</em>.</li>
+<li>Seluruh diskusi tanggal 25 April berlangsung dalam modalitas teks WhatsApp, sehingga intonasi suara, jeda ragu, dan bahasa tubuh S tidak dapat diamati langsung. Pengujian lisan baru terverifikasi pada sesi <em>mock Q&amp;A</em> bersama M tanggal 28 April 2026.</li>
+<li><strong>Penggunaan AI dan batasannya:</strong> Saya menggunakan Gemini untuk membantu menyusun struktur <em>Feature–Benefit–Value–Outcome</em>, merumuskan pertanyaan diagnostik tiap fase setelah mengetahui balasan S, serta mengecek konsistensi antara klaim presentasi dengan bagian <em>Limitations</em> pada <em>paper</em> asli MARS. AI tidak digunakan untuk mengarang angka simulasi, memalsukan respons S, atau mengambil keputusan strategi tim, seluruh angka teknis (12 pelabuhan, 15 knots, <span class="math inline">\(\alpha=0.15/0.75\)</span>, <em>confidence</em> 95%, <span class="math inline">\(N=50\)</span>) diverifikasi langsung dari berkas <em>paper</em>, kode HTML, dan <em>slide</em> Tim BUTEN, serta usulan kalimat promosi yang terlalu bombastis dari AI ditolak demi menjaga <em>honest limits</em>.</li>
+<li><strong>Next practice:</strong> Pada diskusi strategis tim berikutnya, saya akan langsung menanyakan bagian spesifik mana dari materi atau data yang terasa paling rentan di mata lawan bicara sejak fase pertama, alih-alih melontarkan tebakan pribadi lebih dulu yang berisiko meleset dari <em>hidden concern</em> sebenarnya.</li>
+</ul>
 </section>
 <section id="self-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="self-assessment">Self-assessment</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Dimensi</th>
-<th style="text-align: right;">Skor 1–4</th>
+<th style="text-align: right;">Skor</th>
 <th>Evidence singkat</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Person &amp; Character</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Memetakan tekanan peran S sebagai ketua tim pada lomba pertama kami, menghormati otoritas keputusannya, dan menggali nilai batin S sendiri (tampil rapi, jujur, tidak mengada-ada di final)</td>
 </tr>
 <tr class="even">
 <td>Objective &amp; State</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Membedakan secara tegas <em>Interest</em> dan <em>Desire</em>: S bergeser dari tentatif (“kayaknya bisa”, “mungkin”) menjadi komitmen sadar (“aku pastiin”) dengan alasan miliknya sendiri dan <em>must-keep conditions</em> yang jelas</td>
 </tr>
 <tr class="odd">
 <td>Repertoire, Language &amp; AI</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Menggunakan bahasa WhatsApp non-formal yang wajar, membawa 2 tingkat <em>Tangga Bukti</em> termasuk artefak prototipe HTML interaktif + diagram <em>middleware</em>, menyatakan 3 batas jujur di depan, serta menetapkan batas penggunaan AI dengan menolak klaim <em>overpromise</em></td>
 </tr>
 <tr class="even">
 <td>Response &amp; Adaptation</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Bantahan S terhadap hipotesis awal tidak didebat, melainkan diakui keliru lalu dipakai merevisi <em>framing</em> proksi <em>lead-time</em> dan menambahkan slide <em>Interoperability Middleware</em></td>
 </tr>
 <tr class="odd">
 <td>Agreement, Action &amp; Relationship</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: right;">4</td>
+<td>Menetapkan <em>evidence threshold</em> (<em>mock Q&amp;A</em> 28 April bersama M), menguji balik celah argumen sendiri, menjaga hak menolak (<em>informed choice</em>) tanpa tekanan waktu palsu, dan memperkuat kepercayaan tim hingga final 10 Mei</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Total:</strong> — / 20</p>
+<p><strong>Total: 20/20 — Lanjut.</strong></p>
 <section id="assessment-dosen" class="level3 assessor-only">
 <h3 class="anchored" data-anchor-id="assessment-dosen">Assessment dosen</h3>
 <p><strong>Skor:</strong> — / 20<br>

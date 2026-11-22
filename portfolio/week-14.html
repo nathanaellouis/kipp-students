@@ -80,6 +80,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -333,125 +362,258 @@ ul.task-list li input[type="checkbox"] {
 <li>AI role, prompt/output, serta human revision.</li>
 <li>Privacy/authority/risk review dan alasan tidak menggunakan lebih banyak AI.</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Lihat contoh pengisian
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="../examples/week-14.html">Buka contoh fiktif Minggu 14</a> untuk melihat tingkat kekonkretan evidence dan analisis. Jangan menyalin contoh sebagai evidence pribadi.</p>
-</div>
-</div>
 </section>
 <section id="konteks-performance" class="level2">
 <h2 class="anchored" data-anchor-id="konteks-performance">Konteks performance</h2>
-<p><strong>Tanggal dan setting:</strong> Ganti dengan tanggal, tempat, dan bentuk kegiatan.</p>
-<p><strong>Persons dan relationship:</strong> Jelaskan siapa yang terlibat tanpa membuka data pribadi yang tidak diperlukan.</p>
-<p><strong>Objective dan initial state:</strong> Nyatakan perubahan yang ingin dicapai serta evidence state awal.</p>
+<p><strong>Tanggal dan setting:</strong> Minggu, 22 November 2026. Proses perancangan komunikasi publik untuk <em>carousel</em> Instagram tujuh slide yang menjelaskan proyek riset <strong>MARS (<em>Maritime Adaptive Rerouting System</em>)</strong> dengan bantuan AI (Gemini), lalu diunggah di akun Instagram pribadi dan ditindaklanjuti melalui balasan komentar serta pembaruan <em>caption</em> (kelanjutan proses di balik layar dari Minggu 13).</p>
+<p><strong>Persons dan relationship:</strong> Saya berperan sebagai mahasiswa STI ITB 2025 sekaligus penulis yang bertanggung jawab penuh atas isi publikasi, audiens utama adalah mahasiswa lintas jurusan dan pembaca muda di Instagram, audiens sekunder mencakup dosen, juri kompetisi, dan praktisi logistik, dua rekan tim saya (<strong>S</strong> dan <strong>M</strong>) adalah pihak yang karya bersamanya dibahas tanpa menyingkap identitas pribadi mereka, serta para pengomentar adalah pembaca yang menguji keakuratan isi setelah unggahan tayang.</p>
+<p><strong>Objective dan initial state:</strong> Menghasilkan artefak publik yang sederhana, akurat, jujur pada keterbatasan simulasi (<em>honest limits</em>), dan bebas dari pelanggaran privasi maupun klaim berlebihan, dengan memposisikan AI sebatas alat bantu bahasa dan struktur, bukan penentu fakta atau pemilik relasi. <em>Initial state</em>: seluruh data, hasil uji <em>batch</em> <span class="math inline">\(N = 50\)</span>, dan purwarupa simulator MARS sudah ada pada dokumen <em>paper</em> dan <em>slide</em> kompetisi tim kami, tetapi bahasanya masih dipenuhi istilah teknis akademis sehingga terlalu berat jika langsung dibagikan ke pembaca umum di Instagram.</p>
 </section>
 <section id="evidence" class="level2">
 <h2 class="anchored" data-anchor-id="evidence">Evidence</h2>
-<div class="evidence-block">
-<p>Tambahkan link, gambar, video, transcript, artefak, catatan observer, atau bukti tindakan. Jelaskan bagian mana yang merupakan kontribusi Anda.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>1. Pembagian Peran AI, Matriks Risiko, dan Tanggung Jawab Manusia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sebelum memakai AI, setiap subtugas dipetakan berdasarkan <strong>tingkat risiko relasi dan otoritas</strong> (<em>Hijau = rendah, Kuning = sedang, Merah = tinggi</em>) agar pemilihan peran AI tetap proporsional:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Subtugas komunikasi</th>
+<th style="text-align: left;">Tingkat risiko</th>
+<th style="text-align: left;">AI role</th>
+<th style="text-align: left;">Tanggung jawab manusia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Menerjemahkan istilah teknis <em>paper</em> (detoks jargon) ke analogi sehari-hari</td>
+<td style="text-align: left;"><strong>Hijau</strong> (Rendah)</td>
+<td style="text-align: left;"><strong>Translator</strong></td>
+<td style="text-align: left;">Memeriksa apakah analogi tetap setia pada makna teknis <em>feasibility-first</em> dan <em>HITL</em> tanpa mendistorsi konsep</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Menyusun draf awal struktur tujuh slide, <em>caption</em>, dan <em>alt-text</em> aksesibilitas</td>
+<td style="text-align: left;"><strong>Kuning</strong> (Sedang)</td>
+<td style="text-align: left;"><strong>Copilot</strong></td>
+<td style="text-align: left;">Menentukan sudut pandang pribadi, mencocokkan seluruh angka dengan dokumen asli, dan merevisi kalimat yang terlalu promosional</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Menguji potensi salah tafsir jika satu slide di-<em>screenshot</em> terpisah (<em>screenshot test</em>)</td>
+<td style="text-align: left;"><strong>Kuning</strong> (Sedang)</td>
+<td style="text-align: left;"><strong>Mirror / Coach</strong></td>
+<td style="text-align: left;">Menilai sendiri dampak terhadap privasi rekan tim (<strong>S</strong> dan <strong>M</strong>) serta batas otoritas agar tidak terbaca mewakili institusi resmi</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Menyusun draf awal balasan untuk empat komentar dan catatan koreksi <em>caption</em></td>
+<td style="text-align: left;"><strong>Kuning</strong> (Sedang)</td>
+<td style="text-align: left;"><strong>Copilot</strong></td>
+<td style="text-align: left;">Menilai secara mandiri mana kritik yang sah, menyesuaikan nada agar hangat dan personal, lalu mengirim balasan atas nama sendiri</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Membalas komentar/DM secara otomatis atau menebak motif pengkritik</td>
+<td style="text-align: left;"><strong>Merah</strong> (Tinggi)</td>
+<td style="text-align: left;"><strong>Delegate: tidak digunakan</strong></td>
+<td style="text-align: left;">Pengelolaan relasi, pengakuan jujur atas celah riset, dan interaksi dengan pembaca ditangani manual 100% oleh saya</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Menentukan angka riset, batas simulasi, dan data respons unggahan</td>
+<td style="text-align: left;"><strong>Merah</strong> (Tinggi)</td>
+<td style="text-align: left;"><strong>Tidak digunakan</strong></td>
+<td style="text-align: left;">Seluruh fakta diambil langsung dari <em>paper</em>, purwarupa simulator MARS, dan <em>Insight</em> Instagram, bukan hasil karangan AI</td>
+</tr>
+</tbody>
+</table>
+<p><em>(Peran <strong>Mediator</strong> tidak dipakai karena konteks ini bukan fasilitasi konflik langsung multipihak, melainkan perancangan komunikasi publik satu-ke-banyak yang tetap berada di bawah kendali saya).</em></p>
+<hr>
+<section id="prompt-output-awal-ai" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-output-awal-ai">2. Prompt &amp; Output Awal AI</h3>
+<p><strong>Instruksi berpusat pada manusia (<em>person-centered prompt</em>) yang saya berikan:</strong></p>
+<blockquote class="blockquote">
+<p><em>“Bantu saya menyederhanakan konsep proyek riset MARS (12 pelabuhan Indonesia, 15 knots, dual-mode alpha 0,15 vs 0,75, HITL confidence gate di bawah 95%, hasil proksi N=50) menjadi draf carousel Instagram 7 slide plus alt-text untuk pembaca muda dan mahasiswa lintas jurusan. Gunakan bahasa yang santai tapi tetap rapi, jangan pakai nama asli dua rekan tim saya, tegaskan ini catatan pribadi mahasiswa bukan pernyataan resmi kampus, dan sertakan batas bahwa datanya masih simulated proxy.”</em></p>
+</blockquote>
+<p><strong>Cuplikan output awal AI yang kemudian saya evaluasi:</strong></p>
+<p>Output awal Gemini berhasil menyusun alur tujuh slide dan <em>alt-text</em> dengan cepat, tetapi saat saya periksa ulang (<em>human review</em>), masih terdapat lima bagian yang berisiko menimbulkan <em>overclaim</em>, distorsi makna, atau masalah privasi:</p>
+<ul>
+<li>Judul sampul terlalu promosional: <em>“MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!”</em></li>
+<li>Kalimat hasil di slide 5 terlalu mutlak: <em>“LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit.”</em></li>
+<li>Keterbatasan <em>simulated proxy</em> hanya ditaruh sebagai catatan kecil di bagian bawah <em>caption</em>, tidak hadir sebagai slide tersendiri.</li>
+<li>Bahasa pada slide mekanisme masih menyimpan jargon kaku: <em>“filtering kepatuhan proaktif berbasis confidence gate”</em>.</li>
+<li>Penutup <em>caption</em> menyarankan penyebutan nama lengkap rekan tim dan afiliasi kampus secara menonjol di bawah judul.</li>
+</ul>
+<hr>
+</section>
+<section id="human-revision-diterima-diubah-dan-ditolak" class="level3">
+<h3 class="anchored" data-anchor-id="human-revision-diterima-diubah-dan-ditolak">3. Human Revision (Diterima, Diubah, dan Ditolak)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Output awal AI</th>
+<th style="text-align: left;">Keputusan &amp; revisi saya</th>
+<th style="text-align: left;">Alasan revisi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Judul Slide 1:</strong> <em>“MARS: Sistem AI Maritim Pemangkas Waktu Logistik 24 Jam Jadi 9 Menit!”</em></td>
+<td style="text-align: left;"><strong>Ditolak &amp; diubah:</strong> <em>“Gimana cara kapal kargo milih rute aman saat krisis mendadak?”</em> + catatan <em>“hasil simulasi riset mahasiswa, bukan sistem operasional resmi”</em></td>
+<td style="text-align: left;">Versi AI berbau <em>clickbait</em> dan bisa membuat pembaca awam maupun praktisi mengira sistem sudah aktif di pelabuhan nyata.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Slide 3–4 (Mekanisme):</strong> <em>“filtering kepatuhan proaktif berbasis confidence gate”</em></td>
+<td style="text-align: left;"><strong>Diubah:</strong> Analogi aplikasi peta <em>“sadar aturan”</em> (<em>saring jalur terlarang dulu di awal</em>) dan <em>“rem pengaman manusia”</em> saat keyakinan di bawah 95%</td>
+<td style="text-align: left;">Mengurangi jarak bahasa dengan pembaca lintas jurusan tanpa menghilangkan cara kerja inti sistem.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Slide 5 (Hasil):</strong> <em>“LegalBERT dan Modified Dijkstra menjamin 100% rute legal dalam 9 menit.”</em></td>
+<td style="text-align: left;"><strong>Ditolak &amp; diubah:</strong> Menyebut tegas kata <strong>“proksi”</strong>, menyertakan rentang <strong>30–60 menit</strong> saat tinjauan manusia, dan menambahkan <em>trade-off</em> jarak <strong>+7–12%</strong></td>
+<td style="text-align: left;">Versi AI menghilangkan ketidakpastian (<em>uncertainty</em>) dan konsekuensi jarak tempuh, jika di-<em>screenshot</em> terpisah akan terbaca sebagai <em>overclaim</em>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Batas <em>Simulated Proxy</em>:</strong> Hanya ditulis ringkas di akhir <em>caption</em></td>
+<td style="text-align: left;"><strong>Diterima sebagian lalu dipindah:</strong> Dijadikan <strong>satu slide khusus (Slide 6 Batas Jujur)</strong> dengan porsi visual setara slide hasil</td>
+<td style="text-align: left;">Banyak pembaca Instagram hanya menggeser gambar tanpa membuka <em>caption</em>, keterbatasan simulasi harus terlihat langsung di artefak visual.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Slide 7 &amp; Caption:</strong> Saran menyebut nama lengkap rekan tim dan afiliasi institusi secara menonjol</td>
+<td style="text-align: left;"><strong>Ditolak:</strong> Merujuk karya secara kolektif sebagai tim tanpa menyebut nama pribadi rekan + penegasan <em>“catatan belajar pribadi mahasiswa, bukan pernyataan resmi institusi”</em></td>
+<td style="text-align: left;">Melindungi privasi rekan tim (<strong>S</strong> dan <strong>M</strong>) dan menjaga batas otoritas agar unggahan tidak terbaca mewakili sikap resmi ITB atau IEEE.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tinjauan manusia setelah publikasi:</strong> Ketika dua pembaca menyampaikan kritik di kolom komentar bahwa <em>trade-off</em> jarak +7–12% belum menghitung biaya bahan bakar riil (<em>bunker fuel</em>) dan 12 pelabuhan belum mewakili pelabuhan perintis serta cuaca mikro AI membantu menyusun opsi kalimat balasan dan ringkasan koreksi. Saya menolak nada jawaban yang terdengar defensif atau terlalu kaku, memutuskan sendiri bahwa kedua kritik tersebut valid, lalu membalas komentar dan memperbarui <em>caption</em> secara terbuka atas nama saya sendiri.</p>
+<hr>
+</section>
+<section id="privacy-authority-risk-review" class="level3">
+<h3 class="anchored" data-anchor-id="privacy-authority-risk-review">4. Privacy, Authority &amp; Risk Review</h3>
+<ul>
+<li><strong>Privacy:</strong> Nama lengkap, akun pribadi, dan catatan internal rekan tim (<strong>S</strong> dan <strong>M</strong>) tidak dimasukkan ke dalam <em>prompt</em> maupun teks publikasi, mereka hanya dirujuk secara kolektif sebagai tim agar privasi tetap terlindungi.</li>
+<li><strong>Authority boundary:</strong> Sejak slide pertama hingga <em>caption</em>, batas otoritas dinyatakan jelas sebagai catatan belajar pribadi mahasiswa (<em>student contributor</em>), bukan juru bicara resmi ITB, IEEE, atau operator pelabuhan. AI tidak diizinkan menyusun klaim yang mengatasnamakan institusi mana pun.</li>
+<li><strong>Data, akurasi, dan <em>uncertainty</em>:</strong> Seluruh angka teknis (80% perdagangan laut global, biaya logistik 23,8% dan estimasi 14,29% PDB, 12 pelabuhan, 15 knots, kongesti &gt;85%, <span class="math inline">\(\alpha = 0,15/0,75\)</span>, ambang <em>confidence</em> 95%, <span class="math inline">\(N = 50\)</span>, waktu proksi 12–24 jam vs 3–9 menit / 30–60 menit, serta <em>trade-off</em> jarak +7–12%) saya verifikasi langsung terhadap <em>paper</em> dan kode simulasi asli. Ketidakpastian model justru ditampilkan terang-terangan di Slide 6, bukan disembunyikan.</li>
+<li><strong>Risiko <em>profiling</em>, manipulasi, dan <em>dependency</em>:</strong> AI tidak diminta menilai karakter atau motif pengomentar (menghindari <em>profiling</em>), dan draf judul <em>clickbait</em> yang manipulatif langsung saya buang. Untuk mencegah ketergantungan (<em>dependency</em>), saya tetap menguasai sendiri mekanisme teknis MARS sehingga dapat menjawab pertanyaan lanjutan pembaca (seperti perbandingan jeda 30–60 menit pada pelayaran 3–10 hari dan kendala surat edaran PDF pelabuhan) berdasarkan pemahaman sendiri.</li>
+<li><strong>Risiko hilangnya keaslian dan bias:</strong> Saya menyunting ulang bahasa draf AI pada slide dan balasan komentar agar tetap terdengar seperti suara alami mahasiswa bukan bahasa generik yang kaku sekaligus memastikan tidak ada sudut pandang bias yang meremehkan sistem operasional pelabuhan kecil atau prosedur kerja operator lapangan yang sudah ada.</li>
+<li><strong>Batas tugas vs.&nbsp;relasi dan kondisi eskalasi:</strong> AI hanya dipakai pada komunikasi pembawa tugas (<em>task-driven</em>) seperti perapian struktur slide dan <em>alt-text</em>, sementara komunikasi pembawa relasi (<em>relationship-driven</em>) seperti menanggapi kritik pembaca dan mengakui kekurangan riset dipegang penuh oleh saya. <strong>Kondisi eskalasi</strong> ditetapkan tegas: setiap kali muncul komentar kritis, pertanyaan tentang keakuratan fakta, atau potensi salah paham atas batas simulasi, saya langsung mengambil alih kendali penuh tanpa menyerahkan respons akhir ke AI.</li>
+</ul>
+<p><strong>Alasan tidak menggunakan lebih banyak AI:</strong> Saya sengaja tidak mengaktifkan peran <strong>Delegate</strong> (misalnya balasan komentar otomatis atau menyerahkan seluruh draf tanpa pengecekan ulang) karena tiga alasan konkret: (1) volume interaksi masih kecil (4 komentar) sehingga sangat realistis ditangani langsung, (2) dua komentar berupa kritik substantif yang menuntut pengakuan jujur dari manusia yang benar-benar mengerjakan risetnya, dan (3) relasi serta kepercayaan pembaca akan cepat rusak bila jawaban atas kritik terasa seperti respons bot yang dingin.</p>
+<p><strong>Pernyataan transparansi:</strong> <em>“Draf awal teks carousel, terjemahan istilah teknis, dan alt-text pada unggahan publik MARS ini disusun dengan bantuan AI (Gemini) sebagai translator dan copilot, namun verifikasi seluruh data riset, revisi batas klaim, keputusan akhir, balasan komentar, dan tanggung jawab penuh atas isi tetap berada pada saya.”</em></p>
+</section>
+</div>
 </div>
 </section>
 <section id="analisis-komunikasi" class="level2">
 <h2 class="anchored" data-anchor-id="analisis-komunikasi">Analisis komunikasi</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Elemen</th>
-<th>Evidence dan analisis</th>
+<th style="text-align: left;">Elemen</th>
+<th style="text-align: left;">Evidence dan analisis</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Person &amp; character</td>
-<td>Ganti dengan analisis Anda.</td>
+<td style="text-align: left;"><strong>Person &amp; character</strong></td>
+<td style="text-align: left;">Peran saya sebagai penulis yang bertanggung jawab, AI sebagai <em>translator/copilot</em> di zona Hijau–Kuning, rekan tim (<strong>S</strong> dan <strong>M</strong>) yang privasinya dijaga, serta pembaca umum dan pengkritik dipisahkan secara tegas.</td>
 </tr>
 <tr class="even">
-<td>Objective &amp; state</td>
-<td>Ganti dengan analisis Anda.</td>
+<td style="text-align: left;"><strong>Objective &amp; state</strong></td>
+<td style="text-align: left;"><em>Objective</em> menerjemahkan konsep MARS secara jujur tanpa <em>overclaim</em> dijaga sepanjang proses dari penulisan <em>prompt</em> berpusat pada manusia, revisi pra-publikasi, hingga koreksi terbuka setelah komentar masuk.</td>
 </tr>
 <tr class="odd">
-<td>Repertoire &amp; language</td>
-<td>Ganti dengan analisis Anda.</td>
+<td style="text-align: left;"><strong>Repertoire &amp; language</strong></td>
+<td style="text-align: left;">Perbandingan langsung antara <em>prompt</em>, <em>output</em> mentah AI, lima keputusan revisi (diterima, diubah, ditolak), serta alasan tiap revisi terdokumentasi utuh, bahasa disunting agar menjaga keaslian suara manusia.</td>
 </tr>
 <tr class="even">
-<td>Response &amp; adaptation</td>
-<td>Ganti dengan analisis Anda.</td>
+<td style="text-align: left;"><strong>Response &amp; adaptation</strong></td>
+<td style="text-align: left;">Baik risiko sebelum tayang (judul <em>clickbait</em>, klaim mutlak 9 menit, batas <em>simulated proxy</em> yang tersembunyi) maupun dua kritik pembaca setelah tayang direspons lewat keputusan manusia sesuai kondisi eskalasi.</td>
 </tr>
 <tr class="odd">
-<td>Agreement/action</td>
-<td>Ganti dengan analisis Anda.</td>
+<td style="text-align: left;"><strong>Agreement/action</strong></td>
+<td style="text-align: left;">Artefak publik terbit dengan batas wewenang yang jernih, seluruh balasan komentar dan <em>correction log</em> dikirim atas nama saya sendiri, serta seluruh komunikasi pembawa relasi (<em>relationship-driven</em>) tetap ditangani manual.</td>
 </tr>
 <tr class="even">
-<td>Relationship outcome</td>
-<td>Ganti dengan analisis Anda.</td>
+<td style="text-align: left;"><strong>Relationship outcome</strong></td>
+<td style="text-align: left;">Privasi rekan tim terjaga, pengkritik diperlakukan setara dan diberi kredit secara personal, dan kepercayaan pembaca dibangun di atas transparansi batas manusia bukan klaim bombastis buatan AI.</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="penggunaan-ai" class="level2">
 <h2 class="anchored" data-anchor-id="penggunaan-ai">Penggunaan AI</h2>
-<p>Nyatakan <code>Tidak menggunakan AI</code> atau jelaskan:</p>
-<ul>
-<li>alat dan peran AI;</li>
-<li>prompt atau instruksi penting;</li>
-<li>bagian output yang digunakan, diubah, atau ditolak;</li>
-<li>pemeriksaan accuracy, privacy, dan authority;</li>
-<li>apa yang tetap Anda pelajari sebagai manusia.</li>
-</ul>
+<p>Gemini digunakan dalam proses penyusunan draf awal <em>carousel</em> MARS (sebagai <em>translator</em>, <em>copilot</em>, dan <em>mirror</em> untuk uji <em>screenshot test</em>), draf awal opsi balasan komentar, serta penstrukturan catatan ini ke format portofolio Minggu 14. Seluruh verifikasi angka riset, lima revisi utama pada tabel <em>Human Revision</em>, keputusan mengakui kritik pembaca, pengiriman balasan, dan tanggung jawab penuh atas konten dilakukan oleh saya sendiri.</p>
 </section>
 <section id="feedback-dan-tindak-lanjut" class="level2">
 <h2 class="anchored" data-anchor-id="feedback-dan-tindak-lanjut">Feedback dan tindak lanjut</h2>
-<p><strong>Feedback yang diterima:</strong> Ganti dengan kutipan atau ringkasan berbasis evidence.</p>
-<p><strong>Adaptation/replay:</strong> Jelaskan apa yang Anda ubah dan response setelah perubahan.</p>
-<p><strong>Next practice:</strong> Tetapkan satu perilaku spesifik yang akan dilatih berikutnya.</p>
+<ul>
+<li><strong>Feedback yang diterima:</strong> Dua kritik dari pembaca setelah unggahan tayang soal belum dimodelkannya biaya bahan bakar riil pada <em>trade-off</em> jarak +7–12% dan batas representasi 12 pelabuhan terhadap pelabuhan perintis menunjukkan bahwa meski saya sudah melakukan lima revisi terhadap <em>output</em> AI, sudut pandang manusia dari luar tim tetap mampu menangkap celah asumsi yang terlewat oleh saya maupun AI.</li>
+<li><strong>Adaptation/replay:</strong> Kedua kritik saya akui secara terbuka pada balasan komentar dan saya tambahkan sebagai catatan koreksi di bagian bawah <em>caption</em>, sembari memberi kredit kepada pemberi masukan.</li>
+<li><strong>Next practice:</strong> Saat menggunakan AI sebagai <em>copilot</em> untuk komunikasi publik berikutnya, saya akan menggabungkan dua lapis pemeriksaan sebelum terbit: pemeriksaan mandiri memakai matriks risiko Hijau–Kuning–Merah, lalu uji baca cepat oleh minimal satu teman dari luar bidang informatika agar celah asumsi non-teknis (seperti aspek ekonomi atau kondisi lapangan) sudah terlihat sebelum dipublikasikan.</li>
+</ul>
 </section>
 <section id="self-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="self-assessment">Self-assessment</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 38%">
+<col style="width: 30%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Dimensi</th>
-<th style="text-align: right;">Skor 1–4</th>
-<th>Evidence singkat</th>
+<th style="text-align: left;">Dimensi</th>
+<th style="text-align: center;">Skor 1–4</th>
+<th style="text-align: left;">Evidence singkat</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Person &amp; Character</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: left;"><strong>Person &amp; Character</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Peran manusia, batas otoritas pribadi, privasi rekan tim (<strong>S</strong> dan <strong>M</strong>), serta pemisahan komunikasi pembawa tugas dan pembawa relasi dipetakan tegas memakai matriks risiko Hijau–Kuning–Merah.</td>
 </tr>
 <tr class="even">
-<td>Objective &amp; State</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: left;"><strong>Objective &amp; State</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Pilihan peran AI (<em>Translator</em>, <em>Copilot</em>, <em>Mirror/Coach</em>, serta menolak <em>Delegate</em>) selaras dengan <em>objective</em> edukatif, tingkat risiko relasi, dan kondisi eskalasi pada tiap subtugas.</td>
 </tr>
 <tr class="odd">
-<td>Repertoire, Language &amp; AI</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: left;"><strong>Repertoire, Language &amp; AI</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><em>Prompt</em>, cuplikan <em>output</em> awal, lima butir <em>human revision</em> (diterima/diubah/ditolak beserta alasan), penjagaan keaslian suara, serta pernyataan transparansi tercatat jelas dan dapat dibandingkan langsung.</td>
 </tr>
 <tr class="even">
-<td>Response &amp; Adaptation</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: left;"><strong>Response &amp; Adaptation</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Draf AI yang <em>clickbait</em> atau <em>overclaim</em> ditolak sebelum terbit, dan dua kritik pembaca setelah publikasi diterima serta dikoreksi atas keputusan manusia sendiri.</td>
 </tr>
 <tr class="odd">
-<td>Agreement, Action &amp; Relationship</td>
-<td style="text-align: right;">—</td>
-<td>—</td>
+<td style="text-align: left;"><strong>Agreement, Action &amp; Relationship</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Seluruh pemeriksaan privasi, otoritas, <em>uncertainty</em>, <em>profiling</em>, manipulasi, <em>dependency</em>, bias, alasan membatasi AI, dan kepemilikan relasi dengan pembaca terdokumentasi utuh.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Total:</strong> — / 20</p>
+<p><strong>Total: 20/20 — Lanjut.</strong></p>
 <section id="assessment-dosen" class="level3 assessor-only">
 <h3 class="anchored" data-anchor-id="assessment-dosen">Assessment dosen</h3>
 <p><strong>Skor:</strong> — / 20<br>
